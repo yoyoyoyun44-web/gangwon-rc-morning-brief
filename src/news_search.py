@@ -7,13 +7,25 @@ from bs4 import BeautifulSoup
 
 
 # ============================================================
-# 설정
+# NAVER API HUB 인증정보
 # ============================================================
 
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
 NAVER_CLIENT_SECRET = os.environ["NAVER_CLIENT_SECRET"]
 
+
+# NAVER API HUB 기본 URL
+NAVER_API_BASE = "https://naverapihub.apigw.ntruss.com"
+
+# 뉴스 검색 API
+NAVER_NEWS_URL = f"{NAVER_API_BASE}/search/v1/news"
+
 OUTPUT_FILE = "data/raw_news.json"
+
+
+# ============================================================
+# 검색어
+# ============================================================
 
 SEARCH_QUERIES = [
     "보험 제도",
@@ -43,7 +55,7 @@ SEARCH_QUERIES = [
 
 
 # ============================================================
-# HTML 제거
+# HTML 태그 제거
 # ============================================================
 
 def clean_html(text):
@@ -64,7 +76,9 @@ def clean_html(text):
 def parse_date(date_string):
 
     try:
-        return parsedate_to_datetime(date_string)
+        return parsedate_to_datetime(
+            date_string
+        )
 
     except Exception:
 
@@ -72,39 +86,64 @@ def parse_date(date_string):
 
 
 # ============================================================
-# 네이버 뉴스 검색
+# NAVER API HUB 뉴스 검색
 # ============================================================
 
 def search_naver(query):
 
-    url = (
-        "https://openapi.naver.com/"
-        "v1/search/news.json"
-    )
-
     headers = {
-        "X-Naver-Client-Id":
+
+        "X-NCP-APIGW-API-KEY-ID":
             NAVER_CLIENT_ID,
 
-        "X-Naver-Client-Secret":
+        "X-NCP-APIGW-API-KEY":
             NAVER_CLIENT_SECRET
+
     }
 
     params = {
-        "query": query,
-        "display": 100,
-        "start": 1,
-        "sort": "date"
+
+        "query":
+            query,
+
+        "display":
+            100,
+
+        "start":
+            1,
+
+        "sort":
+            "date"
+
     }
 
     response = requests.get(
-        url,
+
+        NAVER_NEWS_URL,
+
         headers=headers,
+
         params=params,
+
         timeout=30
+
     )
 
-    response.raise_for_status()
+
+    # 오류 발생 시 응답 내용까지 표시
+    if response.status_code != 200:
+
+        print()
+        print("NAVER API 오류")
+        print(
+            f"HTTP Status: {response.status_code}"
+        )
+        print(
+            f"Response: {response.text}"
+        )
+
+        response.raise_for_status()
+
 
     return response.json()
 
@@ -117,6 +156,7 @@ def main():
 
     now = datetime.now().astimezone()
 
+    # 테스트 단계에서는 최근 72시간
     cutoff = now - timedelta(
         hours=72
     )
@@ -125,10 +165,16 @@ def main():
 
     seen_urls = set()
 
+
     print("=" * 60)
 
-    print("강원영업단 RC Morning Brief")
-    print("NAVER 뉴스 수집 시작")
+    print(
+        "강원영업단 RC Morning Brief"
+    )
+
+    print(
+        "NAVER API HUB 뉴스 수집 시작"
+    )
 
     print("=" * 60)
 
@@ -140,7 +186,6 @@ def main():
     for query in SEARCH_QUERIES:
 
         print()
-
         print(
             f"[검색] {query}"
         )
@@ -166,6 +211,11 @@ def main():
         )
 
 
+        print(
+            f"  → {len(items)}개 결과"
+        )
+
+
         for item in items:
 
             title = clean_html(
@@ -184,15 +234,21 @@ def main():
 
 
             original_url = (
+
                 item.get(
                     "originallink"
                 )
+
                 or
+
                 item.get(
                     "link"
                 )
+
                 or
+
                 ""
+
             )
 
 
@@ -207,7 +263,7 @@ def main():
             )
 
 
-            # URL이 없는 경우 제외
+            # URL 없는 기사 제외
 
             if not original_url:
 
@@ -226,12 +282,15 @@ def main():
             )
 
 
-            # 너무 오래된 기사 제외
-
+            # 최근 72시간 기사만
             if (
+
                 published
+
                 and
+
                 published < cutoff
+
             ):
 
                 continue
@@ -255,9 +314,13 @@ def main():
 
                 "published_at":
                     (
+
                         published.isoformat()
+
                         if published
+
                         else published_raw
+
                     ),
 
                 "query":
@@ -279,6 +342,7 @@ def main():
             ),
 
         reverse=True
+
     )
 
 
@@ -330,7 +394,6 @@ def main():
 
 
     print()
-
     print("=" * 60)
 
     print(
