@@ -1,6 +1,8 @@
-import os
+````python
 import json
-from datetime import datetime
+import os
+import time
+from pathlib import Path
 
 from google import genai
 
@@ -9,309 +11,485 @@ from google import genai
 # 설정
 # ============================================================
 
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
+INPUT_FILE = Path("data/raw_news.json")
+OUTPUT_FILE = Path("data/news.json")
 
-INPUT_FILE = "data/raw_news.json"
-OUTPUT_FILE = "data/news.json"
+API_KEY = os.getenv("GEMINI_API_KEY")
 
-# 무료 티어에서 사용할 모델
-MODEL = "gemini-3.6-flash"
+# 현재 사용 중인 Gemini 모델
+MODEL_NAME = "gemini-3.6-flash"
 
+# 한 번에 Gemini에 보내는 뉴스 개수
+BATCH_SIZE = 20
 
-# ============================================================
-# API Key 확인
-# ============================================================
+# 503 등 일시적 오류 발생 시 최대 재시도 횟수
+MAX_RETRIES = 4
 
-if not GEMINI_API_KEY:
-    raise RuntimeError(
-        "GEMINI_API_KEY가 설정되지 않았습니다."
-    )
+# 재시도 간격
+RETRY_DELAYS = [30, 60, 120, 180]
 
-if GEMINI_API_KEY != GEMINI_API_KEY.strip():
-    raise RuntimeError(
-        "GEMINI_API_KEY 앞뒤에 공백이 있습니다."
-    )
-
-if "\n" in GEMINI_API_KEY or "\r" in GEMINI_API_KEY:
-    raise RuntimeError(
-        "GEMINI_API_KEY에 줄바꿈이 포함되어 있습니다."
-    )
+# 최종적으로 AI가 검토할 뉴스 수
+MAX_ANALYSIS_NEWS = 80
 
 
 # ============================================================
 # Gemini 클라이언트
 # ============================================================
 
+if not API_KEY:
+    raise RuntimeError(
+        "GEMINI_API_KEY 환경변수가 설정되어 있지 않습니다."
+    )
+
 client = genai.Client(
-    api_key=GEMINI_API_KEY
+    api_key=API_KEY
 )
 
 
 # ============================================================
-# 뉴스 데이터 읽기
+# 뉴스 텍스트 정리
 # ============================================================
 
-def load_news():
+def clean_text(text):
 
-    with open(
-        INPUT_FILE,
-        "r",
-        encoding="utf-8"
-    ) as f:
+    if not text:
+        return ""
 
-        data = json.load(f)
-
-    return data
+    return (
+        str(text)
+        .replace("\n", " ")
+        .replace("\r", " ")
+        .strip()
+    )
 
 
 # ============================================================
-# 시스템 프롬프트
+# 뉴스 데이터 정리
+# ============================================================
+
+def prepare_news(news_list):
+
+    prepared = []
+
+    seen_urls = set()
+
+    for news in news_list:
+
+        title = clean_text(
+            news.get("title", "")
+        )
+
+        description = clean_text(
+            news.get("description", "")
+        )
+
+        url = (
+            news.get("originallink")
+            or news.get("link")
+            or ""
+        )
+
+        if not title:
+            continue
+
+        # URL 중복 제거
+        if url and url in seen_urls:
+            continue
+
+        if url:
+            seen_urls.add(url)
+
+        prepared.append({
+            "id": len(prepared) + 1,
+            "title": title,
+            "description": description,
+            "url": url,
+            "source": clean_text(
+                news.get("source", "")
+            ),
+            "pubDate": clean_text(
+                news.get("pubDate", "")
+            )
+        })
+
+    return prepared
+
+
+# ============================================================
+# Gemini 프롬프트
 # ============================================================
 
 SYSTEM_PROMPT = """
+당신은 삼성화재 강원영업단 RC를 위한
+매일 아침 보험·의료 뉴스 브리핑을 만드는 전문 편집자입니다.
 
-당신은 삼성화재 강원영업단의
-RC를 위한 매일 아침 뉴스 브리핑을 만드는
-전문 뉴스 편집자입니다.
+목표는 단순한 뉴스 요약이 아니라
+삼성화재 RC가 고객과 실제 영업 대화를 시작할 수 있는
+뉴스 소재를 선별하고 재구성하는 것입니다.
 
-목표는 단순히 뉴스를 요약하는 것이 아니라
-삼성화재 RC가 실제 고객 상담과 영업활동에
-활용할 수 있는 뉴스를 선별하는 것입니다.
-
+반드시 다음 원칙을 지키십시오.
 
 [대상]
 
-이 콘텐츠의 대상은
-삼성화재 강원영업단 RC입니다.
-
-본문에서는
-FP, FC, 설계사라는 표현을 사용하지 마세요.
-
-항상 "RC"라고 표현하세요.
-
-
-[카테고리]
-
-뉴스를 다음 3개 카테고리로 분류합니다.
-
-1. 제도 동향
-
-금융감독원
-금융위원회
-손해보험협회
-보건복지부
-국민건강보험공단
-건강보험심사평가원
-등에서 발표하는
-
-보험제도
-보험정책
-건강보험
-실손보험 제도
-의료정책
-보험 관련 규제
-
-등을 우선합니다.
-
-
-2. 의료비 이슈
-
-다음 내용을 우선합니다.
-
-병원비
-의료비
-비급여
-신의료기술
-혁신의료기술
-건강보험 보장
-암 치료
-중증질환
-뇌혈관질환
-심혈관질환
-간병
-간병비
-치료비 부담
-
-등입니다.
-
-
-3. 삼성화재 소식
-
-삼성화재의
-
-장기보장성 보험
-건강보험
-어린이보험
-실손보험
-간병 관련 보험
-질병 관련 상품
-고객 서비스
-
-등과 관련된 뉴스만 우선합니다.
-
-주가나 실적 뉴스는 제외합니다.
-
+1. 보험 제도 및 정책
+2. 의료비
+3. 비급여
+4. 실손보험
+5. 건강보험
+6. 간병
+7. 암·뇌혈관·심혈관 등 중증질환
+8. 신의료기술
+9. 건강보험공단
+10. 건강보험심사평가원
+11. 금융감독원
+12. 금융위원회
+13. 손해보험협회
+14. 삼성화재의 장기보장성 보험 및 서비스
 
 [제외]
 
-다음 기사는 반드시 제외합니다.
+다음 내용은 절대 선정하지 마십시오.
 
-주가
-주식
-증권
-영업이익
-순이익
-매출
-실적
-배당
-투자
+- 주식 시세
+- 주가
+- 영업이익
+- 순이익
+- 매출
+- 실적 전망
+- 기업 실적 경쟁
+- 자동차보험
+- 휴대폰보험
+- 여행자보험
+- 펫보험
+- 기타 만기 3년 이내 일반보험
+- 단순 기업 홍보
+- 연예·사건·정치 일반 뉴스
+- 보험영업 조직에 부정적인 내용
+- 삼성화재 RC의 영업활동에 불리하게 사용할 가능성이 높은 내용
 
-자동차보험
-휴대폰보험
-여행자보험
-펫보험
-일반 단기손해보험
+[삼성화재 소식]
 
-그리고 삼성화재 RC의
-영업활동에 직접적으로 도움이 되지 않는
-단순 사건·사고·연예·정치 뉴스도 제외합니다.
+삼성화재 관련 뉴스는 장기보장성 보험,
+건강보험, 어린이보험, 실손보험, 간병 관련 보장,
+질병 관련 서비스 등 RC의 영업활동에 활용할 수 있는
+내용을 우선합니다.
 
+단순한 기업 실적 뉴스는 제외합니다.
 
-[기사 선정 기준]
+[기사 처리]
 
-다음 순서로 우선순위를 평가하세요.
+기사 원문을 그대로 복사하지 마십시오.
 
-1. RC가 고객에게 설명하기 좋은가?
-2. 보험 보장 필요성과 연결되는가?
-3. 의료비 부담과 연결되는가?
-4. 장기보장성 보험과 연결되는가?
-5. 고객에게 질문을 던질 수 있는가?
-6. 최근 발생한 중요한 이슈인가?
+제목과 내용을 바탕으로 핵심을 파악하고
+RC가 이해하기 쉽도록 요약·재구성하십시오.
 
-
-[기사 요약]
-
-원문을 그대로 복사하지 마세요.
-
-기사 내용을 2~3문장으로
-쉽게 이해할 수 있도록 재구성하세요.
-
+기사에 없는 사실을 만들어내지 마십시오.
 
 [영업 Tip]
 
-각 기사마다 RC가 고객과 대화를 시작할 때
-실제로 사용할 수 있는 영업 Tip을 작성하세요.
+각 기사마다 반드시
+"오늘 이 뉴스를 가지고 고객에게 어떤 질문을 할 것인가?"
+라는 관점에서 실제 대화에 사용할 수 있는
+짧은 영업 Tip을 작성하십시오.
 
-보험 가입을 직접적으로 강요하는 표현은 피하세요.
+상품을 무리하게 직접 판매하는 표현보다
+뉴스 → 고객 관심 → 보장 필요성 확인
+순서의 자연스러운 접근을 우선합니다.
 
-다음과 같은 형태를 선호합니다.
+[우선순위]
 
-"최근 이런 변화가 있는데,
-고객님의 기존 보장도 한번 확인해 보시겠어요?"
+RC 영업활동에 도움이 되는 순서대로
+각 카테고리의 기사를 우선 평가하십시오.
 
-처럼 자연스럽게 상담으로 연결하세요.
+특히 다음을 높게 평가합니다.
 
+- 고객이 쉽게 공감할 수 있는 내용
+- 병원비 부담과 연결되는 내용
+- 비급여와 연결되는 내용
+- 실손보험과 연결되는 내용
+- 간병비와 연결되는 내용
+- 중증질환 치료비와 연결되는 내용
+- 향후 보장 필요성을 설명하기 좋은 내용
+- 고객에게 질문을 던지기 좋은 내용
 
 [중요]
 
-입력된 기사에 없는 내용을
-사실처럼 만들어내지 마세요.
+검색된 뉴스가 충분하지 않다면
+억지로 기사를 만들어내지 마십시오.
 
-기사에서 확인할 수 없는 내용은
-추측하지 마세요.
-
-기사 제목과 URL은 입력된 데이터를
-그대로 사용하세요.
-
-반드시 JSON으로만 응답하세요.
-
-마크다운 코드블록을 사용하지 마세요.
-
+기사에 없는 내용은 생성하지 마십시오.
 """
 
 
 # ============================================================
-# Gemini 뉴스 분석
+# Gemini에 뉴스 배치 전송
 # ============================================================
 
-def generate_news(selected_articles):
+def analyze_batch(batch, batch_number):
 
-    user_prompt = """
+    news_text = []
 
-아래 뉴스 목록을 분석하세요.
+    for item in batch:
 
-삼성화재 강원영업단 RC가
-오늘 아침 고객 상담에 활용할 수 있는
-뉴스를 선별합니다.
+        news_text.append(
+            f"""
+[NEWS {item["id"]}]
+제목: {item["title"]}
+내용: {item["description"]}
+출처: {item["source"]}
+발행일: {item["pubDate"]}
+원문: {item["url"]}
+"""
+        )
 
-각 카테고리별로
-최소 3개, 최대 5개의 기사를 선정하세요.
+    prompt = SYSTEM_PROMPT + """
 
-단, 적합한 기사가 부족하다면
-억지로 채우지 말고 실제로 적합한 기사만 선정하세요.
+다음 뉴스들을 검토하십시오.
 
+각 뉴스의 적합성을 판단한 뒤
+보험·의료 영업활용 가치가 높은 뉴스만 선별하십시오.
 
-각 기사에는 다음 정보를 포함하세요.
+반드시 JSON만 출력하십시오.
 
-title
-published_at
-source
-source_url
-category
-summary
-why_it_matters
-sales_tip
-
-
-그리고 마지막에는
-오늘의 영업 포인트를 3개 작성하세요.
-
-
-다음 JSON 구조를 반드시 지키세요.
+출력 형식:
 
 {
-  "policy": {
-    "name": "제도 동향",
-    "articles": []
-  },
-  "medical": {
-    "name": "의료비 이슈",
-    "articles": []
-  },
-  "samsung_fire": {
-    "name": "삼성화재 소식",
-    "articles": []
-  },
-  "sales_points": []
+  "articles": [
+    {
+      "category": "policy",
+      "title": "재구성한 제목",
+      "summary": "핵심 내용을 2~3문장으로 요약",
+      "why_it_matters": "RC가 이 내용을 알아야 하는 이유",
+      "sales_tip": "고객에게 활용할 수 있는 실제 영업 Tip",
+      "source": "언론사 또는 기관명",
+      "published_at": "기사 발행일",
+      "source_url": "원문 URL"
+    }
+  ]
 }
 
+category는 반드시 다음 중 하나만 사용하십시오.
 
-뉴스 목록:
+policy
+medical
+samsung_fire
 
-""" + json.dumps(
-        selected_articles,
-        ensure_ascii=False,
-        indent=2
-    )
+각 배치에서는 좋은 뉴스가 없는 경우
+articles를 빈 배열로 반환해도 됩니다.
+
+""" + "\n".join(news_text)
+
+    for attempt in range(MAX_RETRIES):
+
+        try:
+
+            print(
+                f"  Gemini 요청 "
+                f"(배치 {batch_number}, "
+                f"시도 {attempt + 1}/{MAX_RETRIES})"
+            )
+
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt
+            )
+
+            text = response.text.strip()
+
+            # 혹시 ```json 형태로 반환되는 경우 제거
+            if text.startswith("```"):
+                text = text.replace(
+                    "```json",
+                    ""
+                ).replace(
+                    "```",
+                    ""
+                ).strip()
+
+            result = json.loads(text)
+
+            if not isinstance(result, dict):
+                raise ValueError(
+                    "Gemini 응답이 JSON 객체가 아닙니다."
+                )
+
+            articles = result.get(
+                "articles",
+                []
+            )
+
+            if not isinstance(
+                articles,
+                list
+            ):
+                raise ValueError(
+                    "articles가 배열이 아닙니다."
+                )
+
+            print(
+                f"  → 배치 {batch_number} "
+                f"분석 완료: {len(articles)}개"
+            )
+
+            return articles
+
+        except Exception as e:
+
+            error_text = str(e)
+
+            print(
+                f"  [Gemini 오류] {error_text}"
+            )
+
+            # 마지막 시도라면 빈 배열 반환
+            if attempt == MAX_RETRIES - 1:
+
+                print(
+                    f"  [경고] 배치 {batch_number} "
+                    f"최종 실패 → 건너뜁니다."
+                )
+
+                return []
+
+            delay = RETRY_DELAYS[
+                min(
+                    attempt,
+                    len(RETRY_DELAYS) - 1
+                )
+            ]
+
+            print(
+                f"  → {delay}초 후 재시도합니다."
+            )
+
+            time.sleep(delay)
+
+    return []
 
 
-    response = client.models.generate_content(
+# ============================================================
+# 기사 중복 제거
+# ============================================================
 
-        model=MODEL,
+def remove_duplicate_articles(
+    articles
+):
 
-        contents=[
-            SYSTEM_PROMPT,
-            user_prompt
-        ],
+    result = []
 
-        config={
-            "temperature": 0.2,
-            "response_mime_type": "application/json"
-        }
-    )
+    seen = set()
+
+    for article in articles:
+
+        title = clean_text(
+            article.get("title", "")
+        )
+
+        url = clean_text(
+            article.get("source_url", "")
+        )
+
+        key = (
+            url
+            if url
+            else title
+        )
+
+        if not key:
+            continue
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        result.append(article)
+
+    return result
 
 
-    return response.text
+# ============================================================
+# 카테고리별 정리
+# ============================================================
+
+def organize_articles(
+    articles
+):
+
+    categories = {
+        "policy": [],
+        "medical": [],
+        "samsung_fire": []
+    }
+
+    for article in articles:
+
+        category = article.get(
+            "category"
+        )
+
+        if category not in categories:
+            continue
+
+        categories[category].append(
+            article
+        )
+
+    # 카테고리별 최대 5개
+    for category in categories:
+
+        categories[category] = (
+            categories[category][:5]
+        )
+
+    return categories
+
+
+# ============================================================
+# 오늘의 영업 포인트
+# ============================================================
+
+def make_sales_points(
+    categories
+):
+
+    points = []
+
+    for category_name, articles in [
+        ("제도 동향", categories["policy"]),
+        ("의료비 이슈", categories["medical"]),
+        ("삼성화재 소식", categories["samsung_fire"])
+    ]:
+
+        for article in articles:
+
+            tip = article.get(
+                "sales_tip",
+                ""
+            )
+
+            if tip:
+
+                points.append(
+                    f"{category_name}: {tip}"
+                )
+
+            if len(points) >= 5:
+                break
+
+        if len(points) >= 5:
+            break
+
+    # 뉴스가 적은 경우 기본 문구
+    if not points:
+
+        points.append(
+            "오늘 뉴스 중 고객의 병원비와 "
+            "보장 필요성으로 연결할 수 있는 "
+            "주제를 찾아 대화를 시작해 보세요."
+        )
+
+    return points[:5]
 
 
 # ============================================================
@@ -324,133 +502,224 @@ def main():
     print("Gemini 뉴스 분석 시작")
     print("=" * 60)
 
-
-    # 뉴스 불러오기
-
-    data = load_news()
-
-    articles = data.get(
-        "articles",
-        []
-    )
-
-
-    print(
-        f"전체 수집 뉴스: {len(articles)}개"
-    )
-
-
     # --------------------------------------------------------
-    # 테스트 단계
-    # 우선 80개만 분석
+    # raw_news.json 읽기
     # --------------------------------------------------------
 
-    selected_articles = articles[:80]
+    if not INPUT_FILE.exists():
 
-
-    print(
-        f"AI 분석 대상: {len(selected_articles)}개"
-    )
-
-
-    # --------------------------------------------------------
-    # Gemini 호출
-    # --------------------------------------------------------
-
-    result = generate_news(
-        selected_articles
-    )
-
-
-    print()
-    print("=" * 60)
-    print("Gemini 응답")
-    print("=" * 60)
-
-    print(result)
-
-
-    # --------------------------------------------------------
-    # JSON 변환
-    # --------------------------------------------------------
-
-    try:
-
-        parsed = json.loads(result)
-
-    except json.JSONDecodeError:
-
-        print()
-        print(
-            "ERROR: Gemini 응답이 JSON 형식이 아닙니다."
+        raise FileNotFoundError(
+            f"{INPUT_FILE} 파일이 없습니다."
         )
 
-        raise
+    with open(
+        INPUT_FILE,
+        "r",
+        encoding="utf-8"
+    ) as f:
 
+        raw_data = json.load(f)
+
+    # NAVER API 결과 구조 대응
+    if isinstance(raw_data, dict):
+
+        if "items" in raw_data:
+            news_list = raw_data["items"]
+
+        elif "news" in raw_data:
+            news_list = raw_data["news"]
+
+        else:
+            # 여러 검색 결과가 배열 안에 들어있는 경우
+            news_list = []
+
+            for value in raw_data.values():
+
+                if isinstance(value, list):
+                    news_list.extend(value)
+
+    elif isinstance(raw_data, list):
+
+        news_list = raw_data
+
+    else:
+
+        news_list = []
+
+    prepared_news = prepare_news(
+        news_list
+    )
+
+    print(
+        f"전체 수집 뉴스: "
+        f"{len(prepared_news)}개"
+    )
 
     # --------------------------------------------------------
-    # 최종 데이터
+    # AI 분석 대상 80개
     # --------------------------------------------------------
 
-    output = {
+    analysis_news = prepared_news[
+        :MAX_ANALYSIS_NEWS
+    ]
+
+    print(
+        f"AI 분석 대상: "
+        f"{len(analysis_news)}개"
+    )
+
+    # --------------------------------------------------------
+    # 20개씩 배치
+    # --------------------------------------------------------
+
+    all_articles = []
+
+    batches = [
+        analysis_news[i:i + BATCH_SIZE]
+        for i in range(
+            0,
+            len(analysis_news),
+            BATCH_SIZE
+        )
+    ]
+
+    print(
+        f"Gemini 분석 배치: "
+        f"{len(batches)}개"
+    )
+
+    for index, batch in enumerate(
+        batches,
+        start=1
+    ):
+
+        articles = analyze_batch(
+            batch,
+            index
+        )
+
+        all_articles.extend(
+            articles
+        )
+
+        # 서버 부담을 줄이기 위한 짧은 간격
+        if index < len(batches):
+            time.sleep(3)
+
+    print(
+        f"Gemini 전체 분석 결과: "
+        f"{len(all_articles)}개"
+    )
+
+    # --------------------------------------------------------
+    # 중복 제거
+    # --------------------------------------------------------
+
+    all_articles = (
+        remove_duplicate_articles(
+            all_articles
+        )
+    )
+
+    print(
+        f"중복 제거 후: "
+        f"{len(all_articles)}개"
+    )
+
+    # --------------------------------------------------------
+    # 카테고리 구성
+    # --------------------------------------------------------
+
+    categories = organize_articles(
+        all_articles
+    )
+
+    print(
+        f"제도 동향: "
+        f"{len(categories['policy'])}개"
+    )
+
+    print(
+        f"의료비 이슈: "
+        f"{len(categories['medical'])}개"
+    )
+
+    print(
+        f"삼성화재 소식: "
+        f"{len(categories['samsung_fire'])}개"
+    )
+
+    # --------------------------------------------------------
+    # 최종 news.json
+    # --------------------------------------------------------
+
+    result = {
 
         "generated_at":
-            datetime.now().astimezone().isoformat(),
+            time.strftime(
+                "%Y-%m-%d %H:%M:%S"
+            ),
 
         "model":
-            MODEL,
+            MODEL_NAME,
 
-        "data":
-            parsed
+        "data": {
 
+            "policy": {
+                "name": "제도 동향",
+                "articles":
+                    categories["policy"]
+            },
+
+            "medical": {
+                "name": "의료비 이슈",
+                "articles":
+                    categories["medical"]
+            },
+
+            "samsung_fire": {
+                "name": "삼성화재 소식",
+                "articles":
+                    categories["samsung_fire"]
+            },
+
+            "sales_points":
+                make_sales_points(
+                    categories
+                )
+        }
     }
-
 
     # --------------------------------------------------------
     # 저장
     # --------------------------------------------------------
 
-    os.makedirs(
-        "data",
+    OUTPUT_FILE.parent.mkdir(
+        parents=True,
         exist_ok=True
     )
 
-
     with open(
-
         OUTPUT_FILE,
-
         "w",
-
         encoding="utf-8"
-
     ) as f:
 
         json.dump(
-
-            output,
-
+            result,
             f,
-
             ensure_ascii=False,
-
             indent=2
-
         )
 
-
-    print()
     print("=" * 60)
     print(
-        f"파일 생성: {OUTPUT_FILE}"
+        f"news.json 생성 완료: "
+        f"{OUTPUT_FILE}"
     )
     print("=" * 60)
 
 
-# ============================================================
-# 실행
-# ============================================================
-
 if __name__ == "__main__":
-
     main()
+````
