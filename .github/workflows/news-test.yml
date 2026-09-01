@@ -1,4 +1,4 @@
-name: Test NAVER News Search
+name: Test News AI Generation
 
 on:
   workflow_dispatch:
@@ -7,54 +7,110 @@ permissions:
   contents: write
 
 jobs:
+
   news-search:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      # 1. GitHub 저장소 가져오기
+      # ------------------------------------------------------
+      # 1. 저장소 가져오기
+      # ------------------------------------------------------
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Python 설치
+
+      # ------------------------------------------------------
+      # 2. Python
+      # ------------------------------------------------------
+
       - name: Set up Python
         uses: actions/setup-python@v5
+
         with:
           python-version: "3.12"
 
-      # 3. 필요한 Python 패키지 설치
+
+      # ------------------------------------------------------
+      # 3. Python 패키지 설치
+      # ------------------------------------------------------
+
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
 
-      # 4. 네이버 뉴스 검색
+          python -m pip install --upgrade pip
+
+          pip install requests beautifulsoup4 openai
+
+
+      # ------------------------------------------------------
+      # 4. NAVER 뉴스 검색
+      # ------------------------------------------------------
+
       - name: Run news search
         env:
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+
+          NAVER_CLIENT_ID:
+            ${{ secrets.NAVER_CLIENT_ID }}
+
+          NAVER_CLIENT_SECRET:
+            ${{ secrets.NAVER_CLIENT_SECRET }}
+
         run: |
+
           python src/news_search.py
 
-      # 5. 생성된 JSON 확인
-      - name: Show result
-        run: |
-          echo "===== raw_news.json ====="
-          cat data/raw_news.json
 
-      # 6. 결과 파일 GitHub에 저장
-      - name: Commit raw news
+      # ------------------------------------------------------
+      # 5. OpenAI 뉴스 분석
+      # ------------------------------------------------------
+
+      - name: Generate AI news
+        env:
+
+          OPENAI_API_KEY:
+            ${{ secrets.OPENAI_API_KEY }}
+
         run: |
 
-          git config user.name "github-actions[bot]"
+          python src/ai_generate.py
+
+
+      # ------------------------------------------------------
+      # 6. 결과 확인
+      # ------------------------------------------------------
+
+      - name: Show news.json
+        run: |
+
+          echo "===================================="
+
+          echo "AI NEWS RESULT"
+
+          echo "===================================="
+
+          cat data/news.json
+
+
+      # ------------------------------------------------------
+      # 7. 결과 저장
+      # ------------------------------------------------------
+
+      - name: Commit generated files
+        run: |
+
+          git config user.name \
+            "github-actions[bot]"
 
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/raw_news.json
+          git add data/news.json
 
           git diff --cached --quiet || \
-            git commit -m "Test NAVER news collection"
+            git commit -m "Generate AI news briefing"
 
           git push
