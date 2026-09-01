@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kakao OAuth Callback</title>
+<style>body{font-family:system-ui,sans-serif;padding:24px;line-height:1.6}code{word-break:break-all;background:#f3f3f3;padding:4px;border-radius:4px}button{padding:10px 14px}</style>
+</head>
+<body>
+<h2>카카오 인증 코드</h2>
+<p>아래 코드를 복사해서 GitHub Actions의 카카오 인증 설정 단계에서 사용하세요.</p>
+<p id="status">확인 중...</p>
+<pre id="code"></pre>
+<button onclick="copyCode()">코드 복사</button>
+<script>
+const p=new URLSearchParams(location.search);
+const code=p.get('code');
+const error=p.get('error');
+const out=document.getElementById('code');
+const status=document.getElementById('status');
+if(code){out.textContent=code;status.textContent='인증 코드가 발급되었습니다. 이 페이지를 닫아도 됩니다.';}
+else if(error){status.textContent='카카오 인증 실패: '+error;out.textContent=p.get('error_description')||'';}
+else{status.textContent='인증 코드가 없습니다. 카카오 로그인부터 다시 진행하세요.';}
+async function copyCode(){if(code){await navigator.clipboard.writeText(code);alert('복사했습니다.');}}
+</script>
+</body>
+</html>
