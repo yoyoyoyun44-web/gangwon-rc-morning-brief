@@ -15,7 +15,7 @@ INPUT_FILE = "data/raw_news.json"
 OUTPUT_FILE = "data/news.json"
 
 # 무료 티어에서 사용할 모델
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.6-flash"
 
 
 # ============================================================
