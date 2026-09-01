@@ -1,8 +1,10 @@
+
 name: Morning Brief - Weekdays
 
 on:
   schedule:
     # 08:15 KST = 23:15 UTC on the previous day
+    # 일~목 UTC 실행 → 월~금 KST 실행
     - cron: "15 23 * * 0-4"
   workflow_dispatch:
 
@@ -27,23 +29,45 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 google-genai holidays
 
+      # =========================================================
+      # 한국 영업일 확인
+      # 주말 + 법정공휴일이면 이후 작업을 실행하지 않음
+      # =========================================================
       - name: Check Korean business day
         id: business_day
+        shell: bash
         run: |
           python - <<'PY'
+          import os
           import holidays
           from datetime import datetime, timezone, timedelta
 
           kst = timezone(timedelta(hours=9))
           today = datetime.now(kst).date()
+
           kr = holidays.KR(years=today.year)
           is_holiday = today in kr
+
+          # 월=0, 화=1 ... 토=5, 일=6
+          is_weekend = today.weekday() >= 5
+
+          should_run = not is_holiday and not is_weekend
+
           print(f"KST date: {today}")
+          print(f"Weekday: {not is_weekend}")
           print(f"Holiday: {is_holiday} {kr.get(today, '')}")
-          with open("$GITHUB_OUTPUT", "a", encoding="utf-8") as f:
-              f.write(f"run={'false' if is_holiday else 'true'}\n")
+          print(f"Business day: {should_run}")
+
+          github_output = os.environ["GITHUB_OUTPUT"]
+
+          with open(github_output, "a", encoding="utf-8") as f:
+              f.write(f"run={'true' if should_run else 'false'}\n")
+
           PY
 
+      # =========================================================
+      # 뉴스 검색
+      # =========================================================
       - name: Run news search
         if: steps.business_day.outputs.run == 'true'
         env:
@@ -51,25 +75,40 @@ jobs:
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python src/news_search.py
 
+      # =========================================================
+      # AI 뉴스 분석
+      # =========================================================
       - name: Generate AI news
         if: steps.business_day.outputs.run == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python src/ai_generate.py
 
+      # =========================================================
+      # 카드뉴스 HTML 생성
+      # =========================================================
       - name: Generate HTML
         if: steps.business_day.outputs.run == 'true'
         run: python src/generate_html.py
 
+      # =========================================================
+      # 생성된 파일 GitHub 저장
+      # =========================================================
       - name: Commit generated files
         if: steps.business_day.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/raw_news.json data/news.json docs/index.html
+
           git diff --cached --quiet || git commit -m "Generate morning brief"
+
           git push
 
+      # =========================================================
+      # 카카오톡 나와의 채팅 전송
+      # =========================================================
       - name: Send to KakaoTalk
         if: steps.business_day.outputs.run == 'true'
         env:
@@ -77,3 +116,4 @@ jobs:
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
         run: python src/kakao_send.py
+
