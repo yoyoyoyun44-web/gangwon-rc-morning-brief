@@ -78,6 +78,14 @@ jobs:
           python src/ai_generate.py
 
       # ------------------------------------------------------
+      # HTML 카드뉴스 생성
+      # ------------------------------------------------------
+
+      - name: Generate HTML
+        run: |
+          python src/generate_html.py       
+
+      # ------------------------------------------------------
       # 6. 결과 확인
       # ------------------------------------------------------
 
@@ -106,8 +114,7 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/raw_news.json
-          git add data/news.json
+          git add data/raw_news.json data/news.json docs/index.html
 
           git diff --cached --quiet || \
             git commit -m "Generate AI news briefing"
