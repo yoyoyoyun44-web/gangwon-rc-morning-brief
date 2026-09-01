@@ -10,7 +10,20 @@ from openai import OpenAI
 # ============================================================
 
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+if not OPENAI_API_KEY:
+    raise RuntimeError(
+        "OPENAI_API_KEY가 설정되지 않았습니다."
+    )
 
+if OPENAI_API_KEY != OPENAI_API_KEY.strip():
+    raise RuntimeError(
+        "OPENAI_API_KEY 앞뒤에 공백이 있습니다."
+    )
+
+if "\n" in OPENAI_API_KEY or "\r" in OPENAI_API_KEY:
+    raise RuntimeError(
+        "OPENAI_API_KEY에 줄바꿈이 포함되어 있습니다."
+    )
 INPUT_FILE = "data/raw_news.json"
 OUTPUT_FILE = "data/news.json"
 
