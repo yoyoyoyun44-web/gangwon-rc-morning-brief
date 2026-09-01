@@ -1,182 +1,767 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#071b3a">
-<title>강원영업단 RC Morning Brief</title>
+
+<meta name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<meta name="theme-color"
+      content="#071b3a">
+
+<title>
+강원영업단 RC Morning Brief
+</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{width:100%;height:100%;overflow:hidden}
-body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR","Malgun Gothic",sans-serif;background:#071b3a;color:#172033}
-.brief{width:100vw;height:100vh;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.brief::-webkit-scrollbar{display:none}
-.page{flex:0 0 100vw;width:100vw;height:100vh;min-height:100vh;scroll-snap-align:start;overflow-y:auto;padding:32px 24px 42px;position:relative;background:#f7f8fa}
-.cover,.closing{background:linear-gradient(145deg,#071b3a 0%,#0b2f68 58%,#13284c 100%);color:#fff;display:flex;flex-direction:column;justify-content:space-between}
-.cover-head,.topline{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.5px;color:#bfc8d7}
-.stamp,.closing-stamp{border:1px solid #d7b34b;color:#e0bd58;padding:6px 9px;font-size:9px;letter-spacing:1.3px}
-.cover-main{margin:auto 0}
-.gold{color:#e0bd58;font-size:13px;letter-spacing:2px;margin-bottom:14px}
-.cover h1{font:600 clamp(48px,15vw,78px)/.92 Georgia,serif;letter-spacing:-3px}
-.cover h1 span,.closing h1 span{color:#e0bd58}
-.date{margin-top:22px;font-size:16px}
-.toc{border-top:1px solid rgba(255,255,255,.2);padding-top:18px}
-.toc-title{color:#d7b34b;font-size:10px;letter-spacing:2px;margin-bottom:8px}
-.toc-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.09);font-size:13px}
-.cover-foot{text-align:center;font-size:9px;color:#aeb8c8}
-.article-page{display:flex;flex-direction:column}
-.article-page.policy{border-top:6px solid #b59a45}
-.article-page.medical{border-top:6px solid #2473a6}
-.article-page.samsung{border-top:6px solid #0b4ea2}
-.badge{align-self:flex-start;margin-top:28px;margin-bottom:15px;padding:6px 9px;background:#edf0f5;border-radius:4px;font-size:10px;font-weight:800}
-.article-page h1{font-size:clamp(25px,7vw,34px);line-height:1.35;letter-spacing:-1.2px}
-.meta{margin-top:9px;color:#8b92a0;font-size:10px}
-.rule{height:1px;background:#d9dde5;margin:19px 0}
-.summary{font-size:15px;line-height:1.8;color:#394153}
-.why{margin-top:17px;padding:13px;background:#eef1f5;border-radius:8px;font-size:12px;line-height:1.65}
-.label{font-size:9px;letter-spacing:1.5px;font-weight:800;color:#778092;margin-bottom:5px}
-.tip{margin-top:12px;padding:15px;border:1px solid #d8c47c;background:#fffdf5;border-radius:8px;font-size:13px;line-height:1.7}
-.tip-title{color:#9b7a17;font-weight:800;margin-bottom:5px}
-.source{display:block;margin-top:auto;padding:13px;text-align:center;text-decoration:none;color:#fff;background:#0b2f68;border-radius:8px;font-size:12px;font-weight:700}
-.swipe{text-align:center;color:#9aa2b1;font-size:9px;margin-top:12px;letter-spacing:1px}
-.closing-stamp{align-self:flex-start;margin-bottom:28px}
-.closing h1{font:600 clamp(35px,10vw,52px)/1.1 Georgia,serif;letter-spacing:-2px}
-.closing-sub{margin-top:18px;color:#d7dfeb;font-size:13px;line-height:1.7}
-.points{margin-top:24px}
-.point{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.13)}
-.point span{font:18px Georgia,serif;color:#d7b34b}
-.point p{font-size:13px;line-height:1.6;color:#f0f3f8}
-.closing-message{margin-top:auto;padding-top:24px;border-top:1px solid rgba(255,255,255,.2);font-size:14px;line-height:1.7;color:#fff}
-@media(min-width:700px){.page{padding-left:calc((100vw - 620px)/2);padding-right:calc((100vw - 620px)/2)}}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+  overflow:hidden
+}
+
+body{
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Noto Sans KR",
+    "Malgun Gothic",
+    sans-serif;
+
+  background:#071b3a;
+  color:#172033;
+}
+
+.brief{
+  width:100vw;
+  height:100vh;
+
+  display:flex;
+
+  overflow-x:auto;
+  overflow-y:hidden;
+
+  scroll-snap-type:x mandatory;
+
+  -webkit-overflow-scrolling:touch;
+
+  scrollbar-width:none;
+}
+
+.brief::-webkit-scrollbar{
+  display:none
+}
+
+.page{
+  flex:0 0 100vw;
+
+  width:100vw;
+  height:100vh;
+  min-height:100vh;
+
+  scroll-snap-align:start;
+
+  overflow-y:auto;
+
+  padding:
+    32px
+    24px
+    42px;
+
+  position:relative;
+
+  background:#f7f8fa;
+}
+
+.cover,
+.closing{
+  background:
+    linear-gradient(
+      145deg,
+      #071b3a 0%,
+      #0b2f68 58%,
+      #13284c 100%
+    );
+
+  color:#fff;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.cover-head,
+.topline{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  font-size:10px;
+  letter-spacing:1.5px;
+
+  color:#bfc8d7;
+}
+
+.stamp,
+.closing-stamp{
+  border:1px solid #d7b34b;
+
+  color:#e0bd58;
+
+  padding:6px 9px;
+
+  font-size:9px;
+
+  letter-spacing:1.3px;
+}
+
+.cover-main{
+  margin:auto 0;
+}
+
+.gold{
+  color:#e0bd58;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  margin-bottom:14px;
+}
+
+.cover h1{
+  font:
+    600
+    clamp(48px,15vw,78px)/.92
+    Georgia,
+    serif;
+
+  letter-spacing:-3px;
+}
+
+.cover h1 span,
+.closing h1 span{
+  color:#e0bd58;
+}
+
+.date{
+  margin-top:22px;
+
+  font-size:16px;
+}
+
+.toc{
+  border-top:
+    1px solid
+    rgba(255,255,255,.2);
+
+  padding-top:18px;
+}
+
+.toc-title{
+  color:#d7b34b;
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  margin-bottom:8px;
+}
+
+.toc-row{
+  display:flex;
+
+  justify-content:space-between;
+
+  padding:9px 0;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.09);
+
+  font-size:13px;
+}
+
+.cover-foot{
+  text-align:center;
+
+  font-size:9px;
+
+  color:#aeb8c8;
+}
+
+.article-page{
+  display:flex;
+
+  flex-direction:column;
+}
+
+.article-page.policy{
+  border-top:6px solid #b59a45;
+}
+
+.article-page.medical{
+  border-top:6px solid #2473a6;
+}
+
+.article-page.samsung{
+  border-top:6px solid #0b4ea2;
+}
+
+.badge{
+  align-self:flex-start;
+
+  margin-top:28px;
+
+  margin-bottom:15px;
+
+  padding:6px 9px;
+
+  background:#edf0f5;
+
+  border-radius:4px;
+
+  font-size:10px;
+
+  font-weight:800;
+}
+
+.article-page h1{
+  font-size:
+    clamp(25px,7vw,34px);
+
+  line-height:1.35;
+
+  letter-spacing:-1.2px;
+}
+
+.meta{
+  margin-top:9px;
+
+  color:#8b92a0;
+
+  font-size:10px;
+}
+
+.rule{
+  height:1px;
+
+  background:#d9dde5;
+
+  margin:19px 0;
+}
+
+.summary{
+  font-size:15px;
+
+  line-height:1.8;
+
+  color:#394153;
+}
+
+.why{
+  margin-top:17px;
+
+  padding:13px;
+
+  background:#eef1f5;
+
+  border-radius:8px;
+
+  font-size:12px;
+
+  line-height:1.65;
+}
+
+.label{
+  font-size:9px;
+
+  letter-spacing:1.5px;
+
+  font-weight:800;
+
+  color:#778092;
+
+  margin-bottom:5px;
+}
+
+.tip{
+  margin-top:12px;
+
+  padding:15px;
+
+  border:
+    1px solid
+    #d8c47c;
+
+  background:#fffdf5;
+
+  border-radius:8px;
+
+  font-size:13px;
+
+  line-height:1.7;
+}
+
+.tip-title{
+  color:#9b7a17;
+
+  font-weight:800;
+
+  margin-bottom:5px;
+}
+
+.source{
+  display:block;
+
+  margin-top:auto;
+
+  padding:13px;
+
+  text-align:center;
+
+  text-decoration:none;
+
+  color:#fff;
+
+  background:#0b2f68;
+
+  border-radius:8px;
+
+  font-size:12px;
+
+  font-weight:700;
+}
+
+.source.disabled{
+  background:#9aa2b1;
+
+  cursor:not-allowed;
+}
+
+.swipe{
+  text-align:center;
+
+  color:#9aa2b1;
+
+  font-size:9px;
+
+  margin-top:12px;
+
+  letter-spacing:1px;
+}
+
+.closing-stamp{
+  align-self:flex-start;
+
+  margin-bottom:28px;
+}
+
+.closing h1{
+  font:
+    600
+    clamp(35px,10vw,52px)/1.1
+    Georgia,
+    serif;
+
+  letter-spacing:-2px;
+}
+
+.closing-sub{
+  margin-top:18px;
+
+  color:#d7dfeb;
+
+  font-size:13px;
+
+  line-height:1.7;
+}
+
+.points{
+  margin-top:24px;
+}
+
+.point{
+  display:flex;
+
+  gap:13px;
+
+  padding:13px 0;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.13);
+}
+
+.point span{
+  font:
+    18px
+    Georgia,
+    serif;
+
+  color:#d7b34b;
+}
+
+.point p{
+  font-size:13px;
+
+  line-height:1.6;
+
+  color:#f0f3f8;
+}
+
+.closing-message{
+  margin-top:auto;
+
+  padding-top:24px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.2);
+
+  font-size:14px;
+
+  line-height:1.7;
+
+  color:#fff;
+}
+
+@media(min-width:700px){
+  .page{
+    padding-left:
+      calc((100vw - 620px)/2);
+
+    padding-right:
+      calc((100vw - 620px)/2);
+  }
+}
+
 </style>
+
 </head>
+
 <body>
-<div class="brief"><section class="page cover">
-  <div class="cover-head"><span>GANGWON SALES DIVISION</span><span class="stamp">DAILY DOSSIER</span></div>
+
+<div class="brief">
+<section class="page cover">
+
+  <div class="cover-head">
+    <span>GANGWON SALES DIVISION</span>
+    <span class="stamp">DAILY DOSSIER</span>
+  </div>
+
   <div class="cover-main">
     <div class="gold">강원영업단 RC를 위한</div>
-    <h1>Morning<br><span>Brief</span></h1>
+
+    <h1>
+      Morning<br>
+      <span>Brief</span>
+    </h1>
+
     <div class="date">2026.09.01</div>
   </div>
-  <div class="toc"><div class="toc-title">CONTENTS</div><div class="toc-row"><span>01　제도 동향</span><b>5건</b></div><div class="toc-row"><span>02　의료비 이슈</span><b>5건</b></div></div>
-  <div class="cover-foot">보험 · 의료 · 영업 인사이트　|　Swipe →</div>
+
+  <div class="toc">
+    <div class="toc-title">CONTENTS</div>
+    <div class="toc-row"><span>01　제도 동향</span><b>3건</b></div><div class="toc-row"><span>02　의료비 이슈</span><b>5건</b></div>
+  </div>
+
+  <div class="cover-foot">
+    보험 · 의료 · 영업 인사이트　|　Swipe →
+  </div>
+
 </section><section class="page article-page policy">
-  <div class="topline"><span>01 / 01</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>01 / 01</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">제도 동향</div>
-  <h1>심평원, AI 의료영상 판독 진료비 심사에 첫 적용… 무릎관절 분야부터 시행</h1>
-  <div class="meta">2026.09.01 16:08 · sentv.co.kr</div>
+
+  <h1>보건복지부, 요양병원 간병 급여화 추진…내국인 인력 우선 고용 검토</h1>
+
+  <div class="meta">
+    2026.09.01 16:58 · newsis.com
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">건강보험심사평가원이 AI 의료영상 판독 결과를 진료비 심사 업무에 처음으로 실제 연계하여 적용하기 시작했습니다. 기존의 참고자료 활용을 넘어 무릎관절 분야를 시작으로 AI 기반의 정밀한 심사가 진행됩니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>심평원의 진료비 심사 체계가 AI 도입으로 한층 정밀해짐에 따라, 향후 근골격계 질환 등 비급여 및 진료비 심사가 엄격해질 수 있으므로 고객의 보장 점검 필요성이 커졌습니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객님, 최근 심평원에서 무릎관절 등 질환 심사에 AI 기술을 직접 도입하여 엄격하게 진료비를 확인하고 있습니다. 향후 관절 질환 치료나 수술 시 보장 차질이 없도록, 미리 삼성화재의 관절·수술비 전용 보장이 잘 갖춰져 있는지 점검해 드려도 될까요?</div></div>
-  <a class="source" href="https://www.sentv.co.kr/article/view/sentv202609010196" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-  <div class="swipe">← 좌우로 스와이프 →</div>
-</section><section class="page article-page policy">
-  <div class="topline"><span>01 / 02</span><span class="stamp">MORNING BRIEF</span></div>
-  <div class="badge">제도 동향</div>
-  <h1>보건복지부·건보공단, 외국인 국민연금 추납 심사 강화… 국내 실거주 기간만 인정</h1>
-  <div class="meta">2026.09.01 16:10 · busan.com</div>
-  <div class="rule"></div>
-  <p class="summary">보건복지부와 국민연금공단이 외국인의 국민연금 추후납부(추납) 심사 기준을 강화하여 국내 실제 거주 기간에 대해서만 추납을 허용하기로 했습니다. 단기 가입 후 추납을 통해 공적 연금을 수령하던 편법 사례를 막기 위한 조치입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>공적 연금 및 사회보험의 수급 기준과 제도가 전반적으로 엄격해지는 추세 속에서, 개인 차원의 사적 보장 및 노후 준비 중요성이 강조됩니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객님, 최근 공적연금이나 사회보장 제도의 조건과 심사가 점차 까다로워지고 있습니다. 공적 보장만 믿기보다는 스스로 컨트롤할 수 있는 개인 건강보험과 노후 자산을 미리 든든히 선점해 두시는 것이 가장 안심할 수 있는 대비책입니다.</div></div>
-  <a class="source" href="https://www.busan.com/view/busan/view.php?code=2026090116084812491" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-  <div class="swipe">← 좌우로 스와이프 →</div>
-</section><section class="page article-page policy">
-  <div class="topline"><span>01 / 03</span><span class="stamp">MORNING BRIEF</span></div>
-  <div class="badge">제도 동향</div>
-  <h1>정부, 희귀질환 신약 급여 결정 기간 100일로 단축 추진</h1>
-  <div class="meta">2026.09.01 16:06 · kmedinfo.co.kr</div>
-  <div class="rule"></div>
-  <p class="summary">정부가 희귀질환 치료제의 건강보험 등재 절차를 단축하는 신속등재 제도를 도입해 기존 약 240일 걸리던 급여 결정 기간을 최대 100일 이내로 줄이는 방안을 추진합니다. 이에 따라 폐동맥고혈압 신약 등 희귀질환 치료제의 급여화 진입 절차가 빨라질 전망입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>희귀·중증질환 신약의 급여화 속도가 빨라지더라도 급여 적용 전까지의 치료비 부담과 비급여 항목에 대한 대비는 여전히 중요합니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객님, 고가 신약의 급여화가 빨라지고 있지만 치료 초기 비급여 비용이나 특수 치료제 보장 공백은 미리 대비하셔야 합니다. 최신 신의료기술과 고가 약제비까지 보장받을 수 있는지 건강보험 보장을 점검해보세요.</div></div>
-  <a class="source" href="http://www.kmedinfo.co.kr/news/articleView.html?idxno=97457" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-  <div class="swipe">← 좌우로 스와이프 →</div>
-</section><section class="page article-page policy">
-  <div class="topline"><span>01 / 04</span><span class="stamp">MORNING BRIEF</span></div>
-  <div class="badge">제도 동향</div>
-  <h1>보건복지부, 기초연금 소득 구간별 차등 지급 개편안 발표</h1>
-  <div class="meta">2026.09.01 16:06 · ngonews.kr</div>
-  <div class="rule"></div>
-  <p class="summary">보건복지부가 기초연금 수급자를 소득 수준에 따라 세 구간으로 구분하여 차등 지급하는 개편방안을 발표했습니다. 소득 수준에 따라 지원 수준이 달라짐에 따라 노후 소득 보장 체계에 변화가 예상됩니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>공적 연금의 보장 범위 조정 가능성이 커짐에 따라 개인 차원의 노후 의료비 및 간병비 보장 준비 필요성이 더욱 강조됩니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객님, 기초연금 등 공적 제도 개편으로 노후 자금과 의료비 자립의 중요성이 높아지고 있습니다. 은퇴 후 갑작스러운 병원비나 간병비 부담을 줄여주는 장기 건강보험 플랜을 미리 준비해두시는 것을 추천합니다.</div></div>
-  <a class="source" href="https://www.ngonews.kr/news/articleView.html?idxno=236922" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">보건복지부가 요양병원 간병비에 건강보험을 적용하는 &#x27;간병 급여화&#x27; 제도를 추진하는 가운데, 내국인 간병 인력을 우선 고용할 수 있도록 정책을 추진 중이라고 밝혔습니다. 정부 차원의 요양병원 간병 지원 체계 구축 노력이 가시화되고 있습니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>정부의 간병 급여화 추진으로 간병비 부담 경감에 대한 관심이 고조되고 있습니다. 다만 건보 적용이 이뤄지더라도 자기부담금이나 지원 한계가 존재하므로 민간 간병보험을 통한 보완적 준비가 지속적으로 필요합니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>고객 상담 시 &quot;정부에서 요양병원 간병비 급여화를 추진하고 있지만, 보장 범위와 실제 현장의 인력 부족을 고려하면 개인이 체감하는 간병비 부담은 여전할 수 있습니다. 지금 바로 간병인 사용일당 등 간병 보장을 든든하게 점검해 두세요.&quot;라고 제안해 보세요.</div>
+  </div>
+
+  <a class="source" href="https://n.news.naver.com/mnews/article/003/0014162381?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page article-page policy">
-  <div class="topline"><span>01 / 05</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>01 / 02</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">제도 동향</div>
-  <h1>건강보험심사평가원, AI 영상 판독 기술 진료비 심사에 첫 도입</h1>
-  <div class="meta">2026.09.01 15:56 · cctimes.kr</div>
+
+  <h1>희귀질환 의료비 지원 확대… 부양의무자 소득·재산 기준 단계적 폐지</h1>
+
+  <div class="meta">
+    2026.09.01 16:52 · mdtoday.co.kr
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">건강보험심사평가원이 딥러닝 기반 인공지능(AI) 기술로 분석한 의료영상 판독 결과를 진료비 심사 업무에 최초로 적용했습니다. 정밀한 심사 체계 구축을 통해 진료비 심사의 정확성과 효율성을 한층 끌어올릴 전망입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>국민건강보험의 심사 체계가 AI 도입 등으로 더욱 정밀해지면서, 정당한 보험금 청구 및 체계적인 보장 설계의 중요성이 커지고 있습니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객에게 &#x27;건강보험 심사도 AI 기술로 더욱 정밀해지는 만큼, 실손 및 건강보험 청구 시 정확한 진단과 보장 내역 확인이 더욱 중요해졌습니다. 보유하신 보험의 보장 범위가 최신 의료 환경에 맞게 잘 설계되어 있는지 점검해 드리겠습니다&#x27;라고 제안하세요.</div></div>
-  <a class="source" href="http://www.cctimes.kr/news/articleView.html?idxno=924765" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">정부가 희귀질환자에 대한 진단 및 의료비 지원 예산을 늘리고, 지원 대상 선정 시 적용되던 부양의무자 가구의 소득·재산 기준을 단계적으로 폐지하기로 했습니다. 이를 통해 의료비 지원 사각지대에 놓여 있던 희귀질환 가구의 부담이 일부 완화될 전망입니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>정부 지원이 확대되더라도 희귀질환은 고가의 비급여 신약 치료 및 장기적인 돌봄 비용 부담이 크기 때문에, 민간 보험을 통한 보완적 대비가 필수적입니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>&quot;희귀질환에 대한 정부 지원이 넓어지고 있지만, 실제 현장에서 발생하는 고가의 비급여 치료비나 간병비까지 완전히 충당하기는 어렵습니다. 희귀질환 진단비와 비급여 치료 특약으로 미리 2중 안전망을 만들어 두시는 것이 안심할 수 있습니다.&quot;</div>
+  </div>
+
+  <a class="source" href="https://www.mdtoday.co.kr/news/articleView.html?idxno=610490" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <div class="swipe">← 좌우로 스와이프 →</div>
+</section><section class="page article-page policy">
+  <div class="topline">
+    <span>01 / 03</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
+  <div class="badge">제도 동향</div>
+
+  <h1>심평원, AI 의료영상 판독 결과를 진료비 심사에 첫 적용</h1>
+
+  <div class="meta">
+    2026.09.01 16:48 · lkp.news
+  </div>
+
+  <div class="rule"></div>
+
+  <p class="summary">건강보험심사평가원이 AI 의료영상 판독 결과를 참고용을 넘어 실제 진료비 심사 업무에 본격 적용합니다. AI 기술 도입을 통해 심사의 정확성과 효율성을 높이고 윤리적·제도적 보완을 병행할 계획입니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>건강보험 심사평가원의 진료비 심사가 정교해짐에 따라 공적 건강보험의 혜택 범위나 급여 판정이 보다 엄격해질 수 있습니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>건강보험공단의 진료비 심사에 AI가 도입되어 더욱 깐깐하고 정밀해지고 있습니다. 공적 보장 외에 발생할 수 있는 의료비 사각지대에 대비해 진단비와 수술비를 든든한 민영 건강보험으로 보완해 두시는 것이 지혜로운 방법입니다.</div>
+  </div>
+
+  <a class="source" href="http://www.lkp.news/news/articleView.html?idxno=83548" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page article-page medical">
-  <div class="topline"><span>02 / 01</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>02 / 01</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">의료비 이슈</div>
-  <h1>AI 기반 차세대 PET-CT 도입… 암·뇌·심장질환 조기 정밀 진단 확대</h1>
-  <div class="meta">2026.09.01 16:07 · dynews.co.kr</div>
+
+  <h1>대상포진 사백신 접종, 심혈관 질환 발생 위험 9% 낮춘다</h1>
+
+  <div class="meta">
+    2026.09.01 17:01 · nongmin.com
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">의료 현장에 인공지능(AI) 기반 영상 재구성 기술을 탑재한 차세대 PET-CT 도입이 확대되고 있습니다. 미세 병변까지 선명하게 확인 가능하여 암 정밀 진단 및 치료 효과 판정은 물론 뇌·심장질환 조기 발견에 크게 기여할 전망입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>첨단 AI 검사 장비 도입으로 암·뇌·심장 등 3대 중증질환의 조기 발견율이 높아짐에 따라, 조기 치료에 필요한 진단비와 정밀 검사 비용 준비의 중요성이 더욱 부각되고 있습니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객님, 최근에는 AI PET-CT 등 첨단 장비 덕분에 암이나 뇌·심장질환을 아주 초기에 발견하는 경우가 많아졌습니다. 조기 발견 시 치료 성공률이 높지만 진단비와 정밀 검사비 준비가 필수적인 만큼, 3대 질환 진단비 보장을 미리 든든하게 점검해 두시는 것이 좋습니다.</div></div>
-  <a class="source" href="https://www.dynews.co.kr/news/articleView.html?idxno=863770" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">추적 관찰 결과 대상포진 사백신 접종자가 생백신 접종자보다 관상동맥질환, 심부전, 뇌졸중 등 심혈관 질환 발생률이 9% 낮아진 것으로 확인되었습니다. 세부적으로는 관상동맥질환 발생률이 10%, 심부전 발생률이 12% 감소했습니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>대상포진 예방접종이 심뇌혈관 질환 위험까지 낮출 수 있다는 임상적 근거를 보여줍니다. 만성질환이나 건강관리에 관심이 높은 고령층 고객에게 뇌·심장 질환 관련 보장 점검 및 건강관리를 안내하기 좋은 소재입니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>고객에게 &quot;대상포진 백신 접종이 심혈관 질환 위험도 줄여준다는 연구 결과가 나왔습니다. 예방접종과 함께 혹시 모를 뇌졸중이나 심부전 등에 대한 진단비·치료비 보장이 충분한지 점검해 보시는 건 어떨까요?&quot;라고 안내해 보세요.</div>
+  </div>
+
+  <a class="source" href="https://n.news.naver.com/mnews/article/662/0000103205?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page article-page medical">
-  <div class="topline"><span>02 / 02</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>02 / 02</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">의료비 이슈</div>
-  <h1>강동경희대병원, 암 환자 &#x27;시간 단축&#x27; 위한 패스트트랙 및 다학제 진료 강화</h1>
-  <div class="meta">2026.09.01 16:00 · bokuennews.com</div>
+
+  <h1>9월 심뇌혈관질환 예방주간… &#x27;자기 혈관 숫자알기&#x27; 캠페인 전개</h1>
+
+  <div class="meta">
+    2026.09.01 16:54 · jejumaeil.net
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">강동경희대병원이 암 의심 환자의 검사 및 진단부터 다학제 진료, 수술, 항암치료까지 신속하게 이어지는 암 패스트트랙을 운영합니다. 병원 측은 암 치료에서 환자의 골든타임을 확보하고 진료 경쟁력을 높이는 데 집중하고 있습니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>암 진단 및 치료 속도가 빨라지고 다학제 진료와 최신 항암치료가 적극 도입됨에 따라 고액의 치료비와 비급여 약물에 대한 대비 필요성이 더욱 커지고 있습니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객에게 &#x27;최근 암 치료는 신속한 패스트트랙과 다학제 통합진료로 치료 성공률을 높이고 있지만, 그만큼 집중적인 치료비 보장이 뒷받침되어야 한다&#x27;고 설명하며 항암방사선약물치료비 및 암 진단비 보장을 재점검해 드리세요.</div></div>
-  <a class="source" href="http://www.bokuennews.com/news/article.html?no=283443" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">9월 심뇌혈관질환 예방관리주간을 맞아 자신의 혈압·혈당·콜레스테롤 수치를 확인하고 예방하자는 &#x27;레드서클 캠페인&#x27;이 전개됩니다. 보건당국은 주요 혈관 수치 파악을 통해 뇌혈관 및 심혈관 질환 위험을 낮추는 생활 습관 형성을 당부했습니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>전국적인 건강 캠페인 시즌을 활용해 고객에게 혈관 건강의 중요성을 환기하고, 뇌혈관·심혈관 질환 진단비 및 수술비 보장이 충분한지 점검을 유도하기 좋은 기회입니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>&quot;고객님, 9월은 보건복지부가 지정한 심뇌혈관질환 예방의 달입니다. 혈압·혈당 수치 체크와 함께, 혹시 모를 뇌졸중이나 심근경색 발생 시 치료비를 든든하게 지켜줄 보장 자산도 이번 기회에 점검해 보세요.&quot;</div>
+  </div>
+
+  <a class="source" href="https://www.jejumaeil.net/news/articleView.html?idxno=404267" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page article-page medical">
-  <div class="topline"><span>02 / 03</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>02 / 03</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">의료비 이슈</div>
-  <h1>9월 심뇌혈관질환 예방 ‘레드서클 캠페인’ 전개…혈압·혈당·콜레스테롤 관리 강조</h1>
-  <div class="meta">2026.09.01 16:00 · jndn.com</div>
+
+  <h1>국내 첫 첨단재생의료 치료 본격화… 세포치료제 실제 환자 적용</h1>
+
+  <div class="meta">
+    2026.09.01 16:50 · news1.kr
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">질병관리청이 지정한 심뇌혈관질환 예방관리주간을 맞아 지자체별로 &#x27;자기 혈관 숫자 알기 - 레드서클&#x27; 캠페인이 진행됩니다. 자신의 혈압, 혈당, 콜레스테롤 수치를 확인하고 심뇌혈관질환을 조기에 예방하자는 취지입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>환절기를 앞두고 심뇌혈관 질환 예방에 대한 대중적 관심이 높아지는 시기로, 고객들의 뇌혈관 및 심장질환 보장 니즈를 환기하기 좋은 시점입니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>고객에게 &#x27;9월은 심뇌혈관질환 예방의 달입니다. 혈압·혈당 체크와 함께 혹시 모를 뇌혈관·허혈성 심장질환 진단비와 수술비 보장이 든든하게 준비되어 있는지 함께 확인해보세요&#x27;라고 안부 인사를 건네보세요.</div></div>
-  <a class="source" href="http://www.jndn.com/article.php?aid=1788245761438822107" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">첨단재생의료 세포치료제가 가톨릭대학교 여의도성모병원에서 실제 환자를 대상으로 국내 첫 적용을 시작했습니다. 이번 치료를 계기로 첨단재생의료 기술이 임상 현장에서 실질적인 치료 수단으로 확대될 전망입니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>신의료기술 및 첨단재생치료의 실제 도입이 가속화되면서, 향후 비급여 고액 치료비에 대한 보장 준비 필요성이 더욱 커지고 있습니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>고객님, 이제 첨단재생치료 같은 최신 의료기술이 실제 병원에서 쓰이기 시작했습니다. 새로운 선진 치료를 경제적 부담 없이 받으실 수 있도록 암·중증질환 관련 최신 비급여 특약과 치료비 보장을 미리 점검해 보세요.</div>
+  </div>
+
+  <a class="source" href="https://n.news.naver.com/mnews/article/421/0009144792?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page article-page medical">
-  <div class="topline"><span>02 / 04</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>02 / 04</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">의료비 이슈</div>
-  <h1>무릎 골관절염 SVF 주사치료, 인공관절 수술 전환율 낮춰</h1>
-  <div class="meta">2026.09.01 15:56 · newsis.com</div>
+
+  <h1>AI 심장나이 높을수록 심혈관질환 위험 급증… 건보 빅데이터로 입증</h1>
+
+  <div class="meta">
+    2026.09.01 16:48 · medipana.com
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">보건복지부 지정 관절전문병원 임상 결과, 무릎 골관절염 환자에게 SVF 주사치료를 시행했을 때 2년 내 인공관절 수술로 전환한 비율이 약 1%에 불과한 것으로 나타났습니다. 이는 수술 없이 관절을 보존하는 신의료기술 및 비급여 치료의 효과를 입증한 결과입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>최근 관절 질환 치료 트렌드가 수술에서 비급여 주사치료 등 신의료기술 중심으로 변화하고 있어 비급여 의료비 및 신의료기술 보장 준비의 중요성이 커지고 있습니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>&quot;고객님, 최근 무릎 관절염은 수술하지 않고 주사 치료 등 신의료기술로 치료하는 경우가 많아졌습니다. 수술비 보장뿐만 아니라 신의료기술 치료비나 비급여 비용까지 충분히 보장받을 수 있는지 보장 내역을 점검해보세요.&quot;</div></div>
-  <a class="source" href="https://www.newsis.com/view/NISX20260901_0003771812" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">국내 대학병원과 국민건강보험공단 빅데이터 연계 연구 결과, 실제 나이보다 &#x27;AI 심장나이&#x27;가 높은 환자의 심혈관질환 발병 위험이 유의미하게 높은 것으로 분석됐습니다. 이번 연구는 대규모 한국인 데이터를 기반으로 장기 예후를 검증한 결과입니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>스스로 건강하다고 느끼더라도 심혈관질환의 잠재적 위험이 존재할 수 있음을 객관적 데이터가 보여줍니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>실제 나이보다 심장 나이가 높으면 자각 증상이 없어도 심혈관질환 위험이 대폭 올라간다는 빅데이터 결과가 나왔습니다. 심뇌혈관질환은 골든타임과 초기 치료가 핵심인 만큼, 뇌혈관 및 허혈성 심장질환 진단비와 수술비 보장을 지금 바로 체크해 보세요.</div>
+  </div>
+
+  <a class="source" href="https://www.medipana.com/news/articleView.html?idxno=416893" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page article-page medical">
-  <div class="topline"><span>02 / 05</span><span class="stamp">MORNING BRIEF</span></div>
+  <div class="topline">
+    <span>02 / 05</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
   <div class="badge">의료비 이슈</div>
-  <h1>9월 &#x27;심·뇌혈관질환 예방관리 주간&#x27;…자기 혈관 숫자 알기 캠페인 전개</h1>
-  <div class="meta">2026.09.01 15:54 · cctimes.kr</div>
+
+  <h1>난소암 환자 맞춤형 치료길 열려…‘오가노이드’ 배양법 개발</h1>
+
+  <div class="meta">
+    2026.09.01 16:46 · medipana.com
+  </div>
+
   <div class="rule"></div>
-  <p class="summary">질병관리청과 지자체가 9월 심·뇌혈관질환 예방관리 주간을 맞아 &#x27;자기 혈관 숫자 알기&#x27; 캠페인을 진행합니다. 혈압, 혈당, 콜레스테롤 수치를 미리 점검해 심뇌혈관질환을 예방하자는 범국민적 취지입니다.</p>
-  <div class="why"><div class="label">WHY IT MATTERS</div><div>정부 및 지자체 캠페인 시기와 연계하여 고객에게 심혈관·뇌혈관 질환 관리 및 진단비·수술비 보장 점검의 필요성을 자연스럽게 제안할 수 있습니다.</div></div>
-  <div class="tip"><div class="tip-title">오늘의 영업 Tip</div><div>&quot;9월은 국가가 지정한 심·뇌혈관질환 예방관리의 달입니다. 평소 혈관 건강 체크와 함께 뇌혈관·허혈성 심장질환 진단비와 수술비 보장이 든든하게 준비되어 있는지 지금 바로 확인해보세요.&quot;</div></div>
-  <a class="source" href="http://www.cctimes.kr/news/articleView.html?idxno=924785" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <p class="summary">중앙대병원 연구팀이 난소암 환자의 종양 특성을 반영하는 &#x27;오가노이드(미니 장기)&#x27; 배양법을 개발했습니다. 이를 통해 환자 개별 종양 특성에 맞춘 항암제 반응 평가와 정밀 맞춤 치료가 가능해질 전망입니다.</p>
+
+  <div class="why">
+    <div class="label">WHY IT MATTERS</div>
+    <div>암 치료 기술이 정밀·맞춤형으로 진화하면서 개인 맞춤형 항암제 및 신의료기술 치료 비용을 보장하는 최신 암 보장의 중요성이 커지고 있습니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">오늘의 영업 Tip</div>
+    <div>여성 고객 상담 시 &quot;암 치료 기술이 발전해 맞춤형 항암 치료가 가능해졌지만, 신기술 치료비용 부담은 늘 수 있습니다. 표적항암치료비 및 암 진단비가 든든하게 준비되어 있는지 점검해보세요&quot;라고 제안해보세요.</div>
+  </div>
+
+  <a class="source" href="https://www.medipana.com/news/articleView.html?idxno=416892" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
   <div class="swipe">← 좌우로 스와이프 →</div>
 </section><section class="page closing">
-  <div class="closing-stamp">TODAY'S SALES POINT</div>
-  <div class="gold">GANGWON SALES DIVISION</div>
-  <h1>오늘의 영업<br><span>활용 포인트</span></h1>
-  <p class="closing-sub">뉴스를 설명하는 것이 아니라, 고객의 걱정을 묻는 소재로 활용하세요.</p>
-  <div class="points"><div class="point"><span>01</span><p>제도 동향: 고객님, 최근 심평원에서 무릎관절 등 질환 심사에 AI 기술을 직접 도입하여 엄격하게 진료비를 확인하고 있습니다. 향후 관절 질환 치료나 수술 시 보장 차질이 없도록, 미리 삼성화재의 관절·수술비 전용 보장이 잘 갖춰져 있는지 점검해 드려도 될까요?</p></div><div class="point"><span>02</span><p>제도 동향: 고객님, 최근 공적연금이나 사회보장 제도의 조건과 심사가 점차 까다로워지고 있습니다. 공적 보장만 믿기보다는 스스로 컨트롤할 수 있는 개인 건강보험과 노후 자산을 미리 든든히 선점해 두시는 것이 가장 안심할 수 있는 대비책입니다.</p></div><div class="point"><span>03</span><p>제도 동향: 고객님, 고가 신약의 급여화가 빨라지고 있지만 치료 초기 비급여 비용이나 특수 치료제 보장 공백은 미리 대비하셔야 합니다. 최신 신의료기술과 고가 약제비까지 보장받을 수 있는지 건강보험 보장을 점검해보세요.</p></div><div class="point"><span>04</span><p>제도 동향: 고객님, 기초연금 등 공적 제도 개편으로 노후 자금과 의료비 자립의 중요성이 높아지고 있습니다. 은퇴 후 갑작스러운 병원비나 간병비 부담을 줄여주는 장기 건강보험 플랜을 미리 준비해두시는 것을 추천합니다.</p></div><div class="point"><span>05</span><p>제도 동향: 고객에게 &#x27;건강보험 심사도 AI 기술로 더욱 정밀해지는 만큼, 실손 및 건강보험 청구 시 정확한 진단과 보장 내역 확인이 더욱 중요해졌습니다. 보유하신 보험의 보장 범위가 최신 의료 환경에 맞게 잘 설계되어 있는지 점검해 드리겠습니다&#x27;라고 제안하세요.</p></div></div>
-  <div class="closing-message"><b>오늘 고객에게 던질 질문 하나를<br>뉴스에서 찾아보세요.</b></div>
-</section></div>
+
+  <div class="closing-stamp">
+    TODAY'S SALES POINT
+  </div>
+
+  <div class="gold">
+    GANGWON SALES DIVISION
+  </div>
+
+  <h1>
+    오늘의 영업<br>
+    <span>활용 포인트</span>
+  </h1>
+
+  <p class="closing-sub">
+    뉴스를 설명하는 것이 아니라,
+    고객의 걱정을 묻는 소재로 활용하세요.
+  </p>
+
+  <div class="points">
+    <div class="point"><span>01</span><p>제도 동향: 고객 상담 시 &quot;정부에서 요양병원 간병비 급여화를 추진하고 있지만, 보장 범위와 실제 현장의 인력 부족을 고려하면 개인이 체감하는 간병비 부담은 여전할 수 있습니다. 지금 바로 간병인 사용일당 등 간병 보장을 든든하게 점검해 두세요.&quot;라고 제안해 보세요.</p></div><div class="point"><span>02</span><p>제도 동향: &quot;희귀질환에 대한 정부 지원이 넓어지고 있지만, 실제 현장에서 발생하는 고가의 비급여 치료비나 간병비까지 완전히 충당하기는 어렵습니다. 희귀질환 진단비와 비급여 치료 특약으로 미리 2중 안전망을 만들어 두시는 것이 안심할 수 있습니다.&quot;</p></div><div class="point"><span>03</span><p>제도 동향: 건강보험공단의 진료비 심사에 AI가 도입되어 더욱 깐깐하고 정밀해지고 있습니다. 공적 보장 외에 발생할 수 있는 의료비 사각지대에 대비해 진단비와 수술비를 든든한 민영 건강보험으로 보완해 두시는 것이 지혜로운 방법입니다.</p></div><div class="point"><span>04</span><p>의료비 이슈: 고객에게 &quot;대상포진 백신 접종이 심혈관 질환 위험도 줄여준다는 연구 결과가 나왔습니다. 예방접종과 함께 혹시 모를 뇌졸중이나 심부전 등에 대한 진단비·치료비 보장이 충분한지 점검해 보시는 건 어떨까요?&quot;라고 안내해 보세요.</p></div><div class="point"><span>05</span><p>의료비 이슈: &quot;고객님, 9월은 보건복지부가 지정한 심뇌혈관질환 예방의 달입니다. 혈압·혈당 수치 체크와 함께, 혹시 모를 뇌졸중이나 심근경색 발생 시 치료비를 든든하게 지켜줄 보장 자산도 이번 기회에 점검해 보세요.&quot;</p></div>
+  </div>
+
+  <div class="closing-message">
+    <b>
+      오늘 고객에게 던질 질문 하나를<br>
+      뉴스에서 찾아보세요.
+    </b>
+  </div>
+
+</section>
+</div>
+
 </body>
+
 </html>
