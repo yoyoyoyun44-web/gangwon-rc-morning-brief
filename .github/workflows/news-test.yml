@@ -64,19 +64,18 @@ jobs:
 
 
       # ------------------------------------------------------
-      # 5. OpenAI 뉴스 분석
+      # Gemini AI 뉴스 분석
       # ------------------------------------------------------
 
       - name: Generate AI news
         env:
 
-          OPENAI_API_KEY:
-            ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY:
+            ${{ secrets.GEMINI_API_KEY }}
 
         run: |
 
           python src/ai_generate.py
-
 
       # ------------------------------------------------------
       # 6. 결과 확인
