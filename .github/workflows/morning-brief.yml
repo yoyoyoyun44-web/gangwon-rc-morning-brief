@@ -82,8 +82,9 @@ jobs:
       # =========================================================
       # AI 실패/쿼터 초과 대비 안전장치
       # 뉴스 검색 결과가 있는데 AI 결과가 비어 있으면
-      # 원본 뉴스에서 의료비·치료비·간병 관련 기사를 자동 선별해
-      # 최소 10건의 브리핑 데이터를 만든다.
+      # 원본 뉴스에서 중복/경쟁사 홍보성/채널 경쟁 기사를 최대한 제거하고
+      # 삼성화재 전속 RC에게 실제 도움이 되는 의료비·치료비·간병·보장공백
+      # 중심의 브리핑 데이터를 자동 생성한다.
       # =========================================================
       - name: Fallback news when AI unavailable
         if: steps.business_day.outputs.run == 'true'
@@ -94,6 +95,7 @@ jobs:
           import re
           from pathlib import Path
           from datetime import datetime
+          from urllib.parse import urlparse
 
           raw_path = Path("data/raw_news.json")
           out_path = Path("data/news.json")
@@ -129,20 +131,76 @@ jobs:
               "mt.co.kr", "seoul.co.kr", "khan.co.kr", "nocutnews.co.kr", "ytn.co.kr"
           }
 
-          excluded = [
+          # 삼성화재 전속 RC 브리핑에서 제외할 채널 경쟁/타사 이익 중심 주제
+          excluded_terms = [
               "GA", "법인보험대리점", "보험대리점", "이직", "전환", "채널 경쟁",
-              "시장점유율", "주가", "주식", "자동차보험", "여행자보험", "펫보험",
-              "휴대폰보험", "실적", "영업이익", "순이익"
+              "시장점유율", "모집인 수", "설계사 수", "수수료 경쟁", "시책 경쟁",
+              "주가", "주식", "자동차보험", "여행자보험", "펫보험", "휴대폰보험",
+              "실적", "영업이익", "순이익"
           ]
+
+          # 타 보험사 자체 상품/판매 성과/홍보성 기사 제거용
+          competitor_names = [
+              "한화손해보험", "현대해상", "DB손해보험", "메리츠화재", "KB손해보험",
+              "롯데손해보험", "흥국화재", "NH농협손해보험", "MG손해보험",
+              "교보생명", "한화생명", "삼성생명", "신한라이프", "NH농협생명",
+              "미래에셋생명", "동양생명", "흥국생명", "ABL생명", "DB생명",
+              "라이나생명", "처브라이프", "푸본현대생명", "KDB생명"
+          ]
+          competitor_promo_terms = [
+              "신상품", "출시", "신규 상품", "특약 출시", "보장 확대", "보장 강화",
+              "가입", "판매", "인기", "경쟁력", "판매량", "판매 실적", "가입자",
+              "체결", "완판", "배타적사용권", "독점 판매", "상품 개정", "상품 출시"
+          ]
+
           medical_terms = [
               "의료비", "치료비", "비급여", "본인부담", "선별급여", "고액", "신약",
               "암", "뇌혈관", "심혈관", "심장", "뇌졸중", "중증질환", "간병", "간병비",
-              "간병인", "가족 간병", "재활", "수술", "항암"
+              "간병인", "가족 간병", "돌봄 부담", "재활", "수술", "항암", "치료 부담"
           ]
           caregiver_terms = ["간병비", "간병인", "간병", "가족 간병", "돌봄 부담"]
 
+          def clean_text(value):
+              value = str(value or "").lower()
+              value = re.sub(r"<[^>]+>", " ", value)
+              value = re.sub(r"[^0-9a-z가-힣 ]+", " ", value)
+              return re.sub(r"\s+", " ", value).strip()
+
           def text(a):
               return " ".join(str(a.get(k, "")) for k in ("title", "description", "source")).strip()
+
+          def normalized_title(title):
+              t = clean_text(title)
+              # 기사 제목에 반복적으로 붙는 검색/속보 표기를 제거
+              t = re.sub(r"\b(단독|속보|종합|영상|포토|그래픽)\b", " ", t)
+              return re.sub(r"\s+", " ", t).strip()
+
+          def title_tokens(title):
+              t = normalized_title(title)
+              return set(x for x in t.split() if len(x) >= 2)
+
+          def similarity(a_title, b_title):
+              a = title_tokens(a_title)
+              b = title_tokens(b_title)
+              if not a or not b:
+                  return 0.0
+              return len(a & b) / max(1, min(len(a), len(b)))
+
+          def domain_of(url):
+              try:
+                  return urlparse(url).netloc.lower().replace("www.", "")
+              except Exception:
+                  return ""
+
+          def is_competitor_promo(a):
+              t = text(a)
+              has_competitor = any(name in t for name in competitor_names)
+              has_promo = any(term in t for term in competitor_promo_terms)
+              return has_competitor and has_promo
+
+          def is_channel_competition(a):
+              t = text(a)
+              return any(term in t for term in excluded_terms)
 
           def score(a):
               t = text(a)
@@ -153,45 +211,97 @@ jobs:
               for term in caregiver_terms:
                   if term in t:
                       s += 6
-              if any(a.get("source", "") == d or d in str(a.get("source_url", "")) for d in major_domains):
+              if "비급여" in t or "본인부담" in t:
+                  s += 10
+              if any(x in t for x in ["암", "뇌혈관", "심혈관", "중증질환"]):
+                  s += 8
+              url = str(a.get("source_url") or a.get("url") or "")
+              source = str(a.get("source", ""))
+              if any(source == d or d in url for d in major_domains):
                   s += 12
               if a.get("is_major_news"):
                   s += 10
-              if "비급여" in t or "본인부담" in t:
+              # 삼성화재 관련 정보는 타사 홍보가 아닌 경우 보조 가점
+              if "삼성화재" in t:
                   s += 8
               return s
 
+          # 1차 필터: URL/제목 중복 및 명백한 경쟁사·채널 경쟁 기사 제거
           candidates = []
-          seen = set()
+          seen_urls = set()
+          seen_titles = []
+
           for a in raw:
               if not isinstance(a, dict):
                   continue
               title = str(a.get("title", "")).strip()
               url = str(a.get("naver_url") or a.get("source_url") or a.get("url") or "").strip()
-              if not title or not url or url in seen:
+              if not title or not url:
                   continue
-              seen.add(url)
-              t = text(a)
-              if any(term in t for term in excluded):
+
+              url_key = url.split("?", 1)[0].rstrip("/").lower()
+              if url_key in seen_urls:
                   continue
+
+              if is_channel_competition(a):
+                  continue
+
+              # 타사 보험사의 상품/판매에 유리한 기사 제거.
+              # 단순히 타사 이름이 등장하는 객관적 의료비 기사는 남길 수 있다.
+              if is_competitor_promo(a) and not any(term in text(a) for term in medical_terms):
+                  continue
+
+              # 제목이 거의 같은 재가공/전재 기사 제거
+              duplicate = False
+              for prev_title, prev_url in seen_titles:
+                  if normalized_title(title) == normalized_title(prev_title) or similarity(title, prev_title) >= 0.82:
+                      duplicate = True
+                      break
+              if duplicate:
+                  continue
+
+              seen_urls.add(url_key)
+              seen_titles.append((title, url_key))
               sc = score(a)
               if sc <= 0:
                   continue
               candidates.append((sc, a))
 
-          candidates.sort(key=lambda x: x[0], reverse=True)
-          selected = [a for _, a in candidates[:10]]
+          # 2차: 점수가 높은 기사부터 선택하되 같은 이슈가 몰리지 않도록 제목 유사도 재검사
+          candidates.sort(key=lambda x: (x[0], str(x[1].get("published_at", ""))), reverse=True)
+          selected = []
+          for sc, a in candidates:
+              title = str(a.get("title", "")).strip()
+              if any(similarity(title, str(x.get("title", ""))) >= 0.68 for x in selected):
+                  continue
+              selected.append(a)
+              if len(selected) >= 10:
+                  break
 
-          # 후보가 부족하면 원본 최신 기사에서 보충
+          # 후보가 10개보다 적더라도 경쟁사 홍보/채널 경쟁/중복을 다시 확인한 뒤 보충
           if len(selected) < 10:
+              selected_urls = {
+                  str(x.get("naver_url") or x.get("source_url") or x.get("url") or "").split("?", 1)[0].rstrip("/").lower()
+                  for x in selected
+              }
               for a in raw:
                   if not isinstance(a, dict):
                       continue
                   title = str(a.get("title", "")).strip()
                   url = str(a.get("naver_url") or a.get("source_url") or a.get("url") or "").strip()
-                  if not title or not url or url in {str(x.get("naver_url") or x.get("source_url") or x.get("url") or "") for x in selected}:
+                  if not title or not url:
+                      continue
+                  url_key = url.split("?", 1)[0].rstrip("/").lower()
+                  if url_key in selected_urls:
+                      continue
+                  if is_channel_competition(a) or is_competitor_promo(a):
+                      continue
+                  if score(a) <= 0:
+                      continue
+                  if any(similarity(title, str(x.get("title", ""))) >= 0.68 for x in selected):
                       continue
                   selected.append(a)
+                  selected_urls.add(url_key)
                   if len(selected) >= 10:
                       break
 
@@ -204,14 +314,31 @@ jobs:
           for a in selected:
               t = text(a)
               category = "policy" if any(x in t for x in ["금융위원회", "금융감독원", "보건복지부", "건강보험 제도", "제도 개선", "급여화"]) else "medical"
-              if "삼성화재" in t:
+              if "삼성화재" in t and not is_competitor_promo(a):
                   category = "samsung_fire"
+
+              # 기사 자체가 타사 상품 홍보성으로 남았을 경우 최종 방어
+              if is_competitor_promo(a):
+                  continue
+
+              if any(x in t for x in ["암", "항암"]):
+                  sales_tip = "암 진단금만이 아니라 수술·항암·약물치료 등 치료 과정에서 실제로 발생할 수 있는 비용 부담까지 확인하고 기존 보장을 점검해 보세요."
+              elif any(x in t for x in ["뇌혈관", "뇌졸중"]):
+                  sales_tip = "뇌혈관질환은 진단 이후 시술·수술·재활까지 이어질 수 있으므로 치료 과정의 비용 부담과 현재 보장을 함께 확인해 보세요."
+              elif any(x in t for x in ["심혈관", "심장"]):
+                  sales_tip = "심혈관질환은 진단 이후 시술·수술·약물치료까지 이어질 수 있는 비용 부담을 중심으로 고객의 보장 상태를 점검해 보세요."
+              elif any(x in t for x in caregiver_terms):
+                  sales_tip = "입원했을 때 간병인 비용과 가족의 돌봄 부담을 어떻게 준비하고 있는지 물어보고 간병인지원 중심으로 보장을 점검해 보세요."
+              elif any(x in t for x in ["비급여", "본인부담", "선별급여"]):
+                  sales_tip = "급여 여부만 확인하지 말고 실제 본인부담금과 비급여 비용이 어느 정도 발생할 수 있는지 고객에게 설명한 뒤 보장 공백을 점검해 보세요."
+              else:
+                  sales_tip = "뉴스 내용을 계기로 최근 의료비 부담에 대한 고객의 걱정을 확인하고 현재 건강·장기보험 보장을 자연스럽게 점검해 보세요."
 
               article = {
                   "title": str(a.get("title", "")).strip(),
                   "summary": str(a.get("description", "")).strip() or "오늘 확인할 보험·의료 관련 주요 뉴스입니다.",
                   "why_it_matters": "고객의 실제 의료비 부담과 현재 보장 공백을 점검할 수 있는 상담 소재입니다.",
-                  "sales_tip": "뉴스 내용을 계기로 고객에게 최근 치료비·비급여·본인부담금에 대한 걱정을 물어보고 현재 장기보험 보장을 점검해 보세요.",
+                  "sales_tip": sales_tip,
                   "source": str(a.get("source", "")).strip(),
                   "published_at": str(a.get("published_at", "")).strip(),
                   "naver_url": str(a.get("naver_url") or a.get("source_url") or a.get("url") or "").strip(),
@@ -227,15 +354,19 @@ jobs:
 
               if len(sales_points) < 5:
                   if any(x in t for x in ["암", "항암"]):
-                      sales_points.append("암 진단 이후 수술·항암·약물치료 등 치료 과정의 비용 부담까지 함께 점검해 보세요.")
+                      point = "암 진단 이후 수술·항암·약물치료 등 치료 과정의 비용 부담까지 함께 점검해 보세요."
                   elif any(x in t for x in ["뇌혈관", "뇌졸중"]):
-                      sales_points.append("뇌혈관질환은 진단 이후 시술·수술·재활까지 이어질 수 있는 치료비 부담을 물어보세요.")
+                      point = "뇌혈관질환은 진단 이후 시술·수술·재활까지 이어질 수 있는 치료비 부담을 물어보세요."
                   elif any(x in t for x in ["심혈관", "심장"]):
-                      sales_points.append("심혈관질환은 진단뿐 아니라 시술·수술·약물치료 과정의 비용 부담까지 확인해 보세요.")
-                  elif any(x in t for x in ["간병", "돌봄"]):
-                      sales_points.append("입원했을 때 간병인 비용과 가족의 돌봄 부담을 어떻게 준비하고 있는지 물어보세요.")
+                      point = "심혈관질환은 진단뿐 아니라 시술·수술·약물치료 과정의 비용 부담까지 확인해 보세요."
+                  elif any(x in t for x in caregiver_terms):
+                      point = "입원했을 때 간병인 비용과 가족의 돌봄 부담을 어떻게 준비하고 있는지 물어보세요."
+                  elif any(x in t for x in ["비급여", "본인부담", "선별급여"]):
+                      point = "비급여와 본인부담금이 실제 가계에 미치는 영향을 설명하고 보장 공백을 점검해 보세요."
                   else:
-                      sales_points.append("최근 의료비 부담에 대한 고객의 걱정을 확인하고 현재 장기보험 보장을 점검해 보세요.")
+                      point = "최근 의료비 부담에 대한 고객의 걱정을 확인하고 현재 장기보험 보장을 점검해 보세요."
+                  if point not in sales_points:
+                      sales_points.append(point)
 
           if not sales_points:
               sales_points = ["오늘 고객 한 명에게 최근 의료비 부담과 현재 건강·장기보험 보장을 함께 점검해 보세요."]
@@ -253,12 +384,13 @@ jobs:
 
           total = sum(len(v) for v in result["categories"].values())
           if total == 0:
-              raise RuntimeError("뉴스 검색 결과가 없어 브리핑을 만들 수 없습니다.")
+              raise RuntimeError("중복·경쟁사 홍보·채널 경쟁 기사를 제외한 유효 뉴스가 없어 브리핑을 만들 수 없습니다.")
 
           with out_path.open("w", encoding="utf-8") as f:
               json.dump(result, f, ensure_ascii=False, indent=2)
 
           print(f"AI 결과가 없어 fallback 브리핑 생성: {total}건")
+          print(f"중복 제거 후 후보: {len(candidates)}건 / 최종 선택: {len(selected)}건")
           PY
 
       # =========================================================
