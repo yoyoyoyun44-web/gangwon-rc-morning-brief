@@ -2,18 +2,15 @@ import json
 import os
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 from google import genai
 
 INPUT_FILE = Path("data/raw_news.json")
 OUTPUT_FILE = Path("data/news.json")
-
 API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME = "gemini-3.6-flash"
-
-# 검색 결과는 상품/보장·의료비·간병 중심으로 들어오므로
-# AI 분석 대상도 과도하게 늘리지 않는다.
-MAX_ANALYSIS_NEWS = 40
+MAX_ANALYSIS_NEWS = 50
 BATCH_SIZE = 20
 MAX_RETRIES_503 = 2
 RETRY_DELAY_503 = 20
@@ -22,6 +19,30 @@ if not API_KEY:
     raise RuntimeError("GEMINI_API_KEY 환경변수가 설정되어 있지 않습니다.")
 
 client = genai.Client(api_key=API_KEY)
+
+MAJOR_NEWS_DOMAINS = {
+    "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "hankookilbo.com",
+    "mk.co.kr", "hankyung.com", "sedaily.com", "fnnews.com", "newsis.com",
+    "yna.co.kr", "news1.kr", "edaily.co.kr", "heraldcorp.com", "asiae.co.kr",
+    "mt.co.kr", "seoul.co.kr", "khan.co.kr", "nocutnews.co.kr", "ytn.co.kr"
+}
+
+OTHER_INSURER_NAMES = [
+    "현대해상", "DB손해보험", "메리츠화재", "KB손해보험", "한화손해보험",
+    "롯데손해보험", "흥국화재", "NH농협손해보험", "하나손해보험", "AXA손해보험",
+    "악사손해보험", "캐롯손해보험", "삼성생명", "한화생명", "교보생명",
+    "신한라이프", "KB라이프", "NH농협생명", "미래에셋생명", "동양생명",
+    "흥국생명", "DB생명", "ABL생명", "푸본현대생명", "라이나생명", "AIA생명",
+    "메트라이프", "처브라이프", "KDB생명", "iM라이프"
+]
+
+OTHER_INSURER_PROMO_TERMS = [
+    "신상품", "상품 출시", "출시", "보장 강화", "보장확대", "보장 확대",
+    "가입자", "체결", "판매", "판매 돌입", "판매 개시", "인기", "히트상품",
+    "주력상품", "대표상품", "추천", "특화상품", "특화 상품", "배타적사용권",
+    "배타적 사용권", "상품 경쟁력", "흥행", "완판", "판매실적", "판매 실적",
+    "시장점유율"
+]
 
 
 def clean_text(value):
@@ -67,93 +88,118 @@ def prepare_news(news_list):
             "published_at": published_at,
             "source": source,
             "group": group,
+            "is_major_news": bool(news.get("is_major_news")) or source in MAJOR_NEWS_DOMAINS,
         })
     return prepared
+
+
+def is_other_insurer_promo(article):
+    text = f"{article.get('title', '')} {article.get('description', '')}"
+    if not any(name in text for name in OTHER_INSURER_NAMES):
+        return False
+    if not any(term in text for term in OTHER_INSURER_PROMO_TERMS):
+        return False
+    medical_context = [
+        "의료비", "치료비", "비급여", "본인부담", "간병비", "간병", "치료", "환자",
+        "질환", "건강보험", "의료", "병원", "신약", "암", "뇌혈관", "심혈관"
+    ]
+    # 객관적인 의료비 기사에 타 보험사가 사례로 등장한 경우는 AI가 다시 판단하도록 살린다.
+    return not any(term in text for term in medical_context)
 
 
 SYSTEM_PROMPT = """
 당신은 '강원영업단 RC Morning Brief'의 전문 편집자입니다.
 
-이 브리핑은 삼성화재 전속 RC가 아침에 3~5분 안에 읽고,
-고객 상담과 보장 점검에 바로 활용하기 위한 자료입니다.
+이 자료는 삼성화재 전속 RC에게 아침마다 배포하는 실전 영업용 브리핑입니다.
+목적은 뉴스를 많이 보여주는 것이 아니라, RC가 3~5분 안에 읽고
+고객의 의료비 부담과 보장 공백을 발견하여 삼성화재 장기보험 상담으로 연결할 수 있는
+'좋은 상담 소재'를 제공하는 것입니다.
 
-핵심 편집 원칙은 다음과 같습니다.
+[가장 중요한 편집 원칙]
+1. 고객의 의료비 부담을 이해시키는 뉴스
+2. 암·뇌혈관·심혈관 등 중증질환의 실제 치료비와 치료과정 부담
+3. 비급여·선별급여·고액 신약·신의료기술 등 본인부담이 커질 수 있는 영역
+4. 간병비·간병인 비용·가족의 돌봄 부담
+5. 삼성화재 건강보험·장기보험·간병 관련 객관적인 소식
+6. 보험제도는 고객 보장에 직접 영향을 줄 때만
 
-[콘텐츠 우선순위]
-1. 상품·보장 변화 및 고객 보장 공백
-2. 의료비 부담·비급여·고액 치료비·치료 과정
-3. 간병비·간병인 비용·가족 간병 부담·간병인 지원
-4. 삼성화재 건강보험·장기보험·간병 관련 소식
-5. 보험 제도·정책 변화
+상품·보장 뉴스는 '다른 보험사가 무엇을 팔고 있는가'보다
+'고객에게 어떤 보장 공백이 생길 수 있는가'를 중심으로 선택하십시오.
 
-보험 제도 뉴스는 고객의 보장이나 의료비 부담과 직접 연결되는 경우에만
-선별하며, 단순 제도 설명은 우선순위를 낮춥니다.
+[삼성화재 RC 대상 배포자료이므로 절대 제외]
+- 다른 보험사의 신상품 출시·특약 출시
+- 다른 보험사의 보장 강화·보장 확대
+- 다른 보험사의 상품 경쟁력·인기·판매 확대
+- 다른 보험사의 가입·체결 사례
+- 다른 보험사의 판매 실적·시장점유율
+- 다른 보험사의 배타적사용권 획득 등 상품 홍보성 기사
+- 다른 보험사의 관계자 발언을 통해 상품을 긍정적으로 홍보하는 기사
+- 특정 보험사의 상품을 고객에게 소개하거나 비교 대상으로 추천하는 기사
+- GA 장점·성장·확대·이직·전환을 긍정적으로 다루는 기사
+- 전속 RC에게 불리하거나 전속채널 약화·위기를 강조하는 기사
+- 전속과 GA를 비교해 GA가 유리하다고 결론내리는 기사
+- GA 수수료·조직·채널 경쟁 자체가 핵심인 기사
 
-[절대 제외]
-다음과 같은 내용은 기사 내용이 사실이더라도 Morning Brief에 넣지 마십시오.
+단, 타 보험사명이 객관적인 의료비·치료비 기사에 단순 사례로 등장한 경우에는
+기사의 의료비 핵심만 남길 수 있습니다. 타 보험사의 상품 홍보 내용은 절대 요약하지 마십시오.
 
-- GA의 장점이나 경쟁력을 긍정적으로 홍보하는 기사
-- GA 확대·성장·시장점유율 확대를 긍정적으로 다루는 기사
-- GA 이직·전환을 권유하거나 긍정적으로 묘사하는 기사
-- 전속설계사에게 불리하다고 해석될 수 있는 기사
-- 전속채널의 약화·위기·이탈을 강조하는 기사
-- 전속설계사와 GA의 장단점을 비교하여 GA가 유리하다고 결론내리는 기사
-- GA 수수료·조직구조·채널 경쟁 자체가 핵심인 기사
-- 보험 판매채널 경쟁을 영업전략으로 다루는 기사
-
-단, 채널 이야기가 포함되어 있더라도 고객의 실제 보장·보험료·의료비 부담에
-직접 영향을 주는 중요한 사실이 있는 경우에는 채널 경쟁 부분은 제거하고
-고객 관점의 핵심만 남길 수 있습니다.
+[메이저 언론 우선]
+네이버 뉴스 검색 결과 중 조선일보, 중앙일보, 동아일보, 한겨레, 한국일보,
+매일경제, 한국경제, 서울경제, 파이낸셜뉴스, 연합뉴스, 뉴시스, 뉴스1, 이데일리,
+헤럴드경제, 아시아경제, 머니투데이, 서울신문, 경향신문, YTN 등 주요 언론의
+기사 중 고객 의료비·보장과 직접 연결되는 내용은 우선적으로 고려하십시오.
+단, 메이저 언론이라는 이유만으로 선정하지 말고 내용의 실질적 가치가 있어야 합니다.
 
 [제외]
 - 주가·주식시세
 - 단순 매출·영업이익·순이익 실적
-- 자동차보험
-- 휴대폰보험
-- 여행자보험
-- 펫보험
+- 자동차보험·휴대폰보험·여행자보험·펫보험
 - 연예·정치 일반·사건사고
 - 단순 업계 인사·조직개편
+- 광고성·협찬성·홍보성 콘텐츠
+- 보험상품 비교·추천 콘텐츠 중 타 보험사 상품을 긍정적으로 소개하는 내용
 
+기사에 없는 사실이나 보장 내용을 만들어내지 마십시오.
 기사 원문을 그대로 복사하지 말고 요약·재구성하십시오.
-기사에 없는 사실이나 상품 보장 내용을 만들어내지 마십시오.
 source_url과 published_at은 입력값을 그대로 유지하십시오.
 """
 
-
 SALES_TIP_RULES = """
-[세일즈 TIP 규칙]
+[RC 세일즈 TIP 규칙]
 
-1. 세일즈 TIP은 '뉴스 → 고객이 느낄 수 있는 부담 → 현재 보장 점검' 순서로 작성합니다.
+핵심은 '뉴스 → 고객의 실제 부담 → 보장 점검 → 상담 연결'입니다.
 
-2. 상품명을 억지로 넣지 말고 고객의 현재 보장을 확인하도록 유도합니다.
+1. 의료비 뉴스는 단순히 '병원비가 비싸졌다'로 끝내지 말고,
+   어떤 치료·상황에서 고객의 본인부담이 커질 수 있는지 설명하십시오.
 
-3. 암 뉴스:
-진단비 하나만 권유하지 말고 수술·항암약물치료·항암방사선치료 등
-치료 과정 전체의 비용을 살펴보는 '암 통합치료비' 관점으로 연결합니다.
+2. 암 뉴스:
+   암 진단비 하나가 아니라 수술·항암약물치료·항암방사선치료·표적/면역치료 등
+   치료 과정 전체의 비용 부담을 살펴보는 '암 통합치료비' 관점으로 연결하십시오.
 
-4. 뇌혈관 뉴스:
-진단비·수술비 하나만 강조하지 말고 진단 이후 시술·수술·치료 과정의
-비용 부담을 살펴보는 '뇌혈관질환 통합치료비' 관점으로 연결합니다.
+3. 뇌혈관 뉴스:
+   진단 이후 시술·수술·재활·치료 과정에서 발생할 수 있는 비용 부담을 살펴보는
+   '뇌혈관질환 통합치료비' 관점으로 연결하십시오.
 
-5. 심혈관 뉴스:
-진단·시술·수술·약물치료 등 치료 과정 전체의 비용 부담을 살펴보는
-'심혈관질환 통합치료비' 관점으로 연결합니다.
+4. 심혈관 뉴스:
+   진단·시술·수술·약물치료 등 치료 과정 전체의 비용 부담을 살펴보는
+   '심혈관질환 통합치료비' 관점으로 연결하십시오.
+
+5. 비급여/선별급여 뉴스:
+   건강보험이 적용된다는 사실만으로 환자 부담이 낮다고 단정하지 말고,
+   실제 본인부담률과 보장 공백을 확인하도록 대화하십시오.
 
 6. 간병 뉴스:
-'간병인 사용일당'을 중심으로 표현하지 않습니다.
-'간병인 지원', '간병인지원', '간병인 비용 부담', '가족의 간병 부담' 등
-고객이 실제로 겪는 문제를 중심으로 대화합니다.
+   '간병인 사용일당'을 중심으로 표현하지 않습니다.
+   '간병인 지원', '간병인지원', '간병인 비용 부담', '가족의 간병 부담'을 중심으로
+   실제 고객이 입원했을 때 가족이 무엇을 감당해야 하는지 대화하게 하십시오.
 
-7. 의료비·비급여 뉴스:
-'얼마가 더 든다'는 단순 공포 조장보다 어떤 상황에서 본인 부담이 커질 수 있는지
-설명하고 현재 실손·건강보험 등 보장 구조를 점검하도록 합니다.
+7. 삼성화재 장기보험 연결:
+   뉴스와 직접 연결되는 경우에만 '현재 건강보험/장기보험 보장 내역을 한번 점검해 보자'는
+   자연스러운 상담으로 연결하십시오. 특정 담보 가입을 단정적으로 권유하지 마십시오.
 
-8. 고객에게 특정 담보 가입을 단정적으로 권유하지 않습니다.
+8. 고객 공포를 과장하지 말고 객관적인 사실과 보장 점검 중심으로 작성하십시오.
 
-9. 실제 RC가 고객에게 말할 수 있는 자연스러운 대화체로 작성합니다.
-
-10. 뉴스와 연결성이 없는 담보나 상품을 억지로 언급하지 않습니다.
+9. 실제 RC가 카카오톡이나 전화에서 그대로 활용할 수 있는 자연스러운 문장으로 작성하십시오.
 """
 
 
@@ -163,6 +209,7 @@ def build_prompt(batch):
         news_text.append(f"""
 [NEWS_ID={item['id']}]
 검색그룹: {item['group']}
+메이저언론 여부: {item['is_major_news']}
 제목: {item['title']}
 내용: {item['description']}
 출처: {item['source']}
@@ -172,17 +219,19 @@ def build_prompt(batch):
 
     return SYSTEM_PROMPT + "\n" + SALES_TIP_RULES + """
 
-[선별 기준]
-각 기사를 다음 관점으로 평가하십시오.
-- 상품·보장 관련성: 40점
-- 의료비/치료비 부담: 25점
-- 간병비/간병 부담: 20점
+[선별 점수]
+- 고객 의료비/치료비 부담: 35점
+- 상품·보장 공백과의 연결성: 25점
+- 간병비/돌봄 부담: 15점
+- 메이저 언론 및 출처 신뢰도: 10점
 - 고객 관심도: 10점
 - 보험 제도 관련성: 5점
 
-점수가 높은 기사부터 선별하되, 채널 경쟁 기사에 해당하면 점수와 관계없이 제외합니다.
+다른 보험사 홍보성 기사와 채널 경쟁 기사는 점수와 관계없이 제외합니다.
+좋은 기사가 부족하면 억지로 10개를 채우지 말고, 객관적으로 가치 있는 기사만 선택합니다.
+단, 최근 뉴스가 적은 날에는 직전 48~72시간의 관련성 높은 기사까지 활용할 수 있습니다.
 
-최종 출력은 기존 HTML과 호환되어야 하므로 카테고리는 반드시 다음 3개 중 하나만 사용하십시오.
+최종 출력 카테고리:
 - policy: 보험 제도·정책 변화
 - medical: 상품·보장·의료비·간병 관련 뉴스
 - samsung_fire: 삼성화재 관련 뉴스
@@ -190,12 +239,12 @@ def build_prompt(batch):
 중요:
 - 반드시 JSON 객체 하나만 출력하십시오.
 - Markdown 코드블록을 사용하지 마십시오.
-- 전체 최대 10개 기사만 선택하십시오.
-- policy는 최대 2개까지만 선택하십시오.
-- medical은 최대 6개까지 선택하십시오.
-- samsung_fire는 최대 2개까지 선택하십시오.
-- 같은 기사나 사실상 동일한 기사는 중복 선택하지 마십시오.
-- 좋은 뉴스가 없으면 articles를 빈 배열로 반환하십시오.
+- 전체 최대 10개 기사
+- policy 최대 2개
+- medical 최대 7개
+- samsung_fire 최대 2개
+- 동일 기사 중복 금지
+- 타 보험사의 상품·특약·가입·판매 홍보 내용은 출력하지 마십시오.
 
 JSON 형식:
 {
@@ -204,7 +253,7 @@ JSON 형식:
       "category": "policy|medical|samsung_fire",
       "title": "재구성한 제목",
       "summary": "2~3문장 요약",
-      "why_it_matters": "RC 관점의 의미",
+      "why_it_matters": "삼성화재 RC가 고객 상담에 활용할 수 있는 의미",
       "sales_tip": "실제 고객에게 말할 수 있는 자연스러운 영업 Tip",
       "source": "입력된 출처",
       "published_at": "입력된 발행일",
@@ -276,7 +325,7 @@ def organize_articles(articles):
         if category in categories and article.get("source_url"):
             categories[category].append(article)
     categories["policy"] = categories["policy"][:2]
-    categories["medical"] = categories["medical"][:6]
+    categories["medical"] = categories["medical"][:7]
     categories["samsung_fire"] = categories["samsung_fire"][:2]
     return categories
 
@@ -304,7 +353,22 @@ def main():
 
     raw_news = prepare_news(load_news())
     print(f"전체 수집 뉴스: {len(raw_news)}개")
-    candidates = raw_news[:MAX_ANALYSIS_NEWS]
+
+    # 메이저 언론 + 의료비/간병 관련성을 우선하여 AI 입력 후보를 구성한다.
+    def candidate_score(item):
+        text = f"{item['title']} {item['description']}"
+        score = 0
+        if item.get("is_major_news"):
+            score += 15
+        group_score = {"medical_cost": 40, "caregiver": 35, "product": 30, "samsung_fire": 25, "policy": 15}
+        score += group_score.get(item.get("group"), 0)
+        if any(term in text for term in ["의료비", "치료비", "본인부담", "비급여", "간병비", "간병", "암", "뇌혈관", "심혈관"]):
+            score += 20
+        if is_other_insurer_promo(item):
+            score -= 100
+        return score
+
+    candidates = sorted(raw_news, key=candidate_score, reverse=True)[:MAX_ANALYSIS_NEWS]
     print(f"AI 분석 대상: {len(candidates)}개")
 
     if not candidates:
@@ -335,7 +399,15 @@ def main():
         if fixed:
             restored.append(fixed)
 
-    categories = organize_articles(deduplicate(restored))
+    # 최종 안전장치: 타 보험사 홍보성 기사와 채널 경쟁 기사는 제거.
+    final_articles = []
+    for article in deduplicate(restored):
+        original = source_by_url.get(clean_text(article.get("source_url")))
+        if original and is_other_insurer_promo(original):
+            continue
+        final_articles.append(article)
+
+    categories = organize_articles(final_articles)
     output = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
         "categories": categories,
