@@ -44,13 +44,34 @@ SEARCH_GROUPS = {
 }
 
 # 전속/GA 채널 경쟁을 다루는 기사는 Morning Brief의 목적과 맞지 않으므로
-# 검색 단계에서도 가급적 배제한다. 상품·보장·고객 부담과 직접 연결되는 경우는
-# AI 단계에서 다시 판단한다.
+# 검색 단계에서도 가급적 배제한다.
 CHANNEL_EXCLUDE_TERMS = [
     "GA 유리", "GA 장점", "GA 확대", "GA 성장", "GA 시장점유율",
     "전속 불리", "전속 설계사 불리", "전속 이탈", "전속 경쟁력 약화",
     "GA로 이동", "GA 이직", "GA 전환", "GA 채널 확대",
     "전속채널 약화", "전속채널 위기", "GA가 유리"
+]
+
+# 이 브리핑은 삼성화재 전속 RC 대상이다.
+# 따라서 타 보험사의 상품/신상품/보장강화/가입사례/판매실적 등을
+# 홍보하거나 긍정적으로 소개하는 기사는 원천적으로 제외한다.
+# 단, 객관적인 의료비·질환·간병 이슈는 특정 보험사 홍보가 아닌 경우 살린다.
+OTHER_INSURER_NAMES = [
+    "현대해상", "DB손해보험", "메리츠화재", "KB손해보험", "한화손해보험",
+    "롯데손해보험", "흥국화재", "NH농협손해보험", "하나손해보험",
+    "교보악사자산운용", "AXA손해보험", "악사손해보험", "캐롯손해보험",
+    "삼성생명", "한화생명", "교보생명", "신한라이프", "KB라이프",
+    "NH농협생명", "미래에셋생명", "동양생명", "흥국생명", "DB생명",
+    "ABL생명", "푸본현대생명", "라이나생명", "AIA생명", "메트라이프",
+    "처브라이프", "KDB생명", "iM라이프"
+]
+
+OTHER_INSURER_PROMO_TERMS = [
+    "신상품", "상품 출시", "출시", "보장 강화", "보장확대", "보장 확대",
+    "가입", "가입자", "체결", "판매", "판매 돌입", "판매 개시", "인기",
+    "히트상품", "주력상품", "대표상품", "추천", "특화상품", "특화 상품",
+    "배타적사용권", "배타적 사용권", "상품 경쟁력", "흥행", "완판",
+    "실적", "판매실적", "판매 실적", "성장", "시장점유율"
 ]
 
 
@@ -70,6 +91,14 @@ def source_from_url(url):
         return urlparse(url).netloc.lower().replace("www.", "")
     except Exception:
         return ""
+
+
+def is_other_insurer_promotional_article(title, description):
+    combined = f"{title} {description}"
+    has_other_insurer = any(name in combined for name in OTHER_INSURER_NAMES)
+    if not has_other_insurer:
+        return False
+    return any(term in combined for term in OTHER_INSURER_PROMO_TERMS)
 
 
 def search_naver(query):
@@ -98,6 +127,7 @@ def main():
     print("NAVER API HUB 뉴스 수집 시작")
     print(f"수집 기준: 최근 {hours}시간")
     print("검색 우선순위: 상품/보장 > 의료비 부담 > 간병 > 제도")
+    print("타 보험사 상품 홍보성 기사: 제외")
     print("=" * 60)
 
     for group, queries in SEARCH_GROUPS.items():
@@ -128,6 +158,13 @@ def main():
 
                 combined = f"{title} {description}"
                 if any(term in combined for term in CHANNEL_EXCLUDE_TERMS):
+                    continue
+
+                # 삼성화재 RC에게 배포하는 자료이므로 타 보험사의 상품/판매 홍보는 제외.
+                # 객관적인 의료비·질환·간병 이슈까지 과도하게 제거하지 않도록
+                # '타 보험사명 + 홍보/상품성 표현'이 동시에 있을 때만 차단한다.
+                if is_other_insurer_promotional_article(title, description):
+                    print(f"  [제외] 타 보험사 홍보/상품 기사: {title}")
                     continue
 
                 seen_urls.add(original_url)
