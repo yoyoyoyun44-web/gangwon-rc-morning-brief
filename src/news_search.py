@@ -66,13 +66,12 @@ OTHER_INSURER_PROMO_TERMS = [
     "시장점유율"
 ]
 
-# 네이버 뉴스에서 메이저 언론 기사가 함께 선별되도록 AI 단계에서 가점을 줄 도메인.
 MAJOR_NEWS_DOMAINS = {
     "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "hankookilbo.com",
     "mk.co.kr", "hankyung.com", "sedaily.com", "fnnews.com", "newsis.com",
     "yna.co.kr", "news1.kr", "edaily.co.kr", "heraldcorp.com", "asiae.co.kr",
     "mt.co.kr", "seoul.co.kr", "khan.co.kr", "nocutnews.co.kr", "ytn.co.kr"
-]
+}
 
 
 def clean_html(text):
@@ -99,7 +98,6 @@ def is_other_insurer_promotional_article(title, description):
         return False
     if not any(term in combined for term in OTHER_INSURER_PROMO_TERMS):
         return False
-    # 의료비/질환 자체를 다루는 기사에 타 보험사가 참고 사례로 등장한 경우는 살린다.
     medical_context = [
         "의료비", "치료비", "비급여", "본인부담", "간병비", "간병", "치료", "환자",
         "질환", "건강보험", "의료", "병원", "신약", "암", "뇌혈관", "심혈관"
@@ -123,7 +121,6 @@ def search_naver(query):
 def main():
     now = datetime.now().astimezone()
     weekday = now.weekday()
-    # 월·화는 주말 뉴스까지 고려하고, 나머지는 직전 48시간까지 확보한다.
     hours = 72 if weekday in (0, 1) else 48
     cutoff = now - timedelta(hours=hours)
     collected = []
@@ -184,9 +181,15 @@ def main():
                     "is_major_news": source in MAJOR_NEWS_DOMAINS,
                 })
 
-    # 그룹 우선순위를 유지하되, 같은 그룹에서는 최신 뉴스가 먼저 오도록 정렬한다.
     group_rank = {"product": 1, "medical_cost": 2, "caregiver": 3, "samsung_fire": 4, "policy": 5}
-    collected.sort(key=lambda x: (group_rank.get(x.get("group"), 99), x.get("published_at", "")), reverse=False)
+    # 그룹 우선순위는 유지하되, 같은 그룹에서는 최신 뉴스가 먼저 오도록 정렬한다.
+    collected.sort(
+        key=lambda x: (
+            group_rank.get(x.get("group"), 99),
+            -((parse_date(x.get("published_at")) or datetime.min.replace(tzinfo=None)).timestamp())
+            if parse_date(x.get("published_at")) and parse_date(x.get("published_at")).tzinfo else 0
+        )
+    )
 
     output = {
         "generated_at": now.isoformat(),
