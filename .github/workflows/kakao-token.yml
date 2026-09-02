@@ -1,1 +1,73 @@
+name: Kakao Token Setup
 
+on:
+  workflow_dispatch:
+    inputs:
+      authorization_code:
+        description: "카카오 인증 코드"
+        required: true
+        type: string
+
+jobs:
+  get-token:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Exchange authorization code for tokens
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
+          KAKAO_REDIRECT_URI: https://yoyoyoyun44-web.github.io/gangwon-rc-morning-brief/kakao_callback.html
+          AUTHORIZATION_CODE: ${{ inputs.authorization_code }}
+        run: |
+          python - <<'PY'
+          import os
+          import requests
+
+          data = {
+              "grant_type": "authorization_code",
+              "client_id": os.environ["KAKAO_REST_API_KEY"],
+              "redirect_uri": os.environ["KAKAO_REDIRECT_URI"],
+              "code": os.environ["AUTHORIZATION_CODE"],
+              "client_secret": os.environ["KAKAO_CLIENT_SECRET"],
+          }
+
+          response = requests.post(
+              "https://kauth.kakao.com/oauth/token",
+              data=data,
+              timeout=20,
+          )
+
+          print("HTTP status:", response.status_code)
+
+          if not response.ok:
+              print("카카오 토큰 발급 실패")
+              print(response.text)
+              raise SystemExit(1)
+
+          result = response.json()
+
+          access_token = result.get("access_token")
+          refresh_token = result.get("refresh_token")
+
+          if not refresh_token:
+              print("Refresh Token이 발급되지 않았습니다.")
+              print(result)
+              raise SystemExit(1)
+
+          print("토큰 발급 성공")
+          print("Access Token: 발급됨")
+          print("Refresh Token: 발급됨")
+          print("")
+          print("중요: Refresh Token 자체는 로그에 출력하지 않습니다.")
+          print("")
+          print("다음 단계에서 이 Refresh Token을 GitHub Secret")
+          print("KAKAO_REFRESH_TOKEN")
+          print("으로 등록해야 합니다.")
+
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write("## 카카오 토큰 발급 결과\n\n")
+              f.write("✅ Access Token 발급 성공\n\n")
+              f.write("✅ Refresh Token 발급 성공\n\n")
+              f.write("⚠️ Refresh Token 값은 보안을 위해 표시하지 않았습니다.\n")
+          PY
