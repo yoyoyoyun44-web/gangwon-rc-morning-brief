@@ -1,7 +1,412 @@
 {
-  "generated_at": "2026-09-02T04:22:42.877067+00:00",
-  "article_count": 1065,
+  "generated_at": "2026-09-02T04:46:57.128892+00:00",
+  "article_count": 1063,
   "articles": [
+    {
+      "title": "손해 보험 협회 '통합민원지원센터' 개소… 보험 민원 처리 역량 강화",
+      "description": "통합민원지원센터는 금융감독원 에서 이송되는 보험 협회 처리 민원과 국민신문고 등을 통해 협회에 접수되는 보험 관련 민원을 보다 신속하고 전문적으로 처리하기 위해 마련됐다. 센터는 민원 지원·상담 업무와 함께...",
+      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92596",
+      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92596",
+      "published_at": "2026-09-02T13:46:00+09:00",
+      "source": "insnews.co.kr",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "프레스티지바이오파마 경영진 잇단 자사주 매입…고상석 대표 4만5600주...",
+      "description": "현재 주요 연구개발 프로젝트로는 섬유화와 고형암 등을 타깃으로 하는 항체신약 'PBP1710', 항체 치료 제의 투약 편의성을 높이기 위한 피하주사(SC) 전달 플랫폼 'IDC224', 췌장암 관련 PAUF 기반 진단기술 'TASA™' 등이 있다....",
+      "source_url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=610611",
+      "naver_url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=610611",
+      "published_at": "2026-09-02T13:44:00+09:00",
+      "source": "mdtoday.co.kr",
+      "query": "암 치료"
+    },
+    {
+      "title": "파로스아이바이오·코오롱제약, PHI-701 공동연구개발 계약",
+      "description": "기존 EGFR 표적 치료 제 투약 이후 발생하는 다양한 내성을 극복하는 것을 목표로 개발되고 있다. 파로스아이바이오는 자체 AI 신약개발 플랫폼 '케미버스'를 활용해 후보물질 설계와 최적화 등을 담당한다. 코오롱제약...",
+      "source_url": "https://www.ebn.co.kr/news/articleView.html?idxno=1722687",
+      "naver_url": "https://www.ebn.co.kr/news/articleView.html?idxno=1722687",
+      "published_at": "2026-09-02T13:44:00+09:00",
+      "source": "ebn.co.kr",
+      "query": "암 치료"
+    },
+    {
+      "title": "알보젠코리아 세나트리플, 출시 이후 성장세...2026년 4월 MAT 판매액 109...",
+      "description": "비만, 중추신경계, 신장, 심혈관 계 질환 영역을 포함한 전문의약품과 일반의약품 포트폴리오를 기반으로 국내 시장에서 사업을 운영하고 있다. 진가영 로이슈(lawissue) 기자",
+      "source_url": "http://www.lawissue.co.kr/view.php?ud=2026090213421731489aeda69934_12",
+      "naver_url": "http://www.lawissue.co.kr/view.php?ud=2026090213421731489aeda69934_12",
+      "published_at": "2026-09-02T13:44:00+09:00",
+      "source": "lawissue.co.kr",
+      "query": "심혈관질환"
+    },
+    {
+      "title": "3개월 이상 해외 체류…온라인으로 간편하게 건강보험 급여 정지",
+      "description": "국민 건강보험공단 은 해외에 3개월 이상 체류할 예정인 건강보험 가입자를 대상으로 ‘출국자 급여정지 신고 서비스’를 온라인으로 확대 운영한다고 2일 밝혔다. 해외 체류에 따른 건강보험 급여정지 신고는 기존에는...",
+      "source_url": "https://www.busan.com/view/busan/view.php?code=2026090213404064326",
+      "naver_url": "https://n.news.naver.com/mnews/article/082/0001396544?sid=103",
+      "published_at": "2026-09-02T13:43:00+09:00",
+      "source": "busan.com",
+      "query": "건강보험공단"
+    },
+    {
+      "title": "\"도움 청하기 전에 찾아간다\"… 군산시 '찾아가는 돌봄' 강화",
+      "description": "이번 교육의 초점은 제도 설명에 머물지 않았다. 실제 현장에서 담당자가 어떤 주민을 대상자로 발굴하고... 특히 군산시 통합돌봄 전담 부서뿐 아니라 보건소와 국민건강 보험 공단이 함께 교육에 참여해 기관 간 연계에도...",
+      "source_url": "http://www.jeollailbo.com/news/articleView.html?idxno=809788",
+      "naver_url": "http://www.jeollailbo.com/news/articleView.html?idxno=809788",
+      "published_at": "2026-09-02T13:42:00+09:00",
+      "source": "jeollailbo.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "피 정화해 암 퍼지는 길목 막는다…UNIST, 암 전이 억제 도전",
+      "description": "강 교수는 “ 암 환자의 혈액은 암세포의 이동 통로일 뿐 아니라 전이를 촉진하는 다양한 물질이 오가는 공간”이라며 “혈액을 정화해 암 전이의 연결고리를 끊는 새로운 치료 개념을 확립하고자 한다”고 말했다. 이어...",
+      "source_url": "https://www.dongascience.com/news/view/79721",
+      "naver_url": "https://n.news.naver.com/mnews/article/584/0000039160?sid=105",
+      "published_at": "2026-09-02T13:42:00+09:00",
+      "source": "dongascience.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "與, 세종서 첫 예산정책협의회…金 “행정수도 예산 꼼꼼히 챙길 것”",
+      "description": "조상호 세종시장은 “양성자 암 치료 센터 건립을 비롯해 세종의 성장과 시민의 삶에 필요한 사업들이 정부 예산에 반영되도록 적극 검토해 달라”고 요청했다. 민주당은 이날 세종을 시작으로 10월 초까지 전국을 돌며...",
+      "source_url": "https://www.etnews.com/20260902000290",
+      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462818?sid=100",
+      "published_at": "2026-09-02T13:42:00+09:00",
+      "source": "etnews.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "티에스디라이프사이언스, 면역세포 화학주성 기술 美 특허 확보",
+      "description": "티에스디라이프사이언스가 iPSC(유도만능줄기세포) 기반 NK세포 치료 제 플랫폼에 적용하는 면역세포... 티에스디라이프사이언스는 기존 NK세포 치료 제가 NK세포 자체의 기능을 강화하는 데 집중한 것과 달리 종양...",
+      "source_url": "https://www.dailypharm.com/user/news/342072?REFERER=NP",
+      "naver_url": "https://www.dailypharm.com/user/news/342072?REFERER=NP",
+      "published_at": "2026-09-02T13:42:00+09:00",
+      "source": "dailypharm.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "경총 “국민연금, 가입자 기여도 공정하게 반영돼야”",
+      "description": "경총은 국민 신뢰를 저해하는 주요 요인으로 ▷인구구조 변화를 반영하지 못하는 재정기반 ▷가입유형에 따른 이원적 보험 료 부과·징수체계 ▷사회·경제 변화에 부합하지 않는 연금감액 제도 ▷소득재분배 기능에...",
+      "source_url": "https://biz.heraldcorp.com/article/10860277?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691862?sid=101",
+      "published_at": "2026-09-02T13:41:00+09:00",
+      "source": "biz.heraldcorp.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "[정읍소식]시립도서관, '독서의 달' 다양한 문화행사 마련 등",
+      "description": "◇시보건소, 심 뇌혈관질환 예방·관리 집중 정읍시보건소가 심 뇌혈관질환 예방관리주간을 맞아 9월 한 달간 혈압·혈당·콜레스테롤 측정과 건강상담을 진행한다고 2일 밝혔다. 보건소는 이 기간 시민들이 20대부터...",
+      "source_url": "https://www.newsis.com/view/NISX20260902_0003773144",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164214?sid=102",
+      "published_at": "2026-09-02T13:41:00+09:00",
+      "source": "newsis.com",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "한국의료분쟁조정중재원장 이창훈 신임 원장 임명…’29년 8월까지 3년간",
+      "description": "보건복지부 는 1일, 제5대 한국의료분쟁조정중재원(이하 의료중재원) 원장에 이창훈 변호사를 임명했다고 밝혔다. 신임 이창훈 원장은 1960년생으로 고려대학교 법학과를 졸업(제26회 사법시험)하고, 1990년 판사를...",
+      "source_url": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=68240",
+      "naver_url": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=68240",
+      "published_at": "2026-09-02T13:40:00+09:00",
+      "source": "akomnews.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "공노총, 배제된 직역연금 수급자에게도 소득 하위 45% 범위에서 기초연...",
+      "description": "관련 연구용역을 추진하고, 보건복지부 기초연금과와 수차례 면담을 진행했으며, 전·현직 공무원을 대상으로 설문조사를 실시해 현장의 목소리와 제도의 부당성을 사회적으로 알려왔다. 특히 지난 8월 19일 국회에서...",
+      "source_url": "http://www.lawissue.co.kr/view.php?ud=2026090213342750289a8c8bf58f_12",
+      "naver_url": "http://www.lawissue.co.kr/view.php?ud=2026090213342750289a8c8bf58f_12",
+      "published_at": "2026-09-02T13:40:00+09:00",
+      "source": "lawissue.co.kr",
+      "query": "보건복지부"
+    },
+    {
+      "title": "경인여대, 한국연구재단 지역혁신사례 경진대회 우수상",
+      "description": "경인여대는 이 사업을 통해 법무부· 보건복지부 지정 '외국인 요양보호사 양성대학'을 운영하고 신입생 40명 전원을 유치했다. G-HUB 글로벌인재정주지원센터에서는 원스톱 비자·행정 상담 2000여건을 처리했다. 또...",
+      "source_url": "https://www.newsis.com/view/NISX20260902_0003773213",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164211?sid=102",
+      "published_at": "2026-09-02T13:39:00+09:00",
+      "source": "newsis.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "경총 \"국민 절반 이상 국민연금 불신…'자동조정장치' 도입해야\"",
+      "description": "국민연금에 대한 국민들의 불신이 50%를 넘어선 가운데, 경영계가 연금 제도 의 근본적인 혁신을 요구하고... 자신이 낸 보험 료에 비례해 연금을 받는 구조를 명확히 세워야 한다는 설명이다. 이를 통해 가입자들의 불만을...",
+      "source_url": "https://www.widedaily.com/news/articleView.html?idxno=300507",
+      "naver_url": "https://www.widedaily.com/news/articleView.html?idxno=300507",
+      "published_at": "2026-09-02T13:38:00+09:00",
+      "source": "widedaily.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "인하대병원 백용수 교수, 유럽심장학회서 ‘인공지능 심장 나이’ 국제...",
+      "description": "연구진은 국내 대학병원 10곳의 대규모 심전도 자료로 인공지능 모델을 검증했으며, 이후 국민 건강보험 공단 자료와 연계한 장기 예후 분석과 영국 바이오뱅크를 활용한 국제 외부 검증으로 연구 범위를 확장했다. 백 교수는...",
+      "source_url": "https://www.khan.co.kr/article/202609021338001",
+      "naver_url": "https://n.news.naver.com/mnews/article/032/0003468001?sid=103",
+      "published_at": "2026-09-02T13:38:00+09:00",
+      "source": "khan.co.kr",
+      "query": "건강보험"
+    },
+    {
+      "title": "민주, 세종서 첫 예산정책협의회...“행정수도·국가균형발전 실현”",
+      "description": "암치료 센터 건립까지 세종시민의 기대에 부응하도록 필요한 예산을 챙기겠다”고 말했다. 박성준 민주당... 암치료 센터 건립의 기본·타당성 조사를 위한 2027년도 국비 3억 원 반영도 건의했다”고 밝혔다. 박...",
+      "source_url": "https://www.mediapen.com/news/view/1120731",
+      "naver_url": "https://www.mediapen.com/news/view/1120731",
+      "published_at": "2026-09-02T13:38:00+09:00",
+      "source": "mediapen.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "처방으로 증명한 자큐보… 적응증·임상 근거 더했다",
+      "description": "증상 평가에는 가슴쓰림과 산 역류, 소화불량 등의 빈도와 중증 도를 측정하는 역류 질환 설문지(Reflux Disease Questionnaire, RDQ)가 사용됐다. 가슴쓰림과 산 역류 영역을 반영한 평균 GERD 점수는 복용 전 2.07점에서...",
+      "source_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727221",
+      "naver_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727221",
+      "published_at": "2026-09-02T13:38:00+09:00",
+      "source": "the-biz.co.kr",
+      "query": "중증질환"
+    },
+    {
+      "title": "오케스트로 클라우드, 공공 DR ISP 7·8차 사업 수주…38개 시스템 재해...",
+      "description": "7차 사업은 △모바일 신분증 플랫폼 △간편인증시스템 △차세대 사회보장정보시스템 등 행정안전부와 보건복지부 의 17개 시스템을 대상으로 한다. 오케스트로 클라우드는 각 시스템의 운영 환경과 중요도를 반영해...",
+      "source_url": "https://www.etnews.com/20260902000287",
+      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462816?sid=105",
+      "published_at": "2026-09-02T13:38:00+09:00",
+      "source": "etnews.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "순천시, 임신·출산·양육 생애주기별 지원 강화…\"아이 키우기 좋은 도...",
+      "description": "미숙아·선천성 이상아 의료비 를 비롯해 선천성 대사이상 및 난청 검사, 보청기, 영유아 발달 정밀검사비 등을 지원한다. 조기진통과 양막 조기파열 등 고위험 임산부와 청소년 산모의 의료비 도 지원 대상에 포함한다....",
+      "source_url": "https://www.getnews.co.kr/news/articleView.html?idxno=879605",
+      "naver_url": "https://www.getnews.co.kr/news/articleView.html?idxno=879605",
+      "published_at": "2026-09-02T13:36:00+09:00",
+      "source": "getnews.co.kr",
+      "query": "의료비"
+    },
+    {
+      "title": "서울부민병원 안지용 실장, 족부족관절학회 개원의 심포지엄서 평발 강...",
+      "description": "평발: 치료 는 무엇이 다른가’를 주제로 강의했다. 평발은 동네 병의원에서 흔히 마주하는 발 질환이지만 모습이 비슷해도 치료 방향이 반대로 갈리는 경우가 있어 정확한 감별이 중요한 영역으로 꼽힌다. 안 실장이...",
+      "source_url": "http://www.whosaeng.com/173349",
+      "naver_url": "http://www.whosaeng.com/173349",
+      "published_at": "2026-09-02T13:36:00+09:00",
+      "source": "whosaeng.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "“폐경 후 생리? 회춘 아니다”… 중년 여성 위협하는 자궁내막암",
+      "description": "한다”며, “출혈이 발생했을 때는 지체 없이 산부인과에 내원해 질 초음파 및 자궁내막 조직 검사를 통해 암 여부를 확인하고, 조기에 적절한 치료 를 받는 것이 중년 이후의 건강을 지키는 핵심”이라고 강조했다.",
+      "source_url": "https://sports.khan.co.kr/article/202609021335003?pt=nv",
+      "naver_url": "https://n.news.naver.com/mnews/article/144/0001135546?sid=103",
+      "published_at": "2026-09-02T13:36:00+09:00",
+      "source": "sports.khan.co.kr",
+      "query": "암 치료"
+    },
+    {
+      "title": "미세먼지 노출, '나쁜 콜레스테롤' 수치 높여 심 뇌혈관 질환 위험 키운...",
+      "description": "미세먼지가 단순 호흡기 질환 유발을 넘어 '나쁜 콜레스테롤'로 불리는 LDL콜레스테롤 수치를 높여 심 뇌혈관 질환 위험까지 증가시킨다는 연구 결과가 나왔다. 강북삼성병원 직업환경의학과 이원철, 김현일...",
+      "source_url": "https://www.rapportian.com/news/articleView.html?idxno=239943",
+      "naver_url": "https://www.rapportian.com/news/articleView.html?idxno=239943",
+      "published_at": "2026-09-02T13:36:00+09:00",
+      "source": "rapportian.com",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "[전남광주 서구소식] 호남권 최초 중증돌봄 맞춤형 돌봄로봇 실증",
+      "description": "서구는 보건복지부 산하 국립재활원과 연계해 추진하는 '수요자 중심 돌봄로봇 및 서비스 실증 연구개발사업' 대상에 관내 중증돌봄 대상자 4가구를 선정하고 오는 9월부터 11월까지 3개월간 가정에서 돌봄로봇을 시범...",
+      "source_url": "https://www.sidae.com/article/2026090213245515167",
+      "naver_url": "https://n.news.naver.com/mnews/article/417/0001157126?sid=102",
+      "published_at": "2026-09-02T13:35:00+09:00",
+      "source": "sidae.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "실업급여 확 줄인다... 월 지급액 낮춰 '최저임금 역전' 해소",
+      "description": "고용노동부는 1일 정부와 노사가 참여하는 고용보험위원회가 이런 내용의 '고용 보험 제도 개편 방안'을 심의, 확정했다고 밝혔다. 정부는 곧 입법 절차에 나설 계획이다. ◇ 최저임금보다 많은 구직급여, 월 지급액...",
+      "source_url": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=87835",
+      "naver_url": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=87835",
+      "published_at": "2026-09-02T13:34:00+09:00",
+      "source": "ekoreanews.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "교보생명, 3040세대 보험료↓…'마이플랜 건강보험 Ⅱ' 선봬",
+      "description": "교보생명이 3040세대의 보험료 부담을 낮추고 고령기 보장을 강화한 '교보마이플랜 건강보험 Ⅱ'를 선보였다. 지난해 출시한 '교보마이플랜 건강보험 '을 개정한 상품으로 기존의 자유로운 설계 방식은 그대로...",
+      "source_url": "http://www.newscape.co.kr/news/articleView.html?idxno=124287",
+      "naver_url": "http://www.newscape.co.kr/news/articleView.html?idxno=124287",
+      "published_at": "2026-09-02T13:34:00+09:00",
+      "source": "newscape.co.kr",
+      "query": "건강보험"
+    },
+    {
+      "title": "손해 보험 협회, 통합민원지원센터 개소…민원처리 전문·효율성 높인다",
+      "description": "통합민원지원센터는 금융감독원 에서 이송되는 보험 협회 처리 민원과 국민신문고 등을 통해 협회에 접수되는 보험 관련 민원을 보다 전문적이고 신속하게 처리하기 위해 마련됐다. 또 보험 가입 조회와 보험 모집종사자...",
+      "source_url": "https://www.etnews.com/20260902000284",
+      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462812?sid=101",
+      "published_at": "2026-09-02T13:33:00+09:00",
+      "source": "etnews.com",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "“우리 곁 환자”…환자단체·글로벌 제약사들, 환자 권리 증진 나서",
+      "description": "환자·가족은 61%, 일반인은 70%가 의료비 및 생활비 등 경제적 지원을 1순위로 선택했다. 다만 환자·가족은 직장과 학교에서의 배려, 질환에 대한 정보 제공과 인식 개선에 대한 요구가 높았다. 환자들이 경제적 지원을...",
+      "source_url": "https://www.etoday.co.kr/news/view/2620992",
+      "naver_url": "https://www.etoday.co.kr/news/view/2620992",
+      "published_at": "2026-09-02T13:32:00+09:00",
+      "source": "etoday.co.kr",
+      "query": "의료비"
+    },
+    {
+      "title": "\"국민연금 못 믿는다 56%\"…경총, '자동조정장치' 등 혁신 방안 제안",
+      "description": "경총은 2일 발표한 '국민 신뢰 제고를 위한 국민연금 제도 혁신 방안' 보고서에서 △자동조정장치 도입 △지역가입자 보험 체계 개선 △감액 제도 폐지·완화 △급여 제도 재설계 △기금운용 거버넌스 개편 등 5대...",
+      "source_url": "https://www.nocutnews.co.kr/news/6572098?utm_source=naver&utm_medium=article&utm_campaign=20260902013029",
+      "naver_url": "https://n.news.naver.com/mnews/article/079/0004185165?sid=101",
+      "published_at": "2026-09-02T13:31:00+09:00",
+      "source": "nocutnews.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "\"8주 넘게 병원 가려면 심사받으세요\"…자동차 보험 약관 대폭 손질",
+      "description": "아울러 소비자가 제도 를 몰라 불이익을 당하지 않도록 보험 가입부터 사고 처리 단계까지 알림톡 등을 활용한 안내 프로세스도 세밀해진다. 사고 접수 직후는 물론 발생 3~4주 차와 6~7주 차에 심사 신청 절차를 반복해서...",
+      "source_url": "https://www.widedaily.com/news/articleView.html?idxno=300503",
+      "naver_url": "https://www.widedaily.com/news/articleView.html?idxno=300503",
+      "published_at": "2026-09-02T13:30:00+09:00",
+      "source": "widedaily.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "듀켐바이오 전립선암 진단제 '프로스타시크' 건보 적용…환자 부담 낮추...",
+      "description": "|중앙이코노미뉴스 윤남웅 기자|듀켐바이오의 전립선암 정밀 진단제 '프로스타시크주'로 시행하는 PET-CT 검사에 9월 1일부터 건강보험 급여 기준이 적용된다. [사진=듀켐바이오]  방사성의약품 국내 1위 기업...",
+      "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=544747",
+      "naver_url": "https://www.joongangenews.com/news/articleView.html?idxno=544747",
+      "published_at": "2026-09-02T13:30:00+09:00",
+      "source": "joongangenews.com",
+      "query": "건강보험"
+    },
+    {
+      "title": "경기도, '제34회 경기도 청소년예술제' 성황리에 마무리",
+      "description": "다만 고령층이나 만성 질환 자는 감염 시 중증 화 위험이 높아 증상이 나타나면 신속히 의료기관을 방문할 것을 당부했다. 검사 대상에 포함되지 않은 소규모 건물이나 민간 시설도 정기적인 청소·소독을 통해 관리 상태를...",
+      "source_url": "http://www.queen.co.kr/news/articleView.html?idxno=462697",
+      "naver_url": "http://www.queen.co.kr/news/articleView.html?idxno=462697",
+      "published_at": "2026-09-02T13:30:00+09:00",
+      "source": "queen.co.kr",
+      "query": "중증질환"
+    },
+    {
+      "title": "홍자,'헌혈로 완성되는 뿌듯한 하루'릴레이 캠페인 참여",
+      "description": "장애인신문·웰페어뉴스=양원준 기자 | 대한적십자사 혈액관리본부와 보건복지부 가 함께 추진하는 '헌혈로 완성되는 뿌듯한 하루' 릴레이 캠페인에 가수 홍자가 열 한번째 주자로 참여했다. 이번 캠페인은 무더위와 장마...",
+      "source_url": "https://www.welfarenews.net/news/articleView.html?idxno=210663",
+      "naver_url": "https://www.welfarenews.net/news/articleView.html?idxno=210663",
+      "published_at": "2026-09-02T13:30:00+09:00",
+      "source": "welfarenews.net",
+      "query": "보건복지부"
+    },
+    {
+      "title": "[단독]4년 새 4배 폭증한 ‘자살유발정보’…10건 중 7건 못 지웠다",
+      "description": "2일 국회 보건복지위원회 소속 서미화 더불어민주당 의원이 보건복지부 로부터 받은 자료에 따르면 지난해 온라인 자살유발정보 신고 건수는 60만 2781건에 달했다. 그러나 연말까지 삭제된 정보는 17만 6163건으로...",
+      "source_url": "https://www.seoul.co.kr/news/society/2026/09/02/20260902500148?wlog_tag3=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/081/0003675936?sid=102",
+      "published_at": "2026-09-02T13:30:00+09:00",
+      "source": "seoul.co.kr",
+      "query": "보건복지부"
+    },
+    {
+      "title": "김광현 이대서울병원 교수, 비뇨의학과 단일공 로봇수술 ‘500례’ 달성",
+      "description": "비뇨기 암 치료 분야에서의 독보적인 경쟁력을 다시 한번 각인시켰다. 이번에 성과의 핵심이 된 다빈치 SP... 한편, 국내 신장암 환자 수는 2023년 기준 7367명으로 전년 대비 5.7% 증가하며 전체 암 중 10위를 기록하는 등...",
+      "source_url": "https://www.sentv.co.kr/article/view/sentv202609020092",
+      "naver_url": "https://www.sentv.co.kr/article/view/sentv202609020092",
+      "published_at": "2026-09-02T13:28:00+09:00",
+      "source": "sentv.co.kr",
+      "query": "암 치료"
+    },
+    {
+      "title": "필수과 전공의 월 100만원 줬지만 소청과 충원율 13%…415억 중 179억만 ...",
+      "description": "2일 보건복지부 가 발간한 ‘2025 보건복지백서’와 국회예산정책처의 ‘2025회계연도 결산 위원회별 분석’에 따르면 정부는 지난해 전공의 등 수련수당 지급사업에 본예산 414억6000만원을 편성했지만 실제 지급액은...",
+      "source_url": "https://www.medigatenews.com/news/2670027177",
+      "naver_url": "https://www.medigatenews.com/news/2670027177",
+      "published_at": "2026-09-02T13:28:00+09:00",
+      "source": "medigatenews.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "[동정] 김영주 이화의대 교수, 한국 보건 산업진흥원 비상근이사 임명",
+      "description": "한국보건산업진흥원은 보건의료 및 바이오헬스 산업의 발전과 기업·기관의 성장을 지원하는 보건복지부 산하 공공기관이다. 진흥원 이사회는 상임이사, 비상임감사, 비상임이사를 포함해 총 11명으로 구성되며, 김영주...",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239810",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239810",
+      "published_at": "2026-09-02T13:28:00+09:00",
+      "source": "doctorstimes.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "강원대병원, 9월부터 ‘자기 혈관 숫자알기 레드서클 캠페인’ 개최",
+      "description": "강원대병원 권역심 뇌혈관질환 센터는 9월 심 뇌혈관질환 예방관리주간을 맞아 질병관리청이 주관하는 ‘자기혈관 숫자알기’ 레드서클 캠페인을 실시한다고 2일 밝혔다. 이번 캠페인은 20대부터 자신의 혈압·혈당...",
+      "source_url": "https://www.kwnews.co.kr/article/20260902500671",
+      "naver_url": "https://n.news.naver.com/mnews/article/087/0001215169?sid=102",
+      "published_at": "2026-09-02T13:27:00+09:00",
+      "source": "kwnews.co.kr",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "“중간위험 심방세동 환자도 항응고제 치료 필요”",
+      "description": "환자의 치료 방향을 결정하는 핵심적인 학술적 근거가 될 것”이라고 전망했다. 한편 이번 연구는 보건복지부 지원 및 한국보건의료연구원이 주관하는 ‘환자중심 의료기술 최적화 연구사업’의 지원으로 진행됐다.",
+      "source_url": "https://www.sentv.co.kr/article/view/sentv202609020089",
+      "naver_url": "https://www.sentv.co.kr/article/view/sentv202609020089",
+      "published_at": "2026-09-02T13:26:00+09:00",
+      "source": "sentv.co.kr",
+      "query": "보건복지부"
+    },
+    {
+      "title": "손보협회, 통합민원지원센터 개소… 보험 민원 처리 전문성 높인다",
+      "description": "금융감독원 에서 이송되는 민원부터 보험 가입 조회, 보험 모집종사자 관련 업무까지 한 곳에서 처리할 수 있도록 지원 체계를 일원화했다. 손해 보험 협회는 2일 서울 금천구 벚꽃로 금천롯데타워에 통합민원지원센터를...",
+      "source_url": "https://www.fnnews.com/news/202609021322342826",
+      "naver_url": "https://n.news.naver.com/mnews/article/014/0005569936?sid=101",
+      "published_at": "2026-09-02T13:25:00+09:00",
+      "source": "fnnews.com",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "\"의대 탈락, 서부권 민심 달래야\" 민형배 시장, 통합TF 구성",
+      "description": "지역의 역량만으로는 한계가 있는 만큼 행정안전부와 보건복지부 등 정부 부처도 국가 정책과 예산을 지원해 통합TF팀에 힘을 싣는다. 전남광주특별시 관계자는 \"국립의대 선정에서 탈락한 서부권 지역민의 상실감이...",
+      "source_url": "https://www.newsis.com/view/NISX20260902_0003773169",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164172?sid=102",
+      "published_at": "2026-09-02T13:25:00+09:00",
+      "source": "newsis.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "자동차 보험 '8주 룰' 10일 시행…경상환자 장기치료 별도 심사",
+      "description": "금융감독원 은 자동차 보험 의 과도한 보험 금 지급과 누수를 막고 보험 가입자의 보험 료 부담을 완화하기 위해 자동차 보험 표준약관을 개정한다고 2일 밝혔다. 금감원에 따르면 자동차부문 보험 손익은 2024년 -97억원에서...",
+      "source_url": "https://news.bizwatch.co.kr/article/finance/2026/09/02/0015",
+      "naver_url": "https://n.news.naver.com/mnews/article/648/0000050404?sid=101",
+      "published_at": "2026-09-02T13:24:00+09:00",
+      "source": "news.bizwatch.co.kr",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "서울성모병원, AI로 '수십 초' 만에 다발골수종 임상시험 후보 찾는다",
+      "description": "따라서 적합한 환자에게 임상시험 참여는 새로운 치료 를 받을 수 있는 중요한 기회가 될 수 있다. 하지만 최근 임상시험은 이전 치료 횟수와 특정 약제에 대한 불응 여부, 조혈모세포이식 경험, 이전 치료 종료 후 경과기간...",
+      "source_url": "https://www.k-health.com/news/articleView.html?idxno=100951",
+      "naver_url": "https://www.k-health.com/news/articleView.html?idxno=100951",
+      "published_at": "2026-09-02T13:24:00+09:00",
+      "source": "k-health.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "남성보다 더 위험해진다’…50대부터 여성 콜레스테롤 ‘역전’",
+      "description": "심 혈관질환 위험도를 다시 확인할 필요가 있다”고 말했다. ◆ 에스트로겐 감소에 LDL 제거 능력 ‘뚝’ 콜레스테롤은 흔히 ‘나쁜 콜레스테롤’로 불리는 LDL(저밀도지단백)콜레스테롤과 ‘좋은 콜레스테롤’로...",
+      "source_url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065586782853552",
+      "naver_url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065586782853552",
+      "published_at": "2026-09-02T13:24:00+09:00",
+      "source": "megaeconomy.co.kr",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "온라인 협박글 전액 배상 인정 첫 사례…'신세계百 폭파' 글 올린 20대 1...",
+      "description": "재판부는 서울경찰청이 경찰 기본 급여와 초과근무수당, 유류비, 급식비, 의료비 등을 산정해 청구한 국고손실금 1256만여원을 전액 배상하라고 판결했다. 이번 판결은 온라인 협박성 글로 낭비된 치안비용의 전액...",
+      "source_url": "https://news.tvchosun.com/site/data/html_dir/2026/09/02/2026090290121.html",
+      "naver_url": "https://n.news.naver.com/mnews/article/448/0000637006?sid=102",
+      "published_at": "2026-09-02T13:23:00+09:00",
+      "source": "news.tvchosun.com",
+      "query": "의료비"
+    },
     {
       "title": "세브란스 \"항응고제, 뇌졸중 위험 낮은 심방세동 환자에도 효과\"",
       "description": "심방세동 진료 지침을 개정하고 진료 현장에서 치료 방향을 결정하는 데 근거가 될 것\"이라고 말했다. 이번 연구는 보건복지부 가 지원하는 보건의료기술 연구개발사업과 삼진제약·한미약품의 지원으로 수행됐다.",
@@ -13,7 +418,7 @@
     },
     {
       "title": "뇌졸중 위험 ‘중간’이라도··· 심방세동 있으면 미리 항응고제 복용...",
-      "description": "심방세동은 심장이 불규칙하게 뛰며 비정상적인 맥박을 만드는 가장 흔한 부정맥 질환 으로, 심장 안에서 피가 굳어 혈전(피떡)이 생길 위험이 높다. 이 혈전이 흘러가다가 뇌혈관 을 막으면 뇌졸중이 발생하는데, 예방을...",
+      "description": "심방세동은 심장이 불규칙하게 뛰며 비정상적인 맥박을 만드는 가장 흔한 부정맥 질환 으로, 심장 안에서 피가 굳어 혈전(피떡)이 생길 위험이 높다. 이 혈전이 혈액을 타고 흘러가다가 뇌혈관 을 막으면 뇌졸중, 다른...",
       "source_url": "https://www.khan.co.kr/article/202609021321001",
       "naver_url": "https://n.news.naver.com/mnews/article/032/0003467994?sid=103",
       "published_at": "2026-09-02T13:21:00+09:00",
@@ -75,7 +480,7 @@
       "query": "암 치료"
     },
     {
-      "title": "미세먼지, '나쁜 콜레스테롤' 수치도 높인다… 심혈관 질환 위험↑",
+      "title": "\"콜레스테롤 높아 걱정\"...도시 거주자 더 위험한 이유",
       "description": "입자가 더 작은 초미세먼지 역시 심혈관 질환 위험을 높였다. 초미세먼지 농도가 일상적인 노출 편차(사분위수 범위)만큼 증가할 때마다 LDL콜레스테롤혈증 발생 위험도는 하루 노출 시 9.7%, 6개월 노출 시 16.6%, 5년...",
       "source_url": "https://www.mt.co.kr/thebio/2026/09/02/2026090212525275267",
       "naver_url": "https://n.news.naver.com/mnews/article/008/0005408365?sid=103",
@@ -129,19 +534,19 @@
       "query": "암 치료"
     },
     {
-      "title": "경인여대, 외국인 인재 ‘유치→취업→정주’ 모델로 전국 무대 우수상",
-      "description": "경인여대는 법무부와 보건복지부 가 지정한 ‘외국인 요양보호사 양성대학’을 운영해 신입생 40명 전원을 유치했다. 또한 ‘G-HUB 글로벌인재정주지원센터’를 개소해 외국인 유학생을 대상으로 비자와 행정, 생활 등에...",
-      "source_url": "https://www.viva100.com/article/20260902500725",
-      "naver_url": "https://www.viva100.com/article/20260902500725",
+      "title": "로봇이 요양시설을 나왔다…서구, ‘집으로 찾아가는 돌봄’ 실증",
+      "description": "서구는 보건복지부 산하 국립재활원과 연계해 ‘수요자 중심 돌봄로봇 및 서비스 실증 연구개발사업’을 추진하고, 관내 중증돌봄 대상자 4가구를 선정해 오는 9월부터 11월까지 3개월간 가정에서 로봇을 실제 사용하도록...",
+      "source_url": "https://www.viva100.com/article/20260902500802",
+      "naver_url": "https://www.viva100.com/article/20260902500802",
       "published_at": "2026-09-02T13:12:00+09:00",
       "source": "viva100.com",
       "query": "보건복지부"
     },
     {
-      "title": "로봇이 요양시설을 나왔다…서구, ‘집으로 찾아가는 돌봄’ 실증",
-      "description": "서구는 보건복지부 산하 국립재활원과 연계해 ‘수요자 중심 돌봄로봇 및 서비스 실증 연구개발사업’을 추진하고, 관내 중증돌봄 대상자 4가구를 선정해 오는 9월부터 11월까지 3개월간 가정에서 로봇을 실제 사용하도록...",
-      "source_url": "https://www.viva100.com/article/20260902500802",
-      "naver_url": "https://www.viva100.com/article/20260902500802",
+      "title": "경인여대, 외국인 인재 ‘유치→취업→정주’ 모델로 전국 무대 우수상",
+      "description": "경인여대는 법무부와 보건복지부 가 지정한 ‘외국인 요양보호사 양성대학’을 운영해 신입생 40명 전원을 유치했다. 또한 ‘G-HUB 글로벌인재정주지원센터’를 개소해 외국인 유학생을 대상으로 비자와 행정, 생활 등에...",
+      "source_url": "https://www.viva100.com/article/20260902500725",
+      "naver_url": "https://www.viva100.com/article/20260902500725",
       "published_at": "2026-09-02T13:12:00+09:00",
       "source": "viva100.com",
       "query": "보건복지부"
@@ -156,12 +561,12 @@
       "query": "보험 제도"
     },
     {
-      "title": "지예은♥바타, 교회 친구→연인→부부…암투병도 이겨낸 사랑 결실[이슈...",
-      "description": "지예은은 최근 갑상생암 진단을 받고 활동을 중단한 채 치료 에 집중했다. 당시 바타가 지예은의 곁을 지키며 힘이 되어준 것으로 알려졌다. 바타는 럽스타그램을 통해 지예은의 병실에 방문해 함께 셀카를 찍은 것도...",
-      "source_url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1005170",
-      "naver_url": "https://m.entertain.naver.com/article/477/0000626109",
+      "title": "한양대병원, 2026년 하반기 신규 의료진 임용 및 진료 시작",
+      "description": "나은 치료 결과를 위해 전문분야에 대한 연구를 진행할 예정이다. 호흡기알레르기내과 정승준 교수는 폐암, 간질성 폐질환, 특수기관지내시경 및 일반 호흡기질환을 전문으로 진료한다. 특히 폐암의 정확한 진단과 치료 를...",
+      "source_url": "http://www.bokuennews.com/news/article.html?no=283502",
+      "naver_url": "http://www.bokuennews.com/news/article.html?no=283502",
       "published_at": "2026-09-02T13:10:00+09:00",
-      "source": "spotvnews.co.kr",
+      "source": "bokuennews.com",
       "query": "암 치료"
     },
     {
@@ -174,12 +579,12 @@
       "query": "암 치료"
     },
     {
-      "title": "한양대병원, 2026년 하반기 신규 의료진 임용 및 진료 시작",
-      "description": "나은 치료 결과를 위해 전문분야에 대한 연구를 진행할 예정이다. 호흡기알레르기내과 정승준 교수는 폐암, 간질성 폐질환, 특수기관지내시경 및 일반 호흡기질환을 전문으로 진료한다. 특히 폐암의 정확한 진단과 치료 를...",
-      "source_url": "http://www.bokuennews.com/news/article.html?no=283502",
-      "naver_url": "http://www.bokuennews.com/news/article.html?no=283502",
+      "title": "지예은♥바타, 교회 친구→연인→부부…암투병도 이겨낸 사랑 결실[이슈...",
+      "description": "지예은은 최근 갑상생암 진단을 받고 활동을 중단한 채 치료 에 집중했다. 당시 바타가 지예은의 곁을 지키며 힘이 되어준 것으로 알려졌다. 바타는 럽스타그램을 통해 지예은의 병실에 방문해 함께 셀카를 찍은 것도...",
+      "source_url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1005170",
+      "naver_url": "https://m.entertain.naver.com/article/477/0000626109",
       "published_at": "2026-09-02T13:10:00+09:00",
-      "source": "bokuennews.com",
+      "source": "spotvnews.co.kr",
       "query": "암 치료"
     },
     {
@@ -372,21 +777,21 @@
       "query": "암 치료"
     },
     {
-      "title": "홍천군보건소, 만성 질환 예방 찾아가는 출장검진 실시",
-      "description": "5%)이 동맥경화 유소견자로 확인된 만큼, 올해도 유소견자를 적극 발굴해 비타민D 검사 추가 실시 및 심 뇌혈관 질환 예방 관리사업 연계 등 사후 관리에 주력할...",
-      "source_url": "http://www.breaknews.com/1233467",
-      "naver_url": "http://www.breaknews.com/1233467",
-      "published_at": "2026-09-02T13:02:00+09:00",
-      "source": "breaknews.com",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "\"맛 좋아 돈 안 아깝다\"… 가을 전어에 담긴 맛과 영양의 비밀",
       "description": "영양학적으로도 불포화지방산인 EPA와 DHA가 풍부하게 함유되어 있어 동맥경화, 뇌졸중 등 심 뇌혈관 질환 예방과 치매 예방에 효과적이다. 또한 비타민과 무기질이 풍부해 여름철 지친 몸의 피로를 해소하고 피부 미용을...",
       "source_url": "https://www.suhyupnews.co.kr/news/articleView.html?idxno=40505",
       "naver_url": "https://www.suhyupnews.co.kr/news/articleView.html?idxno=40505",
       "published_at": "2026-09-02T13:02:00+09:00",
       "source": "suhyupnews.co.kr",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "홍천군보건소, 만성 질환 예방 찾아가는 출장검진 실시",
+      "description": "5%)이 동맥경화 유소견자로 확인된 만큼, 올해도 유소견자를 적극 발굴해 비타민D 검사 추가 실시 및 심 뇌혈관 질환 예방 관리사업 연계 등 사후 관리에 주력할...",
+      "source_url": "http://www.breaknews.com/1233467",
+      "naver_url": "http://www.breaknews.com/1233467",
+      "published_at": "2026-09-02T13:02:00+09:00",
+      "source": "breaknews.com",
       "query": "뇌혈관질환"
     },
     {
@@ -417,21 +822,21 @@
       "query": "보험 제도"
     },
     {
-      "title": "화성 향남읍 ‘동 전환’ 시의회까지 반발",
-      "description": "그러면서 \"동으로 전환될 경우 대입 농어촌 특별전형 자격 상실이나 축소는 물론, 양도소득세 등 세제 혜택 감소, 건강보험 료 경감 혜택 소멸 등 주민들의 경제적·교육적 분야에 걸쳐 많은 불이익이 우려된다\"고...",
-      "source_url": "https://www.kgnews.co.kr/news/article.html?no=909979",
-      "naver_url": "https://www.kgnews.co.kr/news/article.html?no=909979",
-      "published_at": "2026-09-02T13:00:00+09:00",
-      "source": "kgnews.co.kr",
-      "query": "건강보험"
-    },
-    {
       "title": "양 볼에 붉은 '나비 발진' 떴다면 '이 질환' 의심...방치했다간 신장·뇌...",
       "description": "2일 건강보험 심사평가원 국민관심질병통계에 따르면 지난해 루푸스로 병원을 찾은 전체 환자는 3만4081명으로 집계됐다. 2021년 2만9877명, 2023년 3만1987명에 이어 매년 완만한 증가세를 보인다. 특히 전체 환자의 약 86...",
       "source_url": "https://www.fnnews.com/news/202609021053179665",
       "naver_url": "https://n.news.naver.com/mnews/article/014/0005569925?sid=103",
       "published_at": "2026-09-02T13:00:00+09:00",
       "source": "fnnews.com",
+      "query": "건강보험"
+    },
+    {
+      "title": "화성 향남읍 ‘동 전환’ 시의회까지 반발",
+      "description": "그러면서 \"동으로 전환될 경우 대입 농어촌 특별전형 자격 상실이나 축소는 물론, 양도소득세 등 세제 혜택 감소, 건강보험 료 경감 혜택 소멸 등 주민들의 경제적·교육적 분야에 걸쳐 많은 불이익이 우려된다\"고...",
+      "source_url": "https://www.kgnews.co.kr/news/article.html?no=909979",
+      "naver_url": "https://www.kgnews.co.kr/news/article.html?no=909979",
+      "published_at": "2026-09-02T13:00:00+09:00",
+      "source": "kgnews.co.kr",
       "query": "건강보험"
     },
     {
@@ -535,7 +940,7 @@
     },
     {
       "title": "국가﻿유공자로 번진 도수치료 형평성 논란",
-      "description": "보훈대상자에게는 연간 최대 70회까지 도수치료를 지원하면서 일반 건강 보험 환자에게는 연 15회로 치료... 존중하는 제도 재설계 등을 요구했다. 전국임상물리치료사연대는 “국가유공자를 더 두텁게 지원하는 것과 일반...",
+      "description": "﻿ 보훈대상자에게는 연간 최대 70회까지 도수치료를 지원하면서 일반 건강 보험 환자에게는 연 15회로 치료... 존중하는 제도 재설계 등을 요구했다. 전국임상물리치료사연대는 “국가유공자를 더 두텁게 지원하는 것과...",
       "source_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940075",
       "naver_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940075",
       "published_at": "2026-09-02T12:50:00+09:00",
@@ -570,21 +975,21 @@
       "query": "보건복지부"
     },
     {
-      "title": "저소득 노인에게 기초연금 3만원 더 준다",
-      "description": "[정은경/ 보건복지부 장관/지난 7월 : \"모든 수급자에게 35만 원씩 지원하는 기초연금을 저소득 어르신에게 더 많이 지원하는 하후상박 구조로 개편하겠습니다.\"] 지금은 소득 하위 70%에게 똑같은 액수를 지급하지만, 내년...",
-      "source_url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8652698&ref=A",
-      "naver_url": "https://n.news.naver.com/mnews/article/056/0012249433?sid=102",
-      "published_at": "2026-09-02T12:47:00+09:00",
-      "source": "news.kbs.co.kr",
-      "query": "보건복지부"
-    },
-    {
       "title": "AI 신약개발 경진대회 본선에 15개팀 진출",
       "description": "한국보건산업진흥원은 보건복지부 가 주최하는 '제4회 인공지능(AI) 신약개발 경진대회' 본선 진출 15개 팀을 선정했다고 2일 밝혔다. 이번 대회는 글로벌 신약개발 분야에서 차세대 패러다임으로 주목받는 '추론 기반 AI...",
       "source_url": "https://www.etnews.com/20260902000230",
       "naver_url": "https://n.news.naver.com/mnews/article/030/0003462763?sid=105",
       "published_at": "2026-09-02T12:47:00+09:00",
       "source": "etnews.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "저소득 노인에게 기초연금 3만원 더 준다",
+      "description": "[정은경/ 보건복지부 장관/지난 7월 : \"모든 수급자에게 35만 원씩 지원하는 기초연금을 저소득 어르신에게 더 많이 지원하는 하후상박 구조로 개편하겠습니다.\"] 지금은 소득 하위 70%에게 똑같은 액수를 지급하지만, 내년...",
+      "source_url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8652698&ref=A",
+      "naver_url": "https://n.news.naver.com/mnews/article/056/0012249433?sid=102",
+      "published_at": "2026-09-02T12:47:00+09:00",
+      "source": "news.kbs.co.kr",
       "query": "보건복지부"
     },
     {
@@ -660,21 +1065,21 @@
       "query": "건강보험"
     },
     {
-      "title": "임상시험 필요한 다발골수종 환자…AI가 먼저 찾아낸다",
-      "description": "환자에게 임상시험 참여는 중요한 치료 기회가 될 수 있다. 그러나 임상시험 참여 대상자를 찾는 과정은... 이전 치료 횟수, 특정 약제에 대한 불응성, 조혈모세포이식 경험, 이전 치료 종료 후 경과 기간 등 치료 이력과...",
-      "source_url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3042366",
-      "naver_url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3042366",
-      "published_at": "2026-09-02T12:30:00+09:00",
-      "source": "docdocdoc.co.kr",
-      "query": "암 치료"
-    },
-    {
       "title": "서울아산병원, ‘질병 치료 와 환자 삶의 질 제고’ 가치기반의료 선도",
       "description": "그는 “임상 결과가 좋아야 생존하고 삶의 질도 판단할 수 있다”며 “서울아산병원이 외과· 암 치료 등에서 좋은 임상 성과를 내고 있는 만큼, 환자가 보고하는 주관적 결과도 개선해 더 나은 보건의료 체계를...",
       "source_url": "http://www.whosaeng.com/173347",
       "naver_url": "http://www.whosaeng.com/173347",
       "published_at": "2026-09-02T12:30:00+09:00",
       "source": "whosaeng.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "임상시험 필요한 다발골수종 환자…AI가 먼저 찾아낸다",
+      "description": "환자에게 임상시험 참여는 중요한 치료 기회가 될 수 있다. 그러나 임상시험 참여 대상자를 찾는 과정은... 이전 치료 횟수, 특정 약제에 대한 불응성, 조혈모세포이식 경험, 이전 치료 종료 후 경과 기간 등 치료 이력과...",
+      "source_url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3042366",
+      "naver_url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3042366",
+      "published_at": "2026-09-02T12:30:00+09:00",
+      "source": "docdocdoc.co.kr",
       "query": "암 치료"
     },
     {
@@ -894,15 +1299,6 @@
       "query": "암 치료"
     },
     {
-      "title": "‘천안 11세 사망’ 재발 막는다···학대 신고 1년 내 두 번이면 ‘아...",
-      "description": "보건복지부 는 2일 교육부·법무부·행정안전부·경찰청 등과 함께 ‘아동학대 예방 및 대응 보완 대책’을 발표했다. 이번 대책의 계기가 된 천안 사건 피해아동은 2021년과 2024년 두 차례 학대 신고가 접수됐고, 지난...",
-      "source_url": "https://www.khan.co.kr/article/202609021210001",
-      "naver_url": "https://n.news.naver.com/mnews/article/032/0003467987?sid=102",
-      "published_at": "2026-09-02T12:10:00+09:00",
-      "source": "khan.co.kr",
-      "query": "보건복지부"
-    },
-    {
       "title": "“같은해 태어나면 똑같이”…‘최대 2000만원 출산지원금’ 시행 시기...",
       "description": "보건복지부 는 10월 말 지방 우대 지수에 따라 이들 지역을 공개할 예정이다. 문제는 내년 7월 시행 시기를 앞두고 출산을 앞둔 임산부들 사이에서 지원금 때문에 출산예정일을 조절해야 하는 것 아니냐는 하소연이...",
       "source_url": "https://www.nongmin.com/article/20260902500115",
@@ -918,6 +1314,15 @@
       "naver_url": "https://www.epnc.co.kr/news/articleView.html?idxno=406394",
       "published_at": "2026-09-02T12:10:00+09:00",
       "source": "epnc.co.kr",
+      "query": "보건복지부"
+    },
+    {
+      "title": "‘천안 11세 사망’ 재발 막는다···학대 신고 1년 내 두 번이면 ‘아...",
+      "description": "보건복지부 는 2일 교육부·법무부·행정안전부·경찰청 등과 함께 ‘아동학대 예방 및 대응 보완 대책’을 발표했다. 이번 대책의 계기가 된 천안 사건 피해아동은 2021년과 2024년 두 차례 학대 신고가 접수됐고, 지난...",
+      "source_url": "https://www.khan.co.kr/article/202609021210001",
+      "naver_url": "https://n.news.naver.com/mnews/article/032/0003467987?sid=102",
+      "published_at": "2026-09-02T12:10:00+09:00",
+      "source": "khan.co.kr",
       "query": "보건복지부"
     },
     {
@@ -948,19 +1353,19 @@
       "query": "보험 제도"
     },
     {
-      "title": "셀트리온·삼바 양강 벽 못 넘었다…삼오제약, 투젭타 결국 철수",
-      "description": "허셉틴피하주사 삼오제약이 도입한 유방 암 치료 제 허셉틴(성분명: 트라스투주맙) 바이오시밀러 '투젭타주'가 식품의약품안전처 품목허가 자진 취하 절차를 밟고 있다. 2023년 7월 품목허가를 획득한 지 불과 수년 만에...",
-      "source_url": "https://www.dailypharm.com/user/news/342055?REFERER=NP",
-      "naver_url": "https://www.dailypharm.com/user/news/342055?REFERER=NP",
+      "title": "CMG제약, 주식병합·단기빚 전환…주가·재무 부담 낮춘다",
+      "description": "CMG제약 관계자는 \"차세대 폐암·골관절염·신기전 탈모 치료 제 등 소분자 신약 3종을 개발하고 있다\"며 \"복합제와 개량신약, 구강용해필름(OSF) 사업 확대도 추진 중\"이라고 말했다.",
+      "source_url": "https://www.dailypharm.com/user/news/342038?REFERER=NP",
+      "naver_url": "https://www.dailypharm.com/user/news/342038?REFERER=NP",
       "published_at": "2026-09-02T12:08:00+09:00",
       "source": "dailypharm.com",
       "query": "암 치료"
     },
     {
-      "title": "CMG제약, 주식병합·단기빚 전환…주가·재무 부담 낮춘다",
-      "description": "CMG제약 관계자는 \"차세대 폐암·골관절염·신기전 탈모 치료 제 등 소분자 신약 3종을 개발하고 있다\"며 \"복합제와 개량신약, 구강용해필름(OSF) 사업 확대도 추진 중\"이라고 말했다.",
-      "source_url": "https://www.dailypharm.com/user/news/342038?REFERER=NP",
-      "naver_url": "https://www.dailypharm.com/user/news/342038?REFERER=NP",
+      "title": "셀트리온·삼바 양강 벽 못 넘었다…삼오제약, 투젭타 결국 철수",
+      "description": "허셉틴피하주사 삼오제약이 도입한 유방 암 치료 제 허셉틴(성분명: 트라스투주맙) 바이오시밀러 '투젭타주'가 식품의약품안전처 품목허가 자진 취하 절차를 밟고 있다. 2023년 7월 품목허가를 획득한 지 불과 수년 만에...",
+      "source_url": "https://www.dailypharm.com/user/news/342055?REFERER=NP",
+      "naver_url": "https://www.dailypharm.com/user/news/342055?REFERER=NP",
       "published_at": "2026-09-02T12:08:00+09:00",
       "source": "dailypharm.com",
       "query": "암 치료"
@@ -1038,12 +1443,30 @@
       "query": "보건복지부"
     },
     {
-      "title": "車 보험 경상환자 장기치료 심사 도입…향후치료비도 개편",
-      "description": "금감원은 보험 금 누수를 줄여 자동차 보험 의 지속 기반을 마련하고 보험 가입자의 보험 료 부담을 완화하기 위해 이번 제도 개선을 추진했다. 자동차부문 보험 손익은 2024년 97억원 적자에서 지난해 7080억원 적자로...",
-      "source_url": "https://www.etoday.co.kr/news/view/2620895",
-      "naver_url": "https://www.etoday.co.kr/news/view/2620895",
+      "title": "2026년 우리나라 거주자·내국법인, 해외 보유 자산 총 111조원 신고",
+      "description": "해외금융계좌 신고 제도 는 거주자 또는 내국법인이 보유하고 있는 해외금융계좌 잔액의 합계가 '25년... 둘째 개인의 경우 해외신탁 재산 중 건수 기준으로는 보험 이 제일 많았고(전체의 75.3%), 금액 기준으로는...",
+      "source_url": "http://www.intn.co.kr/news/articleView.html?idxno=2052987",
+      "naver_url": "http://www.intn.co.kr/news/articleView.html?idxno=2052987",
       "published_at": "2026-09-02T12:02:00+09:00",
-      "source": "etoday.co.kr",
+      "source": "intn.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "경총 “낸 만큼 받는 국민연금 돼야”⋯ 5대 혁신 방안 제안",
+      "description": "경총은 국민연금에 대한 신뢰 저해 요인으로 인구구조 변화를 반영하지 못하는 재정기반, 가입유형에 따른 이원적 보험 료 부과·징수체계, 사회·경제 변화에 부합하지 않는 연금감액 제도 , 소득재분배 기능에 치우친...",
+      "source_url": "https://www.viva100.com/article/20260902500638",
+      "naver_url": "https://www.viva100.com/article/20260902500638",
+      "published_at": "2026-09-02T12:02:00+09:00",
+      "source": "viva100.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "경총 “기여한 만큼 받는 국민연금 돼야”…자동조정장치 도입 제안",
+      "description": "이원화된 보험 료 부과·징수체계를 꼽았다. 이와 함께 사회·경제적 변화에 맞지 않는 연금 감액 제도 , 소득재분배에 치우친 급여 구조, 기금운용의 전문성과 독립성 부족 등도 개선이 필요하다고 봤다. 우선 연금급여...",
+      "source_url": "https://www.edaily.co.kr/News/Read?newsId=03686726645576184&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "naver_url": "https://n.news.naver.com/mnews/article/018/0006362341?sid=101",
+      "published_at": "2026-09-02T12:02:00+09:00",
+      "source": "edaily.co.kr",
       "query": "보험 제도"
     },
     {
@@ -1065,30 +1488,12 @@
       "query": "보험 제도"
     },
     {
-      "title": "2026년 우리나라 거주자·내국법인, 해외 보유 자산 총 111조원 신고",
-      "description": "해외금융계좌 신고 제도 는 거주자 또는 내국법인이 보유하고 있는 해외금융계좌 잔액의 합계가 '25년... 둘째 개인의 경우 해외신탁 재산 중 건수 기준으로는 보험 이 제일 많았고(전체의 75.3%), 금액 기준으로는...",
-      "source_url": "http://www.intn.co.kr/news/articleView.html?idxno=2052987",
-      "naver_url": "http://www.intn.co.kr/news/articleView.html?idxno=2052987",
+      "title": "車 보험 경상환자 장기치료 심사 도입…향후치료비도 개편",
+      "description": "금감원은 보험 금 누수를 줄여 자동차 보험 의 지속 기반을 마련하고 보험 가입자의 보험 료 부담을 완화하기 위해 이번 제도 개선을 추진했다. 자동차부문 보험 손익은 2024년 97억원 적자에서 지난해 7080억원 적자로...",
+      "source_url": "https://www.etoday.co.kr/news/view/2620895",
+      "naver_url": "https://www.etoday.co.kr/news/view/2620895",
       "published_at": "2026-09-02T12:02:00+09:00",
-      "source": "intn.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "경총 “기여한 만큼 받는 국민연금 돼야”…자동조정장치 도입 제안",
-      "description": "이원화된 보험 료 부과·징수체계를 꼽았다. 이와 함께 사회·경제적 변화에 맞지 않는 연금 감액 제도 , 소득재분배에 치우친 급여 구조, 기금운용의 전문성과 독립성 부족 등도 개선이 필요하다고 봤다. 우선 연금급여...",
-      "source_url": "https://www.edaily.co.kr/News/Read?newsId=03686726645576184&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "naver_url": "https://n.news.naver.com/mnews/article/018/0006362341?sid=101",
-      "published_at": "2026-09-02T12:02:00+09:00",
-      "source": "edaily.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "경총 “낸 만큼 받는 국민연금 돼야”⋯ 5대 혁신 방안 제안",
-      "description": "경총은 국민연금에 대한 신뢰 저해 요인으로 인구구조 변화를 반영하지 못하는 재정기반, 가입유형에 따른 이원적 보험 료 부과·징수체계, 사회·경제 변화에 부합하지 않는 연금감액 제도 , 소득재분배 기능에 치우친...",
-      "source_url": "https://www.viva100.com/article/20260902500638",
-      "naver_url": "https://www.viva100.com/article/20260902500638",
-      "published_at": "2026-09-02T12:02:00+09:00",
-      "source": "viva100.com",
+      "source": "etoday.co.kr",
       "query": "보험 제도"
     },
     {
@@ -1101,21 +1506,21 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "‘뒷목 잡고 드러눕기’ 막는다…교통사고 경상 치료 8주 넘길 땐 심사...",
-      "description": "금융감독원 은 이런 내용을 담은 ‘자동차 보험 표준약관’ 개정 사항을 2일 발표했다. 일부 환자의 불필요한 치료로 인한 보험 사 부담이 결국 보험 료 인상을 통해 보험 가입자 모두에게 전가되고 있다는 지적을 반영한...",
-      "source_url": "https://www.hani.co.kr/arti/economy/finance/1275846.html",
-      "naver_url": "https://n.news.naver.com/mnews/article/028/0002821276?sid=101",
-      "published_at": "2026-09-02T12:02:00+09:00",
-      "source": "hani.co.kr",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "나이롱 환자 걸러낸다…車 보험 '8주룰' 10일부터 시행",
       "description": "금융감독원 은 이 같은 내용을 담은 자동차 보험 표준약관 개정안을 오는 10일부터 적용한다고 2일 밝혔다. 교통사고로 12~14급 경상을 입은 환자가 8주 이상 치료를 받고자 할 경우 자동차손해배상진흥원(자배원) 내...",
       "source_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433098",
       "naver_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433098",
       "published_at": "2026-09-02T12:02:00+09:00",
       "source": "news.einfomax.co.kr",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "‘뒷목 잡고 드러눕기’ 막는다…교통사고 경상 치료 8주 넘길 땐 심사...",
+      "description": "금융감독원 은 이런 내용을 담은 ‘자동차 보험 표준약관’ 개정 사항을 2일 발표했다. 일부 환자의 불필요한 치료로 인한 보험 사 부담이 결국 보험 료 인상을 통해 보험 가입자 모두에게 전가되고 있다는 지적을 반영한...",
+      "source_url": "https://www.hani.co.kr/arti/economy/finance/1275846.html",
+      "naver_url": "https://n.news.naver.com/mnews/article/028/0002821276?sid=101",
+      "published_at": "2026-09-02T12:02:00+09:00",
+      "source": "hani.co.kr",
       "query": "금융감독원 보험"
     },
     {
@@ -1126,6 +1531,60 @@
       "published_at": "2026-09-02T12:02:00+09:00",
       "source": "globalepic.co.kr",
       "query": "비급여"
+    },
+    {
+      "title": "\"국민연금, 세대 간 형평성부터 손봐야\"… 경총, 제도 혁신방안 제시",
+      "description": "△인구구조 변화를 반영하지 못하는 재정기반 △가입유형별로 다른 보험 료 부과·징수체계 △사회·경제 변화에 맞지 않는 연금감액 제도 △소득재분배에 치우친 급여구조 △기금운용 거버넌스의 전문성·독립성 부족 등이...",
+      "source_url": "https://www.fnnews.com/news/202609020833017104",
+      "naver_url": "https://n.news.naver.com/mnews/article/014/0005569907?sid=101",
+      "published_at": "2026-09-02T12:01:00+09:00",
+      "source": "fnnews.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "교통사고 근육통 통원 202회·치료비 1349만원…9월 10일부터 ‘나이롱환...",
+      "description": "이른바 ‘나이롱환자’의 장기·과잉치료를 막기 위해 자동차 보험 보상 절차가 강화된다. 오는 10일부터... 이번 조치는 2023년 도입된 경상환자 진단서 제출 제도 에서 한발 더 나아간 것이다. 기존에는 경상환자가...",
+      "source_url": "https://biz.heraldcorp.com/article/10859989?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691827?sid=101",
+      "published_at": "2026-09-02T12:01:00+09:00",
+      "source": "biz.heraldcorp.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "경총 “국민연금 재정 안정성·생애 기여-급여 형평성 강화해야”",
+      "description": "7%인 결과를 언급하면서 국민 신뢰를 저해하는 주요 원인으로 △인구 구조 변화를 반영하지 못하는 재정 기반 △가입 유형에 따른 이원적 보험 료 부과·징수 체계 △사회·경제 변화에 부합하지 않는 연금감액 제도 △소득...",
+      "source_url": "https://www.etnews.com/20260902000175",
+      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462731?sid=101",
+      "published_at": "2026-09-02T12:01:00+09:00",
+      "source": "etnews.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "\"국민연금 못 믿는다\" 불만 폭발하더니…'폭탄 전망'",
+      "description": "국민연금 보험 료율이 올해부터 오르기 시작했지만 성인 절반 이상은 여전히 제도 를 신뢰하지 않는 것으로 나타났다. 한국경영자총협회(경총)는 신뢰 회복을 위해 자동조정장치를 도입하고 일부 연금감액 제도 를...",
+      "source_url": "https://www.hankyung.com/article/202609029243g",
+      "naver_url": "https://n.news.naver.com/mnews/article/015/0005327829?sid=101",
+      "published_at": "2026-09-02T12:01:00+09:00",
+      "source": "hankyung.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "염좌·타박상 등 ‘나이롱 환자’ 과잉진료 손본다…10일부터 8주 넘게...",
+      "description": "2024년 97억원의 적자를 봤던 자동차 보험 은 지난해 7080억원으로 적자 규모가 크게 불었다. 올해도 5월까지 1637억원의 적자를 기록했다. 새 제도 의 핵심은 경상환자의 장기 치료에 별도의 검증 절차를 두는 것이다. 대상은...",
+      "source_url": "https://www.chosun.com/economy/economy_general/2026/09/02/R5MFKCNTORF67L6JQ426APBUK4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "naver_url": "https://n.news.naver.com/mnews/article/023/0003996259?sid=101",
+      "published_at": "2026-09-02T12:01:00+09:00",
+      "source": "chosun.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "환경책임 보험 료 최대 50% 지원…중기중앙회·기후부·DB손보 맞손",
+      "description": "환경책임 보험 은 환경오염 사고가 발생했을 때 피해자에 대한 배상과 오염 복구 등에 필요한 비용을 보장하는 제도 다. 현행 ‘환경오염피해 배상책임 및 구제에 관한 법률’에 따라 특정대기유해물질이나...",
+      "source_url": "https://biz.heraldcorp.com/article/10860038?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691828?sid=101",
+      "published_at": "2026-09-02T12:01:00+09:00",
+      "source": "biz.heraldcorp.com",
+      "query": "보험 제도"
     },
     {
       "title": "\"국민연금, 낸 만큼 보장받아야\"…경총, 자동조정장치 도입 제안",
@@ -1143,60 +1602,6 @@
       "naver_url": "https://n.news.naver.com/mnews/article/366/0001189898?sid=101",
       "published_at": "2026-09-02T12:01:00+09:00",
       "source": "biz.chosun.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "\"국민연금 못 믿는다\" 불만 폭발하더니…'폭탄 전망'",
-      "description": "국민연금 보험 료율이 올해부터 오르기 시작했지만 성인 절반 이상은 여전히 제도 를 신뢰하지 않는 것으로 나타났다. 한국경영자총협회(경총)는 신뢰 회복을 위해 자동조정장치를 도입하고 일부 연금감액 제도 를...",
-      "source_url": "https://www.hankyung.com/article/202609029243g",
-      "naver_url": "https://n.news.naver.com/mnews/article/015/0005327829?sid=101",
-      "published_at": "2026-09-02T12:01:00+09:00",
-      "source": "hankyung.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "경총 “국민연금 재정 안정성·생애 기여-급여 형평성 강화해야”",
-      "description": "7%인 결과를 언급하면서 국민 신뢰를 저해하는 주요 원인으로 △인구 구조 변화를 반영하지 못하는 재정 기반 △가입 유형에 따른 이원적 보험 료 부과·징수 체계 △사회·경제 변화에 부합하지 않는 연금감액 제도 △소득...",
-      "source_url": "https://www.etnews.com/20260902000175",
-      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462731?sid=101",
-      "published_at": "2026-09-02T12:01:00+09:00",
-      "source": "etnews.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "교통사고 근육통 통원 202회·치료비 1349만원…9월 10일부터 ‘나이롱환...",
-      "description": "이른바 ‘나이롱환자’의 장기·과잉치료를 막기 위해 자동차 보험 보상 절차가 강화된다. 오는 10일부터... 이번 조치는 2023년 도입된 경상환자 진단서 제출 제도 에서 한발 더 나아간 것이다. 기존에는 경상환자가...",
-      "source_url": "https://biz.heraldcorp.com/article/10859989?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691827?sid=101",
-      "published_at": "2026-09-02T12:01:00+09:00",
-      "source": "biz.heraldcorp.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "환경책임 보험 료 최대 50% 지원…중기중앙회·기후부·DB손보 맞손",
-      "description": "환경책임 보험 은 환경오염 사고가 발생했을 때 피해자에 대한 배상과 오염 복구 등에 필요한 비용을 보장하는 제도 다. 현행 ‘환경오염피해 배상책임 및 구제에 관한 법률’에 따라 특정대기유해물질이나...",
-      "source_url": "https://biz.heraldcorp.com/article/10860038?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691828?sid=101",
-      "published_at": "2026-09-02T12:01:00+09:00",
-      "source": "biz.heraldcorp.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "\"국민연금, 세대 간 형평성부터 손봐야\"… 경총, 제도 혁신방안 제시",
-      "description": "△인구구조 변화를 반영하지 못하는 재정기반 △가입유형별로 다른 보험 료 부과·징수체계 △사회·경제 변화에 맞지 않는 연금감액 제도 △소득재분배에 치우친 급여구조 △기금운용 거버넌스의 전문성·독립성 부족 등이...",
-      "source_url": "https://www.fnnews.com/news/202609020833017104",
-      "naver_url": "https://n.news.naver.com/mnews/article/014/0005569907?sid=101",
-      "published_at": "2026-09-02T12:01:00+09:00",
-      "source": "fnnews.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "염좌·타박상 등 ‘나이롱 환자’ 과잉진료 손본다…10일부터 8주 넘게...",
-      "description": "2024년 97억원의 적자를 봤던 자동차 보험 은 지난해 7080억원으로 적자 규모가 크게 불었다. 올해도 5월까지 1637억원의 적자를 기록했다. 새 제도 의 핵심은 경상환자의 장기 치료에 별도의 검증 절차를 두는 것이다. 대상은...",
-      "source_url": "https://www.chosun.com/economy/economy_general/2026/09/02/R5MFKCNTORF67L6JQ426APBUK4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-      "naver_url": "https://n.news.naver.com/mnews/article/023/0003996259?sid=101",
-      "published_at": "2026-09-02T12:01:00+09:00",
-      "source": "chosun.com",
       "query": "보험 제도"
     },
     {
@@ -1236,78 +1641,6 @@
       "query": "보건복지부"
     },
     {
-      "title": "국세청, 해외자산 신고액 111조원…해외주식 61.3조원 '역대 최대'",
-      "description": "예·적금과 주식, 채권, 파생상품, 보험 , 집합투자증권, 가상자산 등이 포함된다. 전체 신고액 증가는... 국세청은 2027년부터 암호화자산 거래정보의 국가 간 자동정보교환 제도 를 시행한다. 협정국에서 받은 국내...",
-      "source_url": "http://www.fieldnews.kr/news/articleView.html?idxno=31207",
-      "naver_url": "http://www.fieldnews.kr/news/articleView.html?idxno=31207",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "fieldnews.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "\"국민연금 못 믿겠다 56%\"…경총, 자동조정장치 도입 제안",
-      "description": "감액 제도 를 폐지하거나 대폭 완화해야 한다고 했다. 아울러 균등급여 비중은 축소하고 비례급여 비중은 확대해 기여와 급여 간 연계성을 강화해야 한다고 설명했다. 이는 보험 료 성실 납부와 장기 가입을 유도하기 위한...",
-      "source_url": "https://www.newsis.com/view/NISX20260902_0003772535",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164022?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "newsis.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "“나이롱환자 꼼수 막는다”…車 보험 경상환자 8주 초과 치료시 심사 의...",
-      "description": "금융감독원은 2일 이 같은 내용을 담은 ‘자동차 보험 치료비 보상절차 개편안’을 발표했다. 일부 환자에게... 소비자 안내 강화 및 시행 일정금융당국은 바뀐 제도 로 인한 소비자의 피해를 막기 위해 가입 시점은 물론...",
-      "source_url": "https://www.dt.co.kr/article/12081632?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/029/0003045762?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "dt.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "자동차 보험 '8주룰' 10일부터 시행",
-      "description": "보험 사들은 제도 변경으로 환자가 신청 시기를 놓치는 것을 막기 위해 보험 가입·갱신과 사고 접수 단계에서 관련 내용을 안내한다. 사고 발생 후 3~4주차와 6~7주차에도 두 차례 추가로 안내할 예정이다.",
-      "source_url": "https://www.sidae.com/article/2026090210153913821",
-      "naver_url": "https://n.news.naver.com/mnews/article/417/0001157115?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "sidae.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "자동차 보험 치료비 보상 절차 개편… 8주 초과 경상환자 '심사' 도입",
-      "description": "또한 9월 10일 이전 발생한 사고에는 이번 제도 가 적용되지 않는다. 검토 신청이 제때 이뤄졌지만 심사가 지연돼 치료기간이 8주를 넘어가는 경우에는 검토 완료 시까지 발생한 치료비를 보험 사가 부담한다. 검토 결과...",
-      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92591",
-      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92591",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "insnews.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "車사고 '8주룰' 10일부터 시행…경상환자 장기치료 심사받는다",
-      "description": "경상환자 장기치료 심사 제도 는 오는 10일 이후 발생한 사고부터 적용됩니다. 향후치료비 지급기준 개편은 오는 10일 이후 개정 약관으로 체결한 계약 가운데 보험 기간이 다음달 25일부터 시작되는 계약부터 적용됩니다.",
-      "source_url": "https://biz.sbs.co.kr/article_hub/20000332265?division=NAVER",
-      "naver_url": "https://n.news.naver.com/mnews/article/374/0000530749?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "biz.sbs.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "\"기여한 만큼 보장 받아야\"…경총, 국민연금 제도 혁신 방안 발표",
-      "description": "경총은 국민 신뢰를 저해하는 주요 요인으로 ▲인구구조 변화를 반영하지 못하는 재정기반 ▲가입유형에 따른 이원적 보험 료 부과·징수체계 ▲사회·경제 변화에 부합하지 않는 연금감액 제도 ▲소득재분배 기능에 치우친...",
-      "source_url": "https://view.asiae.co.kr/article/2026090208121039850",
-      "naver_url": "https://n.news.naver.com/mnews/article/277/0005810846?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "view.asiae.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "\"국민연금, '자동조정장치' 도입해야 재정 안정성 담보\"",
-      "description": "한국경영자총협회(이하 경총)는 2일 '국민 신뢰 제고를 위한 국민연금 제도 혁신 방안' 보고서에서 국민연금 제도 의 구조적 개선 과제를 제시했다. 올해부터 보험 료율·소득대체율 인상 등을 골자로 한 개정 국민연금법이...",
-      "source_url": "https://www.mt.co.kr/industry/2026/09/02/2026090210360437403",
-      "naver_url": "https://n.news.naver.com/mnews/article/008/0005408348?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "mt.co.kr",
-      "query": "보험 제도"
-    },
-    {
       "title": "\"국민연금, 인구 변화 자동 반영 장치 필요…형평성 높여야\"",
       "description": "국민연금 제도 안정성과 수용성을 높이기 위해선 기대수명 증가나 가입자 감소 등 인구·경제 변화를... 지역가입자에 대한 보험 료 부과 및 징수체계도 개선해야 한다고 강조했다. 사업장가입자와 달리 지역가입자는 직접...",
       "source_url": "https://www.news1.kr/industry/company/6277368",
@@ -1335,12 +1668,84 @@
       "query": "보험 제도"
     },
     {
+      "title": "자동차 보험 '8주룰' 10일부터 시행",
+      "description": "보험 사들은 제도 변경으로 환자가 신청 시기를 놓치는 것을 막기 위해 보험 가입·갱신과 사고 접수 단계에서 관련 내용을 안내한다. 사고 발생 후 3~4주차와 6~7주차에도 두 차례 추가로 안내할 예정이다.",
+      "source_url": "https://www.sidae.com/article/2026090210153913821",
+      "naver_url": "https://n.news.naver.com/mnews/article/417/0001157115?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "sidae.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "“나이롱환자 꼼수 막는다”…車 보험 경상환자 8주 초과 치료시 심사 의...",
+      "description": "금융감독원은 2일 이 같은 내용을 담은 ‘자동차 보험 치료비 보상절차 개편안’을 발표했다. 일부 환자에게... 소비자 안내 강화 및 시행 일정금융당국은 바뀐 제도 로 인한 소비자의 피해를 막기 위해 가입 시점은 물론...",
+      "source_url": "https://www.dt.co.kr/article/12081632?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/029/0003045762?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "dt.co.kr",
+      "query": "보험 제도"
+    },
+    {
       "title": "경총 “국민연금, 기여한 만큼 받아야”…자동조정장치 도입 제안",
       "description": "한국경영자총협회는 2일 ‘국민 신뢰 제고를 위한 국민연금 제도 혁신 방안’ 보고서를 발표하고 재정과 보험 료 부과체계, 급여구조, 기금운용 등 5대 개선 과제를 제시했다. 경총이 지난해 11월 성인남녀 1007명을 대상으로...",
       "source_url": "https://www.etoday.co.kr/news/view/2620820",
       "naver_url": "https://www.etoday.co.kr/news/view/2620820",
       "published_at": "2026-09-02T12:00:00+09:00",
       "source": "etoday.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "국세청, 해외자산 신고액 111조원…해외주식 61.3조원 '역대 최대'",
+      "description": "예·적금과 주식, 채권, 파생상품, 보험 , 집합투자증권, 가상자산 등이 포함된다. 전체 신고액 증가는... 국세청은 2027년부터 암호화자산 거래정보의 국가 간 자동정보교환 제도 를 시행한다. 협정국에서 받은 국내...",
+      "source_url": "http://www.fieldnews.kr/news/articleView.html?idxno=31207",
+      "naver_url": "http://www.fieldnews.kr/news/articleView.html?idxno=31207",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "fieldnews.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "\"국민연금 못 믿겠다 56%\"…경총, 자동조정장치 도입 제안",
+      "description": "감액 제도 를 폐지하거나 대폭 완화해야 한다고 했다. 아울러 균등급여 비중은 축소하고 비례급여 비중은 확대해 기여와 급여 간 연계성을 강화해야 한다고 설명했다. 이는 보험 료 성실 납부와 장기 가입을 유도하기 위한...",
+      "source_url": "https://www.newsis.com/view/NISX20260902_0003772535",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164022?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "newsis.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "\"국민연금, '자동조정장치' 도입해야 재정 안정성 담보\"",
+      "description": "한국경영자총협회(이하 경총)는 2일 '국민 신뢰 제고를 위한 국민연금 제도 혁신 방안' 보고서에서 국민연금 제도 의 구조적 개선 과제를 제시했다. 올해부터 보험 료율·소득대체율 인상 등을 골자로 한 개정 국민연금법이...",
+      "source_url": "https://www.mt.co.kr/industry/2026/09/02/2026090210360437403",
+      "naver_url": "https://n.news.naver.com/mnews/article/008/0005408348?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "mt.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "車사고 '8주룰' 10일부터 시행…경상환자 장기치료 심사받는다",
+      "description": "경상환자 장기치료 심사 제도 는 오는 10일 이후 발생한 사고부터 적용됩니다. 향후치료비 지급기준 개편은 오는 10일 이후 개정 약관으로 체결한 계약 가운데 보험 기간이 다음달 25일부터 시작되는 계약부터 적용됩니다.",
+      "source_url": "https://biz.sbs.co.kr/article_hub/20000332265?division=NAVER",
+      "naver_url": "https://n.news.naver.com/mnews/article/374/0000530749?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "biz.sbs.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "자동차 보험 치료비 보상 절차 개편… 8주 초과 경상환자 '심사' 도입",
+      "description": "또한 9월 10일 이전 발생한 사고에는 이번 제도 가 적용되지 않는다. 검토 신청이 제때 이뤄졌지만 심사가 지연돼 치료기간이 8주를 넘어가는 경우에는 검토 완료 시까지 발생한 치료비를 보험 사가 부담한다. 검토 결과...",
+      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92591",
+      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92591",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "insnews.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "\"기여한 만큼 보장 받아야\"…경총, 국민연금 제도 혁신 방안 발표",
+      "description": "경총은 국민 신뢰를 저해하는 주요 요인으로 ▲인구구조 변화를 반영하지 못하는 재정기반 ▲가입유형에 따른 이원적 보험 료 부과·징수체계 ▲사회·경제 변화에 부합하지 않는 연금감액 제도 ▲소득재분배 기능에 치우친...",
+      "source_url": "https://view.asiae.co.kr/article/2026090208121039850",
+      "naver_url": "https://n.news.naver.com/mnews/article/277/0005810846?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "view.asiae.co.kr",
       "query": "보험 제도"
     },
     {
@@ -1362,21 +1767,21 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "10일부터 교통사고 경상 환자, 8주 이상 치료 받으려면 전문 기관 심사...",
-      "description": "금융감독원 은 보험 금 누수 방지를 통해 자동차 보험 의 장기적인 지속 기반을 마련하고, 선량한 보험 가입자의 보험 료 부담 완화를 위해 표준약관 개정을 추진했다고 밝혔습니다.",
-      "source_url": "https://imnews.imbc.com/news/2026/econo/article/6849069_36932.html",
-      "naver_url": "https://n.news.naver.com/mnews/article/214/0001521589?sid=101",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "imnews.imbc.com",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "'경상환자' 8주 초과 치료비 검증받는다…車 보험 표준약관 개정",
       "description": "2일 금융감독원 에 따르면 오는 10일 자동차 보험 표준약관이 개정으로 자동차 보험 치료비 보상 절차가 개편된다. 이번 개정은 특히 사고 이후 장기간 치료를 이어가는 경상환자에 대한 관리 절차를 마련하는 데 초점이...",
       "source_url": "https://www.newsis.com/view/NISX20260902_0003773037",
       "naver_url": "https://n.news.naver.com/mnews/article/003/0014164010?sid=101",
       "published_at": "2026-09-02T12:00:00+09:00",
       "source": "newsis.com",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "10일부터 교통사고 경상 환자, 8주 이상 치료 받으려면 전문 기관 심사...",
+      "description": "금융감독원 은 보험 금 누수 방지를 통해 자동차 보험 의 장기적인 지속 기반을 마련하고, 선량한 보험 가입자의 보험 료 부담 완화를 위해 표준약관 개정을 추진했다고 밝혔습니다.",
+      "source_url": "https://imnews.imbc.com/news/2026/econo/article/6849069_36932.html",
+      "naver_url": "https://n.news.naver.com/mnews/article/214/0001521589?sid=101",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "imnews.imbc.com",
       "query": "금융감독원 보험"
     },
     {
@@ -1389,15 +1794,6 @@
       "query": "뇌혈관질환"
     },
     {
-      "title": "감사원 \"자살시도자 사후관리 구멍…응급실 내원 81% 연계 안돼\"",
-      "description": "감사원은 2일 보건복지부 와 교육부 등 5개 기관을 대상으로 실시한 '정신건강 취약계층 지원실태Ⅰ(자살예방 분야)' 감사 결과를 공개하고 이같이 밝혔다. 우리나라는 2003년부터 경제협력개발기구(OECD) 회원국 가운데...",
-      "source_url": "https://www.newsis.com/view/NISX20260902_0003773051",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164031?sid=100",
-      "published_at": "2026-09-02T12:00:00+09:00",
-      "source": "newsis.com",
-      "query": "보건복지부"
-    },
-    {
       "title": "감사원 \"자살고위험군 정보연계 미흡…상담지원 실효성 낮아\"",
       "description": "거짓 답변 가능성이 있다면서 검사 방법의 보완이 필요하다고 지적했다. 또 20대 남성 자살 위험군 식별 정확도를 높이기 위해 보건복지부 가 병무청의 병역판정 검사 결과를 적극 활용할 필요가 있다고도 제안했다.",
       "source_url": "https://www.yna.co.kr/view/AKR20260902037500001?input=1195m",
@@ -1407,12 +1803,21 @@
       "query": "보건복지부"
     },
     {
-      "title": "KB금융 회장 '운명의 날' 임박···양종희 연임론에 힘 싣는 3가지",
-      "description": "보험 과 은행을 모두 경험한 올라운더라는 강점이 있지만, 최대 계열사인 국민은행을 이끈 기간이... 금융당국은 금융지주 최고경영자 선임 과정의 투명성과 독립성을 강화하는 방향으로 제도 개선을 추진해 왔다. 다만...",
-      "source_url": "https://www.smartbizn.com/news/articleView.html?idxno=152781",
-      "naver_url": "https://www.smartbizn.com/news/articleView.html?idxno=152781",
+      "title": "감사원 \"자살시도자 사후관리 구멍…응급실 내원 81% 연계 안돼\"",
+      "description": "감사원은 2일 보건복지부 와 교육부 등 5개 기관을 대상으로 실시한 '정신건강 취약계층 지원실태Ⅰ(자살예방 분야)' 감사 결과를 공개하고 이같이 밝혔다. 우리나라는 2003년부터 경제협력개발기구(OECD) 회원국 가운데...",
+      "source_url": "https://www.newsis.com/view/NISX20260902_0003773051",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014164031?sid=100",
+      "published_at": "2026-09-02T12:00:00+09:00",
+      "source": "newsis.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "내년부터 구직급여 주 7일→6일 지급",
+      "description": "고용노동부가 어제(1일) 확정한 고용 보험 제도 개편안을 보면 지금은 실업급여를 주 7일치로 계산해 주지만, 앞으로는 무급휴일을 뺀 주 6일치로 지급합니다. 이에 따라 하한액 기준으로 한 달에 198만 원을 받던...",
+      "source_url": "https://www.tbc.co.kr/news/view?pno=20260902093610AE04949&id=210604",
+      "naver_url": "https://www.tbc.co.kr/news/view?pno=20260902093610AE04949&id=210604",
       "published_at": "2026-09-02T11:58:00+09:00",
-      "source": "smartbizn.com",
+      "source": "tbc.co.kr",
       "query": "보험 제도"
     },
     {
@@ -1425,12 +1830,12 @@
       "query": "보험 제도"
     },
     {
-      "title": "내년부터 구직급여 주 7일→6일 지급",
-      "description": "고용노동부가 어제(1일) 확정한 고용 보험 제도 개편안을 보면 지금은 실업급여를 주 7일치로 계산해 주지만, 앞으로는 무급휴일을 뺀 주 6일치로 지급합니다. 이에 따라 하한액 기준으로 한 달에 198만 원을 받던...",
-      "source_url": "https://www.tbc.co.kr/news/view?pno=20260902093610AE04949&id=210604",
-      "naver_url": "https://www.tbc.co.kr/news/view?pno=20260902093610AE04949&id=210604",
+      "title": "KB금융 회장 '운명의 날' 임박···양종희 연임론에 힘 싣는 3가지",
+      "description": "보험 과 은행을 모두 경험한 올라운더라는 강점이 있지만, 최대 계열사인 국민은행을 이끈 기간이... 금융당국은 금융지주 최고경영자 선임 과정의 투명성과 독립성을 강화하는 방향으로 제도 개선을 추진해 왔다. 다만...",
+      "source_url": "https://www.smartbizn.com/news/articleView.html?idxno=152781",
+      "naver_url": "https://www.smartbizn.com/news/articleView.html?idxno=152781",
       "published_at": "2026-09-02T11:58:00+09:00",
-      "source": "tbc.co.kr",
+      "source": "smartbizn.com",
       "query": "보험 제도"
     },
     {
@@ -1515,10 +1920,10 @@
       "query": "보험 제도"
     },
     {
-      "title": "\"출근하는 내가 바보?\"…일할 때보다 더 버는 실업급여 '주6일 싹뚝'",
-      "description": "1일 연합뉴스 보도에 따르면 고용노동부는 노동자, 사용자, 전문가가 참여한 '고용 보험 제도 개선 태스크포스(TF)' 회의를 통해 이 같은 내용을 담은 고용보험 개편안에 최종 합의했다. 현행 구직급여는 최저임금의 80...",
-      "source_url": "https://www.thepublic.kr/news/articleView.html?idxno=317209",
-      "naver_url": "https://www.thepublic.kr/news/articleView.html?idxno=317209",
+      "title": "\"중수청 가겠다\"더니 검찰인력 615명 변심…' 보험 성 지원'이었나",
+      "description": "위한 ' 보험 성 선택'이었던 것 아니냐는 분석이 나온다. 다음 달 2일 출범하는 중수청이 복잡한 대형 범죄... 정치적 독립성 문 제도 남아 있다. 중수청은 행정안전부 소속이다. 중수청장은 후보추천위원회 추천을 거쳐...",
+      "source_url": "https://www.thepublic.kr/news/articleView.html?idxno=317226",
+      "naver_url": "https://www.thepublic.kr/news/articleView.html?idxno=317226",
       "published_at": "2026-09-02T11:52:00+09:00",
       "source": "thepublic.kr",
       "query": "보험 제도"
@@ -1533,10 +1938,10 @@
       "query": "보험 제도"
     },
     {
-      "title": "\"중수청 가겠다\"더니 검찰인력 615명 변심…' 보험 성 지원'이었나",
-      "description": "위한 ' 보험 성 선택'이었던 것 아니냐는 분석이 나온다. 다음 달 2일 출범하는 중수청이 복잡한 대형 범죄... 정치적 독립성 문 제도 남아 있다. 중수청은 행정안전부 소속이다. 중수청장은 후보추천위원회 추천을 거쳐...",
-      "source_url": "https://www.thepublic.kr/news/articleView.html?idxno=317226",
-      "naver_url": "https://www.thepublic.kr/news/articleView.html?idxno=317226",
+      "title": "\"출근하는 내가 바보?\"…일할 때보다 더 버는 실업급여 '주6일 싹뚝'",
+      "description": "1일 연합뉴스 보도에 따르면 고용노동부는 노동자, 사용자, 전문가가 참여한 '고용 보험 제도 개선 태스크포스(TF)' 회의를 통해 이 같은 내용을 담은 고용보험 개편안에 최종 합의했다. 현행 구직급여는 최저임금의 80...",
+      "source_url": "https://www.thepublic.kr/news/articleView.html?idxno=317209",
+      "naver_url": "https://www.thepublic.kr/news/articleView.html?idxno=317209",
       "published_at": "2026-09-02T11:52:00+09:00",
       "source": "thepublic.kr",
       "query": "보험 제도"
@@ -1677,21 +2082,21 @@
       "query": "의료비"
     },
     {
-      "title": "밤마다 깨우는 '소변 신호' 전립선만의 문제는 아니다",
-      "description": "연령, 전립선 상태, 과거 검사 결과를 함께 놓고 해석해야 하며, 필요하면 추가 검사로 암 여부를 확인한다. 치료 는 증상 정도와 전립선 크기, 방광 기능, 전반적인 건강 상태를 고려해 정한다. 불편이 크지 않다면 생활습관...",
-      "source_url": "https://www.ccdailynews.com/news/articleView.html?idxno=2437991",
-      "naver_url": "https://www.ccdailynews.com/news/articleView.html?idxno=2437991",
-      "published_at": "2026-09-02T11:46:00+09:00",
-      "source": "ccdailynews.com",
-      "query": "암 치료"
-    },
-    {
       "title": "로킷헬스, 싱가포르 진피 재생 패치 특허…아세안 정조준",
       "description": "해당 기술은 수술실에서 환자 맞춤형 패치를 즉시 제조해 적용할 수 있는 피부 창상 치료 플랫폼이다. 중증 화상이나 당뇨발, 욕창 등 난치성 피부 창상 치료 의 효율을 높이는 것은 물론, 흉터 재건이나 피부 결손 복원...",
       "source_url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1170496&ref=naverpc",
       "naver_url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1170496&ref=naverpc",
       "published_at": "2026-09-02T11:46:00+09:00",
       "source": "medicaltimes.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "밤마다 깨우는 '소변 신호' 전립선만의 문제는 아니다",
+      "description": "연령, 전립선 상태, 과거 검사 결과를 함께 놓고 해석해야 하며, 필요하면 추가 검사로 암 여부를 확인한다. 치료 는 증상 정도와 전립선 크기, 방광 기능, 전반적인 건강 상태를 고려해 정한다. 불편이 크지 않다면 생활습관...",
+      "source_url": "https://www.ccdailynews.com/news/articleView.html?idxno=2437991",
+      "naver_url": "https://www.ccdailynews.com/news/articleView.html?idxno=2437991",
+      "published_at": "2026-09-02T11:46:00+09:00",
+      "source": "ccdailynews.com",
       "query": "암 치료"
     },
     {
@@ -1713,21 +2118,21 @@
       "query": "보험 제도"
     },
     {
-      "title": "간장약 회사 벗은 셀트리온제약…바이오·CMO가 매출 절반 넘었다",
-      "description": "건강보험 재정은 5년 동안 흑자를 이어오다 올해 1분기 3조9000억원 적자를 기록했다. 정부는 상대적으로 가격이 낮은 바이오시밀러 사용을 유도하기 위해 이를 선택하는 환자에게 인센티브를 제공하는 방안을...",
-      "source_url": "https://www.newsmap.co.kr/news/articleView.html?idxno=2792",
-      "naver_url": "https://www.newsmap.co.kr/news/articleView.html?idxno=2792",
-      "published_at": "2026-09-02T11:42:00+09:00",
-      "source": "newsmap.co.kr",
-      "query": "건강보험"
-    },
-    {
       "title": "[금융레이더]교보생명/DB손해 보험 /카카오페이손해 보험 /KB국민카드/NH농협...",
       "description": "◆교보생명, 마이플랜 건강보험 Ⅱ 개정 출시 교보생명이 2일 ‘교보마이플랜 건강보험 Ⅱ’를 개정 출시했다고 밝혔다. 이번 상품은 암·뇌혈관질환·허혈심장질환 등 3대 질병을 보장하는 만기연장전환형과 체증형...",
       "source_url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609021104052180357",
       "naver_url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609021104052180357",
       "published_at": "2026-09-02T11:42:00+09:00",
       "source": "dnews.co.kr",
+      "query": "건강보험"
+    },
+    {
+      "title": "간장약 회사 벗은 셀트리온제약…바이오·CMO가 매출 절반 넘었다",
+      "description": "건강보험 재정은 5년 동안 흑자를 이어오다 올해 1분기 3조9000억원 적자를 기록했다. 정부는 상대적으로 가격이 낮은 바이오시밀러 사용을 유도하기 위해 이를 선택하는 환자에게 인센티브를 제공하는 방안을...",
+      "source_url": "https://www.newsmap.co.kr/news/articleView.html?idxno=2792",
+      "naver_url": "https://www.newsmap.co.kr/news/articleView.html?idxno=2792",
+      "published_at": "2026-09-02T11:42:00+09:00",
+      "source": "newsmap.co.kr",
       "query": "건강보험"
     },
     {
@@ -1767,21 +2172,21 @@
       "query": "암 치료"
     },
     {
-      "title": "금융위 '캐피탈 렌터카 규제 완화'…업계 \"국토부 패싱 '졸속 행정'\" 비...",
-      "description": "연합회는 렌터카 산업이 여객자동차 운수사업법에 근거해 등록, 차령, 차고지, 보험 등을 규제받는... 제도 개편의 근거가 되는 시장영향분석을 규제 완화 당사자인 여신금융협회 측이 주도하고 있다는 점도 공정성 시비를...",
-      "source_url": "http://www.newsian.co.kr/news/articleView.html?idxno=94648",
-      "naver_url": "http://www.newsian.co.kr/news/articleView.html?idxno=94648",
-      "published_at": "2026-09-02T11:40:00+09:00",
-      "source": "newsian.co.kr",
-      "query": "보험 제도"
-    },
-    {
       "title": "3만원의 정치학...기초연금 차등지급, 누가 얻고 누가 잃나",
       "description": "소득 순위에 따라 일률적으로 나눠주기보다 빈곤 위험이 높은 계층에 재원을 몰아주는 것이 제도 의 목적에... 청년들은 국민연금에서 더 높은 보험 료를 부담하는 동시에, 고령화로 늘어나는 기초연금 재정까지 감당해야...",
       "source_url": "https://www.eroun.net/news/articleView.html?idxno=89024",
       "naver_url": "https://www.eroun.net/news/articleView.html?idxno=89024",
       "published_at": "2026-09-02T11:40:00+09:00",
       "source": "eroun.net",
+      "query": "보험 제도"
+    },
+    {
+      "title": "금융위 '캐피탈 렌터카 규제 완화'…업계 \"국토부 패싱 '졸속 행정'\" 비...",
+      "description": "연합회는 렌터카 산업이 여객자동차 운수사업법에 근거해 등록, 차령, 차고지, 보험 등을 규제받는... 제도 개편의 근거가 되는 시장영향분석을 규제 완화 당사자인 여신금융협회 측이 주도하고 있다는 점도 공정성 시비를...",
+      "source_url": "http://www.newsian.co.kr/news/articleView.html?idxno=94648",
+      "naver_url": "http://www.newsian.co.kr/news/articleView.html?idxno=94648",
+      "published_at": "2026-09-02T11:40:00+09:00",
+      "source": "newsian.co.kr",
       "query": "보험 제도"
     },
     {
@@ -1866,15 +2271,6 @@
       "query": "건강보험"
     },
     {
-      "title": "현대엘리베이터, 2026 생명나눔 캠페인 진행",
-      "description": "히크만 주머니는 항 암치료 에 사용하는 약물주입 관(카테터·Catheter)을 위생적으로 관리하는 보호용 도구다. 제작한 주머니는 한국백혈병어린이재단에 전달할 예정이다. 헌혈에는 임직원 56명이 참여했다. 헌혈증...",
-      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/111082",
-      "naver_url": "https://www.smarttoday.co.kr/ko-kr/articles/111082",
-      "published_at": "2026-09-02T11:36:00+09:00",
-      "source": "smarttoday.co.kr",
-      "query": "암 치료"
-    },
-    {
       "title": "삼성서울병원, 위암 로봇수술 1500례 달성…최소침습수술 역량 강화",
       "description": "이준호 삼성서울병원 위장관외과장은 \"전용 로봇 장비를 도입함으로써 위암의 치료 성적과 삶의 질을 유지하는 수술기법 등의 향상이 있을 것\"이라며 \"앞으로 환자에게 더 나은 치료 결과를 가져올 술기 개발에...",
       "source_url": "https://www.k-health.com/news/articleView.html?idxno=100949",
@@ -1893,13 +2289,13 @@
       "query": "암 치료"
     },
     {
-      "title": "손보협회, '통합민원지원센터' 개소…민원 처리 전문성·효율성 높인다",
-      "description": "통합민원지원센터는 금융감독원 에서 이송되는 보험 협회 처리 민원과 국민신문고 등을 통해 협회에 접수되는 보험 관련 민원을 전문적으로 처리하기 위해 마련됐다. 보험 가입 조회와 보험 모집종사자 직접 말소...",
-      "source_url": "https://www.news1.kr/finance/insurance-card/6277436",
-      "naver_url": "https://n.news.naver.com/mnews/article/421/0009146214?sid=101",
-      "published_at": "2026-09-02T11:35:00+09:00",
-      "source": "news1.kr",
-      "query": "금융감독원 보험"
+      "title": "현대엘리베이터, 2026 생명나눔 캠페인 진행",
+      "description": "히크만 주머니는 항 암치료 에 사용하는 약물주입 관(카테터·Catheter)을 위생적으로 관리하는 보호용 도구다. 제작한 주머니는 한국백혈병어린이재단에 전달할 예정이다. 헌혈에는 임직원 56명이 참여했다. 헌혈증...",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/111082",
+      "naver_url": "https://www.smarttoday.co.kr/ko-kr/articles/111082",
+      "published_at": "2026-09-02T11:36:00+09:00",
+      "source": "smarttoday.co.kr",
+      "query": "암 치료"
     },
     {
       "title": "손보협회, 통합민원지원센터 열었다…“ 보험 민원 전문성 높일 것”",
@@ -1911,13 +2307,13 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "내년도 농업·농촌에 확실한 변화를 만든다",
-      "description": "기후변화로 농업재해 빈도와 강도가 높아지는 만큼 농업재해 보험 대상 품목을 늘리고, 농업재해 보험 과... 농지의 생산기능을 유지하면서 재생에너지를 생산하는 영농형 태양광 제도 를 농업인이 충분히 이해하고...",
-      "source_url": "http://www.wonyesanup.co.kr/news/articleView.html?idxno=65675",
-      "naver_url": "http://www.wonyesanup.co.kr/news/articleView.html?idxno=65675",
-      "published_at": "2026-09-02T11:34:00+09:00",
-      "source": "wonyesanup.co.kr",
-      "query": "보험 제도"
+      "title": "손보협회, '통합민원지원센터' 개소…민원 처리 전문성·효율성 높인다",
+      "description": "통합민원지원센터는 금융감독원 에서 이송되는 보험 협회 처리 민원과 국민신문고 등을 통해 협회에 접수되는 보험 관련 민원을 전문적으로 처리하기 위해 마련됐다. 보험 가입 조회와 보험 모집종사자 직접 말소...",
+      "source_url": "https://www.news1.kr/finance/insurance-card/6277436",
+      "naver_url": "https://n.news.naver.com/mnews/article/421/0009146214?sid=101",
+      "published_at": "2026-09-02T11:35:00+09:00",
+      "source": "news1.kr",
+      "query": "금융감독원 보험"
     },
     {
       "title": "실업급여 월 198만→176만원…노사 고용 보험 료 0.1%p씩 오른다",
@@ -1926,6 +2322,15 @@
       "naver_url": "https://news.mtn.co.kr/news-detail/2026090209271929721",
       "published_at": "2026-09-02T11:34:00+09:00",
       "source": "news.mtn.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "내년도 농업·농촌에 확실한 변화를 만든다",
+      "description": "기후변화로 농업재해 빈도와 강도가 높아지는 만큼 농업재해 보험 대상 품목을 늘리고, 농업재해 보험 과... 농지의 생산기능을 유지하면서 재생에너지를 생산하는 영농형 태양광 제도 를 농업인이 충분히 이해하고...",
+      "source_url": "http://www.wonyesanup.co.kr/news/articleView.html?idxno=65675",
+      "naver_url": "http://www.wonyesanup.co.kr/news/articleView.html?idxno=65675",
+      "published_at": "2026-09-02T11:34:00+09:00",
+      "source": "wonyesanup.co.kr",
       "query": "보험 제도"
     },
     {
@@ -1965,21 +2370,21 @@
       "query": "의료비"
     },
     {
-      "title": "혈액 속 ' 암 전이 물질' 걸러낸다…UNIST, 대장암 전이 억제 기술 개발",
-      "description": "강 교수는 \" 암 환자 혈액은 암세포 이동 통로일 뿐만 아니라 전이를 촉진하는 다양한 물질이 오가는 공간\"이라며 \"혈액을 정화해 암 전이 연결고리를 끊는 새로운 치료 개념을 확립하고자 한다\"고 말했다. 이어...",
-      "source_url": "https://www.jnilbo.com/news/articleView.html?idxno=90000061819",
-      "naver_url": "https://www.jnilbo.com/news/articleView.html?idxno=90000061819",
-      "published_at": "2026-09-02T11:34:00+09:00",
-      "source": "jnilbo.com",
-      "query": "암 치료"
-    },
-    {
       "title": "담양군, 재가암환자·보호자 건강관리 지원…자조모임 운영",
       "description": "담양군 제공 전남광주통합특별시 담양군이 암 치료 이후 일상생활을 이어가는 재가암환자와 보호자의 건강관리와 정서적 회복을 지원한다. 담양군보건소는 지역 내 재가암환자와 보호자를 대상으로 오는 9월22일까지 매주...",
       "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=544906",
       "naver_url": "https://www.joongangenews.com/news/articleView.html?idxno=544906",
       "published_at": "2026-09-02T11:34:00+09:00",
       "source": "joongangenews.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "혈액 속 ' 암 전이 물질' 걸러낸다…UNIST, 대장암 전이 억제 기술 개발",
+      "description": "강 교수는 \" 암 환자 혈액은 암세포 이동 통로일 뿐만 아니라 전이를 촉진하는 다양한 물질이 오가는 공간\"이라며 \"혈액을 정화해 암 전이 연결고리를 끊는 새로운 치료 개념을 확립하고자 한다\"고 말했다. 이어...",
+      "source_url": "https://www.jnilbo.com/news/articleView.html?idxno=90000061819",
+      "naver_url": "https://www.jnilbo.com/news/articleView.html?idxno=90000061819",
+      "published_at": "2026-09-02T11:34:00+09:00",
+      "source": "jnilbo.com",
       "query": "암 치료"
     },
     {
@@ -2100,15 +2505,6 @@
       "query": "건강보험"
     },
     {
-      "title": "가천대 길병원, CAR-T 치료 확대…경인지역 세포 치료 인프라 강화",
-      "description": "가천대 길병원(병원장 김우경)이 CAR-T 세포 치료 센터를 중심으로 재발성·불응성 혈액암 환자에 대한 세포 치료 를 확대하고 있다. 가천대 길병원은 2024년 4월 경인지역 최초로 CAR-T 세포 치료 센터를 개소하고, 같은 해 첫...",
-      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011309",
-      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011309",
-      "published_at": "2026-09-02T11:28:00+09:00",
-      "source": "bosa.co.kr",
-      "query": "암 치료"
-    },
-    {
       "title": "與 세종서 첫 예산정책협의회…김민석 \"노무현 꿈·이해찬 의지 이룰 것...",
       "description": "또 \"양성자 암치료 센터 건립을 비롯해 세종에 꼭 필요한 사업이 정부 예산에 반영될 수 있도록 예산심의 과정에 적극 검토해달라\"며 \"중앙행정기관과 공공기관의 2차 이전이 차질 없이 추진되고, 세종의 스마트...",
       "source_url": "https://www.news1.kr/politics/assembly/6277391",
@@ -2127,13 +2523,13 @@
       "query": "암 치료"
     },
     {
-      "title": "군산시 '군산형 통합 돌봄' 구축에 박차",
-      "description": "이번 교육은 단순한 제도 전달을 넘어 '현장에서 대상자를 어떻게 찾아내고, 무슨 서비스를 드릴 것인가\"를... 아울러 군산시 통합돌봄 전담 부서를 비롯해 보건소, 국민건강 보험 공단이 함께 참여해 실효성을 높였다. 시는...",
-      "source_url": "http://www.domin.co.kr/news/articleView.html?idxno=1567243",
-      "naver_url": "http://www.domin.co.kr/news/articleView.html?idxno=1567243",
-      "published_at": "2026-09-02T11:26:00+09:00",
-      "source": "domin.co.kr",
-      "query": "보험 제도"
+      "title": "가천대 길병원, CAR-T 치료 확대…경인지역 세포 치료 인프라 강화",
+      "description": "가천대 길병원(병원장 김우경)이 CAR-T 세포 치료 센터를 중심으로 재발성·불응성 혈액암 환자에 대한 세포 치료 를 확대하고 있다. 가천대 길병원은 2024년 4월 경인지역 최초로 CAR-T 세포 치료 센터를 개소하고, 같은 해 첫...",
+      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011309",
+      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011309",
+      "published_at": "2026-09-02T11:28:00+09:00",
+      "source": "bosa.co.kr",
+      "query": "암 치료"
     },
     {
       "title": "[달라지는 생활, 인천은?] 9월 10일 이후 교통사고부터 '8주 초과 치료'...",
@@ -2142,6 +2538,15 @@
       "naver_url": "http://www.incheonnews.com/news/articleView.html?idxno=439940",
       "published_at": "2026-09-02T11:26:00+09:00",
       "source": "incheonnews.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "군산시 '군산형 통합 돌봄' 구축에 박차",
+      "description": "이번 교육은 단순한 제도 전달을 넘어 '현장에서 대상자를 어떻게 찾아내고, 무슨 서비스를 드릴 것인가\"를... 아울러 군산시 통합돌봄 전담 부서를 비롯해 보건소, 국민건강 보험 공단이 함께 참여해 실효성을 높였다. 시는...",
+      "source_url": "http://www.domin.co.kr/news/articleView.html?idxno=1567243",
+      "naver_url": "http://www.domin.co.kr/news/articleView.html?idxno=1567243",
+      "published_at": "2026-09-02T11:26:00+09:00",
+      "source": "domin.co.kr",
       "query": "보험 제도"
     },
     {
@@ -2208,21 +2613,21 @@
       "query": "의료비"
     },
     {
-      "title": "중앙대병원 이미경 교수, 침습성 칸디다증 조기진단 바이오마커 발굴 나...",
-      "description": "적절한 치료 를 시행하는 것이 중요하다. 하지만 감염 여부와 원인균을 확인하는 데 시간이 걸릴 수 있어... 이 교수는 이번 연구와 함께 인공지능(AI)과 나노기술을 접목한 차세대 암 진단 기술 개발에도 참여하는 등...",
-      "source_url": "http://www.whosaeng.com/173344",
-      "naver_url": "http://www.whosaeng.com/173344",
-      "published_at": "2026-09-02T11:24:00+09:00",
-      "source": "whosaeng.com",
-      "query": "암 치료"
-    },
-    {
       "title": "서울성모병원, 임상시험 대상자 AI로 뽑는다",
       "description": "연구팀이 개발한 소프트웨어는 치료 이력과 최신 검사 결과, 임상시험별 참여 기준을 한 번에 대조해 대상자 선별 과정을 자동화한 것이 특징이다. 선별 결과는 참여 가능·보류·참여 불가로 구분되며, 환자별로 어떤...",
       "source_url": "https://biz.heraldcorp.com/article/10860070?ref=naver",
       "naver_url": "https://n.news.naver.com/mnews/article/016/0002691751?sid=101",
       "published_at": "2026-09-02T11:24:00+09:00",
       "source": "biz.heraldcorp.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "중앙대병원 이미경 교수, 침습성 칸디다증 조기진단 바이오마커 발굴 나...",
+      "description": "적절한 치료 를 시행하는 것이 중요하다. 하지만 감염 여부와 원인균을 확인하는 데 시간이 걸릴 수 있어... 이 교수는 이번 연구와 함께 인공지능(AI)과 나노기술을 접목한 차세대 암 진단 기술 개발에도 참여하는 등...",
+      "source_url": "http://www.whosaeng.com/173344",
+      "naver_url": "http://www.whosaeng.com/173344",
+      "published_at": "2026-09-02T11:24:00+09:00",
+      "source": "whosaeng.com",
       "query": "암 치료"
     },
     {
@@ -2334,21 +2739,21 @@
       "query": "건강보험"
     },
     {
-      "title": "‘타그리소’+‘오파티스’ 폐암 PFS 괄목 개선 입증",
-      "description": "‘SANOVO 시험’은 치료 를 진행한 전력이 없고 MET 단백질이 과다발현된 상피세포 성장인자 수용체 변이... 이 시험에서 무진행 생존기간 개선 유익성은 MET 단백질 과다발현이 고도로 나타난 피험자 그룹과 치료 의향...",
-      "source_url": "https://www.yakup.com/news/index.html?mode=view&cat=16&nid=331982",
-      "naver_url": "https://www.yakup.com/news/index.html?mode=view&cat=16&nid=331982",
-      "published_at": "2026-09-02T11:20:00+09:00",
-      "source": "yakup.com",
-      "query": "암 치료"
-    },
-    {
       "title": "한양대병원, 2026년 하반기 신규 의료진 임용",
       "description": "나은 치료 결과를 위해 전문분야에 대한 연구를 진행할 예정이다. 호흡기알레르기내과 정승준 교수는 폐암, 간질성 폐질환, 특수기관지내시경 및 일반 호흡기질환을 전문으로 진료한다. 특히 폐암의 정확한 진단과 치료 를...",
       "source_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940069",
       "naver_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940069",
       "published_at": "2026-09-02T11:20:00+09:00",
       "source": "dailymedi.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "‘타그리소’+‘오파티스’ 폐암 PFS 괄목 개선 입증",
+      "description": "‘SANOVO 시험’은 치료 를 진행한 전력이 없고 MET 단백질이 과다발현된 상피세포 성장인자 수용체 변이... 이 시험에서 무진행 생존기간 개선 유익성은 MET 단백질 과다발현이 고도로 나타난 피험자 그룹과 치료 의향...",
+      "source_url": "https://www.yakup.com/news/index.html?mode=view&cat=16&nid=331982",
+      "naver_url": "https://www.yakup.com/news/index.html?mode=view&cat=16&nid=331982",
+      "published_at": "2026-09-02T11:20:00+09:00",
+      "source": "yakup.com",
       "query": "암 치료"
     },
     {
@@ -2406,21 +2811,21 @@
       "query": "보건복지부"
     },
     {
-      "title": "우아한청년들, 라이더 안전망 구축 논의…“기업·노동자 자율협력 중요...",
-      "description": "경나경 교수는 배달업계의 안전교육 인프라를 활용해 교육 효과를 검증하고 이를 보험 료와 인센티브 등에 연계하는 협력 모델을 제시했다. 임우택 본부장은 직종별 노무제공 실태를 파악한 뒤 단계적으로 제도 를 설계할...",
-      "source_url": "https://www.socialvalue.kr/news/view/1065579269855688",
-      "naver_url": "https://www.socialvalue.kr/news/view/1065579269855688",
-      "published_at": "2026-09-02T11:16:00+09:00",
-      "source": "socialvalue.kr",
-      "query": "보험 제도"
-    },
-    {
       "title": "셀레믹스, 美 암 임상진단 시장 진출...AchieveDx와 3년 최소 99억원 계약",
       "description": "보험 청구 및 상환 역량에 셀레믹스의 NGS 패널과 시약, 분석기술을 결합하는 방식이다. CLIA는 미국에서 환자 진단과 치료에 사용되는 임상검사를 수행하는 검사실의 품질과 운영기준을 관리하는 제도 다....",
       "source_url": "https://www.thepowernews.co.kr/view.php?ud=2026090210461136359aeda69934_7",
       "naver_url": "https://www.thepowernews.co.kr/view.php?ud=2026090210461136359aeda69934_7",
       "published_at": "2026-09-02T11:16:00+09:00",
       "source": "thepowernews.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "우아한청년들, 라이더 안전망 구축 논의…“기업·노동자 자율협력 중요...",
+      "description": "경나경 교수는 배달업계의 안전교육 인프라를 활용해 교육 효과를 검증하고 이를 보험 료와 인센티브 등에 연계하는 협력 모델을 제시했다. 임우택 본부장은 직종별 노무제공 실태를 파악한 뒤 단계적으로 제도 를 설계할...",
+      "source_url": "https://www.socialvalue.kr/news/view/1065579269855688",
+      "naver_url": "https://www.socialvalue.kr/news/view/1065579269855688",
+      "published_at": "2026-09-02T11:16:00+09:00",
+      "source": "socialvalue.kr",
       "query": "보험 제도"
     },
     {
@@ -2451,6 +2856,24 @@
       "query": "의료비"
     },
     {
+      "title": "[심성(心性)기획] 한미 ‘글로벌 DNA’의 진화…김재교, 릴리·제넨텍 연...",
+      "description": "2013년에는 역류성식도염 치료제 에소메졸이 국내 개량신약 가운데 처음으로 미국 식품의약국(FDA) 허가를... 비소세포폐 암 치료 제로 FDA 허가를 추진했다. 그러나 2022년 9월 FDA 항암제자문위원회(ODAC)는 포지오티닙의...",
+      "source_url": "https://m.skyedaily.com/news_view.html?ID=310476",
+      "naver_url": "https://m.skyedaily.com/news_view.html?ID=310476",
+      "published_at": "2026-09-02T11:16:00+09:00",
+      "source": "m.skyedaily.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "용인특례시, 재가암환자 맞춤형 건강관리 프로그램 추진",
+      "description": "가정에서 치료 와 회복을 이어가는 암 환자들의 신체적·정서적 부담을 낮추고 일상 적응을 돕는 통합 돌봄 지원이 지역별로 펼쳐진다. 용인특례시 처인·기흥...",
+      "source_url": "http://www.breaknews.com/1233435",
+      "naver_url": "http://www.breaknews.com/1233435",
+      "published_at": "2026-09-02T11:16:00+09:00",
+      "source": "breaknews.com",
+      "query": "암 치료"
+    },
+    {
       "title": "與, 세종서 예산협의회…김민석 “행정수도 반드시 완성”",
       "description": "세종시는 양성자 암치료 센터 건립과 스마트 국가산업단지 조성, 중앙행정기관·공공기관 2차 이전 등도 건의했다. 조 시장은 “세종시만을 위한 사업이 아니라 국회 세종의사당과 대통령 세종집무실 건립을 뒷받침하고...",
       "source_url": "https://www.etoday.co.kr/news/view/2620970",
@@ -2478,24 +2901,6 @@
       "query": "암 치료"
     },
     {
-      "title": "용인특례시, 재가암환자 맞춤형 건강관리 프로그램 추진",
-      "description": "가정에서 치료 와 회복을 이어가는 암 환자들의 신체적·정서적 부담을 낮추고 일상 적응을 돕는 통합 돌봄 지원이 지역별로 펼쳐진다. 용인특례시 처인·기흥...",
-      "source_url": "http://www.breaknews.com/1233435",
-      "naver_url": "http://www.breaknews.com/1233435",
-      "published_at": "2026-09-02T11:16:00+09:00",
-      "source": "breaknews.com",
-      "query": "암 치료"
-    },
-    {
-      "title": "[심성(心性)기획] 한미 ‘글로벌 DNA’의 진화…김재교, 릴리·제넨텍 연...",
-      "description": "2013년에는 역류성식도염 치료제 에소메졸이 국내 개량신약 가운데 처음으로 미국 식품의약국(FDA) 허가를... 비소세포폐 암 치료 제로 FDA 허가를 추진했다. 그러나 2022년 9월 FDA 항암제자문위원회(ODAC)는 포지오티닙의...",
-      "source_url": "https://m.skyedaily.com/news_view.html?ID=310476",
-      "naver_url": "https://m.skyedaily.com/news_view.html?ID=310476",
-      "published_at": "2026-09-02T11:16:00+09:00",
-      "source": "m.skyedaily.com",
-      "query": "암 치료"
-    },
-    {
       "title": "이대대동맥 혈관 병원·플로우닉스, 대동맥 진료 통합 솔루션 공동 개발",
       "description": "플로우닉스는 4차원 혈류 자기공명영상 기술을 기반으로 심혈관· 뇌혈관 질환 진단용 의료영상 분석 소프트웨어를 개발하는 스타트업이다. 시간에 따른 혈류의 속도와 방향, 패턴을 3차원으로 시각화·분석해 질환 진단과...",
       "source_url": "https://weekly.hankooki.com/news/articleView.html?idxno=7181965",
@@ -2514,21 +2919,21 @@
       "query": "심혈관질환"
     },
     {
-      "title": "AI 신약개발 경진대회 본선 15개팀 선정…'추론 기반 AI' 구현",
-      "description": "한국보건산업진흥원은 보건복지부 가 주최하는 '제4회 인공지능(AI) 신약개발 경진대회(4th JUMP AI, fourth.py)' 본선 진출 15개 팀을 선정했다고 2일 밝혔다. 이번 대회는 신약개발 전주기 혁신을 위한 AI 전문 인재를...",
-      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416958",
-      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416958",
-      "published_at": "2026-09-02T11:16:00+09:00",
-      "source": "medipana.com",
-      "query": "보건복지부"
-    },
-    {
       "title": "“두 번 이상 학대 신고 땐 즉각분리 ”…정부, 아동학대 대응 강화",
       "description": "2일 보건복지부 등에 따르면 복지부와 교육부, 법무부, 행정안전부, 경찰청은 관계부처 합동으로 ‘아동학대 예방 및 대응 보완 대책’을 마련해 발표했다. 이번 대책은 천안 아동학대 의심 사망 사건에서 피해 아동에게...",
       "source_url": "https://www.kyeonggi.com/article/20260902580130",
       "naver_url": "https://n.news.naver.com/mnews/article/666/0000121614?sid=100",
       "published_at": "2026-09-02T11:16:00+09:00",
       "source": "kyeonggi.com",
+      "query": "보건복지부"
+    },
+    {
+      "title": "AI 신약개발 경진대회 본선 15개팀 선정…'추론 기반 AI' 구현",
+      "description": "한국보건산업진흥원은 보건복지부 가 주최하는 '제4회 인공지능(AI) 신약개발 경진대회(4th JUMP AI, fourth.py)' 본선 진출 15개 팀을 선정했다고 2일 밝혔다. 이번 대회는 신약개발 전주기 혁신을 위한 AI 전문 인재를...",
+      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416958",
+      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416958",
+      "published_at": "2026-09-02T11:16:00+09:00",
+      "source": "medipana.com",
       "query": "보건복지부"
     },
     {
@@ -2577,19 +2982,19 @@
       "query": "보건복지부"
     },
     {
-      "title": "[산업의 맥]AI 자율주행 광주실증, 국가 표준을 세워야",
-      "description": "연결하는 제도 적 통로도 분명해야 한다. 지금까지의 자율주행 정책은 규제특례와 임시운행허가를 통해 시험기회를 제공하는 데만 집중했다. 앞으로는 실증에서 확보한 결과가 성능인증, 운행예정구역 적합성 승인, 보험 ...",
-      "source_url": "https://view.asiae.co.kr/article/2026081210523389912",
-      "naver_url": "https://n.news.naver.com/mnews/article/277/0005810795?sid=110",
+      "title": "청년 안심 정책 보험 ·소상공인 산재 보험 료 지원 신설(종합)",
+      "description": "창업부터 위기, 재기 등 생애주기에 맞춰 청년 소상공인을 지원하는 '창업 안심 정책 보험 '을 비롯해 1인 소상공인 육아지원금, 산재 보험 료 지원 등의 제도 를 도입한다. 2일 중소벤처기업부는 서울 성동구 KT&G...",
+      "source_url": "https://view.asiae.co.kr/article/2026090211130280676",
+      "naver_url": "https://n.news.naver.com/mnews/article/277/0005810794?sid=101",
       "published_at": "2026-09-02T11:13:00+09:00",
       "source": "view.asiae.co.kr",
       "query": "보험 제도"
     },
     {
-      "title": "청년 안심 정책 보험 ·소상공인 산재 보험 료 지원 신설(종합)",
-      "description": "창업부터 위기, 재기 등 생애주기에 맞춰 청년 소상공인을 지원하는 '창업 안심 정책 보험 '을 비롯해 1인 소상공인 육아지원금, 산재 보험 료 지원 등의 제도 를 도입한다. 2일 중소벤처기업부는 서울 성동구 KT&G...",
-      "source_url": "https://view.asiae.co.kr/article/2026090211130280676",
-      "naver_url": "https://n.news.naver.com/mnews/article/277/0005810794?sid=101",
+      "title": "[산업의 맥]AI 자율주행 광주실증, 국가 표준을 세워야",
+      "description": "연결하는 제도 적 통로도 분명해야 한다. 지금까지의 자율주행 정책은 규제특례와 임시운행허가를 통해 시험기회를 제공하는 데만 집중했다. 앞으로는 실증에서 확보한 결과가 성능인증, 운행예정구역 적합성 승인, 보험 ...",
+      "source_url": "https://view.asiae.co.kr/article/2026081210523389912",
+      "naver_url": "https://n.news.naver.com/mnews/article/277/0005810795?sid=110",
       "published_at": "2026-09-02T11:13:00+09:00",
       "source": "view.asiae.co.kr",
       "query": "보험 제도"
@@ -2649,15 +3054,6 @@
       "query": "뇌혈관질환"
     },
     {
-      "title": "연 2회 아동학대 신고 시 '즉각 분리' 최우선…촘촘해진 학대 방어막",
-      "description": "com 보건복지부 는 2일 정부서울청사에서 브리핑을 열고 교육부, 법무부, 행정안전부, 경찰청과 함께 「아동학대 예방 및 대응 보완 대책」을 발표했다. [사진= 보건복지부 ] 최근 11세 장애아동이 학대로 사망한 비극적인...",
-      "source_url": "https://www.ajunews.com/view/20260902110558224",
-      "naver_url": "https://www.ajunews.com/view/20260902110558224",
-      "published_at": "2026-09-02T11:12:00+09:00",
-      "source": "ajunews.com",
-      "query": "보건복지부"
-    },
-    {
       "title": "연 2회 이상 아동학대 신고 시 '즉시 분리' 최우선 고려",
       "description": "현수엽 보건복지부 1차관은 2일 정부서울청사에서 이 같은 ‘아동학대 예방 및 대응 보완대책’을 발표했다. 이번 대책의 핵심은 적극적 분리다. 아동학대 신고가 접수되면 경찰은 단순 처리 결과가 아닌 상세한 현장...",
       "source_url": "https://www.etoday.co.kr/news/view/2620968",
@@ -2667,13 +3063,13 @@
       "query": "보건복지부"
     },
     {
-      "title": "[헤럴드비즈] 대전환 시대, 지속가능 노동을 위한 사회 혁신 절실",
-      "description": "기술 혁신이 가져온 변화는 현행 노동관계법과 제도 를 시험대에 올렸다. 특정 장소와 정해진 시간, 명확한... 정부는 노무제공자를 위한 사회안전매트 구축을 위해 소득 기반 고용 보험 도입을 차질 없이 추진하는 한편...",
-      "source_url": "https://biz.heraldcorp.com/article/10860018?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691721?sid=110",
-      "published_at": "2026-09-02T11:10:00+09:00",
-      "source": "biz.heraldcorp.com",
-      "query": "보험 제도"
+      "title": "연 2회 아동학대 신고 시 '즉각 분리' 최우선…촘촘해진 학대 방어막",
+      "description": "com 보건복지부 는 2일 정부서울청사에서 브리핑을 열고 교육부, 법무부, 행정안전부, 경찰청과 함께 「아동학대 예방 및 대응 보완 대책」을 발표했다. [사진= 보건복지부 ] 최근 11세 장애아동이 학대로 사망한 비극적인...",
+      "source_url": "https://www.ajunews.com/view/20260902110558224",
+      "naver_url": "https://www.ajunews.com/view/20260902110558224",
+      "published_at": "2026-09-02T11:12:00+09:00",
+      "source": "ajunews.com",
+      "query": "보건복지부"
     },
     {
       "title": "흥국생명 '플렉스리턴100종신 보험 ' 배타적사용권 획득",
@@ -2691,6 +3087,15 @@
       "naver_url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=811612",
       "published_at": "2026-09-02T11:10:00+09:00",
       "source": "startuptoday.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "[헤럴드비즈] 대전환 시대, 지속가능 노동을 위한 사회 혁신 절실",
+      "description": "기술 혁신이 가져온 변화는 현행 노동관계법과 제도 를 시험대에 올렸다. 특정 장소와 정해진 시간, 명확한... 정부는 노무제공자를 위한 사회안전매트 구축을 위해 소득 기반 고용 보험 도입을 차질 없이 추진하는 한편...",
+      "source_url": "https://biz.heraldcorp.com/article/10860018?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/016/0002691721?sid=110",
+      "published_at": "2026-09-02T11:10:00+09:00",
+      "source": "biz.heraldcorp.com",
       "query": "보험 제도"
     },
     {
@@ -2730,6 +3135,15 @@
       "query": "보건복지부"
     },
     {
+      "title": "[뉴공 아카이브]이세미 더불어민주당 성남시의원, 한가선 조국혁신당 성...",
+      "description": "이런 제도 에 대해서 이해를 하고 있어야 이걸 판단할 수 있는 근거가 생기는데. 이게 사실 그런 제도 를 잘... 아니면,이세미 : 일반적인 4대 보험 에 들어서 뭔가 소득활동을 해서 세금을 내고 그 일반적인 평범한,▶김어준...",
+      "source_url": "http://www.ddanzi.com/893289215",
+      "naver_url": "http://www.ddanzi.com/893289215",
+      "published_at": "2026-09-02T11:08:00+09:00",
+      "source": "ddanzi.com",
+      "query": "보험 제도"
+    },
+    {
       "title": "‘1개월 가입·119개월 추납’ 외국인 3명뿐…실제 연금 수령은 국내거...",
       "description": "김 이사장은 특정 국가나 동포에 대한 혐오로 논란이 확산하는 것은 경계해야 한다면서도 소득이 있을 때 보험 료를 성실히 납부한다는 사회 보험 취지에 맞게 제도 를 점검하고 개선할 필요가 있다고 밝혔다. 다만...",
       "source_url": "https://www.joongang.co.kr/article/25458404",
@@ -2745,15 +3159,6 @@
       "naver_url": "http://www.newstomato.com/ReadNews.aspx?no=1312251&inflow=N",
       "published_at": "2026-09-02T11:08:00+09:00",
       "source": "newstomato.com",
-      "query": "보험 제도"
-    },
-    {
-      "title": "[뉴공 아카이브]이세미 더불어민주당 성남시의원, 한가선 조국혁신당 성...",
-      "description": "이런 제도 에 대해서 이해를 하고 있어야 이걸 판단할 수 있는 근거가 생기는데. 이게 사실 그런 제도 를 잘... 아니면,이세미 : 일반적인 4대 보험 에 들어서 뭔가 소득활동을 해서 세금을 내고 그 일반적인 평범한,▶김어준...",
-      "source_url": "http://www.ddanzi.com/893289215",
-      "naver_url": "http://www.ddanzi.com/893289215",
-      "published_at": "2026-09-02T11:08:00+09:00",
-      "source": "ddanzi.com",
       "query": "보험 제도"
     },
     {
@@ -2802,21 +3207,21 @@
       "query": "뇌혈관질환"
     },
     {
-      "title": "공주시, 야외 활동 시 '진드기 매개 감염병' 주의보 발령",
-      "description": "진드기 매개 감염병은 병원체에 감염된 진드기에 물려 발생하는 질환 으로, 쯔쯔가무시증과 중증 열성혈소판감소증후군(SFTS)이 대표적이다. 특히 가을철에 환자가 집중적으로 발생하는 경향이 있어 등산, 캠핑, 임산물 채취...",
-      "source_url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=907242",
-      "naver_url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=907242",
-      "published_at": "2026-09-02T11:06:00+09:00",
-      "source": "chungnamilbo.co.kr",
-      "query": "중증질환"
-    },
-    {
       "title": "공주시, 야외 활동 '진드기 매개 감염병' 주의 당부",
       "description": "진드기 매개 감염병은 병원체에 감염된 진드기에 물려 발생하는 질환 으로 쯔쯔가무시증과 중증 열성혈소판감소증후군(SFTS)이 대표적이다. 특히 가을철에 환자가 집중적으로 발생하는 경향이 있어 등산, 캠핑, 임산물 채취...",
       "source_url": "https://www.ccreview.co.kr/news/articleView.html?idxno=356426",
       "naver_url": "https://www.ccreview.co.kr/news/articleView.html?idxno=356426",
       "published_at": "2026-09-02T11:06:00+09:00",
       "source": "ccreview.co.kr",
+      "query": "중증질환"
+    },
+    {
+      "title": "공주시, 야외 활동 시 '진드기 매개 감염병' 주의보 발령",
+      "description": "진드기 매개 감염병은 병원체에 감염된 진드기에 물려 발생하는 질환 으로, 쯔쯔가무시증과 중증 열성혈소판감소증후군(SFTS)이 대표적이다. 특히 가을철에 환자가 집중적으로 발생하는 경향이 있어 등산, 캠핑, 임산물 채취...",
+      "source_url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=907242",
+      "naver_url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=907242",
+      "published_at": "2026-09-02T11:06:00+09:00",
+      "source": "chungnamilbo.co.kr",
       "query": "중증질환"
     },
     {
@@ -2892,15 +3297,6 @@
       "query": "보건복지부"
     },
     {
-      "title": "지예은, 공개 열애 5개월 만에 “초고속 결혼”⋯ 암 투병 때도 곁 지켰...",
-      "description": "지예은은 지난해 갑상선암을 진단받은 뒤 활동을 잠시 중단하고 치료 에 집중했다. 암 투병 당시에도 바타는 지예은의 곁을 지키며 힘이 돼준 것으로 알려졌다. 이후 지예은은 건강을 회복하고 방송에 복귀했다. 갑상선...",
-      "source_url": "https://kormedi.com/?p=2857984",
-      "naver_url": "https://n.news.naver.com/mnews/article/296/0000104358?sid=103",
-      "published_at": "2026-09-02T11:03:00+09:00",
-      "source": "kormedi.com",
-      "query": "암 치료"
-    },
-    {
       "title": "고려대 안산병원, ‘라디오믹스 창시자’ 람방 교수와 AI 암 정밀 치료 연...",
       "description": "람방 교수는 라디오믹스 개념을 제안한 연구자로 AI 기반 암 치료 와 임상 의사결정지원시스템 연구를 이어오고 있다. 람방 교수는 세미나에서 ‘Medical Images Are Not Pictures; They Are Quantitative Data: From Radiomics 1.0 to...",
       "source_url": "https://www.mydaily.co.kr/page/view/2026090211024518739",
@@ -2910,22 +3306,13 @@
       "query": "암 치료"
     },
     {
-      "title": "흥국생명, ' 보험 료 페이백' 3개월 배타적사용권 획득",
-      "description": "물가상승률에 따라 보험 료 할인율이 달라지는 물가연동형 보험 료 할인 제도 는 보험 료 체증률 5%에서 물가상승률을 뺀 만큼 할인하는 방식이다. 한국은행 물가안정 목표인 2%를 기준으로 하면 3%의 할인율이 적용된다....",
-      "source_url": "http://www.newscape.co.kr/news/articleView.html?idxno=124282",
-      "naver_url": "http://www.newscape.co.kr/news/articleView.html?idxno=124282",
-      "published_at": "2026-09-02T11:02:00+09:00",
-      "source": "newscape.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "“트랙터 기울면 즉시 알림”…TYM, 텔레매틱스로 전복 사고 잡는다",
-      "description": "농업 분야 재해율은 농업인안전 보험 기준 5.0%로, 전체 산업재해율(0.67%)의 약 7.5배에 달한다. 사망만인율도... 등 제도 정비에 나선 상태다. 이런 가운데 농기계 업계에서도 사고 예방을 위한 기술 대응이 이어지고...",
-      "source_url": "https://www.newsam.co.kr/news/article.html?no=43891",
-      "naver_url": "https://www.newsam.co.kr/news/article.html?no=43891",
-      "published_at": "2026-09-02T11:02:00+09:00",
-      "source": "newsam.co.kr",
-      "query": "보험 제도"
+      "title": "지예은, 공개 열애 5개월 만에 “초고속 결혼”⋯ 암 투병 때도 곁 지켰...",
+      "description": "지예은은 지난해 갑상선암을 진단받은 뒤 활동을 잠시 중단하고 치료 에 집중했다. 암 투병 당시에도 바타는 지예은의 곁을 지키며 힘이 돼준 것으로 알려졌다. 이후 지예은은 건강을 회복하고 방송에 복귀했다. 갑상선...",
+      "source_url": "https://kormedi.com/?p=2857984",
+      "naver_url": "https://n.news.naver.com/mnews/article/296/0000104358?sid=103",
+      "published_at": "2026-09-02T11:03:00+09:00",
+      "source": "kormedi.com",
+      "query": "암 치료"
     },
     {
       "title": "하나은행, C-Level 퇴직연금 전담 컨설팅 제공",
@@ -2943,6 +3330,24 @@
       "naver_url": "https://www.ajunews.com/view/20260902105118151",
       "published_at": "2026-09-02T11:02:00+09:00",
       "source": "ajunews.com",
+      "query": "보험 제도"
+    },
+    {
+      "title": "“트랙터 기울면 즉시 알림”…TYM, 텔레매틱스로 전복 사고 잡는다",
+      "description": "농업 분야 재해율은 농업인안전 보험 기준 5.0%로, 전체 산업재해율(0.67%)의 약 7.5배에 달한다. 사망만인율도... 등 제도 정비에 나선 상태다. 이런 가운데 농기계 업계에서도 사고 예방을 위한 기술 대응이 이어지고...",
+      "source_url": "https://www.newsam.co.kr/news/article.html?no=43891",
+      "naver_url": "https://www.newsam.co.kr/news/article.html?no=43891",
+      "published_at": "2026-09-02T11:02:00+09:00",
+      "source": "newsam.co.kr",
+      "query": "보험 제도"
+    },
+    {
+      "title": "흥국생명, ' 보험 료 페이백' 3개월 배타적사용권 획득",
+      "description": "물가상승률에 따라 보험 료 할인율이 달라지는 물가연동형 보험 료 할인 제도 는 보험 료 체증률 5%에서 물가상승률을 뺀 만큼 할인하는 방식이다. 한국은행 물가안정 목표인 2%를 기준으로 하면 3%의 할인율이 적용된다....",
+      "source_url": "http://www.newscape.co.kr/news/articleView.html?idxno=124282",
+      "naver_url": "http://www.newscape.co.kr/news/articleView.html?idxno=124282",
+      "published_at": "2026-09-02T11:02:00+09:00",
+      "source": "newscape.co.kr",
       "query": "보험 제도"
     },
     {
@@ -2964,15 +3369,6 @@
       "query": "건강보험"
     },
     {
-      "title": "듀켐바이오 전립선암 정밀진단제, 이달부터 건강보험 적용…환자 부담...",
-      "description": "방사성의약품 전문기업 듀켐바이오의 전립선암 정밀 진단제 '프로스타시크주'를 활용한 양전자방출단층촬영(PET-CT) 검사에 이달부터 건강보험 급여가 본격 적용된다. 보건복지부의 PET-CT 행위 보험급여 고시에 따른...",
-      "source_url": "https://www.widedaily.com/news/articleView.html?idxno=300494",
-      "naver_url": "https://www.widedaily.com/news/articleView.html?idxno=300494",
-      "published_at": "2026-09-02T11:02:00+09:00",
-      "source": "widedaily.com",
-      "query": "건강보험"
-    },
-    {
       "title": "건보공단 \"급여정지 신고, 온라인으로…3개월 이상 해외 체류 예정자 대...",
       "description": "국민 건강보험 공단은 해외에 3개월 이상 체류 예정인 건강보험 가입자를 대상으로 '출국자 급여정지 신고 서비스'를 온라인으로 확대 운영 한다고 2일 밝혔다. 건강보험 가입자가 3개월 이상 국외에 체류하는 경우에는 관련...",
       "source_url": "https://weekly.hankooki.com/news/articleView.html?idxno=7181953",
@@ -2982,13 +3378,13 @@
       "query": "건강보험"
     },
     {
-      "title": "보로노이 주가 장중 9%대 올라, 세계폐암학회서 연구 성과 공개 기대감...",
-      "description": "VRN11은 상피세포성장인자수용체 변이로 발생한 비소세포폐암을 대상으로 개발 중인 차세대 표적 치료 제, VRN10은 상피세포성장인자수용체2 유발 고형암을 대상으로 개발 중인 차세대 표적 치료 제다.",
-      "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=446187",
-      "naver_url": "https://www.businesspost.co.kr/BP?command=article_view&num=446187",
+      "title": "듀켐바이오 전립선암 정밀진단제, 이달부터 건강보험 적용…환자 부담...",
+      "description": "방사성의약품 전문기업 듀켐바이오의 전립선암 정밀 진단제 '프로스타시크주'를 활용한 양전자방출단층촬영(PET-CT) 검사에 이달부터 건강보험 급여가 본격 적용된다. 보건복지부의 PET-CT 행위 보험급여 고시에 따른...",
+      "source_url": "https://www.widedaily.com/news/articleView.html?idxno=300494",
+      "naver_url": "https://www.widedaily.com/news/articleView.html?idxno=300494",
       "published_at": "2026-09-02T11:02:00+09:00",
-      "source": "businesspost.co.kr",
-      "query": "암 치료"
+      "source": "widedaily.com",
+      "query": "건강보험"
     },
     {
       "title": "가수 임영웅, 또 선한 영향력…소아암 환아 위해 200만원 기부",
@@ -2997,6 +3393,15 @@
       "naver_url": "https://www.job-post.co.kr/news/articleView.html?idxno=225784",
       "published_at": "2026-09-02T11:02:00+09:00",
       "source": "job-post.co.kr",
+      "query": "암 치료"
+    },
+    {
+      "title": "보로노이 주가 장중 9%대 올라, 세계폐암학회서 연구 성과 공개 기대감...",
+      "description": "VRN11은 상피세포성장인자수용체 변이로 발생한 비소세포폐암을 대상으로 개발 중인 차세대 표적 치료 제, VRN10은 상피세포성장인자수용체2 유발 고형암을 대상으로 개발 중인 차세대 표적 치료 제다.",
+      "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=446187",
+      "naver_url": "https://www.businesspost.co.kr/BP?command=article_view&num=446187",
+      "published_at": "2026-09-02T11:02:00+09:00",
+      "source": "businesspost.co.kr",
       "query": "암 치료"
     },
     {
@@ -3036,21 +3441,21 @@
       "query": "의료비"
     },
     {
-      "title": "[카드뉴스] 나이 들수록 달라지는 건강 적신호...연령대별 주의 질환",
-      "description": "알고 치료 ·조절하는 비율이 낮았다. 젊다는 이유로 체중 증가나 높은 혈당·혈압을 방치하면 위험요인이... 암 검진도 40대부터 대상이 확대된다. 국가암검진에서는 40세 이상 남녀가 2년마다 위암 검진을 받을 수 있고...",
-      "source_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245230",
-      "naver_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245230",
-      "published_at": "2026-09-02T11:00:00+09:00",
-      "source": "sisunnews.co.kr",
-      "query": "암 치료"
-    },
-    {
       "title": "김광현 이대서울병원 교수, 단일공 로봇수술 500례 기록",
       "description": "지난 2019년 개원 이후 국내 비뇨의학과 분야 단일공 로봇수술 도입을 이끌어온 이대서울병원은 김 교수의 아시아 최초 다빈치 SP 단일공 로봇 전립선암 수술 성공을 비롯해 고난도 비뇨기 암 치료 에서 임상 역량을...",
       "source_url": "https://weekly.hankooki.com/news/articleView.html?idxno=7181952",
       "naver_url": "https://weekly.hankooki.com/news/articleView.html?idxno=7181952",
       "published_at": "2026-09-02T11:00:00+09:00",
       "source": "weekly.hankooki.com",
+      "query": "암 치료"
+    },
+    {
+      "title": "[카드뉴스] 나이 들수록 달라지는 건강 적신호...연령대별 주의 질환",
+      "description": "알고 치료 ·조절하는 비율이 낮았다. 젊다는 이유로 체중 증가나 높은 혈당·혈압을 방치하면 위험요인이... 암 검진도 40대부터 대상이 확대된다. 국가암검진에서는 40세 이상 남녀가 2년마다 위암 검진을 받을 수 있고...",
+      "source_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245230",
+      "naver_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245230",
+      "published_at": "2026-09-02T11:00:00+09:00",
+      "source": "sisunnews.co.kr",
       "query": "암 치료"
     },
     {
@@ -3153,21 +3558,21 @@
       "query": "보건복지부"
     },
     {
-      "title": "한국로슈 '폴라이비' 미만성 거대B세포 림프종 1차 치료에 급여 적용",
-      "description": "치료에 건강보험 급여를 적용받았다고 2일 밝혔다. 폴라이비와 R-CHP 병용요법은 DLBCL 1차 치료에서 기존 표준치료법인 R-CHOP 대비 임상적으로 유의한 PFS 개선 효과를 보인 최초 치료법이다. 폴라이비는 이전에...",
-      "source_url": "https://www.rapportian.com/news/articleView.html?idxno=239934",
-      "naver_url": "https://www.rapportian.com/news/articleView.html?idxno=239934",
-      "published_at": "2026-09-02T10:54:00+09:00",
-      "source": "rapportian.com",
-      "query": "건강보험"
-    },
-    {
       "title": "해외 3개월 이상 체류자, 건강보험 급여정지 온라인 신고 가능",
       "description": "국민 건강보험 공단은 해외에서 3개월 이상 체류할 예정인 가입자를 대상으로 하는 '출국자 급여정지 신고 서비스'를 온라인으로 확대 운영한다고 2일 밝혔다. 기존에 해외 3개월 이상 체류 예정자가 건강보험 급여 정지를...",
       "source_url": "https://www.jnilbo.com/news/articleView.html?idxno=90000061776",
       "naver_url": "https://www.jnilbo.com/news/articleView.html?idxno=90000061776",
       "published_at": "2026-09-02T10:54:00+09:00",
       "source": "jnilbo.com",
+      "query": "건강보험"
+    },
+    {
+      "title": "한국로슈 '폴라이비' 미만성 거대B세포 림프종 1차 치료에 급여 적용",
+      "description": "치료에 건강보험 급여를 적용받았다고 2일 밝혔다. 폴라이비와 R-CHP 병용요법은 DLBCL 1차 치료에서 기존 표준치료법인 R-CHOP 대비 임상적으로 유의한 PFS 개선 효과를 보인 최초 치료법이다. 폴라이비는 이전에...",
+      "source_url": "https://www.rapportian.com/news/articleView.html?idxno=239934",
+      "naver_url": "https://www.rapportian.com/news/articleView.html?idxno=239934",
+      "published_at": "2026-09-02T10:54:00+09:00",
+      "source": "rapportian.com",
       "query": "건강보험"
     },
     {
@@ -3178,15 +3583,6 @@
       "published_at": "2026-09-02T10:54:00+09:00",
       "source": "thereport.co.kr",
       "query": "의료비"
-    },
-    {
-      "title": "김천대 치기공학과 대학원과정 신설.. '학부~석사 연계교육'",
-      "description": "보건복지부 /식품의약품안전처/국립과학수사연구원/한국의료기기안전정보원 등 공직 및 공공기관에도 진출하며 해외 대학 및 연구기관과의 국제 연구협력, 디지털 덴탈 관련 스타트업 창업 등으로도 진로를 넓히고...",
-      "source_url": "https://www.veritas-a.com/news/articleView.html?idxno=625745",
-      "naver_url": "https://www.veritas-a.com/news/articleView.html?idxno=625745",
-      "published_at": "2026-09-02T10:54:00+09:00",
-      "source": "veritas-a.com",
-      "query": "보건복지부"
     },
     {
       "title": "“미프진 신속 도입” 용혜인…의원직 겸직 논란엔 답 피했다(종합)",
@@ -3207,6 +3603,15 @@
       "query": "보건복지부"
     },
     {
+      "title": "김천대 치기공학과 대학원과정 신설.. '학부~석사 연계교육'",
+      "description": "보건복지부 /식품의약품안전처/국립과학수사연구원/한국의료기기안전정보원 등 공직 및 공공기관에도 진출하며 해외 대학 및 연구기관과의 국제 연구협력, 디지털 덴탈 관련 스타트업 창업 등으로도 진로를 넓히고...",
+      "source_url": "https://www.veritas-a.com/news/articleView.html?idxno=625745",
+      "naver_url": "https://www.veritas-a.com/news/articleView.html?idxno=625745",
+      "published_at": "2026-09-02T10:54:00+09:00",
+      "source": "veritas-a.com",
+      "query": "보건복지부"
+    },
+    {
       "title": "듀켐바이오 ‘프로스타시크’ 건강보험 급여 적용…환자 부담 낮아져",
       "description": "듀켐바이오(176750)는 전립선특이막항원(PSMA) 표적 양전자방출단층촬영(PET) 진단용 방사성의약품 ‘프로스타시크주’를 이용한 PET-CT 검사에 지난 1일부터 건강보험 급여 기준이 적용됐다고 2일 밝혔다....",
       "source_url": "https://www.edaily.co.kr/News/Read?newsId=03407926645576184&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
@@ -3223,15 +3628,6 @@
       "published_at": "2026-09-02T10:53:00+09:00",
       "source": "kizmom.com",
       "query": "보건복지부"
-    },
-    {
-      "title": "원주 주력산업, ‘5극 3특’ 강원 성장엔진에 포함…첨단산업 도약 기대",
-      "description": "원주의료기기산업진흥원이 사업을 총괄하며, ▲암 진단·치료·회복·관리를 지원하는 암 치료 특화 어시스턴트 AX ▲진료 지원 다기능 로보틱스 AX ▲일상 관리·회복 지원 엣지 AX 등 3대 실증축과 의료AX 데이터...",
-      "source_url": "https://www.sentv.co.kr/article/view/sentv202609020058",
-      "naver_url": "https://www.sentv.co.kr/article/view/sentv202609020058",
-      "published_at": "2026-09-02T10:52:00+09:00",
-      "source": "sentv.co.kr",
-      "query": "암 치료"
     },
     {
       "title": "뇌졸중 위험 낮은 심방세동 환자도 항응고제 필요",
@@ -3297,15 +3693,6 @@
       "query": "건강보험"
     },
     {
-      "title": "배는 부른데, 영양은 부족? 미네랄 결핍이 문제다",
-      "description": "병원의 설립 목적이자 존재 이유는 병든 사람을 치료 해 고통을 줄이고, 병마를 물리쳐... 그래서 면역력을 정상화시키고 암 ·난치병·괴질을 물리치는 것이 인산 선생께서 세상에...",
-      "source_url": "https://monthly.chosun.com/news/articleView.html?idxno=71255",
-      "naver_url": "https://monthly.chosun.com/news/articleView.html?idxno=71255",
-      "published_at": "2026-09-02T10:50:00+09:00",
-      "source": "monthly.chosun.com",
-      "query": "암 치료"
-    },
-    {
       "title": "[성주 24시] 청렴서약부터 반부패 법령 교육까지…성주군의회 청렴교육",
       "description": "◇ 성주군, '자기혈관 숫자알기' 캠페인…2040세대 집중 홍보 경북 성주군은 심 뇌혈관질환 예방관리 주간을 맞아 9월 한 달간 '자기혈관 숫자알기, 레드서클 캠페인'을 운영한다. 이번 캠페인은 심 뇌혈관질환 예방의...",
       "source_url": "https://www.sisajournal.com/news/articleView.html?idxno=385679",
@@ -3342,24 +3729,6 @@
       "query": "보험 제도"
     },
     {
-      "title": "우아한청년들, '플랫폼 노동자 안전‧복지' 민관 협력 해법 모색 나서",
-      "description": "경나경 교수는 안전교육 효과를 보험 료, 인센티브와 연계하는 협력모델을 제안했으며 임우택 본부장은 직종별 노무제공 실태에 따른 단계적 제도 설계 필요성을 강조했다. 한편, 라이더 안전경영위원회는 지난해 2월...",
-      "source_url": "https://www.newsmap.co.kr/news/articleView.html?idxno=2771",
-      "naver_url": "https://www.newsmap.co.kr/news/articleView.html?idxno=2771",
-      "published_at": "2026-09-02T10:48:00+09:00",
-      "source": "newsmap.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "TYM, 전복 대응 기술 강화…농작업 사망 59%가 농기계 사고",
-      "description": "농업인안전 보험 기준 농업 분야 재해율은 5.0%다. 전체 산업재해율 0.67%와 비교하면 약 7.5배다.... 트랙터 안전벨트 미착용 경보장치 의무화 등 제도 정비도 추진하고 있다. TYM은 농기계 사고에 대응하기 위해...",
-      "source_url": "http://www.beyondpost.co.kr/view.php?ud=20260902104058700646a9e4dd7f_30",
-      "naver_url": "http://www.beyondpost.co.kr/view.php?ud=20260902104058700646a9e4dd7f_30",
-      "published_at": "2026-09-02T10:48:00+09:00",
-      "source": "beyondpost.co.kr",
-      "query": "보험 제도"
-    },
-    {
       "title": "해외체류 예정자, 온라인서 건강보험 급여정지 신고 가능",
       "description": "국민 건강보험 공단은 해외에서 3개월 이상 체류할 예정인 가입자를 대상으로 하는 '출국자 급여정지 신고 서비스'를 온라인으로 확대 운영한다고 2일 밝혔다. 기존에 해외 3개월 이상 체류 예정자가 건강보험 급여 정지를...",
       "source_url": "https://www.yna.co.kr/view/AKR20260902071100530?input=1195m",
@@ -3369,49 +3738,13 @@
       "query": "건강보험"
     },
     {
-      "title": "현대엘리베이터, 헌혈부터 나눔 실천까지",
-      "description": "히크만 주머니는 항 암치료 과정에서 사용되는 약물주입관인 카테터를 위생적으로 관리할 수 있도록 보호하는 용품이다. 이번 헌혈에는 임직원 56명이 참여했으며, 헌혈증 기부와 히크만 주머니 제작·기부 활동에는...",
-      "source_url": "https://www.inews365.com/news/article.html?no=934099",
-      "naver_url": "https://www.inews365.com/news/article.html?no=934099",
-      "published_at": "2026-09-02T10:48:00+09:00",
-      "source": "inews365.com",
-      "query": "암 치료"
-    },
-    {
-      "title": "﻿다발골수종 치료 제 임상시험 환자 자동 선별",
-      "description": "재발과 불응이 잦아 신약 임상시험 참여 자체가 중대한 치료 기회지만, 그동안은 담당 교수가 임상시험을... 먼저 전자의무기록을 정리해 과거 치료 횟수, 특정 약제군 불응 여부, 조혈모세포이식 이력 등을...",
-      "source_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940061",
-      "naver_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940061",
-      "published_at": "2026-09-02T10:48:00+09:00",
-      "source": "dailymedi.com",
-      "query": "암 치료"
-    },
-    {
-      "title": "온병원 췌장담도센터, 5년간 EUS 5,368건·ERCP 3,213건",
-      "description": "췌장과 담도는 몸속 깊은 곳에 위치해 진단과 치료 의 난도가 높은 부위로 꼽힌다. 게다가 모친이 위암과... 경험이 치료 성패를 좌우한다\"며 \"췌장담도 질환자들이 수도권 원정 진료로 치료 시기를 놓치는 일이...",
-      "source_url": "https://kormedi.com/?p=2857974",
-      "naver_url": "https://n.news.naver.com/mnews/article/296/0000104357?sid=102",
-      "published_at": "2026-09-02T10:47:00+09:00",
-      "source": "kormedi.com",
-      "query": "암 치료"
-    },
-    {
-      "title": "[출범 25년, 금융지주 점검①] '주인'보다 '책임'…4000조 금융지주, 지...",
-      "description": "외형은 이처럼 크게 불어났지만, 지배구조 문제는 올해 다시 금융당국의 주요 제도 개선 과제로 떠올랐다.... 다음 편에서는 은행 중심이던 금융지주의 사업구조가 25년간 어떻게 달라졌는지, 증권· 보험 으로 덩치를 키운...",
+      "title": "[출범 25년, 금융 지주 점검①] '주인'보다 '책임'…4000조 금융 지주, 지...",
+      "description": "금융감독원 이 지난 4월 발표한 '2025년 금융 지주회사 경영실적(잠정)'에 따르면 지난해 말 기준 국내... 다음 편에서는 은행 중심이던 금융 지주의 사업구조가 25년간 어떻게 달라졌는지, 증권· 보험 으로 덩치를 키운 비은행...",
       "source_url": "http://www.ftoday.co.kr/news/articleView.html?idxno=364626",
       "naver_url": "http://www.ftoday.co.kr/news/articleView.html?idxno=364626",
       "published_at": "2026-09-02T10:46:00+09:00",
       "source": "ftoday.co.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "임상시험 필요한 다발골수종 환자, AI가 먼저 찾아낸다",
-      "description": "환자에게는 임상시험 참여 자체가 중요한 치료 기회가 된다. 문제는 그 기회를 붙잡기까지의 과정이다.... 흩어져 있던 처방 기록을 약제 단위로 나눠서 그동안 몇 번의 치료 를 받았는지, 어떤 약제군에 반응하지 않았는지...",
-      "source_url": "https://www.monews.co.kr/news/articleView.html?idxno=413593",
-      "naver_url": "https://www.monews.co.kr/news/articleView.html?idxno=413593",
-      "published_at": "2026-09-02T10:46:00+09:00",
-      "source": "monews.co.kr",
-      "query": "암 치료"
+      "query": "금융감독원 보험"
     },
     {
       "title": "20년 운영 지역아동센터, 이전했다고 '신규시설'?",
@@ -3424,21 +3757,12 @@
     },
     {
       "title": "예금보호 1억 상향 1년…머니무브 대신 '은행 쏠림'만 커졌다",
-      "description": "2001년 부분보호 제도 도입 이후 24년간 유지되던 한도가 처음으로 조정된 것이다. 그동안 한국의... 예금 보험 공사 관계자는 \"한도 상향으로 업권 간 급격한 자금 이동은 없었고, 성공적으로 연착륙한 것으로...",
+      "description": "예금 보험 료율 인상 여부는 아직 결론이 나지 않았다. 이 관계자는 \"계량모형 연구용역 결과를 업권에 공유하고, 이를 참고해 금융위원회 ·업권·민간전문가와 함께 적정 인상 수준을 논의하고 있는 단계\"라며...",
       "source_url": "http://www.srtimes.kr/news/articleView.html?idxno=211389",
       "naver_url": "http://www.srtimes.kr/news/articleView.html?idxno=211389",
       "published_at": "2026-09-02T10:44:00+09:00",
       "source": "srtimes.kr",
-      "query": "보험 제도"
-    },
-    {
-      "title": "강원대병원, COPD 환자 퇴원 후 연계관리 효과 확인",
-      "description": "건강보험 심사평가원의 COPD 적정성 평가에서도 흡입기관지확장제 처방과 폐기능검사 시행 등이 주요 질 관리 지표로 활용되고 있으며, 국내에서도 급성기 치료 이후 지속적인 질환 관리 중요성이 강조돼 왔다. 연구...",
-      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416957",
-      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416957",
-      "published_at": "2026-09-02T10:44:00+09:00",
-      "source": "medipana.com",
-      "query": "건강보험"
+      "query": "금융위원회 보험"
     },
     {
       "title": "건보공단, 해외 3개월 이상 체류자 ‘급여정지 신고’ 온라인으로 간편...",
@@ -3450,13 +3774,13 @@
       "query": "건강보험"
     },
     {
-      "title": "용인시, 재가암환자 맞춤형 건강관리…3개 구 보건소별 프로그램 운영",
-      "description": "수지구보건소는 이달 1일부터 암 치료 후 건강관리가 필요한 주민을 대상으로 3주간 프로그램을 운영한다. 의료진과의 일대일 상담을 비롯해 원예 활동과 건강한 식생활 교육 등을 진행한다. 앞서 기흥구보건소는 지난...",
-      "source_url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5057561",
-      "naver_url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5057561",
+      "title": "강원대병원, COPD 환자 퇴원 후 연계관리 효과 확인",
+      "description": "건강보험 심사평가원의 COPD 적정성 평가에서도 흡입기관지확장제 처방과 폐기능검사 시행 등이 주요 질 관리 지표로 활용되고 있으며, 국내에서도 급성기 치료 이후 지속적인 질환 관리 중요성이 강조돼 왔다. 연구...",
+      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416957",
+      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416957",
       "published_at": "2026-09-02T10:44:00+09:00",
-      "source": "shinailbo.co.kr",
-      "query": "암 치료"
+      "source": "medipana.com",
+      "query": "건강보험"
     },
     {
       "title": "심 뇌혈관질환 예방주간 맞아 창녕군 '레드서클 캠페인' 운영",
@@ -3492,15 +3816,6 @@
       "naver_url": "https://pk.newdaily.co.kr/site/data/html/2026/09/02/2026090200091.html",
       "published_at": "2026-09-02T10:44:00+09:00",
       "source": "pk.newdaily.co.kr",
-      "query": "보건복지부"
-    },
-    {
-      "title": "아동학대 연 2회 이상 신고되면 즉각분리 우선 고려한다(종합)",
-      "description": "보건복지부 와 교육부·법무부·행정안전부·경찰청은 1일 이런 내용을 중심으로 하는 '아동학대 예방 및 대응 보완 대책'을 발표했다. 경찰·아동학대공무원 매뉴얼 개정해 재학대 대응 강화 앞서 충남 천안에서는...",
-      "source_url": "https://www.yna.co.kr/view/AKR20260901198951530?input=1195m",
-      "naver_url": "https://n.news.naver.com/mnews/article/001/0016284676?sid=102",
-      "published_at": "2026-09-02T10:43:00+09:00",
-      "source": "yna.co.kr",
       "query": "보건복지부"
     },
     {
@@ -3540,24 +3855,6 @@
       "query": "간병인"
     },
     {
-      "title": "로킷헬스케어, 자가 진피 재생 패치 싱가포르 특허 등록 결정",
-      "description": "수술실에서 환자에게 맞는 패치를 즉시 제조해 적용할 수 있도록 설계된 피부 창상 치료 플랫폼 기술이다.... 당뇨발궤양과 욕창, 화상 치료 등이 주요 하위 시장에 포함된다. 아시아·태평양 전체 첨단 피부 창상관리...",
-      "source_url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=610555",
-      "naver_url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=610555",
-      "published_at": "2026-09-02T10:42:00+09:00",
-      "source": "mdtoday.co.kr",
-      "query": "암 치료"
-    },
-    {
-      "title": "TYM, 농기계 전복사고 막는다···'MYTYM' 사전 경고 기능 강화",
-      "description": "농업 분야 재해율도 농업인안전 보험 기준 5.0%로 전체 산업재해율 0.67%의 약 7.5배에 달한다. 사망만인율은... 25% 낮춘다는 목표를 세우고 트랙터 안전벨트 미착용 경보장치 의무화 등 관련 제도 정비를 추진하고 있다.",
-      "source_url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2465672",
-      "naver_url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2465672",
-      "published_at": "2026-09-02T10:40:00+09:00",
-      "source": "enewstoday.co.kr",
-      "query": "보험 제도"
-    },
-    {
       "title": "셀트리온제약, 바이오·CMO 비중 절반 넘었다…PFS 성장 견인",
       "description": "건강보험 재정 효율화 필요성이 커지는 상황에서 바이오시밀러 처방을 유도하는 추가 지원책이 이어질 가능성도 있다고 봤다. 셀트리온제약이 셀트리온 바이오시밀러의 국내 판매를 독점하고 있는 만큼 관련...",
       "source_url": "https://www.medipana.com/news/articleView.html?idxno=416953",
@@ -3583,15 +3880,6 @@
       "published_at": "2026-09-02T10:40:00+09:00",
       "source": "bosa.co.kr",
       "query": "중증질환"
-    },
-    {
-      "title": "[대한금융DB]2026년 상반기 보험 사 기본자본 및 지급여력비율 현황",
-      "description": "손보사는 15개사 모두 금융당국 권고치를 상회했으며 가장 낮은 곳은 하나손해 보험 (152.1%)이다. 기본자본비율은 내년 제도 도입에 맞춰 해약환급금준비금 적립비율 완화 적용사를 대상으로 이익잉여금 내에서 100...",
-      "source_url": "https://www.kbanker.co.kr/news/articleView.html?idxno=225816",
-      "naver_url": "https://www.kbanker.co.kr/news/articleView.html?idxno=225816",
-      "published_at": "2026-09-02T10:38:00+09:00",
-      "source": "kbanker.co.kr",
-      "query": "보험 제도"
     },
     {
       "title": "교보생명, 교보마이플랜 건강보험 Ⅱ 개정 출시",
@@ -3621,24 +3909,6 @@
       "query": "뇌혈관질환"
     },
     {
-      "title": "신안군, 공보의 공백에 '시니어 의사' 투입…월 3300만원·섬 순회진료",
-      "description": "보건복지부 에 따르면 의과 공보의는 2025년 945명에서 올해 593명으로 352명 감소했다. 감소율은 약 37.2%다. 2017년 2116명과 비교하면 올해 인원은 당시의 약 28% 수준까지 줄었다. 특히 올해 의과 공보의 신규 편입 인원은...",
-      "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=544857",
-      "naver_url": "https://www.joongangenews.com/news/articleView.html?idxno=544857",
-      "published_at": "2026-09-02T10:38:00+09:00",
-      "source": "joongangenews.com",
-      "query": "보건복지부"
-    },
-    {
-      "title": "약가 개편 45% 확정, 중소 제약사 생존 갈림길",
-      "description": "인포그래픽 / AI 보건복지부 는 2026년 9월 1일 기준 동일제제 최고가를 53.55%에 해당하는 기준금액으로 간주해 100% 가격으로 환산한 뒤, 여기에 새 산정률 45%를 적용해 조정 금액을 산출하기로 확정했다. 기등재 의약품...",
-      "source_url": "http://www.smedaily.co.kr/news/articleView.html?idxno=362528",
-      "naver_url": "http://www.smedaily.co.kr/news/articleView.html?idxno=362528",
-      "published_at": "2026-09-02T10:38:00+09:00",
-      "source": "smedaily.co.kr",
-      "query": "보건복지부"
-    },
-    {
       "title": "‘찬물’ 마시면 살 빠진다? 여에스더 밝힌 효과는",
       "description": "심 뇌혈관 질환 이나 고혈압이 있는 사람도 차가운 물을 한꺼번에 많이 마시는 것은 피하는 편이 좋다. 갑자기 차가운 자극이 가해지면 일시적으로 자율신경계가 반응해 혈관 수축이 나타나고, 혈압이 솟을 수 있다....",
       "source_url": "https://health.chosun.com/site/data/html_dir/2026/09/02/2026090200989.html",
@@ -3646,15 +3916,6 @@
       "published_at": "2026-09-02T10:37:00+09:00",
       "source": "health.chosun.com",
       "query": "뇌혈관질환"
-    },
-    {
-      "title": "권익위 \"지역아동센터, 행정구역 이전 시 보조금 제한 불합리\"",
-      "description": "그러나 보건복지부 가 올해 2월 관련 지침을 변경하면서 문제가 발생했다. 다른 시·군·구로 이전하는 지역아동센터는 기존 시설을 폐업한 뒤 새로 설치 신고를 해야 하며, 신규시설과 마찬가지로 24개월간 보조금 지원이...",
-      "source_url": "https://www.dailian.co.kr/news/view/1685411/?sc=Naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/119/0003128123?sid=100",
-      "published_at": "2026-09-02T10:37:00+09:00",
-      "source": "dailian.co.kr",
-      "query": "보건복지부"
     },
     {
       "title": "교보생명, 3040세대 부담 낮춘 '마이플랜 건강보험 Ⅱ' 출시",
@@ -3673,42 +3934,6 @@
       "published_at": "2026-09-02T10:36:00+09:00",
       "source": "fortunekorea.co.kr",
       "query": "의료비"
-    },
-    {
-      "title": "파로스아이바이오-코오롱제약, 신약개발 협력 확대",
-      "description": "이와 관련, 양사는 지난 5월 전략적 업무협약을 체결한 데 이어 6월 보건복지부 와 한국보건산업진흥원 주관의 ‘구조기반 AI 신약개발 지원 사업’에 선정되며 개발 동력을 확보한 바 있다. 이번 계약에 따라 양사는...",
-      "source_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940064",
-      "naver_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940064",
-      "published_at": "2026-09-02T10:36:00+09:00",
-      "source": "dailymedi.com",
-      "query": "보건복지부"
-    },
-    {
-      "title": "우먼타임스 협찬 '2026 핑크런' 대회 10월 11일 상암월드컵공원에서 개최",
-      "description": "이번 '2026 핑크런'은 한국유방건강재단과 한국유방암학회, 대한암협회, 서울시여성가족재단이 공동 주최하며 보건복지부 와 서울특별시, 우포스가 후원으로 함께 한다. 행사는 오는 10월 11일 상암월드컵공원에서 오전...",
-      "source_url": "https://www.womentimes.co.kr/news/articleView.html?idxno=105859",
-      "naver_url": "https://www.womentimes.co.kr/news/articleView.html?idxno=105859",
-      "published_at": "2026-09-02T10:36:00+09:00",
-      "source": "womentimes.co.kr",
-      "query": "보건복지부"
-    },
-    {
-      "title": "의협, 군의관·공보의 복무기간 현실화 등 제도개선 추진",
-      "description": "대한공중보건의사협의회, 대한전공의협의회, 대한의과대학·의학전문대학원학생협회 등 의료계 대표 단체들이 공동 주관하며 국방부와 보건복지부 가 후원한다. 현재 육군 현역병의 복무기간은 18개월로 단축됐으나...",
-      "source_url": "http://www.medisobizanews.com/news/articleView.html?idxno=141784",
-      "naver_url": "http://www.medisobizanews.com/news/articleView.html?idxno=141784",
-      "published_at": "2026-09-02T10:36:00+09:00",
-      "source": "medisobizanews.com",
-      "query": "보건복지부"
-    },
-    {
-      "title": "연 2회 이상 아동학대 신고 시 '즉각분리'…아동수당 막는다(종합)",
-      "description": "현수엽 보건복지부 제1차관은 2일 오전 정부서울청사에서 교육부, 법무부, 행정안전부, 경찰청과 함께 마련한 아동학대 예방 및 대응 보완 대책을 발표했다. 최근 충남 천안 한 교회에서 발생한 아동학대 의심 사망 사건은...",
-      "source_url": "https://www.newsis.com/view/NISX20260902_0003772846",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014163511?sid=102",
-      "published_at": "2026-09-02T10:35:00+09:00",
-      "source": "newsis.com",
-      "query": "보건복지부"
     },
     {
       "title": "KB 손해보험 , 말뿐인 'AI 소비자보호'…기존 고객 불만 23% 폭증",
@@ -3736,15 +3961,6 @@
       "published_at": "2026-09-02T10:34:00+09:00",
       "source": "bosa.co.kr",
       "query": "심혈관질환"
-    },
-    {
-      "title": "천안 아동 사망 사건 계기… 정부, 재학대 우려 아동 분리보호 강화",
-      "description": "보건복지부 와 교육부·법무부·행정안전부·경찰청은 1일 이 같은 내용을 담은 '아동학대 예방 및 대응 보완 대책'을 발표했다. 앞서 천안에서는 지적장애를 가진 11세 남아가 할머니와 교회 목사에게 학대를 받다 숨지는...",
-      "source_url": "https://www.daejonilbo.com/news/articleView.html?idxno=2298294",
-      "naver_url": "https://n.news.naver.com/mnews/article/656/0000185678?sid=102",
-      "published_at": "2026-09-02T10:34:00+09:00",
-      "source": "daejonilbo.com",
-      "query": "보건복지부"
     },
     {
       "title": "실손 보험 갈림길 선 1·2세대… 보험 료 낮출까 보장 지킬까",
@@ -3972,21 +4188,21 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "류영상 조선대 교수 “고령층 심혈관질환엔 지방간 주목해야”",
-      "description": "연구팀은 국민 건강보험 공단 자료를 활용해 당뇨병이 없는 65세 이상 성인 14만2518명을 대상으로 평균 11.64년간 추적 관찰했다.지방간은 비침습적 지표인 지방간지수(FLI) 60 이상으로 정의하고, 공복혈당 100~125mg/dL인...",
-      "source_url": "https://news.mtn.co.kr/news-detail/2026090210155929054",
-      "naver_url": "https://news.mtn.co.kr/news-detail/2026090210155929054",
-      "published_at": "2026-09-02T10:20:00+09:00",
-      "source": "news.mtn.co.kr",
-      "query": "건강보험"
-    },
-    {
       "title": "20년 수입약 독점 깬다...GC녹십자, 아젤라산 직접 생산 도전장",
       "description": "일반의약품은 건강보험 이 적용되지 않고 약국이 최종 판매가격을 정하기 때문에 약국별 편차가 있다. GC녹십자가 아젤리아크림보다 낮은 출하가격을 책정할 경우 약국의 매입 선택지가 늘어나면서 소비자가격 경쟁으로...",
       "source_url": "https://www.newspim.com/news/view/20260901000603",
       "naver_url": "https://www.newspim.com/news/view/20260901000603",
       "published_at": "2026-09-02T10:20:00+09:00",
       "source": "newspim.com",
+      "query": "건강보험"
+    },
+    {
+      "title": "류영상 조선대 교수 “고령층 심혈관질환엔 지방간 주목해야”",
+      "description": "연구팀은 국민 건강보험 공단 자료를 활용해 당뇨병이 없는 65세 이상 성인 14만2518명을 대상으로 평균 11.64년간 추적 관찰했다.지방간은 비침습적 지표인 지방간지수(FLI) 60 이상으로 정의하고, 공복혈당 100~125mg/dL인...",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026090210155929054",
+      "naver_url": "https://news.mtn.co.kr/news-detail/2026090210155929054",
+      "published_at": "2026-09-02T10:20:00+09:00",
+      "source": "news.mtn.co.kr",
       "query": "건강보험"
     },
     {
@@ -4080,6 +4296,15 @@
       "query": "실손보험"
     },
     {
+      "title": "유방암 수술 후 재건, 체형 따라 '맞춤형' 선택 가능",
+      "description": "건강보험 심사평가원 자료를 분석한 국내 통계에서 유방전절제술 후 재건술 시행률은 2015년 19.4%에서 2020년 54.5%로 크게 증가했다. 유방재건은 단순히 유방의 모양을 다시 만드는 데 그치지 않는다. 암 수술 후 달라진...",
+      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011285",
+      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011285",
+      "published_at": "2026-09-02T10:10:00+09:00",
+      "source": "bosa.co.kr",
+      "query": "건강보험"
+    },
+    {
       "title": "내 혈관은 얼마나 건강 한가 ‘레드서클 캠페인’",
       "description": "△부산소방재난본부 심폐소생술 교육·시연 △국민 건강보험 공단 부산울산경남지역본부 대사증후군 예방 홍보 △동아대학교병원 부산권역심뇌혈관질환센터 심근경색·뇌졸중 전구증상 대응요령 홍보...",
       "source_url": "https://www.busan.com/view/busan/view.php?code=2026090208383244017",
@@ -4095,15 +4320,6 @@
       "naver_url": "https://thetracker.co.kr/View.aspx?No=4209097",
       "published_at": "2026-09-02T10:10:00+09:00",
       "source": "thetracker.co.kr",
-      "query": "건강보험"
-    },
-    {
-      "title": "유방암 수술 후 재건, 체형 따라 '맞춤형' 선택 가능",
-      "description": "건강보험 심사평가원 자료를 분석한 국내 통계에서 유방전절제술 후 재건술 시행률은 2015년 19.4%에서 2020년 54.5%로 크게 증가했다. 유방재건은 단순히 유방의 모양을 다시 만드는 데 그치지 않는다. 암 수술 후 달라진...",
-      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011285",
-      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011285",
-      "published_at": "2026-09-02T10:10:00+09:00",
-      "source": "bosa.co.kr",
       "query": "건강보험"
     },
     {
@@ -4125,21 +4341,21 @@
       "query": "건강보험"
     },
     {
-      "title": "사람 키우고 지역 잇고… 상생의 새 공식",
-      "description": "이후 위험성평가를 통한 유해·위험요인 발굴, 라이더 심 뇌혈관질환 건강검진 지원, 산업재해 분석 연구 등 안전정책을 추진해왔다. 지난해에 이어 2년 연속 국회 차원의 정책 논의에도 참여하며 제도와 현장을 연결하는...",
-      "source_url": "https://www.pressman.kr/news/articleView.html?idxno=103473",
-      "naver_url": "https://www.pressman.kr/news/articleView.html?idxno=103473",
-      "published_at": "2026-09-02T10:08:00+09:00",
-      "source": "pressman.kr",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "\"뇌졸중 위험 크지 않은 심방세동 환자도 혈전 예방해야\"…항응고제 치...",
       "description": "반면 고혈압, 당뇨병, 심부전, 혈관질환 , 고령 등 뇌졸중 위험 요인이 하나뿐인 환자를 중간위험 환자로... 연구팀은 24개월 동안 뇌졸중, 심장 등에서 생긴 혈전이 다른 혈관 을 막는 전신색전증, 뇌 등 장기에서...",
       "source_url": "https://www.sportschosun.com/life/2026-09-02/202609020100013030000636",
       "naver_url": "https://n.news.naver.com/mnews/article/076/0004441656?sid=102",
       "published_at": "2026-09-02T10:08:00+09:00",
       "source": "sportschosun.com",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "사람 키우고 지역 잇고… 상생의 새 공식",
+      "description": "이후 위험성평가를 통한 유해·위험요인 발굴, 라이더 심 뇌혈관질환 건강검진 지원, 산업재해 분석 연구 등 안전정책을 추진해왔다. 지난해에 이어 2년 연속 국회 차원의 정책 논의에도 참여하며 제도와 현장을 연결하는...",
+      "source_url": "https://www.pressman.kr/news/articleView.html?idxno=103473",
+      "naver_url": "https://www.pressman.kr/news/articleView.html?idxno=103473",
+      "published_at": "2026-09-02T10:08:00+09:00",
+      "source": "pressman.kr",
       "query": "뇌혈관질환"
     },
     {
@@ -4161,21 +4377,21 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "\"뇌졸중 부르는 삼방세동, 위험도 낮아도 약 필요\"",
-      "description": "반면 고혈압, 당뇨병, 심부전, 혈관질환 , 고령 등 뇌졸중 위험 요인이 하나뿐인 환자를 중간위험 환자로... 연구팀은 24개월 동안 뇌졸중, 심장 등에서 생긴 혈전이 다른 혈관 을 막는 전신색전증, 뇌 등 장기에서...",
-      "source_url": "https://www.newsis.com/view/NISX20260902_0003772732",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014163354?sid=102",
-      "published_at": "2026-09-02T10:06:00+09:00",
-      "source": "newsis.com",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "뇌졸중 위험 크지 않은 심방세동 환자도 혈전 예방해야",
       "description": "반면 고혈압·당뇨병·심부전· 혈관질환 ·고령 등 위험요인이 하나뿐인 중간위험 환자의 경우 항응고제 치료를 고려할 수 있도록 권고하고 있지만, 항응고제 투여군과 비투여군의 치료 결과를 직접 비교한 임상시험...",
       "source_url": "http://www.whosaeng.com/173334",
       "naver_url": "http://www.whosaeng.com/173334",
       "published_at": "2026-09-02T10:06:00+09:00",
       "source": "whosaeng.com",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "\"뇌졸중 부르는 삼방세동, 위험도 낮아도 약 필요\"",
+      "description": "반면 고혈압, 당뇨병, 심부전, 혈관질환 , 고령 등 뇌졸중 위험 요인이 하나뿐인 환자를 중간위험 환자로... 연구팀은 24개월 동안 뇌졸중, 심장 등에서 생긴 혈전이 다른 혈관 을 막는 전신색전증, 뇌 등 장기에서...",
+      "source_url": "https://www.newsis.com/view/NISX20260902_0003772732",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014163354?sid=102",
+      "published_at": "2026-09-02T10:06:00+09:00",
+      "source": "newsis.com",
       "query": "뇌혈관질환"
     },
     {
@@ -4215,21 +4431,21 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "맨소래덤아시아퍼시픽, 한국실명예방재단과 어린이 눈 건강사업 2년 연...",
-      "description": "후원금은 오는 12월까지 어린이 눈 건강교육과 시력검사, 눈 의료비 및 안경 구매비용 지원 등에 사용된다. 이번 사업은 전세계 일반의약품(OTC) 안약 판매 1위(출처 2014 기네스 레코드) 제약사인 로토제약의 글로벌...",
-      "source_url": "http://www.segyebiz.com/newsView/20260902505832?OutUrl=naver",
-      "naver_url": "http://www.segyebiz.com/newsView/20260902505832?OutUrl=naver",
-      "published_at": "2026-09-02T10:04:00+09:00",
-      "source": "segyebiz.com",
-      "query": "의료비"
-    },
-    {
       "title": "카카오페이손보 '펫보험', 브랜드 대상 수상…국민투표서 최다 득표",
       "description": "펫보험은 수술비뿐 아니라 MRI·CT 검사비, 입원비, 통원비 등 실제 양육 과정에서 발생할 수 있는 다양한 의료비 를 보장한다. 수술 당일 의료비 는 최대 500만 원, 연간 최대 4000만 원까지 보장하며 연간 보장 한도...",
       "source_url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=266285",
       "naver_url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=266285",
       "published_at": "2026-09-02T10:04:00+09:00",
       "source": "whitepaper.co.kr",
+      "query": "의료비"
+    },
+    {
+      "title": "맨소래덤아시아퍼시픽, 한국실명예방재단과 어린이 눈 건강사업 2년 연...",
+      "description": "후원금은 오는 12월까지 어린이 눈 건강교육과 시력검사, 눈 의료비 및 안경 구매비용 지원 등에 사용된다. 이번 사업은 전세계 일반의약품(OTC) 안약 판매 1위(출처 2014 기네스 레코드) 제약사인 로토제약의 글로벌...",
+      "source_url": "http://www.segyebiz.com/newsView/20260902505832?OutUrl=naver",
+      "naver_url": "http://www.segyebiz.com/newsView/20260902505832?OutUrl=naver",
+      "published_at": "2026-09-02T10:04:00+09:00",
+      "source": "segyebiz.com",
       "query": "의료비"
     },
     {
@@ -4368,21 +4584,21 @@
       "query": "건강보험"
     },
     {
-      "title": "우아한청년들, 플랫폼 노동자 안전·복지 민간협력 방안 논의",
-      "description": "위원회는 그동안 위험성평가를 통한 유해·위험요인 발굴과 라이더 심 뇌혈관질환 건강검진 지원, 산업재해 분석 연구, 안전한 배달환경 조성을 위한 정책토론회 등을 진행했다. 우아한청년들 관계자는 “앞으로도 라이더가...",
-      "source_url": "https://zdnet.co.kr/view/?no=20260902093951",
-      "naver_url": "https://n.news.naver.com/mnews/article/092/0002435901?sid=105",
-      "published_at": "2026-09-02T09:58:00+09:00",
-      "source": "zdnet.co.kr",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "[건강정보] 9월4일 '콜레스테롤의 날'···증상 없는 이상지질혈증, 정...",
       "description": "동맥경화가 진행되면 협심증, 심근경색과 같은 심혈관질환이나 뇌졸중, 뇌경색 등 뇌혈관질환 의 위험도 높아진다. 김경안 가톨릭대 인천성모병원 교수는 \"이상지질혈증은 대부분 특별한 증상이 없어 발견이 늦어질 수...",
       "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239798",
       "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239798",
       "published_at": "2026-09-02T09:58:00+09:00",
       "source": "doctorstimes.com",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "우아한청년들, 플랫폼 노동자 안전·복지 민간협력 방안 논의",
+      "description": "위원회는 그동안 위험성평가를 통한 유해·위험요인 발굴과 라이더 심 뇌혈관질환 건강검진 지원, 산업재해 분석 연구, 안전한 배달환경 조성을 위한 정책토론회 등을 진행했다. 우아한청년들 관계자는 “앞으로도 라이더가...",
+      "source_url": "https://zdnet.co.kr/view/?no=20260902093951",
+      "naver_url": "https://n.news.naver.com/mnews/article/092/0002435901?sid=105",
+      "published_at": "2026-09-02T09:58:00+09:00",
+      "source": "zdnet.co.kr",
       "query": "뇌혈관질환"
     },
     {
@@ -4404,21 +4620,21 @@
       "query": "의료비"
     },
     {
-      "title": "수해기업, 연체해도 곧바로 부실처리 안 한다… 신보 '회복시간' 벌어준...",
-      "description": "금융 위원회는 지난달 20일 금융감독원 과 정책 금융 기관, 금융 업권별 협회 등이 참여하는 긴급 금융 대응반을... 금융 당국은 피해 소상공인·중소기업뿐 아니라 가계에도 긴급생활안정자금과 대출 만기연장·상환유예, 보험 료...",
-      "source_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727201",
-      "naver_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727201",
-      "published_at": "2026-09-02T09:54:00+09:00",
-      "source": "the-biz.co.kr",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "임종룡 우리 금융 회장, 3년 만에 자사주 5000주 매입",
       "description": "금융감독원 전자공시에 따르면 취득 단가는 주당 3만1800원이다. 공시 단가를 기준으로 단순 계산했을 때... 우리 금융 의 올해 상반기 당기순이익은 1조6089억 원이다. 2분기 실적이 턴어라운드했다. 보험 자회사...",
       "source_url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=266282",
       "naver_url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=266282",
       "published_at": "2026-09-02T09:54:00+09:00",
       "source": "whitepaper.co.kr",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "수해기업, 연체해도 곧바로 부실처리 안 한다… 신보 '회복시간' 벌어준...",
+      "description": "금융 위원회는 지난달 20일 금융감독원 과 정책 금융 기관, 금융 업권별 협회 등이 참여하는 긴급 금융 대응반을... 금융 당국은 피해 소상공인·중소기업뿐 아니라 가계에도 긴급생활안정자금과 대출 만기연장·상환유예, 보험 료...",
+      "source_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727201",
+      "naver_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727201",
+      "published_at": "2026-09-02T09:54:00+09:00",
+      "source": "the-biz.co.kr",
       "query": "금융감독원 보험"
     },
     {
@@ -4438,15 +4654,6 @@
       "published_at": "2026-09-02T09:54:00+09:00",
       "source": "joongangenews.com",
       "query": "의료비"
-    },
-    {
-      "title": "듀켐바이오 '프로스타시크', 전립선암 PET-CT 건강보험 급여 적용",
-      "description": "방사성의약품 기업 듀켐바이오(대표 김상우)의 전립선특이막항원(PSMA) 표적 양전자방출단층촬영(PET) 진단용 방사성의약품 '프로스타시크주'가 시행하는 PET-CT 검사에 9월 1일부터 건강보험 급여 기준이 적용됐다....",
-      "source_url": "https://www.biotimes.co.kr/news/articleView.html?idxno=34173",
-      "naver_url": "https://www.biotimes.co.kr/news/articleView.html?idxno=34173",
-      "published_at": "2026-09-02T09:52:00+09:00",
-      "source": "biotimes.co.kr",
-      "query": "건강보험"
     },
     {
       "title": "뇌졸중 위험 낮아도 항응고제 효과…심방세동 치료 근거 넓혔다",
@@ -4476,6 +4683,15 @@
       "query": "중증질환"
     },
     {
+      "title": "듀켐바이오 '프로스타시크', 전립선암 PET-CT 건강보험 급여 적용",
+      "description": "듀켐바이오는 2025년 10월 건강보험심사평가원 평가를 통과한 이후 약 11개월 만에 급여 기준이 마련됐다고 설명했다. 급여 대상은 중등도 이상의 전이 위험이 있는 전립선암 환자 가운데 첫 수술이나 방사선 치료...",
+      "source_url": "https://www.biotimes.co.kr/news/articleView.html?idxno=34173",
+      "naver_url": "https://www.biotimes.co.kr/news/articleView.html?idxno=34173",
+      "published_at": "2026-09-02T09:52:00+09:00",
+      "source": "biotimes.co.kr",
+      "query": "건강보험심사평가원"
+    },
+    {
       "title": "SK바이오팜, 엔비디아 B200 128장 확보…AI 신약개발 역량 강화",
       "description": "자체 확보한 특화 파운데이션 모델을 실제 연구 과제에 적용해 중개연구를 비롯해 질환 ·타깃·화합물... 뇌혈관 장벽(BBB) 투과 기술을 활용한 뇌종양 및 항암 신약, RPT(방사성의약품치료제) 등 차세대 모달리티로...",
       "source_url": "https://www.etnews.com/20260902000078",
@@ -4486,21 +4702,12 @@
     },
     {
       "title": "[ 건강 정보] 유방암 수술 후 재건, 이제는 '맞춤형'···보형물부터 자가...",
-      "description": "건강보험 심사평가원 자료를 분석한 국내 통계에 따르면, 유방전절제술(유방 전체를 제거하는 수술) 후 유방재건술 시행률은 2015년 19.4%에서 2020년 54.5%로 크게 늘었다. 이러한 유방재건술은 유방의 형태를 회복할 뿐...",
+      "description": "건강보험심사평가원 자료를 분석한 국내 통계에 따르면, 유방전절제술(유방 전체를 제거하는 수술) 후 유방재건술 시행률은 2015년 19.4%에서 2020년 54.5%로 크게 늘었다. 이러한 유방재건술은 유방의 형태를 회복할 뿐...",
       "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239797",
       "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239797",
       "published_at": "2026-09-02T09:50:00+09:00",
       "source": "doctorstimes.com",
-      "query": "건강보험"
-    },
-    {
-      "title": "JW신약, 탈모치료제 부각에 12%↑…4거래일 연속 상승[특징주]",
-      "description": "탈모 치료 관련 건강보험 급여 전환이 현실화할 경우 처방량 증가에 따른 실적 개선 가능성도 거론된다. 치료비 부담이 낮아지면 피나스테리드·두타스테리드 계열 경구제와 미녹시딜 외용제의 수요 확대가...",
-      "source_url": "https://www.newsway.co.kr/news/view?ud=2026090209300761985",
-      "naver_url": "https://www.newsway.co.kr/news/view?ud=2026090209300761985",
-      "published_at": "2026-09-02T09:50:00+09:00",
-      "source": "newsway.co.kr",
-      "query": "건강보험"
+      "query": "건강보험심사평가원"
     },
     {
       "title": "고대안산병원, AI 기반 '디지털 트윈' 개발...암 정밀치료 연구 나선다",
@@ -4548,21 +4755,21 @@
       "query": "중증질환"
     },
     {
-      "title": "증상 없는 이상지질혈증…'콜레스테롤 수치'만 보지 마세요",
-      "description": "동맥경화가 진행되면 협심증과 심근경색 등 심혈관질환은 물론 뇌졸중·뇌경색 같은 뇌혈관질환 위험도 높아진다. 가톨릭대 인천성모병원 심장혈관내과 김경안 교수는 \"LDL콜레스테롤은 동맥경화성 심혈관질환과 밀접한...",
-      "source_url": "https://www.k-health.com/news/articleView.html?idxno=100940",
-      "naver_url": "https://www.k-health.com/news/articleView.html?idxno=100940",
-      "published_at": "2026-09-02T09:44:00+09:00",
-      "source": "k-health.com",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "심방세동 중간위험군, 항응고제 치료로 합병증 크게 감소",
       "description": "반면 고혈압, 당뇨병, 심부전, 혈관질환 , 고령 등 뇌졸중 위험 요인이 하나뿐인 환자를 중간위험 환자로... 연구팀은 24개월 동안 뇌졸중, 심장 등에서 생긴 혈전이 다른 혈관 을 막는 전신색전증, 뇌 등 장기에서...",
       "source_url": "https://www.edaily.co.kr/News/Read?newsId=03093046645576184&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
       "naver_url": "https://n.news.naver.com/mnews/article/018/0006362181?sid=102",
       "published_at": "2026-09-02T09:44:00+09:00",
       "source": "edaily.co.kr",
+      "query": "뇌혈관질환"
+    },
+    {
+      "title": "증상 없는 이상지질혈증…'콜레스테롤 수치'만 보지 마세요",
+      "description": "동맥경화가 진행되면 협심증과 심근경색 등 심혈관질환은 물론 뇌졸중·뇌경색 같은 뇌혈관질환 위험도 높아진다. 가톨릭대 인천성모병원 심장혈관내과 김경안 교수는 \"LDL콜레스테롤은 동맥경화성 심혈관질환과 밀접한...",
+      "source_url": "https://www.k-health.com/news/articleView.html?idxno=100940",
+      "naver_url": "https://www.k-health.com/news/articleView.html?idxno=100940",
+      "published_at": "2026-09-02T09:44:00+09:00",
+      "source": "k-health.com",
       "query": "뇌혈관질환"
     },
     {
@@ -4683,19 +4890,19 @@
       "query": "중증질환"
     },
     {
-      "title": "[2026 전남광주미래산업박람회] 다음 기술 , '휠체어 슬로프 멀티' 선보인...",
-      "description": "이어 “이번 전시회를 기점으로 제품의 공급을 대폭 확대하고, 지속적인 기술 혁신 을 통해 대한민국을... 뿌리 기술 ·3D 프린팅·부품 및 기술 △인공지능(AI) 가전·홈 디바이스 △드론 관련 부품 및 기술 △ 의료 기기...",
-      "source_url": "https://www.etnews.com/20260901000472",
-      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462591?sid=102",
+      "title": "[2026 전남광주미래산업박람회] 대진산업, 재귀반사 페인트·안전 도로 ...",
+      "description": "혁신 기술 뿐만 아니라 ISO 9001·14001, 안전보건경영시스템, 뿌리기업, 백년 소공인, 벤처기업... 뿌리 기술 ·3D 프린팅·부품 및 기술 △인공지능(AI) 가전·홈 디바이스 △드론 관련 부품 및 기술 △ 의료 기기·헬스케어...",
+      "source_url": "https://www.etnews.com/20260901000471",
+      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462589?sid=102",
       "published_at": "2026-09-02T09:31:00+09:00",
       "source": "etnews.com",
       "query": "혁신의료기술"
     },
     {
-      "title": "[2026 전남광주미래산업박람회] 대진산업, 재귀반사 페인트·안전 도로 ...",
-      "description": "혁신 기술 뿐만 아니라 ISO 9001·14001, 안전보건경영시스템, 뿌리기업, 백년 소공인, 벤처기업... 뿌리 기술 ·3D 프린팅·부품 및 기술 △인공지능(AI) 가전·홈 디바이스 △드론 관련 부품 및 기술 △ 의료 기기·헬스케어...",
-      "source_url": "https://www.etnews.com/20260901000471",
-      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462589?sid=102",
+      "title": "[2026 전남광주미래산업박람회] 다음 기술 , '휠체어 슬로프 멀티' 선보인...",
+      "description": "이어 “이번 전시회를 기점으로 제품의 공급을 대폭 확대하고, 지속적인 기술 혁신 을 통해 대한민국을... 뿌리 기술 ·3D 프린팅·부품 및 기술 △인공지능(AI) 가전·홈 디바이스 △드론 관련 부품 및 기술 △ 의료 기기...",
+      "source_url": "https://www.etnews.com/20260901000472",
+      "naver_url": "https://n.news.naver.com/mnews/article/030/0003462591?sid=102",
       "published_at": "2026-09-02T09:31:00+09:00",
       "source": "etnews.com",
       "query": "혁신의료기술"
@@ -5205,21 +5412,21 @@
       "query": "뇌혈관질환"
     },
     {
-      "title": "경기도, 레지오넬라증 예방 총력전 돌입",
-      "description": "다만 50세 이상 고령층, 흡연자, 만성폐 질환 , 당뇨 등 만성 질환 자, 면역저하자는 감염 시 중증 화 위험이 높은 만큼, 갑작스러운 고열, 기침, 호흡곤란 등 폐렴 유사 증상이 나타나거나 통상적인 치료에도 호전이 없을...",
-      "source_url": "https://www.viva100.com/article/20260902500078",
-      "naver_url": "https://www.viva100.com/article/20260902500078",
-      "published_at": "2026-09-02T08:48:00+09:00",
-      "source": "viva100.com",
-      "query": "중증질환"
-    },
-    {
       "title": "로슈, 中 삼중항체에 15억 달러 베팅…혈액암·자가면역 동시 겨냥",
       "description": "최근 노바티스의 CD19 CAR-T 후보물질 '랩-셀' 자가면역·신경계 질환 임상에서 중증 면역반응과 관련된 환자 3명이 사망하면서 8건의 연구가 중단됐다. 브리스톨마이어스스퀴브(BMS)도 염증성 이상반응을 검토하기 위해...",
       "source_url": "https://www.medipana.com/news/articleView.html?idxno=416926",
       "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416926",
       "published_at": "2026-09-02T08:48:00+09:00",
       "source": "medipana.com",
+      "query": "중증질환"
+    },
+    {
+      "title": "경기도, 레지오넬라증 예방 총력전 돌입",
+      "description": "다만 50세 이상 고령층, 흡연자, 만성폐 질환 , 당뇨 등 만성 질환 자, 면역저하자는 감염 시 중증 화 위험이 높은 만큼, 갑작스러운 고열, 기침, 호흡곤란 등 폐렴 유사 증상이 나타나거나 통상적인 치료에도 호전이 없을...",
+      "source_url": "https://www.viva100.com/article/20260902500078",
+      "naver_url": "https://www.viva100.com/article/20260902500078",
+      "published_at": "2026-09-02T08:48:00+09:00",
+      "source": "viva100.com",
       "query": "중증질환"
     },
     {
@@ -5511,15 +5718,6 @@
       "query": "비급여"
     },
     {
-      "title": "[김희진 교수의 수면의학] 수면무호흡증 진단 후 체크해야 할 3가지",
-      "description": "산소포화도가 얼마나 떨어지는지, 낮 동안 졸림이 심한지, 고혈압이나 심혈관질환 같은 동반질환이 있는지 등을 함께 살펴봐야 합니다. 또 하나 눈여겨볼 것은 어떤 자세에서 무호흡이 심해지는지입니다. 예를 들어...",
-      "source_url": "https://www.k-health.com/news/articleView.html?idxno=100939",
-      "naver_url": "https://www.k-health.com/news/articleView.html?idxno=100939",
-      "published_at": "2026-09-02T08:06:00+09:00",
-      "source": "k-health.com",
-      "query": "심혈관질환"
-    },
-    {
       "title": "증상 없어도 성인 57%서 동맥경화…20대도 13명 중 1명꼴",
       "description": "동맥경화는 심근경색이나 뇌졸중 같은 심혈관질환 이 나타나기 훨씬 전부터 시작될 수 있지만, 증상이 없는 성인의 혈관에 실제 플라크가 얼마나 흔한지는 충분히 알려지지 않았다. 미국심장학회(ACC)는 최근...",
       "source_url": "https://www.datasom.co.kr/news/articleView.html?idxno=209741",
@@ -5529,13 +5727,13 @@
       "query": "심혈관질환"
     },
     {
-      "title": "세종시교육청-세종공동모금회, 저소득층 학생 지원 ‘세종시 학생 꿈 키...",
-      "description": "이번 협약은 양 기관의 협력체계를 공고히 하여 경제적 어려움을 겪는 학생을 선제적으로 발굴하고, 생계비· 의료비 ·장학금 등 개별 상황에 최적화된 복지 혜택을...",
-      "source_url": "http://www.breaknews.com/1233379",
-      "naver_url": "http://www.breaknews.com/1233379",
-      "published_at": "2026-09-02T08:04:00+09:00",
-      "source": "breaknews.com",
-      "query": "의료비"
+      "title": "[김희진 교수의 수면의학] 수면무호흡증 진단 후 체크해야 할 3가지",
+      "description": "산소포화도가 얼마나 떨어지는지, 낮 동안 졸림이 심한지, 고혈압이나 심혈관질환 같은 동반질환이 있는지 등을 함께 살펴봐야 합니다. 또 하나 눈여겨볼 것은 어떤 자세에서 무호흡이 심해지는지입니다. 예를 들어...",
+      "source_url": "https://www.k-health.com/news/articleView.html?idxno=100939",
+      "naver_url": "https://www.k-health.com/news/articleView.html?idxno=100939",
+      "published_at": "2026-09-02T08:06:00+09:00",
+      "source": "k-health.com",
+      "query": "심혈관질환"
     },
     {
       "title": "정부, 중증·희귀질환 치료제 보험 적용 확대…'드라벳 증후군' 약값 부...",
@@ -5544,6 +5742,15 @@
       "naver_url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=610481",
       "published_at": "2026-09-02T08:04:00+09:00",
       "source": "mdtoday.co.kr",
+      "query": "의료비"
+    },
+    {
+      "title": "세종시교육청-세종공동모금회, 저소득층 학생 지원 ‘세종시 학생 꿈 키...",
+      "description": "이번 협약은 양 기관의 협력체계를 공고히 하여 경제적 어려움을 겪는 학생을 선제적으로 발굴하고, 생계비· 의료비 ·장학금 등 개별 상황에 최적화된 복지 혜택을...",
+      "source_url": "http://www.breaknews.com/1233379",
+      "naver_url": "http://www.breaknews.com/1233379",
+      "published_at": "2026-09-02T08:04:00+09:00",
+      "source": "breaknews.com",
       "query": "의료비"
     },
     {
@@ -5727,21 +5934,21 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "[Invest]당국 내려가면 대관도 따라가나…복잡한 금융 사 '세종 거점' 셈...",
-      "description": "금융 위원회와 금융감독원 등 금융 당국의 지방이전 논의가 이어지면서 민간 금융 회사들도 대관·정책협력... 31일 금융 권에 따르면 최근 주요 금융 지주와 은행, 보험 사 등의 대관·정책협력 조직에서는 금융 당국의...",
-      "source_url": "https://www.investchosun.com/site/data/html_dir/2026/09/01/2026090180141.html",
-      "naver_url": "https://www.investchosun.com/site/data/html_dir/2026/09/01/2026090180141.html",
-      "published_at": "2026-09-02T07:02:00+09:00",
-      "source": "investchosun.com",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "[오늘 재경부 등 경제부처 일정]",
       "description": "6월말 국내은행의 부실채권 현황(잠정)(석간) ※ 금융감독원 , 이화여대와 공동으로 「Future Climate Finance in the era of Green Transition」 국제 컨퍼런스 개최(09:00) ※26.9.10.부터 자동차 보험 치료비 보상...",
       "source_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432977",
       "naver_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432977",
       "published_at": "2026-09-02T07:02:00+09:00",
       "source": "news.einfomax.co.kr",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "[Invest]당국 내려가면 대관도 따라가나…복잡한 금융 사 '세종 거점' 셈...",
+      "description": "금융 위원회와 금융감독원 등 금융 당국의 지방이전 논의가 이어지면서 민간 금융 회사들도 대관·정책협력... 31일 금융 권에 따르면 최근 주요 금융 지주와 은행, 보험 사 등의 대관·정책협력 조직에서는 금융 당국의...",
+      "source_url": "https://www.investchosun.com/site/data/html_dir/2026/09/01/2026090180141.html",
+      "naver_url": "https://www.investchosun.com/site/data/html_dir/2026/09/01/2026090180141.html",
+      "published_at": "2026-09-02T07:02:00+09:00",
+      "source": "investchosun.com",
       "query": "금융감독원 보험"
     },
     {
@@ -5799,21 +6006,21 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "롯데손보, 공개 매각으로 선회…기업가치 두고 온도차",
-      "description": "금융위원회 는 보험 사가 후순위채와 신종자본증권을 발행해 ‘돌려막기’하는 관행을 바꾸려고 내년부터 기본자본 K-ICS 비율 기준을 50% 이상으로 유지하는 방안을 확정했다. 문제는 롯데손보의 기본자본이...",
-      "source_url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609011515092770232",
-      "naver_url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609011515092770232",
-      "published_at": "2026-09-02T07:00:00+09:00",
-      "source": "dnews.co.kr",
-      "query": "금융위원회 보험"
-    },
-    {
       "title": "의료계 반발 '관리급여' 도입을 지난해 성과로 자평한 복지부",
       "description": "실손 보험 과 관련해서는 건강 보험 을 보완하는 역할에 맞도록 상품구조 개편 방향을 마련했다며, 이를 토대로 금융위원회 가 건강 보험 급여 본인부담 적정 보장과 중증 중심 비급여 보장 합리화를 골자로 한 5세대...",
       "source_url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3042345",
       "naver_url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3042345",
       "published_at": "2026-09-02T07:00:00+09:00",
       "source": "docdocdoc.co.kr",
+      "query": "금융위원회 보험"
+    },
+    {
+      "title": "롯데손보, 공개 매각으로 선회…기업가치 두고 온도차",
+      "description": "금융위원회 는 보험 사가 후순위채와 신종자본증권을 발행해 ‘돌려막기’하는 관행을 바꾸려고 내년부터 기본자본 K-ICS 비율 기준을 50% 이상으로 유지하는 방안을 확정했다. 문제는 롯데손보의 기본자본이...",
+      "source_url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609011515092770232",
+      "naver_url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609011515092770232",
+      "published_at": "2026-09-02T07:00:00+09:00",
+      "source": "dnews.co.kr",
       "query": "금융위원회 보험"
     },
     {
@@ -6024,21 +6231,21 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "[기자의 눈] 금융 기관 지방이전, 주소만 옮겨선 안 된다",
-      "description": "정부가 2차 공공기관 이전에 속도를 내면서 산업은행과 기업은행, 수출입은행 등 국책은행은 물론 금융감독원 과 예금 보험 공사까지 이전 가능성이 거론되고 있다. 금융 노조는 오는 4일 총파업을 예고하며 지방 이전...",
-      "source_url": "https://www.ajunews.com/view/20260901084604038",
-      "naver_url": "https://www.ajunews.com/view/20260901084604038",
-      "published_at": "2026-09-02T06:02:00+09:00",
-      "source": "ajunews.com",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "\"달러 강세를 완충 장치로…전 유형 톱5”",
       "description": "[커버스토리] 베스트 디폴트옵션( 보험 ): 삼성생명 삼성생명은 디폴트옵션(사전지정운용제도) 상품 선정에... 삼성생명은 2026년 2분기 금융감독원 공시 기준 확정기여(DC)형과 개인형퇴직연금(IRP)에서 상위 10개...",
       "source_url": "https://magazine.hankyung.com/money/article/202608187270c",
       "naver_url": "https://magazine.hankyung.com/money/article/202608187270c",
       "published_at": "2026-09-02T06:02:00+09:00",
       "source": "magazine.hankyung.com",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "[기자의 눈] 금융 기관 지방이전, 주소만 옮겨선 안 된다",
+      "description": "정부가 2차 공공기관 이전에 속도를 내면서 산업은행과 기업은행, 수출입은행 등 국책은행은 물론 금융감독원 과 예금 보험 공사까지 이전 가능성이 거론되고 있다. 금융 노조는 오는 4일 총파업을 예고하며 지방 이전...",
+      "source_url": "https://www.ajunews.com/view/20260901084604038",
+      "naver_url": "https://www.ajunews.com/view/20260901084604038",
+      "published_at": "2026-09-02T06:02:00+09:00",
+      "source": "ajunews.com",
       "query": "금융감독원 보험"
     },
     {
@@ -6105,6 +6312,15 @@
       "query": "심혈관질환"
     },
     {
+      "title": "[정책 인사이트] 권역응급센터 44→53곳 늘렸는데…기존 지역거점은 왜...",
+      "description": "정부 입장에서는 상급종합병원이 중증질환 뿐 아니라 중증응급환자를 적극적으로 수용하고 최종치료까지 책임지도록 유도하기 위한 장치다. 실제 이번 권역센터 공모에는 서울 주요 대형병원들이 뛰어들었고...",
+      "source_url": "https://www.apsk.co.kr/news/articleView.html?idxno=540330",
+      "naver_url": "https://www.apsk.co.kr/news/articleView.html?idxno=540330",
+      "published_at": "2026-09-02T06:02:00+09:00",
+      "source": "apsk.co.kr",
+      "query": "중증질환"
+    },
+    {
       "title": "국산 CAR-T '림카토' 연내 급여 촉각…해외선 '랩셀' 자가면역 임상 빨간...",
       "description": "노바티스가 중증 면역반응으로 환자 3명이 사망한 뒤 자가면역·신경 질환 대상 CAR-T 임상시험 8건을 일시 중단했고 브리스톨마이어스스퀴브(BMS)도 유사한 개발 프로그램의 환자 모집을 멈췄다. 혈액암에서는 이미...",
       "source_url": "https://www.apsk.co.kr/news/articleView.html?idxno=540328",
@@ -6120,42 +6336,6 @@
       "naver_url": "https://www.yakup.com/news/index.html?mode=view&cat=18&nid=331927",
       "published_at": "2026-09-02T06:02:00+09:00",
       "source": "yakup.com",
-      "query": "중증질환"
-    },
-    {
-      "title": "‘유비웰’ 한국‧미국‧EU‧브라질 매출서 로열티..분쟁 타결",
-      "description": "앞으로도 바이오마린 파마슈티컬은 혁신을 지속하고, 각종 중증 유전성 질환 을 앓고 있는 환자들을 위한 차세대 치료제들을 선보일 것이고, 소아 연골 무형성증 환자들을 위한 모멘텀을 구축해 나갈 것이라고 하디...",
-      "source_url": "https://www.yakup.com/news/index.html?mode=view&cat=16&nid=331920",
-      "naver_url": "https://www.yakup.com/news/index.html?mode=view&cat=16&nid=331920",
-      "published_at": "2026-09-02T06:02:00+09:00",
-      "source": "yakup.com",
-      "query": "중증질환"
-    },
-    {
-      "title": "[정책 인사이트] 권역응급센터 44→53곳 늘렸는데…기존 지역거점은 왜...",
-      "description": "정부 입장에서는 상급종합병원이 중증질환 뿐 아니라 중증응급환자를 적극적으로 수용하고 최종치료까지 책임지도록 유도하기 위한 장치다. 실제 이번 권역센터 공모에는 서울 주요 대형병원들이 뛰어들었고...",
-      "source_url": "https://www.apsk.co.kr/news/articleView.html?idxno=540330",
-      "naver_url": "https://www.apsk.co.kr/news/articleView.html?idxno=540330",
-      "published_at": "2026-09-02T06:02:00+09:00",
-      "source": "apsk.co.kr",
-      "query": "중증질환"
-    },
-    {
-      "title": "보험급여 해결한 '핀테플라', 종합병원 처방권 진입",
-      "description": "드라벳증후군은 생후 12개월 전후에 발병하며 환자의 최대 15%가 유아기 또는 청소년기에 사망하는 치명적인 소아 극희귀 중증 난치 질환 이다. 장기간 지속되는 열성 경련은 물론 비특이적인 형태의 발작이 평생...",
-      "source_url": "https://www.dailypharm.com/user/news/342043?REFERER=NP",
-      "naver_url": "https://www.dailypharm.com/user/news/342043?REFERER=NP",
-      "published_at": "2026-09-02T06:02:00+09:00",
-      "source": "dailypharm.com",
-      "query": "중증질환"
-    },
-    {
-      "title": "[수요광장] 안전한 돌봄, 함께 행복한 사회",
-      "description": "요즘 같은 폭염 속에서, 에어컨은 고사하고 선풍기조차 켤 수 없는 극한의 상황, 사회적으로 정신 질환 자가... 정책적으로 ' 중증 서비스 가산 수가제 도입' 등 현실적인 보상과 처우개선은 여전히 미진하다. A 씨도 우리...",
-      "source_url": "https://www.cctoday.co.kr/news/articleView.html?idxno=2235955",
-      "naver_url": "https://www.cctoday.co.kr/news/articleView.html?idxno=2235955",
-      "published_at": "2026-09-02T06:02:00+09:00",
-      "source": "cctoday.co.kr",
       "query": "중증질환"
     },
     {
@@ -6204,21 +6384,21 @@
       "query": "간병인"
     },
     {
-      "title": "복지부 내년 예산안 작년 대비 8.2% 확대된 148조 7천억 확정",
-      "description": "미래세대 회복과 성장 지원을 위해 복지부는 미숙아·선천성이상아 출생 시 의료비 지원을 최대 2700만원까지 확대하고, 가임력 검사비 지원 및 난임·임산부 심리상담센터를 확충한다. 복지부는 AX 및 바이오 혁신...",
-      "source_url": "https://www.monews.co.kr/news/articleView.html?idxno=413541",
-      "naver_url": "https://www.monews.co.kr/news/articleView.html?idxno=413541",
-      "published_at": "2026-09-02T06:00:00+09:00",
-      "source": "monews.co.kr",
-      "query": "의료비"
-    },
-    {
       "title": "유방암 증가세 뚜렷…젊은 환자·재발 치료 관건[2026 여성암 리포트①...",
       "description": "이들 질환은 여성의 신체적·정신적 건강과 삶의 질을 저해하고 의료비 부담과 생산성 손실 등 사회경제적 비용을 초래한다. 최근 다수의 신약 등장으로 치료 패러다임이 변화하고 있지만 여전히 재발과 전이...",
       "source_url": "https://www.etoday.co.kr/news/view/2614943",
       "naver_url": "https://www.etoday.co.kr/news/view/2614943",
       "published_at": "2026-09-02T06:00:00+09:00",
       "source": "etoday.co.kr",
+      "query": "의료비"
+    },
+    {
+      "title": "복지부 내년 예산안 작년 대비 8.2% 확대된 148조 7천억 확정",
+      "description": "미래세대 회복과 성장 지원을 위해 복지부는 미숙아·선천성이상아 출생 시 의료비 지원을 최대 2700만원까지 확대하고, 가임력 검사비 지원 및 난임·임산부 심리상담센터를 확충한다. 복지부는 AX 및 바이오 혁신...",
+      "source_url": "https://www.monews.co.kr/news/articleView.html?idxno=413541",
+      "naver_url": "https://www.monews.co.kr/news/articleView.html?idxno=413541",
+      "published_at": "2026-09-02T06:00:00+09:00",
+      "source": "monews.co.kr",
       "query": "의료비"
     },
     {
@@ -6330,21 +6510,21 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "[오늘의 주요일정] 금융 ·증권(9월2일 수요일)",
-      "description": "6월말 국내은행의 부실채권 현황(잠정) ▲09:00 금융감독원 , 이화여대와 공동 국제 컨퍼런스 개최 ▲12:00 '26.9.10.부터 자동차 보험 치료비 보상 절차가 개편됩니다 <한국은행> ▲09:30 2026 BOK-CEPR-OECD 공동...",
-      "source_url": "https://www.newsis.com/view/NISX20260901_0003771955",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014162799?sid=101",
-      "published_at": "2026-09-02T05:00:00+09:00",
-      "source": "newsis.com",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "[노트북 너머] 수단이 목적이 된 금융 기관 지방이전",
       "description": "1차 공공기관 이전 당시 금융감독원 과 주요 국책은행을 비롯한 핵심 금융 기관이 서울에 남은 논리는 여전히... 금융 중심지 정책을 추진한 이유도 여기에 있다. 금감원이 세종으로 이전하면 감독 대상인 은행·증권· 보험 사도...",
       "source_url": "https://www.etoday.co.kr/news/view/2620577",
       "naver_url": "https://www.etoday.co.kr/news/view/2620577",
       "published_at": "2026-09-02T05:00:00+09:00",
       "source": "etoday.co.kr",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "[오늘의 주요일정] 금융 ·증권(9월2일 수요일)",
+      "description": "6월말 국내은행의 부실채권 현황(잠정) ▲09:00 금융감독원 , 이화여대와 공동 국제 컨퍼런스 개최 ▲12:00 '26.9.10.부터 자동차 보험 치료비 보상 절차가 개편됩니다 <한국은행> ▲09:30 2026 BOK-CEPR-OECD 공동...",
+      "source_url": "https://www.newsis.com/view/NISX20260901_0003771955",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014162799?sid=101",
+      "published_at": "2026-09-02T05:00:00+09:00",
+      "source": "newsis.com",
       "query": "금융감독원 보험"
     },
     {
@@ -6870,15 +7050,6 @@
       "query": "심혈관질환"
     },
     {
-      "title": "순창군, ‘자기 혈관 숫자알기’ 레드서클 캠페인 추진",
-      "description": "순창보건의료원은 심 뇌혈관질환 예방관리 주간(9. 1.~9. 7.)을 맞아 심근경색, 뇌졸중 등 중증 심 뇌혈관질환 예방의 중요성을 알리고 주민들의 건강생활 실천을 돕기 위해 ‘자기혈관 숫자알기-레드서클 캠페인’을...",
-      "source_url": "https://sjbnews.com/news/news.php?number=886512",
-      "naver_url": "https://sjbnews.com/news/news.php?number=886512",
-      "published_at": "2026-09-01T19:22:00+09:00",
-      "source": "sjbnews.com",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "항암제 '파드셉' 급여협상에 암초, 아스텔라스 美와 약가인하 합의",
       "description": "하지만 두 약제 모두 초고가인 데다 '신약끼리 병용'이라는 국내 건강보험 역사상 전례가 드문 복잡한 구조여서 보건당국( 건강보험공단 )의 재정 부담이 크다. 당국 역시 재정 건전성을 위해 제약사 측에 상당한 수준의...",
       "source_url": "http://www.medical-tribune.co.kr/news/articleView.html?idxno=215009",
@@ -6921,16 +7092,16 @@
       "naver_url": "https://www.cnbizm.com/news/articleView.html?idxno=313535",
       "published_at": "2026-09-01T19:14:00+09:00",
       "source": "cnbizm.com",
-      "query": "의료비"
+      "query": "비급여"
     },
     {
       "title": "[위클리오늘] 영덕군 오늘(9. 1)",
-      "description": "◇영덕군보건소, 심 뇌혈관질환 예방 캠페인 운영 - 심혈관질환 예방·관리 ... 9대 생활 수칙 실천 레드서클 캠페인 '자기혈관 숫자알기' 홍보물/영덕군 제공 영덕군보건소가 9월 심 뇌혈관질환 예방의 달을 맞아 질병관리청...",
+      "description": "◇영덕군보건소, 심뇌혈관질환 예방 캠페인 운영 - 심혈관질환 예방·관리 ... 9대 생활 수칙 실천 레드서클 캠페인 '자기혈관 숫자알기' 홍보물/영덕군 제공 영덕군보건소가 9월 심뇌혈관질환 예방의 달을 맞아 질병관리청...",
       "source_url": "http://www.weeklytoday.com/news/articleView.html?idxno=792530",
       "naver_url": "http://www.weeklytoday.com/news/articleView.html?idxno=792530",
       "published_at": "2026-09-01T19:14:00+09:00",
       "source": "weeklytoday.com",
-      "query": "뇌혈관질환"
+      "query": "심혈관질환"
     },
     {
       "title": "DB손보 환산 민원건수 1년 새 16%↑ '증가폭 최대'…메리츠는 줄어도 1위",
@@ -6996,15 +7167,6 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "미추홀구보건소, 모바일 걷기 앱 '워크온' 챌린지 연중 운영",
-      "description": "심 뇌혈관질환 포스터. 자료=인천시 인천 미추홀구보건소가 스마트폰 앱을 활용해 구민들의 일상 속 걷기 습관 형성과 건강 증진을 적극 독려하고 나섰다. 미추홀구보건소는 주민들의 생활 속 걷기 활성화를 위해 모바일...",
-      "source_url": "https://www.gukjenews.com/news/articleView.html?idxno=3681582",
-      "naver_url": "https://www.gukjenews.com/news/articleView.html?idxno=3681582",
-      "published_at": "2026-09-01T19:02:00+09:00",
-      "source": "gukjenews.com",
-      "query": "뇌혈관질환"
-    },
-    {
       "title": "“수술 싫어? 좌욕 꼭 하세요”…‘항문 세척’ 중요한 이유?",
       "description": "지난해 치핵수술 15만 1864건...입원 기간 2.2일 국민 건강보험공단 이 31일 발간한 2025년 주요 수술 통계 연보에 따르면, 지난해 치핵수술은 15만 1864건이었다. 치핵수술은 40대가 가장 많이 했다. 치핵수술의 진료비는...",
       "source_url": "https://kormedi.com/?p=2857409",
@@ -7041,15 +7203,6 @@
       "query": "금융감독원 보험"
     },
     {
-      "title": "서다운 대전시의원 \"희귀질환 아동 지원 지역·학교 따라 달라선 안 돼...",
-      "description": "대전의 경우 올해 6월 기준 희귀질환자 의료비 지원을 받는 18세 미만 아동은 161명이다. 의료비 지원 대상만 집계한 수치여서 실제 치료와 학교생활을 병행하는 희귀질환 아동은 더 많을 것으로 서 의원은 보고 있다. 서...",
-      "source_url": "https://www.gukjenews.com/news/articleView.html?idxno=3681571",
-      "naver_url": "https://www.gukjenews.com/news/articleView.html?idxno=3681571",
-      "published_at": "2026-09-01T18:46:00+09:00",
-      "source": "gukjenews.com",
-      "query": "의료비"
-    },
-    {
       "title": "‘혈관 재개통=끝’ 아니었다…제이엘케이 AI, 뇌경색 진행 포착",
       "description": "회사는 최근 평가유예 신의료기술 로 지정된 JLK-CTP의 의료현장 적용과 사업화도 추진하고 있다. 제이엘케이 관계자는 “이번 연구를 통해 혈관 재개통 여부만으로 치료 이후 뇌 손상 정도를 판단하기보다 시간에 따른...",
       "source_url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065605337507767",
@@ -7075,15 +7228,6 @@
       "published_at": "2026-09-01T18:36:00+09:00",
       "source": "getnews.co.kr",
       "query": "신의료기술"
-    },
-    {
-      "title": "개인회생 변제율 낮추는 방법…부양가족·추가생계비·인가거부 리스크",
-      "description": "대법원 회생 실무 기준상, 본인·부양가족 치료비, 장애로 인한 지속적 의료비 , 미성년 자녀 교육비 등은... 장애로 인한 지속적 의료비 , 미성년 자녀의 공교육 관련 교육비도 지출의 불가피성이 자료로 뒷받침되면 가산될...",
-      "source_url": "https://lawtalknews.co.kr/article/1RX6MOHZX78B",
-      "naver_url": "https://lawtalknews.co.kr/article/1RX6MOHZX78B",
-      "published_at": "2026-09-01T18:34:00+09:00",
-      "source": "lawtalknews.co.kr",
-      "query": "의료비"
     },
     {
       "title": "이재준 제21대 한림대 의료 원장 취임…의무부총장 겸임",
@@ -7356,21 +7500,21 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "한국건강관리협회 강원특별자치도지부·한국여성농업인 강원특별자치도...",
-      "description": "건강검진은 △농약중독 평가 △근골격계 질환 선별검사 △골절 위험도 평가 △ 심혈관 계 질환 위험도 평가 △폐활량 검사 등으로 구성돼있다. 고복희 한국건강관리협회 강원지부 본부장은 “강원 농업과 농촌의 발전을...",
-      "source_url": "https://www.kwnews.co.kr/article/20260901501835",
-      "naver_url": "https://n.news.naver.com/mnews/article/087/0001214954?sid=102",
-      "published_at": "2026-09-01T18:00:00+09:00",
-      "source": "kwnews.co.kr",
-      "query": "심혈관질환"
-    },
-    {
       "title": "[롱제비티] 심장마비 백신 역할 가능한 '이것'···심부전·뇌졸중도 예...",
       "description": "③ 백신에 포함된 면역 증강 보조제가 대상포진 바이러스로 인한 혈관 내 만성 염증을 억제하는 것이 심혈관 질환 예방의 핵심 원인이다. 대상포진 백신을 맞으면 심장마비·심부전·뇌졸중에 걸릴 위험을 크게 낮춘다는...",
       "source_url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=258149",
       "naver_url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=258149",
       "published_at": "2026-09-01T18:00:00+09:00",
       "source": "womaneconomy.co.kr",
+      "query": "심혈관질환"
+    },
+    {
+      "title": "한국건강관리협회 강원특별자치도지부·한국여성농업인 강원특별자치도...",
+      "description": "건강검진은 △농약중독 평가 △근골격계 질환 선별검사 △골절 위험도 평가 △ 심혈관 계 질환 위험도 평가 △폐활량 검사 등으로 구성돼있다. 고복희 한국건강관리협회 강원지부 본부장은 “강원 농업과 농촌의 발전을...",
+      "source_url": "https://www.kwnews.co.kr/article/20260901501835",
+      "naver_url": "https://n.news.naver.com/mnews/article/087/0001214954?sid=102",
+      "published_at": "2026-09-01T18:00:00+09:00",
+      "source": "kwnews.co.kr",
       "query": "심혈관질환"
     },
     {
@@ -7419,21 +7563,21 @@
       "query": "건강보험심사평가원"
     },
     {
-      "title": "유한양행, 케이메디허브와 신약개발 맞손…R&D 협력 확대",
-      "description": "유한양행(대표이사 조욱제)은 대구경북첨단 의료 산업진흥재단(케이메디허브, 이사장 박구선)과 혁신 신약... 상호 기술 지원 ▲ 의료 산업 네트워크 구축 등 다각적인 분야에서 협력할 예정이다. 특히 유한양행은...",
-      "source_url": "https://www.thepublic.kr/news/articleView.html?idxno=317144",
-      "naver_url": "https://www.thepublic.kr/news/articleView.html?idxno=317144",
-      "published_at": "2026-09-01T17:54:00+09:00",
-      "source": "thepublic.kr",
-      "query": "혁신의료기술"
-    },
-    {
       "title": "한림대춘천성심병원, 제23대 조재호 병원장 취임",
       "description": "그는 진료 현장에서 발견한 문제를 연구로 연결하고, 연구 성과가 다시 환자 치료로 이어지는 선순환 구조를 구축해 연구 역량을 실질적인 의료 혁신 으로 연결한다는 계획이다. AI와 디지털 헬스케어 등 미래 의료 기술 을...",
       "source_url": "http://www.bokuennews.com/news/article.html?no=283472",
       "naver_url": "http://www.bokuennews.com/news/article.html?no=283472",
       "published_at": "2026-09-01T17:54:00+09:00",
       "source": "bokuennews.com",
+      "query": "혁신의료기술"
+    },
+    {
+      "title": "유한양행, 케이메디허브와 신약개발 맞손…R&D 협력 확대",
+      "description": "유한양행(대표이사 조욱제)은 대구경북첨단 의료 산업진흥재단(케이메디허브, 이사장 박구선)과 혁신 신약... 상호 기술 지원 ▲ 의료 산업 네트워크 구축 등 다각적인 분야에서 협력할 예정이다. 특히 유한양행은...",
+      "source_url": "https://www.thepublic.kr/news/articleView.html?idxno=317144",
+      "naver_url": "https://www.thepublic.kr/news/articleView.html?idxno=317144",
+      "published_at": "2026-09-01T17:54:00+09:00",
+      "source": "thepublic.kr",
       "query": "혁신의료기술"
     },
     {
@@ -7482,21 +7626,21 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "다올투자증권, 제주 애월 공사대금 소송 항소…1심 일부 패소 불복",
-      "description": "1일 금융감독원 전자공시시스템에 따르면 다올투자증권과 메리츠화재해상 보험 , 한국투자캐피탈, 마우나제일차, 몽상드제주제일차, 에어라인제십이차, 인베스토리제십차, 신한자산신탁 등 8개사는 지난달 31일...",
-      "source_url": "http://www.popcornnews.net/news/articleView.html?idxno=131497",
-      "naver_url": "http://www.popcornnews.net/news/articleView.html?idxno=131497",
-      "published_at": "2026-09-01T17:46:00+09:00",
-      "source": "popcornnews.net",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "다올투자증권, 진흥기업 356억 1심 패소에 불복…대주단 8곳 항소",
       "description": "다올투자증권은 1일 금융감독원 전자공시를 통해 지난달 31일 서울중앙지방법원에 항소장이 제출됐다고... 다올투자증권을 비롯해 메리츠화재해상 보험 , 한국투자캐피탈, 마우나제일차, 몽상드제주제일차...",
       "source_url": "https://www.consumuch.com/news/articleView.html?idxno=78926",
       "naver_url": "https://www.consumuch.com/news/articleView.html?idxno=78926",
       "published_at": "2026-09-01T17:46:00+09:00",
       "source": "consumuch.com",
+      "query": "금융감독원 보험"
+    },
+    {
+      "title": "다올투자증권, 제주 애월 공사대금 소송 항소…1심 일부 패소 불복",
+      "description": "1일 금융감독원 전자공시시스템에 따르면 다올투자증권과 메리츠화재해상 보험 , 한국투자캐피탈, 마우나제일차, 몽상드제주제일차, 에어라인제십이차, 인베스토리제십차, 신한자산신탁 등 8개사는 지난달 31일...",
+      "source_url": "http://www.popcornnews.net/news/articleView.html?idxno=131497",
+      "naver_url": "http://www.popcornnews.net/news/articleView.html?idxno=131497",
+      "published_at": "2026-09-01T17:46:00+09:00",
+      "source": "popcornnews.net",
       "query": "금융감독원 보험"
     },
     {
@@ -7597,15 +7741,6 @@
       "published_at": "2026-09-01T17:27:00+09:00",
       "source": "korea.kr",
       "query": "심혈관질환"
-    },
-    {
-      "title": "[은행 뉴스브리핑] 농협 금융 전북특별자치도에 'NH 금융 허브' 출범",
-      "description": "위해 'NH 금융 허브'를 출범했다. 농협 금융 은 'NH 금융 허브'에 은행, 보험 , 증권, 자산운용, 캐피탈, 벤처투자 등... □ 토스뱅크-금감원 '찾아가는 FSS 어린이 금융 스쿨-병원학교편' 운영 토스뱅크가 금융감독원 과 함께...",
-      "source_url": "https://www.asiatime.co.kr/article/20260901500395",
-      "naver_url": "https://www.asiatime.co.kr/article/20260901500395",
-      "published_at": "2026-09-01T17:26:00+09:00",
-      "source": "asiatime.co.kr",
-      "query": "금융감독원 보험"
     },
     {
       "title": "\"지방 내려가면 6000만원 지원\"… 삼육대, 수도권 청년-부울경 대기업·...",
@@ -7714,15 +7849,6 @@
       "published_at": "2026-09-01T17:08:00+09:00",
       "source": "medipana.com",
       "query": "건강보험심사평가원"
-    },
-    {
-      "title": "금융 노조 공공기관 이전 반발에 싸늘해진 지역 여론",
-      "description": "실제 지난달 산업은행과 기업은행, 수출입은행 등 금융 기관 노조는 지방 이전에 공개적으로 반대했고, 이전 가능성이 거론되는 금융감독원 과 예금 보험 공사 등에서도 노조를 중심으로 반대 목소리가 나오고 있다. 업무...",
-      "source_url": "https://www.joongdo.co.kr/web/view.php?key=20260901010000307",
-      "naver_url": "https://www.joongdo.co.kr/web/view.php?key=20260901010000307",
-      "published_at": "2026-09-01T17:06:00+09:00",
-      "source": "joongdo.co.kr",
-      "query": "금융감독원 보험"
     },
     {
       "title": "보험 GA협회, ‘ 금융 위 출신’ 송재근 상임부회장 맞아",
@@ -7842,21 +7968,21 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "외국인 간병 인력 수입?…복지부 \"내국인 우선 고용 후 검토\"",
-      "description": "보건복지부가 요양병원 간병 비에 건강 보험 을 적용하는 간병 급여화 제도를 추진 중인 가운데 \"내국인 간병 인력을 우선 고용할 수 있도록 정책을 추진하고 있다\"고 밝혔다. 복지부는 1일 보도설명자료를 통해 \"요양병원...",
-      "source_url": "https://www.newsis.com/view/NISX20260901_0003771988",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014162381?sid=102",
-      "published_at": "2026-09-01T16:58:00+09:00",
-      "source": "newsis.com",
-      "query": "간병보험"
-    },
-    {
       "title": "[ 보험 업계 동향] NH농협생명ㆍiM라이프ㆍDB생명ㆍKB라이프파트너스 (9.1...",
       "description": "■ iM라이프, 건강보험 시장 진출···치매 검사부터 돌봄까지 32종 보장 - '액티브 케어 치매 간병보험 ' 출시···재가·요양병원 비용 보장 강화 - 연금 중심 포트폴리오 확장···노년기 전 단계 보장체계 구축 iM라이프가...",
       "source_url": "http://www.weeklytoday.com/news/articleView.html?idxno=792485",
       "naver_url": "http://www.weeklytoday.com/news/articleView.html?idxno=792485",
       "published_at": "2026-09-01T16:58:00+09:00",
       "source": "weeklytoday.com",
+      "query": "간병보험"
+    },
+    {
+      "title": "외국인 간병 인력 수입?…복지부 \"내국인 우선 고용 후 검토\"",
+      "description": "보건복지부가 요양병원 간병 비에 건강 보험 을 적용하는 간병 급여화 제도를 추진 중인 가운데 \"내국인 간병 인력을 우선 고용할 수 있도록 정책을 추진하고 있다\"고 밝혔다. 복지부는 1일 보도설명자료를 통해 \"요양병원...",
+      "source_url": "https://www.newsis.com/view/NISX20260901_0003771988",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014162381?sid=102",
+      "published_at": "2026-09-01T16:58:00+09:00",
+      "source": "newsis.com",
       "query": "간병보험"
     },
     {
@@ -7887,15 +8013,6 @@
       "query": "건강보험공단"
     },
     {
-      "title": "[더밸류 브리핑] 오늘의 NH농협 금융 소식…NH농협생명·NH농협카드·NH농...",
-      "description": "NH농협생명이 순환계질환의 검사부터 치료·재활까지 전 과정을 보장하는 ‘혈관튼튼NH건강 보험 ’을... [사진=NH농협캐피탈] 이번 시스템은 금융감독원 의 ‘ 금융 소비자보호 개선 로드맵’ 정책 방향에 맞춰 금융 거래...",
-      "source_url": "http://www.thevaluenews.co.kr/news/view.php?idx=201205",
-      "naver_url": "http://www.thevaluenews.co.kr/news/view.php?idx=201205",
-      "published_at": "2026-09-01T16:54:00+09:00",
-      "source": "thevaluenews.co.kr",
-      "query": "금융감독원 보험"
-    },
-    {
       "title": "보험 업권, 7개 지자체와 '무료 상생 보험 ' 출시한다",
       "description": "1일 금융위원회 에 따르면 보험 업권은 질병이나 상해 등 불의의 사고 발생 시 더욱 큰 재정적 어려움에 노출될 수 있는 취약계층을 지원하기 위한 상생 보험 사업을 추진하고 있다. 보험 업권은 취약계층 대상의 상생 보험 ...",
       "source_url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=317556",
@@ -7914,19 +8031,19 @@
       "query": "건강보험공단"
     },
     {
-      "title": "조재호 춘천성심병원장 취임…\"지역서 치료 완결한다\"",
-      "description": "AI와 디지털 헬스케어 등 미래 의료 기술 을 진료에 활용하기 위한 연구를 이어가는 동시에 교육과 연구를 통한... 지역 의료 기관과 긴밀하게 협력해 지역 안에서 치료가 완결되는 의료 체계를 구축하고, 연구와 혁신 을 통해...",
-      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416895",
-      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416895",
+      "title": "한림대 의료 원 이재준號 출범…\"5개 병원 시너지 강화\"",
+      "description": "이후 범부처전주기 의료 기기연구개발사업과 연구중심병원 육성 R&D사업, 의료 데이터중심병원 사업, 혁신 형... 등 의료기술 개발을 진행했다. 이 의료 원장이 춘천성심병원에서 구축해 온 연구 기반은 앞으로 개별...",
+      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416894",
+      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416894",
       "published_at": "2026-09-01T16:52:00+09:00",
       "source": "medipana.com",
       "query": "혁신의료기술"
     },
     {
-      "title": "한림대 의료 원 이재준號 출범…\"5개 병원 시너지 강화\"",
-      "description": "이후 범부처전주기 의료 기기연구개발사업과 연구중심병원 육성 R&D사업, 의료 데이터중심병원 사업, 혁신 형... 등 의료기술 개발을 진행했다. 이 의료 원장이 춘천성심병원에서 구축해 온 연구 기반은 앞으로 개별...",
-      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416894",
-      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416894",
+      "title": "조재호 춘천성심병원장 취임…\"지역서 치료 완결한다\"",
+      "description": "AI와 디지털 헬스케어 등 미래 의료 기술 을 진료에 활용하기 위한 연구를 이어가는 동시에 교육과 연구를 통한... 지역 의료 기관과 긴밀하게 협력해 지역 안에서 치료가 완결되는 의료 체계를 구축하고, 연구와 혁신 을 통해...",
+      "source_url": "https://www.medipana.com/news/articleView.html?idxno=416895",
+      "naver_url": "https://www.medipana.com/news/articleView.html?idxno=416895",
       "published_at": "2026-09-01T16:52:00+09:00",
       "source": "medipana.com",
       "query": "혁신의료기술"
@@ -8032,12 +8149,12 @@
     },
     {
       "title": "“대출 이자 부담된다”… 보험 사 금리인하 신청늘었지만 수용은 감소",
-      "description": "한편 금리인하 요구 신청은 소득이나 신용도 등이 좋아진 만큼 금리를 낮춰달라는 권리로 보험 업계뿐만 아니라 은행·저축은행 등 금융 권에서 모두 적용받는다. 앞서 지난해 금융감독원 · 금융 위원회 당국은 소비자...",
+      "description": "한편 금리인하 요구 신청은 소득이나 신용도 등이 좋아진 만큼 금리를 낮춰달라는 권리로 보험 업계뿐만 아니라 은행·저축은행 등 금융 권에서 모두 적용받는다. 앞서 지난해 금융 감독원· 금융위원회 당국은 소비자...",
       "source_url": "https://www.mk.co.kr/article/12141437",
       "naver_url": "https://n.news.naver.com/mnews/article/009/0005728792?sid=101",
       "published_at": "2026-09-01T16:37:00+09:00",
       "source": "mk.co.kr",
-      "query": "금융감독원 보험"
+      "query": "금융위원회 보험"
     },
     {
       "title": "유한양행, 케이메디허브와 신약 공동연구 MOU…오픈이노베이션 확대",
@@ -8095,12 +8212,12 @@
     },
     {
       "title": "은행 막히자 보험 찾았는데… ‘마지막 급전창구’ 약관대출도 막힌다",
-      "description": "금융감독원 은 보험 사들에 보험 계약대출 리스크 관리를 강화하도록 주문했고 일부 보험 사들은 이에 맞춰 해약환급금 대비 대출 가능 비율을 95%에서 85%로 낮췄다. 최근 증시 변동성 확대에 따른 빚투 수요까지 몰리며...",
+      "description": "금융위원회 에 따르면 올해 상반기 보험 업권 가계대출은 2조원 증가했다. 지난해 연간 1조9000억원 감소했던 것과 대조적이다. 보험 계약대출도 증가세가 두드러졌다. 주요 생명 보험 사(삼성·한화·교보·NH농협·신한라이프)...",
       "source_url": "https://www.dt.co.kr/article/12081487?ref=naver",
       "naver_url": "https://n.news.naver.com/mnews/article/029/0003045575?sid=101",
       "published_at": "2026-09-01T16:31:00+09:00",
       "source": "dt.co.kr",
-      "query": "금융감독원 보험"
+      "query": "금융위원회 보험"
     },
     {
       "title": "iM라이프, 건강보험 시장 진출…치매 간병보험 출시",
@@ -8256,15 +8373,6 @@
       "query": "건강보험심사평가원"
     },
     {
-      "title": "경남도, 소상공인 상생 보험 (생명 보험 ) 지원사업 개시",
-      "description": "'소상공인 상생 보험 '은 금융위원회 주관 공모사업으로, 지역 소상공인과 취약계층 대상 생명 보험 , 손해 보험 상품을 무료로 지원하는 사업이다. 이중 경남도가 9월부터 추진하는 사업은 생명 보험 상품인 '민생회복대출...",
-      "source_url": "https://www.newsgn.com/news/articleView.html?idxno=570936",
-      "naver_url": "https://www.newsgn.com/news/articleView.html?idxno=570936",
-      "published_at": "2026-09-01T16:14:00+09:00",
-      "source": "newsgn.com",
-      "query": "금융위원회 보험"
-    },
-    {
       "title": "보험 GA협회, 송재근 부회장 취임… 금융 당국 소통 강화",
       "description": "한국 보험 대리점협회( 보험 GA협회)가 처음으로 금융위원회 출신 부회장을 선임해 금융 당국과의 소통을 강화한다. 보험 GA협회는 송재근 전 신협중앙회 사업대표이사<사진>가 상임부회장으로 취임했다고 1일 밝혔다. 송...",
       "source_url": "https://www.fetv.co.kr/news/articleView.html?idxno=309454",
@@ -8274,19 +8382,37 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "[병원계 소식] 9월 1일",
-      "description": "대체하는 기술 이 아니라 의료 진의 역량을 확장하고 더 나은 의료 를 가능하게 하는 도구로 활용될 수 있도록, 의료 진과 환자가 현장에서 실제로 체감할 수 있는 혁신 적인 AI 증강병원 모델을 만들어가겠다\"고 말했다....",
-      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239756",
-      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239756",
+      "title": "경남도, 소상공인 상생 보험 (생명 보험 ) 지원사업 개시",
+      "description": "'소상공인 상생 보험 '은 금융위원회 주관 공모사업으로, 지역 소상공인과 취약계층 대상 생명 보험 , 손해 보험 상품을 무료로 지원하는 사업이다. 이중 경남도가 9월부터 추진하는 사업은 생명 보험 상품인 '민생회복대출...",
+      "source_url": "https://www.newsgn.com/news/articleView.html?idxno=570936",
+      "naver_url": "https://www.newsgn.com/news/articleView.html?idxno=570936",
       "published_at": "2026-09-01T16:14:00+09:00",
-      "source": "doctorstimes.com",
-      "query": "혁신의료기술"
+      "source": "newsgn.com",
+      "query": "금융위원회 보험"
     },
     {
       "title": "[오늘의 인사 및 동정] 9월 1일",
       "description": "그는 진료 현장에서 발견한 문제를 연구로 연결하고, 연구 성과가 다시 환자 치료로 이어지는 선순환 구조를 구축해 연구 역량을 실질적인 의료 혁신 으로 연결한다는 계획이다. AI와 디지털 헬스케어 등 미래 의료 기술 을...",
       "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239777",
       "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239777",
+      "published_at": "2026-09-01T16:14:00+09:00",
+      "source": "doctorstimes.com",
+      "query": "혁신의료기술"
+    },
+    {
+      "title": "[제약업계 소식] 9월 1일",
+      "description": "의료 재단(이사장 박구선, 이하 케이메디허브)과 혁신 신약 파이프라인 강화를 위한 업무협약을 체결했다고 밝혔다. 이번 협약은 유한양행의 신약 개발 역량과 케이메디허브가 보유한 신약개발 연구 인프라· 기술 지원...",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239759",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239759",
+      "published_at": "2026-09-01T16:14:00+09:00",
+      "source": "doctorstimes.com",
+      "query": "혁신의료기술"
+    },
+    {
+      "title": "연세대학교 의료 원 인사",
+      "description": "글로벌치과 혁신의료기술 실증지원센터 소장 △이제호 권역장애인구강진료센터장 ◆ 연세암병원 △김형일 위암센터장 △박준용 간암센터장 △허혁 대장암센터장 △방승민 췌장담도암센터장 △정다현 식도암센터장...",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239781",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239781",
       "published_at": "2026-09-01T16:14:00+09:00",
       "source": "doctorstimes.com",
       "query": "혁신의료기술"
@@ -8301,19 +8427,10 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "연세대학교 의료 원 인사",
-      "description": "글로벌치과 혁신의료기술 실증지원센터 소장 △이제호 권역장애인구강진료센터장 ◆ 연세암병원 △김형일 위암센터장 △박준용 간암센터장 △허혁 대장암센터장 △방승민 췌장담도암센터장 △정다현 식도암센터장...",
-      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239781",
-      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239781",
-      "published_at": "2026-09-01T16:14:00+09:00",
-      "source": "doctorstimes.com",
-      "query": "혁신의료기술"
-    },
-    {
-      "title": "[제약업계 소식] 9월 1일",
-      "description": "의료 재단(이사장 박구선, 이하 케이메디허브)과 혁신 신약 파이프라인 강화를 위한 업무협약을 체결했다고 밝혔다. 이번 협약은 유한양행의 신약 개발 역량과 케이메디허브가 보유한 신약개발 연구 인프라· 기술 지원...",
-      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239759",
-      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239759",
+      "title": "[병원계 소식] 9월 1일",
+      "description": "대체하는 기술 이 아니라 의료 진의 역량을 확장하고 더 나은 의료 를 가능하게 하는 도구로 활용될 수 있도록, 의료 진과 환자가 현장에서 실제로 체감할 수 있는 혁신 적인 AI 증강병원 모델을 만들어가겠다\"고 말했다....",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239756",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239756",
       "published_at": "2026-09-01T16:14:00+09:00",
       "source": "doctorstimes.com",
       "query": "혁신의료기술"
@@ -8472,21 +8589,21 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "﻿[제약건기식]SK플라즈마, 고용량 저혈소판치료제 출시로 복약 편의 개...",
-      "description": "건강보험심사평가원 통계에 따르면, 2025년 기미 진료 환자 중 50~60대가 48%로 가장 높은 비율을 차지했으며, 30~40대도 36%에 달해 중장년층에 국한되지 않는 질환임이 확인됐다. 태극제약 관계자는 \"기미와 색소침착은...",
-      "source_url": "https://www.getnews.co.kr/news/articleView.html?idxno=879483",
-      "naver_url": "https://www.getnews.co.kr/news/articleView.html?idxno=879483",
-      "published_at": "2026-09-01T15:56:00+09:00",
-      "source": "getnews.co.kr",
-      "query": "건강보험심사평가원"
-    },
-    {
       "title": "심평원, 인공지능(AI) 영상 판독 '진료비 심사 '에 첫 적용",
       "description": "건강보험심사평가원 이 참고자료로 활용해 온 인공지능(AI) 의료영상 판독 결과를 진료비 심사 업무에 처음 적용했다. 심평원은 2018년부터 딥러닝 기반의 인공지능(AI) 기술을 활용해 의료영상을 자동 분석하는 판독...",
       "source_url": "http://www.cctimes.kr/news/articleView.html?idxno=924765",
       "naver_url": "http://www.cctimes.kr/news/articleView.html?idxno=924765",
       "published_at": "2026-09-01T15:56:00+09:00",
       "source": "cctimes.kr",
+      "query": "건강보험심사평가원"
+    },
+    {
+      "title": "﻿[제약건기식]SK플라즈마, 고용량 저혈소판치료제 출시로 복약 편의 개...",
+      "description": "건강보험심사평가원 통계에 따르면, 2025년 기미 진료 환자 중 50~60대가 48%로 가장 높은 비율을 차지했으며, 30~40대도 36%에 달해 중장년층에 국한되지 않는 질환임이 확인됐다. 태극제약 관계자는 \"기미와 색소침착은...",
+      "source_url": "https://www.getnews.co.kr/news/articleView.html?idxno=879483",
+      "naver_url": "https://www.getnews.co.kr/news/articleView.html?idxno=879483",
+      "published_at": "2026-09-01T15:56:00+09:00",
+      "source": "getnews.co.kr",
       "query": "건강보험심사평가원"
     },
     {
@@ -8661,15 +8778,6 @@
       "query": "간병보험"
     },
     {
-      "title": "건보 공단 부울경본부, 영도 중장년 1인가구 고독사 예방 지원",
-      "description": "국민 건강보험공단 부산울산경남지역본부는 지난달 31일 부산 영도구청을 찾아 중장년 1인가구의 고독사 예방을 위한 사회공헌기금 500만원을 전달했다. 이번 지원은 영도구 내 돌봄이 필요한 중장년 1인가구 100세대를...",
-      "source_url": "http://www.inews24.com/view/2000568",
-      "naver_url": "https://n.news.naver.com/mnews/article/031/0001054337?sid=102",
-      "published_at": "2026-09-01T15:34:00+09:00",
-      "source": "inews24.com",
-      "query": "건강보험공단"
-    },
-    {
       "title": "체외수정 3회 연속 1등급 충남대병원 난임클리닉",
       "description": "▲ 건강보험심사평가원 난임시술 의료기관 평가에서 체외수정시술 3회 연속 1등급을 받은 충남대학교병원 전경 난임 치료의 안전성과 질 관리 역량을 살피는 국가 평가에서 충남대병원이 3회 연속 종합 1등급을 받았다....",
       "source_url": "https://www.ccdailynews.com/news/articleView.html?idxno=2437739",
@@ -8677,15 +8785,6 @@
       "published_at": "2026-09-01T15:32:00+09:00",
       "source": "ccdailynews.com",
       "query": "건강보험심사평가원"
-    },
-    {
-      "title": "[그래픽] 국민의료비 추이",
-      "description": "1일 보건복지부와 국민 건강보험공단 이 공개한 '국민보건계정 보고서'에 따르면 2025년 국민의료비(잠정치)는 224조9천936억원으로 전년보다 3.8% 증가했다. circlemin@yna.co.kr X(트위터) @yonhap...",
-      "source_url": "https://www.yna.co.kr/view/GYH20260901001200044?input=1363m",
-      "naver_url": "https://n.news.naver.com/mnews/article/001/0016283234?sid=102",
-      "published_at": "2026-09-01T15:31:00+09:00",
-      "source": "yna.co.kr",
-      "query": "건강보험공단"
     },
     {
       "title": "사망 땐 대출 상환·휴업 땐 고정비 보전…무료 상생 보험 나온다",
@@ -8706,21 +8805,21 @@
       "query": "비급여"
     },
     {
-      "title": "[2027 예산안] 식약처, 8829억 투입…안심 먹거리·K-푸드 진출 '활성화...",
-      "description": "올해부터 추진 중인 ' 의료 제품 허가·심사 혁신 방안'의 일환으로 매개변수 기반 출하 등 첨단 제조 기술 이 적용된 의약품의 품질 심사자료 표준모델도 구축해 허가·심사 준비 기간 단축도 지원한다. 식의약 안전성도...",
-      "source_url": "https://www.newspim.com/news/view/20260901000950",
-      "naver_url": "https://www.newspim.com/news/view/20260901000950",
-      "published_at": "2026-09-01T15:30:00+09:00",
-      "source": "newspim.com",
-      "query": "혁신의료기술"
-    },
-    {
       "title": "제이앤피메디 메이븐 컨버터, '프리 갈리앵 코리아' 최우수 디지털 헬스...",
       "description": "제약·바이오 업계의 노벨상으로 불리는 프리 갈리앵은 인류의 건강 증진에 기여한 혁신 적인 의약품과 의료기술 의 성과를 기리기 위해 1970년 프랑스에서 시작된 세계적 권위의 시상식이다. 올해 처음 열리는...",
       "source_url": "http://www.bokuennews.com/news/article.html?no=283451",
       "naver_url": "http://www.bokuennews.com/news/article.html?no=283451",
       "published_at": "2026-09-01T15:30:00+09:00",
       "source": "bokuennews.com",
+      "query": "혁신의료기술"
+    },
+    {
+      "title": "[2027 예산안] 식약처, 8829억 투입…안심 먹거리·K-푸드 진출 '활성화...",
+      "description": "올해부터 추진 중인 ' 의료 제품 허가·심사 혁신 방안'의 일환으로 매개변수 기반 출하 등 첨단 제조 기술 이 적용된 의약품의 품질 심사자료 표준모델도 구축해 허가·심사 준비 기간 단축도 지원한다. 식의약 안전성도...",
+      "source_url": "https://www.newspim.com/news/view/20260901000950",
+      "naver_url": "https://www.newspim.com/news/view/20260901000950",
+      "published_at": "2026-09-01T15:30:00+09:00",
+      "source": "newspim.com",
       "query": "혁신의료기술"
     },
     {
@@ -8751,15 +8850,6 @@
       "query": "비급여"
     },
     {
-      "title": "AI 의료 영상 판독 진료비 심사, '무릎관절'부터 첫 적용",
-      "description": "그동안 심평원은 지난 2018년부터 딥러닝 기반의 인공지능(AI) 기술 을 활용해 의료 영상을 자동 분석하는 판독... 보건 의료 혁신 을 선도해 나가겠다\"고 밝혔다. 한편, 심평원은 인공지능(AI) 판독 결과의 심사 업무 적용에...",
-      "source_url": "http://www.doctorsnews.co.kr/news/articleView.html?idxno=166111",
-      "naver_url": "http://www.doctorsnews.co.kr/news/articleView.html?idxno=166111",
-      "published_at": "2026-09-01T15:28:00+09:00",
-      "source": "doctorsnews.co.kr",
-      "query": "혁신의료기술"
-    },
-    {
       "title": "유한양행, 케이메디허브와 혁신 신약 공동연구…R&D 협력 확대",
       "description": "유한양행이 케이메디허브와 신약 후보물질 공동연구 및 연구 인프라 활용을 위한 협력체계를 구축하며 혁신 ... 통한 기술 지원 △ 의료 산업 네트워크 구축 등에 협력할 예정이다. 특히 유한양행은 케이메디허브의 연구...",
       "source_url": "https://www.ebn.co.kr/news/articleView.html?idxno=1722532",
@@ -8775,6 +8865,15 @@
       "naver_url": "https://www.industrynews.co.kr/news/articleView.html?idxno=85322",
       "published_at": "2026-09-01T15:28:00+09:00",
       "source": "industrynews.co.kr",
+      "query": "혁신의료기술"
+    },
+    {
+      "title": "AI 의료 영상 판독 진료비 심사, '무릎관절'부터 첫 적용",
+      "description": "그동안 심평원은 지난 2018년부터 딥러닝 기반의 인공지능(AI) 기술 을 활용해 의료 영상을 자동 분석하는 판독... 보건 의료 혁신 을 선도해 나가겠다\"고 밝혔다. 한편, 심평원은 인공지능(AI) 판독 결과의 심사 업무 적용에...",
+      "source_url": "http://www.doctorsnews.co.kr/news/articleView.html?idxno=166111",
+      "naver_url": "http://www.doctorsnews.co.kr/news/articleView.html?idxno=166111",
+      "published_at": "2026-09-01T15:28:00+09:00",
+      "source": "doctorsnews.co.kr",
       "query": "혁신의료기술"
     },
     {
@@ -8904,15 +9003,6 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "씨어스, 은성 의료 재단과 '씽크' 기반 의료 AI 파운데이션 모델 공동개발",
-      "description": "있는 의료 네트워크를 갖추고 있다. 특히 올해를 '디지털 전환과 환자 경험 혁신 의 원년'으로 정하고, AI가... 대체하는 기술 이 아니라, 의료 진의 역량을 확장하고 더 나은 의료 를 가능하게 하는 도구로 활용될 수 있도록...",
-      "source_url": "https://www.mt.co.kr/thebio/2026/09/01/2026090114502178257",
-      "naver_url": "https://n.news.naver.com/mnews/article/008/0005407814?sid=101",
-      "published_at": "2026-09-01T15:08:00+09:00",
-      "source": "mt.co.kr",
-      "query": "혁신의료기술"
-    },
-    {
       "title": "\"AI 증강병원 추진\"…씨어스·은성 의료 재단 '맞손'",
       "description": "있는 의료 네트워크를 갖추고 있다. 특히 올해를 '디지털 전환과 환자 경험 혁신 의 원년'으로 정하고, AI가... 이어 \"AI가 의료 진을 대체하는 기술 이 아니라, 의료 진의 역량을 확장하고 더 나은 의료 를 가능하게 하는...",
       "source_url": "https://www.newsis.com/view/NISX20260901_0003771682",
@@ -8922,13 +9012,13 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "부천세종병원 개원 44주년…대규모 증축 새 도약 나선다!",
-      "description": "특히 심혈관질환 치료 네트워크(세종심혈관네트워크, SJ-CCN)를 자체적으로 구축해 전국을 하나로 잇는가 하면, 끊임없는 의료진 등 인력 및 시설 투자, 국내외 선천성 심장병 어린이 대상 무료수술 등 의료나눔에도...",
-      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011238",
-      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011238",
+      "title": "씨어스, 은성 의료 재단과 '씽크' 기반 의료 AI 파운데이션 모델 공동개발",
+      "description": "있는 의료 네트워크를 갖추고 있다. 특히 올해를 '디지털 전환과 환자 경험 혁신 의 원년'으로 정하고, AI가... 대체하는 기술 이 아니라, 의료 진의 역량을 확장하고 더 나은 의료 를 가능하게 하는 도구로 활용될 수 있도록...",
+      "source_url": "https://www.mt.co.kr/thebio/2026/09/01/2026090114502178257",
+      "naver_url": "https://n.news.naver.com/mnews/article/008/0005407814?sid=101",
       "published_at": "2026-09-01T15:08:00+09:00",
-      "source": "bosa.co.kr",
-      "query": "심혈관질환"
+      "source": "mt.co.kr",
+      "query": "혁신의료기술"
     },
     {
       "title": "보험 업계, 7개 지자체와 소상공인·취약계층 ‘무료 상생 보험 ’ 출시",
@@ -8976,12 +9066,12 @@
       "query": "비급여"
     },
     {
-      "title": "한림대 의료 원 제21대 이재준 의료 원장 취임",
-      "description": "이후 범부처전주기 의료 기기연구개발사업과 연구중심병원 육성 R&D사업, 의료 데이터중심병원 사업, 혁신 형... 반영한 의료기술 개발을 진행했다. 아울러 이 의료 원장은 2023년부터 한림대학교 의료 ...",
-      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011235",
-      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011235",
+      "title": "이재준 한림대 의료 원장 취임…춘천성심병원 새 수장엔 조재호",
+      "description": "강원도 유일 연구중심병원으로서 연구와 혁신 기능도 강화한다. 진료 현장의 문제를 연구로 연결하고 AI·디지털 헬스케어 등 미래 의료 기술 을 활용해 연구 성과가 실제 환자 치료로 이어지는 선순환 구조를 구축할...",
+      "source_url": "https://www.dailian.co.kr/news/view/1685043/?sc=Naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/119/0003127818?sid=103",
       "published_at": "2026-09-01T15:04:00+09:00",
-      "source": "bosa.co.kr",
+      "source": "dailian.co.kr",
       "query": "혁신의료기술"
     },
     {
@@ -8994,12 +9084,12 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "이재준 한림대 의료 원장 취임…춘천성심병원 새 수장엔 조재호",
-      "description": "강원도 유일 연구중심병원으로서 연구와 혁신 기능도 강화한다. 진료 현장의 문제를 연구로 연결하고 AI·디지털 헬스케어 등 미래 의료 기술 을 활용해 연구 성과가 실제 환자 치료로 이어지는 선순환 구조를 구축할...",
-      "source_url": "https://www.dailian.co.kr/news/view/1685043/?sc=Naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/119/0003127818?sid=103",
+      "title": "한림대 의료 원 제21대 이재준 의료 원장 취임",
+      "description": "이후 범부처전주기 의료 기기연구개발사업과 연구중심병원 육성 R&D사업, 의료 데이터중심병원 사업, 혁신 형... 반영한 의료기술 개발을 진행했다. 아울러 이 의료 원장은 2023년부터 한림대학교 의료 ...",
+      "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011235",
+      "naver_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3011235",
       "published_at": "2026-09-01T15:04:00+09:00",
-      "source": "dailian.co.kr",
+      "source": "bosa.co.kr",
       "query": "혁신의료기술"
     },
     {
@@ -9048,13 +9138,13 @@
       "query": "혁신의료기술"
     },
     {
-      "title": "서청주농협, '혈관튼튼 NH건강보험' 출시 기념 가입 행사 개최",
-      "description": "'혈관튼튼 NH건강보험'은 뇌· 심혈관질환 뿐만 아니라 특정순환계질환까지 보장 범위를 넓힌 상품이다. 실속형과 종합형으로 구성돼 고객의 건강상태와 필요에 따라 맞춤 설계가 가능하다는 점이 특징이다. 서청주농협은...",
-      "source_url": "https://www.gukjenews.com/news/articleView.html?idxno=3681200",
-      "naver_url": "https://www.gukjenews.com/news/articleView.html?idxno=3681200",
-      "published_at": "2026-09-01T14:58:00+09:00",
-      "source": "gukjenews.com",
-      "query": "심혈관질환"
+      "title": "보험 대리점협회, 송재근 신임 상임부회장 임기 개시",
+      "description": "송재근 상임부회장은 재무부와 금융위원회 에서 금융 정책 및 보험 제도 관련 핵심 업무를 담당했으며, 생명 보험 협회 전무이사와 신협중앙회 사업대표이사 등을 역임한 금융 · 보험 전문가다. 협회 측은 금융위원회 출신...",
+      "source_url": "http://www.srtimes.kr/news/articleView.html?idxno=211360",
+      "naver_url": "http://www.srtimes.kr/news/articleView.html?idxno=211360",
+      "published_at": "2026-09-01T14:56:00+09:00",
+      "source": "srtimes.kr",
+      "query": "금융위원회 보험"
     },
     {
       "title": "보험 GA협회, 송재근 상임부회장 취임…첫 금융위원회 출신",
@@ -9063,15 +9153,6 @@
       "naver_url": "https://n.news.naver.com/mnews/article/003/0014161842?sid=101",
       "published_at": "2026-09-01T14:56:00+09:00",
       "source": "newsis.com",
-      "query": "금융위원회 보험"
-    },
-    {
-      "title": "보험 대리점협회, 송재근 신임 상임부회장 임기 개시",
-      "description": "송재근 상임부회장은 재무부와 금융위원회 에서 금융 정책 및 보험 제도 관련 핵심 업무를 담당했으며, 생명 보험 협회 전무이사와 신협중앙회 사업대표이사 등을 역임한 금융 · 보험 전문가다. 협회 측은 금융위원회 출신...",
-      "source_url": "http://www.srtimes.kr/news/articleView.html?idxno=211360",
-      "naver_url": "http://www.srtimes.kr/news/articleView.html?idxno=211360",
-      "published_at": "2026-09-01T14:56:00+09:00",
-      "source": "srtimes.kr",
       "query": "금융위원회 보험"
     },
     {
@@ -9100,15 +9181,6 @@
       "published_at": "2026-09-01T14:54:00+09:00",
       "source": "yna.co.kr",
       "query": "실손보험"
-    },
-    {
-      "title": "알보젠코리아 세나트리플, 국내 질염치료제 시장 판매 1위… 브랜드 사...",
-      "description": "한편 알보젠코리아는 글로벌 제약기업 Lotus 그룹의 계열사로, 비만과 중추신경계, 신장, 심혈관 계 질환 영역을 비롯한 전문의약품과 일반의약품 포트폴리오를 기반으로 국내 의약품 시장에서 사업을 전개하고 있다.",
-      "source_url": "https://www.kbsm.net/news/view.php?idx=532472",
-      "naver_url": "https://www.kbsm.net/news/view.php?idx=532472",
-      "published_at": "2026-09-01T14:48:00+09:00",
-      "source": "kbsm.net",
-      "query": "심혈관질환"
     },
     {
       "title": "보험 업계, 7개 지자체와 소상공인 '무료 상생 보험 '…140억 규모",
@@ -9192,15 +9264,6 @@
       "query": "금융위원회 보험"
     },
     {
-      "title": "심장 수술 3만 건…부천세종병원 44주년 맞았다",
-      "description": "◇ 전국 57개 기관 심혈관 네트워크 부천세종병원은 심혈관질환 치료 네트워크인 세종심혈관네트워크(SJ-CCN)를 자체 구축했다. 출범 3년여 만에 참여기관이 57곳으로 늘었으며 상급 대학병원과 국군의무사령부 등...",
-      "source_url": "https://www.sentv.co.kr/article/view/sentv202609010147",
-      "naver_url": "https://www.sentv.co.kr/article/view/sentv202609010147",
-      "published_at": "2026-09-01T14:38:00+09:00",
-      "source": "sentv.co.kr",
-      "query": "심혈관질환"
-    },
-    {
       "title": "복지부, 핀테플라액 건보 적용···연 1억 치료비 1,000만 원대로 경감",
       "description": "식품의약품안전처 허가와 건강보험심사평가원 평가 및 공단 협상을 동시에 진행하는 허가-평가-협상 병행 시범사업 대상에 선정돼 통상 240일이 걸리던 소요 기간을 126일로 절반가량 단축했다. 중증 암 환자를 위한 신약...",
       "source_url": "https://www.globale.co.kr/news/articleView.html?idxno=40148",
@@ -9210,21 +9273,21 @@
       "query": "건강보험심사평가원"
     },
     {
-      "title": "7개 지자체, 소상공인에 무료 상생 보험 …100만명 혜택 전망",
-      "description": "상생 보험 상품을 출시한다. 금융위원회 는 경남·경북·광주·전남·전북·제주·충북 등 7개 지자체가 소상공인·취약계층을 대상으로 한 상생 보험 상품을 출시한다고 1일 밝혔다. 상생 보험 은 각 지역에서 20억원씩 총...",
-      "source_url": "https://sateconomy.co.kr/news/view/1065590773042337",
-      "naver_url": "https://sateconomy.co.kr/news/view/1065590773042337",
-      "published_at": "2026-09-01T14:36:00+09:00",
-      "source": "sateconomy.co.kr",
-      "query": "금융위원회 보험"
-    },
-    {
       "title": "보험 업계, 7개 지자체에 140억원 무료 상생 보험",
       "description": "사진=연합뉴스 매일일보 = 최재원 기자  | 보험 업계가 지방자치단체들과 함께 140억원 규모의 무료 상생 보험 을 본격 선보인다. 금융위원회 는 7개 지방자치단체(경남·경북·광주·전남·전북·제주·충북)가 소상공인...",
       "source_url": "https://www.m-i.kr/news/articleView.html?idxno=1408538",
       "naver_url": "https://www.m-i.kr/news/articleView.html?idxno=1408538",
       "published_at": "2026-09-01T14:36:00+09:00",
       "source": "m-i.kr",
+      "query": "금융위원회 보험"
+    },
+    {
+      "title": "7개 지자체, 소상공인에 무료 상생 보험 …100만명 혜택 전망",
+      "description": "상생 보험 상품을 출시한다. 금융위원회 는 경남·경북·광주·전남·전북·제주·충북 등 7개 지자체가 소상공인·취약계층을 대상으로 한 상생 보험 상품을 출시한다고 1일 밝혔다. 상생 보험 은 각 지역에서 20억원씩 총...",
+      "source_url": "https://sateconomy.co.kr/news/view/1065590773042337",
+      "naver_url": "https://sateconomy.co.kr/news/view/1065590773042337",
+      "published_at": "2026-09-01T14:36:00+09:00",
+      "source": "sateconomy.co.kr",
       "query": "금융위원회 보험"
     },
     {
@@ -9237,21 +9300,21 @@
       "query": "손해보험협회"
     },
     {
-      "title": "대출 갚고 휴업비 보전…지역 맞춤형 무료 상생 보험 문 연다",
-      "description": "금융위원회 보험 업권이 7개 지자체에서 소상공인의 보험료를 대신 내주는 140억원 규모 상생보험을 가동한다. 손해보험은 대부분 조건을 충족하면 별도 신청 없이 가입되지만 보험금까지 자동으로 들어오는 것은 아니다....",
-      "source_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=482621",
-      "naver_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=482621",
-      "published_at": "2026-09-01T14:34:00+09:00",
-      "source": "pinpointnews.co.kr",
-      "query": "금융위원회 보험"
-    },
-    {
       "title": "[이슈] 보험 료 0원인데 대출 1000만원 보장... 보험 업권 '상생 보험 ' 시작",
       "description": "1일 금융위원회 에 따르면 보험 업권은 생명 보험 업계와 손해 보험 업계가 각각 150억 원씩 총 300억 원의 상생기금을 조성했다. 이 가운데 7개 지방자치단체와 함께 소상공인이 보험 료를 내지 않고 가입할 수 있는 보험 을...",
       "source_url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=811494",
       "naver_url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=811494",
       "published_at": "2026-09-01T14:34:00+09:00",
       "source": "startuptoday.co.kr",
+      "query": "금융위원회 보험"
+    },
+    {
+      "title": "대출 갚고 휴업비 보전…지역 맞춤형 무료 상생 보험 문 연다",
+      "description": "금융위원회 보험 업권이 7개 지자체에서 소상공인의 보험료를 대신 내주는 140억원 규모 상생보험을 가동한다. 손해보험은 대부분 조건을 충족하면 별도 신청 없이 가입되지만 보험금까지 자동으로 들어오는 것은 아니다....",
+      "source_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=482621",
+      "naver_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=482621",
+      "published_at": "2026-09-01T14:34:00+09:00",
+      "source": "pinpointnews.co.kr",
       "query": "금융위원회 보험"
     },
     {
@@ -9273,13 +9336,13 @@
       "query": "실손보험"
     },
     {
-      "title": "경희대, 한국형 ARPA-H 과제 선정…양자센싱 조기진단 개발",
-      "description": "연구팀은 양자센싱·오가노이드·MEMS·AI 기술을 통합해 질환이 임상적으로 나타나기 전 위험신호를 포착하는 정밀의료 기술을 개발하고, 향후 심혈관 질환 을 비롯한 난치성 질환 조기진단으로 확대할 계획이다....",
-      "source_url": "https://www.joongang.co.kr/article/25458072",
-      "naver_url": "https://n.news.naver.com/mnews/article/025/0003548258?sid=102",
-      "published_at": "2026-09-01T14:31:00+09:00",
-      "source": "joongang.co.kr",
-      "query": "심혈관질환"
+      "title": "[오늘의 제약리뷰] 유유제약·동아제약·일동제약·JW중외제약·유한양...",
+      "description": "유한양행은 대구경북첨단 의료 산업진흥재단(케이메디허브)과 혁신 신약 파이프라인 강화를 위한... 상호 기술 지원 ▲ 의료 산업 네트워크 구축 등에서 협력할 계획이다. 특히 유한양행은 케이메디허브의 전문 연구인력과...",
+      "source_url": "http://www.financialreview.co.kr/news/articleView.html?idxno=44518",
+      "naver_url": "http://www.financialreview.co.kr/news/articleView.html?idxno=44518",
+      "published_at": "2026-09-01T14:30:00+09:00",
+      "source": "financialreview.co.kr",
+      "query": "혁신의료기술"
     },
     {
       "title": "전장 '골든아워' 넓힌다…현대로템, 장갑형구급차로 야전 의료 고도화",
@@ -9288,15 +9351,6 @@
       "naver_url": "https://www.m-i.kr/news/articleView.html?idxno=1408585",
       "published_at": "2026-09-01T14:30:00+09:00",
       "source": "m-i.kr",
-      "query": "혁신의료기술"
-    },
-    {
-      "title": "[오늘의 제약리뷰] 유유제약·동아제약·일동제약·JW중외제약·유한양...",
-      "description": "유한양행은 대구경북첨단 의료 산업진흥재단(케이메디허브)과 혁신 신약 파이프라인 강화를 위한... 상호 기술 지원 ▲ 의료 산업 네트워크 구축 등에서 협력할 계획이다. 특히 유한양행은 케이메디허브의 전문 연구인력과...",
-      "source_url": "http://www.financialreview.co.kr/news/articleView.html?idxno=44518",
-      "naver_url": "http://www.financialreview.co.kr/news/articleView.html?idxno=44518",
-      "published_at": "2026-09-01T14:30:00+09:00",
-      "source": "financialreview.co.kr",
       "query": "혁신의료기술"
     },
     {
@@ -9514,78 +9568,6 @@
       "published_at": "2026-09-01T13:49:00+09:00",
       "source": "news1.kr",
       "query": "금융위원회 보험"
-    },
-    {
-      "title": "결혼하면 100만원·출산 최대 2000만원…내년 달라지는 ‘체감 예산’",
-      "description": "의무복무를 마친 제대군인에게는 전역 후 18개월 동안 실손보험 료 전액을 지원한다. 관련 예산은 75억원이다. 복무 중 발생한 부상뿐 아니라 전역 뒤 치료비 부담까지 국가가 지원하는 방식이다. 전국 주요...",
-      "source_url": "https://www.thepowernews.co.kr/view.php?ud=202609011336345934de3f0aa1be_7",
-      "naver_url": "https://www.thepowernews.co.kr/view.php?ud=202609011336345934de3f0aa1be_7",
-      "published_at": "2026-09-01T13:46:00+09:00",
-      "source": "thepowernews.co.kr",
-      "query": "실손보험"
-    },
-    {
-      "title": "희귀 뇌전증 치료제 '핀테플라액' 건보 적용…환자 부담 연 1억원→1천만...",
-      "description": "이번 신약은 식품의약품안전처 허가와 동시에 건강보험심사평가원 급여 협상을 실시하는 '허가-평가-협상 병행 시범사업' 대상으로 선정돼 기존 소요 기간(240일)의 절반 수준인 126일 만에 보험이 적용됐다. 오랜 기간...",
-      "source_url": "http://www.hemophilia.co.kr/news/articleView.html?idxno=44174",
-      "naver_url": "http://www.hemophilia.co.kr/news/articleView.html?idxno=44174",
-      "published_at": "2026-09-01T13:44:00+09:00",
-      "source": "hemophilia.co.kr",
-      "query": "건강보험심사평가원"
-    },
-    {
-      "title": "유한양행, 케이메디허브와 신약 공동연구…R&D 강화",
-      "description": "교류와 기술 지원, 의료 산업 네트워크 구축 등에도 협력하기로 했습니다. 특히 유한양행은 케이메디허브가 보유한 전문 연구인력과 첨단 연구시설을 활용해 개방형 혁신 , 오픈 이노베이션 전략을 강화한다는 방침입니다....",
-      "source_url": "https://biz.sbs.co.kr/article_hub/20000332027?division=NAVER",
-      "naver_url": "https://n.news.naver.com/mnews/article/374/0000530519?sid=101",
-      "published_at": "2026-09-01T13:42:00+09:00",
-      "source": "biz.sbs.co.kr",
-      "query": "혁신의료기술"
-    },
-    {
-      "title": "성장호르몬약 처방 4년 새 80%↑…식약처 안전관리 강화",
-      "description": "건강보험심사평가원 에 따르면 성장호르몬 제제 처방량은 지난 2020년 89만5천여 건에서 2024년 162만1천여 건으로 4년 만에 약 80% 증가했습니다. 특히 성장호르몬 제제는 환자가 직접 주사하는 자가투여 방식인 만큼 올바른...",
-      "source_url": "https://biz.sbs.co.kr/article_hub/20000332029?division=NAVER",
-      "naver_url": "https://n.news.naver.com/mnews/article/374/0000530520?sid=101",
-      "published_at": "2026-09-01T13:42:00+09:00",
-      "source": "biz.sbs.co.kr",
-      "query": "건강보험심사평가원"
-    },
-    {
-      "title": "[엠비디 IPO] '따로 또 같이'…플랫폼 경쟁력 입증 '관건'",
-      "description": "온코센시는 서울성모병원과 신촌세브란스병원 등 상급병원에 비급여 항목으로 제공한다. ASFA는 제약·바이오 기업, 연구기관 등에 공급한다. 엠비디는 각 사업 간 연계성을 차별화 포인트로 내세운다. 가령 ASFA가...",
-      "source_url": "https://www.the-stock.kr/news/articleView.html?idxno=33283",
-      "naver_url": "https://www.the-stock.kr/news/articleView.html?idxno=33283",
-      "published_at": "2026-09-01T13:30:00+09:00",
-      "source": "the-stock.kr",
-      "query": "비급여"
-    },
-    {
-      "title": "6000여 종 헬스케어 품목 갖춘 ‘체험형 약국’… 메가팩토리약국 광교...",
-      "description": "병·의원 처방전에 따른 일반 처방 조제는 물론, 탈모 및 체중 관리 등 비급여 전문의약품의 안전한 복약 안내를 제공한다. 특히 일반의약품이나 건강기능식품을 함께 섭취하려는 소비자에게는 기복용 의약품과의 성분...",
-      "source_url": "https://www.fnnews.com/news/202609011050188801",
-      "naver_url": "https://n.news.naver.com/mnews/article/014/0005569269?sid=101",
-      "published_at": "2026-09-01T13:29:00+09:00",
-      "source": "fnnews.com",
-      "query": "비급여"
-    },
-    {
-      "title": "유한양행-케이메디허브, 신약개발 위해 인력· 기술 교류",
-      "description": "양측은 신약 공동연구 과제를 발굴하고 연구인력 교류를 통한 연구개발(R&D) 역량 강화, 기술 지원, 의료 산업... 유한양행은 앞으로도 오픈 이노베이션(개방형 혁신 ) 전략을 강화한다는 방침이다. 김열홍 유한양행 R&D 총괄...",
-      "source_url": "http://www.segyebiz.com/newsView/20260901511016?OutUrl=naver",
-      "naver_url": "http://www.segyebiz.com/newsView/20260901511016?OutUrl=naver",
-      "published_at": "2026-09-01T13:28:00+09:00",
-      "source": "segyebiz.com",
-      "query": "혁신의료기술"
-    },
-    {
-      "title": "유한양행, 국책 인프라 활용… 혁신 신약 개발 가속",
-      "description": "유한양행과 케이메디허브는 지난달 31일 혁신 신약 연구개발(R&D) 협력을 위한 업무협약을 체결했다고 1일 밝혔다. 양측은 신약 공동연구 과제 발굴과 수행을 비롯해 연구인력 교류와 연구시설·첨단장비 기술 지원, 의료 산업...",
-      "source_url": "https://www.ngetnews.com/news/articleView.html?idxno=552886",
-      "naver_url": "https://www.ngetnews.com/news/articleView.html?idxno=552886",
-      "published_at": "2026-09-01T13:26:00+09:00",
-      "source": "ngetnews.com",
-      "query": "혁신의료기술"
     }
   ]
 }
