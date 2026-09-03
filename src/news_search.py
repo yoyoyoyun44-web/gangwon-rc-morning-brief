@@ -49,14 +49,29 @@ CHANNEL_EXCLUDE_TERMS = [
     "보험대리점 수수료", "설계사 이직", "설계사 전환"
 ]
 
-# 네이버 뉴스 검색 결과 중 Morning Brief에서 사용하지 않을 서비스 영역.
-# 현재는 사용자가 지정한 '엔터' 영역을 원천 배제한다.
-# 네이버 뉴스 검색 API 응답에는 화면상 카테고리 필드가 별도로 제공되지 않으므로
-# 네이버 뉴스 URL의 호스트를 기준으로 판별한다.
-NAVER_CATEGORY_EXCLUDE_HOSTS = {
-    "m.entertain.naver.com",
-    "entertain.naver.com",
+# 네이버 뉴스 서비스 영역 필터.
+# 엔터/스포츠는 원천 배제하지 않고, '연예인·운동선수 본인의 중증질환/고가치료 사례'처럼
+# 고객의 의료비·치료비 관점에서 실질적인 의미가 있는 기사만 통과시킨다.
+NAVER_SPECIAL_CATEGORY_HOSTS = {
+    "entertainment": {"m.entertain.naver.com", "entertain.naver.com"},
+    "sports": {"m.sports.naver.com", "sports.naver.com", "n.sports.naver.com"},
 }
+
+SEVERE_TREATMENT_TERMS = [
+    "중증질환", "중증 질환", "암", "백혈병", "혈액암", "뇌종양", "뇌졸중",
+    "뇌출혈", "뇌경색", "심근경색", "심장질환", "심혈관", "뇌혈관",
+    "희귀질환", "희귀 질환", "난치병", "난치질환", "난치 질환", "말기",
+    "투병", "투병중", "투병 중", "수술", "항암", "방사선", "중환자실",
+    "신약", "면역항암", "표적항암", "고가 치료", "고액 치료", "고액의료비",
+    "고액 의료비", "치료비", "치료 비용", "의료비"
+]
+
+PERSONAL_CASE_TERMS = [
+    "투병", "진단받", "진단 받", "확진", "앓고", "앓아", "치료받", "치료 받",
+    "수술받", "수술 받", "입원", "항암치료", "항암 치료", "치료 중", "치료중",
+    "병원비", "치료비", "의료비", "본인", "가족", "직접", "겪어", "고백",
+    "투병기", "건강상태", "건강 상태", "투병 사실", "투병 소식"
+]
 
 OTHER_INSURER_NAMES = [
     "현대해상", "DB손해보험", "메리츠화재", "KB손해보험", "한화손해보험",
@@ -101,18 +116,25 @@ def source_from_url(url):
         return ""
 
 
-def is_excluded_naver_category(*urls):
-    """네이버 뉴스의 제외 서비스 영역(현재: 엔터)인지 URL로 판별한다."""
-    for url in urls:
-        if not url:
-            continue
-        try:
-            host = urlparse(url).netloc.lower().replace("www.", "")
-            if host in NAVER_CATEGORY_EXCLUDE_HOSTS:
-                return True
-        except Exception:
-            continue
-    return False
+def naver_special_category(url):
+    try:
+        host = urlparse(url or "").netloc.lower().replace("www.", "")
+        for category, hosts in NAVER_SPECIAL_CATEGORY_HOSTS.items():
+            if host in hosts:
+                return category
+    except Exception:
+        pass
+    return None
+
+
+def is_allowed_special_category_article(title, description, category):
+    """엔터/스포츠에서는 유명인 본인의 중증질환·고가치료 사례만 허용한다."""
+    if category not in {"entertainment", "sports"}:
+        return True
+    combined = f"{title} {description}"
+    has_severe = any(term in combined for term in SEVERE_TREATMENT_TERMS)
+    has_personal_case = any(term in combined for term in PERSONAL_CASE_TERMS)
+    return has_severe and has_personal_case
 
 
 def is_other_insurer_promotional_article(title, description):
@@ -155,7 +177,7 @@ def main():
     print(f"수집 기준: 최근 {hours}시간")
     print("검색 우선순위: 상품/보장 > 의료비 부담 > 간병 > 삼성화재 > 제도")
     print("타 보험사 상품 홍보성 기사 및 GA/전속 채널경쟁 기사 제외")
-    print("네이버 뉴스 엔터 영역 기사 제외")
+    print("네이버 엔터/스포츠: 본인 중증질환·고가치료 사례만 허용")
     print("=" * 60)
 
     for group, queries in SEARCH_GROUPS.items():
@@ -185,9 +207,9 @@ def main():
                 if published and published < cutoff:
                     continue
 
-                # 네이버 뉴스 '엔터' 영역은 키워드가 보험/간병과 겹치더라도 원천 배제한다.
-                if is_excluded_naver_category(original_url, naver_url):
-                    print(f"  [제외] 네이버 뉴스 엔터 영역: {title}")
+                category = naver_special_category(original_url) or naver_special_category(naver_url)
+                if category and not is_allowed_special_category_article(title, description, category):
+                    print(f"  [제외] 네이버 {category} 영역 비관련 기사: {title}")
                     continue
 
                 combined = f"{title} {description}"
@@ -211,7 +233,6 @@ def main():
                 })
 
     group_rank = {"product": 1, "medical_cost": 2, "caregiver": 3, "samsung_fire": 4, "policy": 5}
-    # 그룹 우선순위는 유지하되, 같은 그룹에서는 최신 뉴스가 먼저 오도록 정렬한다.
     collected.sort(
         key=lambda x: (
             group_rank.get(x.get("group"), 99),
