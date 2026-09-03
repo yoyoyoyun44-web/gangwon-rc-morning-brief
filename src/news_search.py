@@ -49,6 +49,15 @@ CHANNEL_EXCLUDE_TERMS = [
     "보험대리점 수수료", "설계사 이직", "설계사 전환"
 ]
 
+# 네이버 뉴스 검색 결과 중 Morning Brief에서 사용하지 않을 서비스 영역.
+# 현재는 사용자가 지정한 '엔터' 영역을 원천 배제한다.
+# 네이버 뉴스 검색 API 응답에는 화면상 카테고리 필드가 별도로 제공되지 않으므로
+# 네이버 뉴스 URL의 호스트를 기준으로 판별한다.
+NAVER_CATEGORY_EXCLUDE_HOSTS = {
+    "m.entertain.naver.com",
+    "entertain.naver.com",
+}
+
 OTHER_INSURER_NAMES = [
     "현대해상", "DB손해보험", "메리츠화재", "KB손해보험", "한화손해보험",
     "롯데손해보험", "흥국화재", "NH농협손해보험", "하나손해보험",
@@ -92,6 +101,20 @@ def source_from_url(url):
         return ""
 
 
+def is_excluded_naver_category(*urls):
+    """네이버 뉴스의 제외 서비스 영역(현재: 엔터)인지 URL로 판별한다."""
+    for url in urls:
+        if not url:
+            continue
+        try:
+            host = urlparse(url).netloc.lower().replace("www.", "")
+            if host in NAVER_CATEGORY_EXCLUDE_HOSTS:
+                return True
+        except Exception:
+            continue
+    return False
+
+
 def is_other_insurer_promotional_article(title, description):
     combined = f"{title} {description}"
     if not any(name in combined for name in OTHER_INSURER_NAMES):
@@ -132,6 +155,7 @@ def main():
     print(f"수집 기준: 최근 {hours}시간")
     print("검색 우선순위: 상품/보장 > 의료비 부담 > 간병 > 삼성화재 > 제도")
     print("타 보험사 상품 홍보성 기사 및 GA/전속 채널경쟁 기사 제외")
+    print("네이버 뉴스 엔터 영역 기사 제외")
     print("=" * 60)
 
     for group, queries in SEARCH_GROUPS.items():
@@ -159,6 +183,11 @@ def main():
                 if not title or not original_url or original_url in seen_urls:
                     continue
                 if published and published < cutoff:
+                    continue
+
+                # 네이버 뉴스 '엔터' 영역은 키워드가 보험/간병과 겹치더라도 원천 배제한다.
+                if is_excluded_naver_category(original_url, naver_url):
+                    print(f"  [제외] 네이버 뉴스 엔터 영역: {title}")
                     continue
 
                 combined = f"{title} {description}"
