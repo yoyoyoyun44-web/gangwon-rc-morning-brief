@@ -102,7 +102,6 @@ def is_other_insurer_promo(article):
         "의료비", "치료비", "비급여", "본인부담", "간병비", "간병", "치료", "환자",
         "질환", "건강보험", "의료", "병원", "신약", "암", "뇌혈관", "심혈관"
     ]
-    # 객관적인 의료비 기사에 타 보험사가 사례로 등장한 경우는 AI가 다시 판단하도록 살린다.
     return not any(term in text for term in medical_context)
 
 
@@ -376,7 +375,6 @@ def main():
     raw_news = prepare_news(load_news())
     print(f"전체 수집 뉴스: {len(raw_news)}개")
 
-    # 메이저 언론 + 의료비/간병 관련성을 우선하여 AI 입력 후보를 구성한다.
     def candidate_score(item):
         text = f"{item['title']} {item['description']}"
         score = 0
@@ -421,7 +419,6 @@ def main():
         if fixed:
             restored.append(fixed)
 
-    # 최종 안전장치: 타 보험사 홍보성 기사와 채널 경쟁 기사는 제거.
     final_articles = []
     for article in deduplicate(restored):
         original = source_by_url.get(clean_text(article.get("source_url")))
@@ -447,7 +444,7 @@ def main():
     print(f"삼성화재 소식: {len(categories['samsung_fire'])}개")
     print(f"제도 동향: {len(categories['policy'])}개")
     print(f"파일 생성: {OUTPUT_FILE}")
-    print("=")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
