@@ -70,6 +70,15 @@ jobs:
         run: python src/news_search.py
 
       # =========================================================
+      # 공식기관 보도자료 추가 수집
+      # 네이버 뉴스 수집은 그대로 유지하고, 공식 원문만 별도로 추가한다.
+      # 이후 AI 단계에서 네이버 뉴스 + 공식기관 자료를 함께 통합 선별한다.
+      # =========================================================
+      - name: Run official source collection
+        if: steps.business_day.outputs.run == 'true'
+        run: python src/official_sources.py
+
+      # =========================================================
       # AI 뉴스 분석
       # =========================================================
       - name: Generate AI news
@@ -131,7 +140,6 @@ jobs:
               "mt.co.kr", "seoul.co.kr", "khan.co.kr", "nocutnews.co.kr", "ytn.co.kr"
           }
 
-          # 삼성화재 전속 RC 브리핑에서 제외할 채널 경쟁/타사 이익 중심 주제
           excluded_terms = [
               "GA", "법인보험대리점", "보험대리점", "이직", "전환", "채널 경쟁",
               "시장점유율", "모집인 수", "설계사 수", "수수료 경쟁", "시책 경쟁",
@@ -139,7 +147,6 @@ jobs:
               "실적", "영업이익", "순이익"
           ]
 
-          # 타 보험사 자체 상품/판매 성과/홍보성 기사 제거용
           competitor_names = [
               "한화손해보험", "현대해상", "DB손해보험", "메리츠화재", "KB손해보험",
               "롯데손해보험", "흥국화재", "NH농협손해보험", "MG손해보험",
@@ -171,7 +178,6 @@ jobs:
 
           def normalized_title(title):
               t = clean_text(title)
-              # 기사 제목에 반복적으로 붙는 검색/속보 표기를 제거
               t = re.sub(r"\b(단독|속보|종합|영상|포토|그래픽)\b", " ", t)
               return re.sub(r"\s+", " ", t).strip()
 
@@ -186,21 +192,12 @@ jobs:
                   return 0.0
               return len(a & b) / max(1, min(len(a), len(b)))
 
-          def domain_of(url):
-              try:
-                  return urlparse(url).netloc.lower().replace("www.", "")
-              except Exception:
-                  return ""
-
           def is_competitor_promo(a):
               t = text(a)
-              has_competitor = any(name in t for name in competitor_names)
-              has_promo = any(term in t for term in competitor_promo_terms)
-              return has_competitor and has_promo
+              return any(name in t for name in competitor_names) and any(term in t for term in competitor_promo_terms)
 
           def is_channel_competition(a):
-              t = text(a)
-              return any(term in t for term in excluded_terms)
+              return any(term in text(a) for term in excluded_terms)
 
           def score(a):
               t = text(a)
@@ -221,12 +218,12 @@ jobs:
                   s += 12
               if a.get("is_major_news"):
                   s += 10
-              # 삼성화재 관련 정보는 타사 홍보가 아닌 경우 보조 가점
+              if a.get("origin_type") == "official":
+                  s += 12
               if "삼성화재" in t:
                   s += 8
               return s
 
-          # 1차 필터: URL/제목 중복 및 명백한 경쟁사·채널 경쟁 기사 제거
           candidates = []
           seen_urls = set()
           seen_titles = []
@@ -242,16 +239,11 @@ jobs:
               url_key = url.split("?", 1)[0].rstrip("/").lower()
               if url_key in seen_urls:
                   continue
-
               if is_channel_competition(a):
                   continue
-
-              # 타사 보험사의 상품/판매에 유리한 기사 제거.
-              # 단순히 타사 이름이 등장하는 객관적 의료비 기사는 남길 수 있다.
               if is_competitor_promo(a) and not any(term in text(a) for term in medical_terms):
                   continue
 
-              # 제목이 거의 같은 재가공/전재 기사 제거
               duplicate = False
               for prev_title, prev_url in seen_titles:
                   if normalized_title(title) == normalized_title(prev_title) or similarity(title, prev_title) >= 0.82:
@@ -267,7 +259,6 @@ jobs:
                   continue
               candidates.append((sc, a))
 
-          # 2차: 점수가 높은 기사부터 선택하되 같은 이슈가 몰리지 않도록 제목 유사도 재검사
           candidates.sort(key=lambda x: (x[0], str(x[1].get("published_at", ""))), reverse=True)
           selected = []
           for sc, a in candidates:
@@ -278,33 +269,6 @@ jobs:
               if len(selected) >= 10:
                   break
 
-          # 후보가 10개보다 적더라도 경쟁사 홍보/채널 경쟁/중복을 다시 확인한 뒤 보충
-          if len(selected) < 10:
-              selected_urls = {
-                  str(x.get("naver_url") or x.get("source_url") or x.get("url") or "").split("?", 1)[0].rstrip("/").lower()
-                  for x in selected
-              }
-              for a in raw:
-                  if not isinstance(a, dict):
-                      continue
-                  title = str(a.get("title", "")).strip()
-                  url = str(a.get("naver_url") or a.get("source_url") or a.get("url") or "").strip()
-                  if not title or not url:
-                      continue
-                  url_key = url.split("?", 1)[0].rstrip("/").lower()
-                  if url_key in selected_urls:
-                      continue
-                  if is_channel_competition(a) or is_competitor_promo(a):
-                      continue
-                  if score(a) <= 0:
-                      continue
-                  if any(similarity(title, str(x.get("title", ""))) >= 0.68 for x in selected):
-                      continue
-                  selected.append(a)
-                  selected_urls.add(url_key)
-                  if len(selected) >= 10:
-                      break
-
           today = datetime.now().strftime("%Y.%m.%d")
           medical = []
           policy = []
@@ -313,11 +277,14 @@ jobs:
 
           for a in selected:
               t = text(a)
-              category = "policy" if any(x in t for x in ["금융위원회", "금융감독원", "보건복지부", "건강보험 제도", "제도 개선", "급여화"]) else "medical"
+              category = "policy" if (
+                  a.get("origin_type") == "official" or
+                  any(x in t for x in ["금융위원회", "금융감독원", "보건복지부", "건강보험 제도", "제도 개선", "급여화"])
+              ) else "medical"
+
               if "삼성화재" in t and not is_competitor_promo(a):
                   category = "samsung_fire"
 
-              # 기사 자체가 타사 상품 홍보성으로 남았을 경우 최종 방어
               if is_competitor_promo(a):
                   continue
 
@@ -339,7 +306,7 @@ jobs:
                   "summary": str(a.get("description", "")).strip() or "오늘 확인할 보험·의료 관련 주요 뉴스입니다.",
                   "why_it_matters": "고객의 실제 의료비 부담과 현재 보장 공백을 점검할 수 있는 상담 소재입니다.",
                   "sales_tip": sales_tip,
-                  "source": str(a.get("source", "")).strip(),
+                  "source": str(a.get("source_org_name") or a.get("source", "")).strip(),
                   "published_at": str(a.get("published_at", "")).strip(),
                   "naver_url": str(a.get("naver_url") or a.get("source_url") or a.get("url") or "").strip(),
                   "source_url": str(a.get("source_url") or a.get("url") or "").strip(),
