@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T10:03:47.975044+00:00",
-  "article_count": 1295,
-  "official_article_count": 7,
+  "generated_at": "2026-09-08T19:23:30.149944+09:00",
+  "article_count": 1353,
+  "official_article_count": 63,
   "articles": [
     {
       "title": "건강 보험 재정에 비상등…내년 보험 료율 동결이냐 인상이냐",
@@ -191,23 +191,12 @@
       "is_major_news": true
     },
     {
-      "title": "\" 건강보험 공단, 'AI 기반 건강 복지 플랫폼'으로 만든다\"",
-      "description": "지속 가능한 건강보험 을 위해 불필요한 재정 지출은 줄이고 보장 성은 강화할 계획이다. 강 이사장은 \"재정 투입에 비해 효과가 충분한지, AI와 디지털 전환을 통해 더 효율적으로 할 수 있는지, 국민이 실제 체감하는 성과로...",
-      "source_url": "https://www.mt.co.kr/thebio/2026/09/08/2026090815364219610",
-      "naver_url": "https://n.news.naver.com/mnews/article/008/0005410993?sid=101",
+      "title": "보험 료 동결한 날…건보 이사장 \"모든 사업 원점 재검토\"",
+      "description": "2027년도 건강보험 료율이 동결된 가운데 강청희 국민 건강보험 공단 이사장은 모든 사업을 원점에서 다시 살펴보겠다고 밝혔다. 불필요한 지출은 줄이되 꼭 필요한 보장 은 두텁게 해 재정 투입 효과성을 높이겠다는 의미다....",
+      "source_url": "https://www.newsis.com/view/NISX20260908_0003781147",
+      "naver_url": "https://n.news.naver.com/mnews/article/003/0014177330?sid=102",
       "published_at": "2026-09-08T16:00:00+09:00",
-      "source": "mt.co.kr",
-      "query": "건강보험 보장",
-      "group": "product",
-      "is_major_news": true
-    },
-    {
-      "title": "\"아플 때 든든하게\"…강청희 건보공단 이사장의 '리부트 건강보험 '",
-      "description": "그는 건강보험 과 장기요양 보험 , 지역사회 통합돌봄을 개별 제도로 바라보지 않고 국민 한 사람의 생애를 중심으로 연결·재설계해 치료 중심 보장 을 넘어 예방· 건강 관리·의료·돌봄이 이어지는 '생애주기 건강 보장 체계...",
-      "source_url": "https://www.fnnews.com/news/202609081418554669",
-      "naver_url": "https://n.news.naver.com/mnews/article/014/0005572750?sid=103",
-      "published_at": "2026-09-08T16:00:00+09:00",
-      "source": "fnnews.com",
+      "source": "newsis.com",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": true
@@ -224,12 +213,23 @@
       "is_major_news": true
     },
     {
-      "title": "보험 료 동결한 날…건보 이사장 \"모든 사업 원점 재검토\"",
-      "description": "2027년도 건강보험 료율이 동결된 가운데 강청희 국민 건강보험 공단 이사장은 모든 사업을 원점에서 다시 살펴보겠다고 밝혔다. 불필요한 지출은 줄이되 꼭 필요한 보장 은 두텁게 해 재정 투입 효과성을 높이겠다는 의미다....",
-      "source_url": "https://www.newsis.com/view/NISX20260908_0003781147",
-      "naver_url": "https://n.news.naver.com/mnews/article/003/0014177330?sid=102",
+      "title": "\"아플 때 든든하게\"…강청희 건보공단 이사장의 '리부트 건강보험 '",
+      "description": "그는 건강보험 과 장기요양 보험 , 지역사회 통합돌봄을 개별 제도로 바라보지 않고 국민 한 사람의 생애를 중심으로 연결·재설계해 치료 중심 보장 을 넘어 예방· 건강 관리·의료·돌봄이 이어지는 '생애주기 건강 보장 체계...",
+      "source_url": "https://www.fnnews.com/news/202609081418554669",
+      "naver_url": "https://n.news.naver.com/mnews/article/014/0005572750?sid=103",
       "published_at": "2026-09-08T16:00:00+09:00",
-      "source": "newsis.com",
+      "source": "fnnews.com",
+      "query": "건강보험 보장",
+      "group": "product",
+      "is_major_news": true
+    },
+    {
+      "title": "\" 건강보험 공단, 'AI 기반 건강 복지 플랫폼'으로 만든다\"",
+      "description": "지속 가능한 건강보험 을 위해 불필요한 재정 지출은 줄이고 보장 성은 강화할 계획이다. 강 이사장은 \"재정 투입에 비해 효과가 충분한지, AI와 디지털 전환을 통해 더 효율적으로 할 수 있는지, 국민이 실제 체감하는 성과로...",
+      "source_url": "https://www.mt.co.kr/thebio/2026/09/08/2026090815364219610",
+      "naver_url": "https://n.news.naver.com/mnews/article/008/0005410993?sid=101",
+      "published_at": "2026-09-08T16:00:00+09:00",
+      "source": "mt.co.kr",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": true
@@ -1423,6 +1423,28 @@
       "is_major_news": false
     },
     {
+      "title": "NH생명 충북총국, 청주마라톤서 '혈관튼튼 NH 건강보험 ' 홍보",
+      "description": "'혈관튼튼 NH 건강보험 '은 고혈압·고지혈증·당뇨 등 만성질환이 있어도 가입할 수 있도록 가입 문턱을 낮춘 상품으로, 혈관질환에 대한 검사부터 치료와 재활까지 보장 하는 것이 특징이다. 상품 가입 및 자세한 상담은...",
+      "source_url": "https://www.ccdn.co.kr/news/articleView.html?idxno=1098588",
+      "naver_url": "https://www.ccdn.co.kr/news/articleView.html?idxno=1098588",
+      "published_at": "2026-09-08T19:02:00+09:00",
+      "source": "ccdn.co.kr",
+      "query": "건강보험 보장",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "당뇨 등 197만명 건보 확대…건보료는 동결",
+      "description": "건강보험 에 이런 걸 지원을….\"] 정부가 오는 12월부터 중증 2형 당뇨 환자에게도 건보 지원을 확대하기로 했습니다. 연속 혈당측정기나 인슐린 자동 주입기 구입비를 최대 90%까지 보장 합니다. 정부는 혈우병 등 희귀...",
+      "source_url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8657883&ref=A",
+      "naver_url": "https://n.news.naver.com/mnews/article/056/0012253283?sid=102",
+      "published_at": "2026-09-08T19:02:00+09:00",
+      "source": "news.kbs.co.kr",
+      "query": "건강보험 보장",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
       "title": "내년 건보료 안 오른다…올 12월부터 희귀·중증난치질환 본인부담률 낮...",
       "description": "보건복지부는 8일 개최한 건강보험정책심의위원회에서 건강보험 보장 1단계 혁신방안을 의결했다. 올해 12월부터 희귀질환과 중증난치질환을 앓는 환자 136만명의 본인부담률을 10%에서 7%로 줄이고 2028년 상반기에는 5...",
       "source_url": "https://www.nongmin.com/article/20260908500398",
@@ -1462,17 +1484,6 @@
       "naver_url": "https://www.newsway.co.kr/news/view?ud=2026090818374058168",
       "published_at": "2026-09-08T18:40:00+09:00",
       "source": "newsway.co.kr",
-      "query": "건강보험 보장",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
-      "title": "희귀질환자 의료비 부담 확 낮춘다…본인부담 10%→5% [경기일보 보도,...",
-      "description": "보건복지부는 8일 열린 제15차 건강보험정책심의위원회에서 이 같은 내용을 담은 ‘ 건강보험 보장 1단계 혁신방안’을 의결했다. 이에 따라 희귀질환과 중증난치질환자의 건강보험 본인부담률은 현재 10%에서...",
-      "source_url": "https://www.kyeonggi.com/article/20260908580558",
-      "naver_url": "https://n.news.naver.com/mnews/article/666/0000122534?sid=100",
-      "published_at": "2026-09-08T18:28:00+09:00",
-      "source": "kyeonggi.com",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -1687,23 +1698,23 @@
       "is_major_news": false
     },
     {
-      "title": "남양주 요양시설 늘수록 커지는 시비 부담…국비 확대 요구",
-      "description": "8일 남양주시에 따르면 일반 의료급여에는 국비 80%가 지원되지만 기초생활 보장 수급자의 장기요양급여... 다른 지역에서 전입한 의료급여 수급자의 실제 거주 여부를 살피고 국민 건강보험 공단 남양주지사, 요양기관 관련...",
-      "source_url": "https://www.asiatoday.co.kr/kn/view.php?key=20260908010003116",
-      "naver_url": "https://www.asiatoday.co.kr/kn/view.php?key=20260908010003116",
-      "published_at": "2026-09-08T17:08:00+09:00",
-      "source": "asiatoday.co.kr",
-      "query": "건강보험 보장",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "희귀·중증난치 136만명 본인부담률 10%→7%로",
       "description": "8일 보건복지부에 따르면 건강보험정책심의위원회는 이날 이 같은 내용의 ' 건강보험 보장 1단계 혁신방안'과 2027년도 건강보험료율 결정안을 의결했다. 정부는 중증·희귀난치질환과 중증 당뇨병, 재택관리, 치과...",
       "source_url": "https://www.datasom.co.kr/news/articleView.html?idxno=209842",
       "naver_url": "https://www.datasom.co.kr/news/articleView.html?idxno=209842",
       "published_at": "2026-09-08T17:08:00+09:00",
       "source": "datasom.co.kr",
+      "query": "건강보험 보장",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "남양주 요양시설 늘수록 커지는 시비 부담…국비 확대 요구",
+      "description": "8일 남양주시에 따르면 일반 의료급여에는 국비 80%가 지원되지만 기초생활 보장 수급자의 장기요양급여... 다른 지역에서 전입한 의료급여 수급자의 실제 거주 여부를 살피고 국민 건강보험 공단 남양주지사, 요양기관 관련...",
+      "source_url": "https://www.asiatoday.co.kr/kn/view.php?key=20260908010003116",
+      "naver_url": "https://www.asiatoday.co.kr/kn/view.php?key=20260908010003116",
+      "published_at": "2026-09-08T17:08:00+09:00",
+      "source": "asiatoday.co.kr",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -1786,23 +1797,23 @@
       "is_major_news": false
     },
     {
-      "title": "李, 프랑스 순방서 전도연과 셀카…장동혁 \"활짝 웃는 모습에 국민 분통...",
-      "description": "지역·필수·공공의료 강화와 건강보험 보장 혁신방안 등에 추가 재정이 필요하기 때문이다. 이번에 함께 의결된 건강보험 보장 1단계 혁신방안에는 중증·희귀난치질환자 등을 중심으로 197만명에게 연간 6000억...",
-      "source_url": "https://www.dailian.co.kr/news/view/1687841/?sc=Naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/119/0003130383?sid=100",
-      "published_at": "2026-09-08T16:30:00+09:00",
-      "source": "dailian.co.kr",
-      "query": "건강보험 보장",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "희귀·난치 본인 부담 완화···중증 2형 당뇨도 지원",
       "description": "김용민 앵커> 정부가 희귀질환과 중증난치질환, 중증 당뇨병 등을 중심으로 건강보험 보장 을 늘립니다. 희귀·중증난치 질환자의 본인부담률을 낮추고, 중증 2형 당뇨병까지 의료기기 지원을 확대합니다. 보도에 김유리...",
       "source_url": "https://www.ktv.go.kr/content/view?content_id=760622",
       "naver_url": "https://www.ktv.go.kr/content/view?content_id=760622",
       "published_at": "2026-09-08T16:30:00+09:00",
       "source": "ktv.go.kr",
+      "query": "건강보험 보장",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "李, 프랑스 순방서 전도연과 셀카…장동혁 \"활짝 웃는 모습에 국민 분통...",
+      "description": "지역·필수·공공의료 강화와 건강보험 보장 혁신방안 등에 추가 재정이 필요하기 때문이다. 이번에 함께 의결된 건강보험 보장 1단계 혁신방안에는 중증·희귀난치질환자 등을 중심으로 197만명에게 연간 6000억...",
+      "source_url": "https://www.dailian.co.kr/news/view/1687841/?sc=Naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/119/0003130383?sid=100",
+      "published_at": "2026-09-08T16:30:00+09:00",
+      "source": "dailian.co.kr",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -1874,6 +1885,17 @@
       "is_major_news": false
     },
     {
+      "title": "내년부터 외래진료 연 300회 넘으면 본인부담 90%…CT·MRI 이력 공유",
+      "description": "보건복지부 유주헌 건강보험 정책국장은 “의학적으로 필요한 진료는 충분히 보장 하면서 반복·과다 의료이용에 따른 환자 안전 위험을 줄이기 위한 개정”이라며 “가입자와 의료기관이 의료이용 현황과...",
+      "source_url": "https://www.medigatenews.com/news/690073025",
+      "naver_url": "https://www.medigatenews.com/news/690073025",
+      "published_at": "2026-09-08T16:10:00+09:00",
+      "source": "medigatenews.com",
+      "query": "건강보험 보장",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
       "title": "내년 건강보험 료율 7.19%로 동결…반도체 호황·지출 효율화 반영",
       "description": "정부가 가계의 경제적 부담을 덜고 재정 안정을 꾀하기 위해 내년도 건강보험 료율을 현행 수준으로... 그동안 각계에서는 가계 부담을 고려해 보험 료 인상을 억제해야 한다는 의견과, 보장 성 약화 및 국민 의료비 증가를...",
       "source_url": "https://www.pointe.co.kr/news/articleView.html?idxno=84438",
@@ -1896,12 +1918,12 @@
       "is_major_news": false
     },
     {
-      "title": "내년부터 외래진료 연 300회 넘으면 본인부담 90%…CT·MRI 이력 공유",
-      "description": "보건복지부 유주헌 건강보험 정책국장은 “의학적으로 필요한 진료는 충분히 보장 하면서 반복·과다 의료이용에 따른 환자 안전 위험을 줄이기 위한 개정”이라며 “가입자와 의료기관이 의료이용 현황과...",
-      "source_url": "https://www.medigatenews.com/news/690073025",
-      "naver_url": "https://www.medigatenews.com/news/690073025",
-      "published_at": "2026-09-08T16:10:00+09:00",
-      "source": "medigatenews.com",
+      "title": "내년 건강보험 료율 7.19% 동결…정부지원 1조1000억원 확대 예정",
+      "description": "이번 결정은 최근 지역·필수·공공의료 강화와 건강보험 보장 혁신방안 추진에 따른 지출 소요를 고려하는 한편, 건강보험 재정의 안정적인 운영 상황과 내년도 정부지원 확대, 보험료 수입 증가가 기대되는 점...",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239908",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239908",
+      "published_at": "2026-09-08T16:06:00+09:00",
+      "source": "doctorstimes.com",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -1913,17 +1935,6 @@
       "naver_url": "https://www.newswhoplus.com/news/articleView.html?idxno=69161",
       "published_at": "2026-09-08T16:06:00+09:00",
       "source": "newswhoplus.com",
-      "query": "건강보험 보장",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
-      "title": "내년 건강보험 료율 7.19% 동결…정부지원 1조1000억원 확대 예정",
-      "description": "이번 결정은 최근 지역·필수·공공의료 강화와 건강보험 보장 혁신방안 추진에 따른 지출 소요를 고려하는 한편, 건강보험 재정의 안정적인 운영 상황과 내년도 정부지원 확대, 보험료 수입 증가가 기대되는 점...",
-      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239908",
-      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239908",
-      "published_at": "2026-09-08T16:06:00+09:00",
-      "source": "doctorstimes.com",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -1973,12 +1984,12 @@
       "is_major_news": false
     },
     {
-      "title": "치아 하나도 없는 65세 이상도 임플란트 건보 적용",
-      "description": "보건복지부는 이 같은 내용의 ‘ 건강보험 보장 1단계 혁신방안’을 추진한다고 8일 밝혔다. 그동안 완전틀니만 건강보험으로 지원받았던 완전 무치악 환자의 치료 선택지가 넓어질 전망이다. 현재 65세 이상은 평생...",
-      "source_url": "https://www.kukinews.com/article/view/kuk202609080136",
-      "naver_url": "https://www.kukinews.com/article/view/kuk202609080136",
+      "title": "건보 이사장 “건보 재정 안정 위해 소득 중심 개편해야”",
+      "description": "인권을 보장 하는 체계를 정교하게 만들려고 한다”고 말했습니다. 2027년도 건강 보험 료율이 동결된 것과 관련해선 “국민 부담을 올리는 것은 문제가 있다”며 “같은 재정 아래에서 불필요한 돈은 줄이고 필요한 돈은...",
+      "source_url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8657755&ref=A",
+      "naver_url": "https://n.news.naver.com/mnews/article/056/0012253186?sid=102",
       "published_at": "2026-09-08T16:00:00+09:00",
-      "source": "kukinews.com",
+      "source": "news.kbs.co.kr",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -1995,12 +2006,12 @@
       "is_major_news": false
     },
     {
-      "title": "건보 이사장 “건보 재정 안정 위해 소득 중심 개편해야”",
-      "description": "인권을 보장 하는 체계를 정교하게 만들려고 한다”고 말했습니다. 2027년도 건강 보험 료율이 동결된 것과 관련해선 “국민 부담을 올리는 것은 문제가 있다”며 “같은 재정 아래에서 불필요한 돈은 줄이고 필요한 돈은...",
-      "source_url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8657755&ref=A",
-      "naver_url": "https://n.news.naver.com/mnews/article/056/0012253186?sid=102",
+      "title": "치아 하나도 없는 65세 이상도 임플란트 건보 적용",
+      "description": "보건복지부는 이 같은 내용의 ‘ 건강보험 보장 1단계 혁신방안’을 추진한다고 8일 밝혔다. 그동안 완전틀니만 건강보험으로 지원받았던 완전 무치악 환자의 치료 선택지가 넓어질 전망이다. 현재 65세 이상은 평생...",
+      "source_url": "https://www.kukinews.com/article/view/kuk202609080136",
+      "naver_url": "https://www.kukinews.com/article/view/kuk202609080136",
       "published_at": "2026-09-08T16:00:00+09:00",
-      "source": "news.kbs.co.kr",
+      "source": "kukinews.com",
       "query": "건강보험 보장",
       "group": "product",
       "is_major_news": false
@@ -2116,23 +2127,23 @@
       "is_major_news": false
     },
     {
-      "title": "돌아온 유권자들은 극우를 찍었다, 원한 것은 복지가 아니었다",
-      "description": "3 내년 건강보험 료율은 7.19%로 멈췄고, 연 300회를 넘는 외래진료의 본인부담 률은 90%로 오른다. 4 학내 성폭력을 알렸다가 전보와 해임을 겪은 지혜복 교사가 962일의 투쟁 끝에 학교로 돌아간다. 마지막 아침의 사진을...",
-      "source_url": "https://newscham.net/articles/117169",
-      "naver_url": "https://newscham.net/articles/117169",
-      "published_at": "2026-09-08T17:58:00+09:00",
-      "source": "newscham.net",
-      "query": "건강보험 본인부담",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "내년 건보료율, 2년만에 '동결'",
       "description": "내년도 국민 건강보험 료율이 올해와 같은 7.19%로 동결됐다. 반도체 산업 호황에 따른 보험 료 수입 증가와... 이번 동결 결정에 따라 직장가입자의 월평균 보험 료( 본인부담 금)는 16만699원, 지역가입자는 9만242원으로...",
       "source_url": "https://www.newsgn.com/news/articleView.html?idxno=572364",
       "naver_url": "https://www.newsgn.com/news/articleView.html?idxno=572364",
       "published_at": "2026-09-08T17:58:00+09:00",
       "source": "newsgn.com",
+      "query": "건강보험 본인부담",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "돌아온 유권자들은 극우를 찍었다, 원한 것은 복지가 아니었다",
+      "description": "3 내년 건강보험 료율은 7.19%로 멈췄고, 연 300회를 넘는 외래진료의 본인부담 률은 90%로 오른다. 4 학내 성폭력을 알렸다가 전보와 해임을 겪은 지혜복 교사가 962일의 투쟁 끝에 학교로 돌아간다. 마지막 아침의 사진을...",
+      "source_url": "https://newscham.net/articles/117169",
+      "naver_url": "https://newscham.net/articles/117169",
+      "published_at": "2026-09-08T17:58:00+09:00",
+      "source": "newscham.net",
       "query": "건강보험 본인부담",
       "group": "product",
       "is_major_news": false
@@ -2292,23 +2303,23 @@
       "is_major_news": false
     },
     {
-      "title": "홍익표 \"연임 논란 커져 유감… 李대통령, 분명한 의사 밝힐 것\" 外 [오...",
-      "description": "우선 희귀질환 및 중증 난치질환자의 건강보험 본인부담 률을 단계적으로 인하한다. 오는 12월부터 7%로 낮추고, 내년 상반기에는 5%까지 경감할 계획이다. 이에 따라 대상 환자 약 136만 명의 연평균 본인부담금은 기존 75만...",
-      "source_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245659",
-      "naver_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245659",
-      "published_at": "2026-09-08T15:32:00+09:00",
-      "source": "sisunnews.co.kr",
-      "query": "건강보험 본인부담",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "희귀·난치환자 건보 본인부담 률 10→5% 경감…산정특례 재등록 간소화",
       "description": "정부가 희귀질환과 중증 난치질환을 앓고 있는 환자를 대상으로 현재 10%인 건강보험 본인부담 률을 5%까지 단계적으로 경감한다. 췌장 장애가 장애 유형으로 신설된 것에 맞춰, 12월부터는 1형 당뇨병 환자만 대상으로...",
       "source_url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5059949",
       "naver_url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5059949",
       "published_at": "2026-09-08T15:32:00+09:00",
       "source": "shinailbo.co.kr",
+      "query": "건강보험 본인부담",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "홍익표 \"연임 논란 커져 유감… 李대통령, 분명한 의사 밝힐 것\" 外 [오...",
+      "description": "우선 희귀질환 및 중증 난치질환자의 건강보험 본인부담 률을 단계적으로 인하한다. 오는 12월부터 7%로 낮추고, 내년 상반기에는 5%까지 경감할 계획이다. 이에 따라 대상 환자 약 136만 명의 연평균 본인부담금은 기존 75만...",
+      "source_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245659",
+      "naver_url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=245659",
+      "published_at": "2026-09-08T15:32:00+09:00",
+      "source": "sisunnews.co.kr",
       "query": "건강보험 본인부담",
       "group": "product",
       "is_major_news": false
@@ -2369,23 +2380,23 @@
       "is_major_news": false
     },
     {
-      "title": "보건복지부, \"19세 되면 끊기던 당뇨 지원…34세까지 늘린다\"",
-      "description": "치료비 부담 을 덜 수 있는 길이 열리면서, 그동안 제도적 '지원 공백'을 지적해온 정치권의 문제 제기가 정책 변화로 이어질지 주목된다. 보건복지부는 8일 건강보험 정책심의위원회를 열고 ' 건강보험 보장 1단계 혁신방안...",
-      "source_url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=446591",
-      "naver_url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=446591",
-      "published_at": "2026-09-08T15:12:00+09:00",
-      "source": "jeonmin.co.kr",
-      "query": "건강보험 본인부담",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "희귀·난치환자 본인부담 10→5%…197만명에 연8천억 지원",
       "description": "방안에 따르면 정부는 희귀질환과 중증 난치질환을 앓고 있는 환자 약 197만명에 연간 8000억원을 지원해 현재 10%인 건강보험 본인부담 률을 오는 12월부터 7%로 인하하고, 내년 상반기에 5%로 추가 인하한다. 이를 통해...",
       "source_url": "http://www.newsfc.co.kr/news/articleView.html?idxno=80990",
       "naver_url": "http://www.newsfc.co.kr/news/articleView.html?idxno=80990",
       "published_at": "2026-09-08T15:12:00+09:00",
       "source": "newsfc.co.kr",
+      "query": "건강보험 본인부담",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "보건복지부, \"19세 되면 끊기던 당뇨 지원…34세까지 늘린다\"",
+      "description": "치료비 부담 을 덜 수 있는 길이 열리면서, 그동안 제도적 '지원 공백'을 지적해온 정치권의 문제 제기가 정책 변화로 이어질지 주목된다. 보건복지부는 8일 건강보험 정책심의위원회를 열고 ' 건강보험 보장 1단계 혁신방안...",
+      "source_url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=446591",
+      "naver_url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=446591",
+      "published_at": "2026-09-08T15:12:00+09:00",
+      "source": "jeonmin.co.kr",
       "query": "건강보험 본인부담",
       "group": "product",
       "is_major_news": false
@@ -2435,23 +2446,23 @@
       "is_major_news": false
     },
     {
-      "title": "내년 건강보험 료율 7.19% 동결…\"재정 흑자에 반도체 호황까지\"",
-      "description": "건강보험 보장성 확대에 추가 재정이 필요하기 때문이다. 이에 따라 중증·희귀난치질환자 등 약 197만 명에게 연간 6000억-8000억 원을 지원하는 보장 강화 방안도 추진된다. 희귀·중증난치질환자의 산정특례 본인 ...",
-      "source_url": "https://www.daejonilbo.com/news/articleView.html?idxno=2299562",
-      "naver_url": "https://n.news.naver.com/mnews/article/656/0000186202?sid=101",
-      "published_at": "2026-09-08T14:57:00+09:00",
-      "source": "daejonilbo.com",
-      "query": "건강보험 본인부담",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "2027년 건강보험 료율 '동결'… “반도체 호황에 건보수입 증가 기대”",
       "description": "정부는 건강보험 재정 여력을 긍정적으로 보며 국민의 보험 료 부담 을 우선 고려했다는 입장이다.... 우선 지속적인 치료가 필요한 희귀·중증질환자 136만명의 본인부담 률을 현행 10%에서 올해 12월 7%로 낮춘다....",
       "source_url": "https://www.segye.com/newsView/20260908511419?OutUrl=naver",
       "naver_url": "https://n.news.naver.com/mnews/article/022/0004157359?sid=102",
       "published_at": "2026-09-08T14:57:00+09:00",
       "source": "segye.com",
+      "query": "건강보험 본인부담",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "내년 건강보험 료율 7.19% 동결…\"재정 흑자에 반도체 호황까지\"",
+      "description": "건강보험 보장성 확대에 추가 재정이 필요하기 때문이다. 이에 따라 중증·희귀난치질환자 등 약 197만 명에게 연간 6000억-8000억 원을 지원하는 보장 강화 방안도 추진된다. 희귀·중증난치질환자의 산정특례 본인 ...",
+      "source_url": "https://www.daejonilbo.com/news/articleView.html?idxno=2299562",
+      "naver_url": "https://n.news.naver.com/mnews/article/656/0000186202?sid=101",
+      "published_at": "2026-09-08T14:57:00+09:00",
+      "source": "daejonilbo.com",
       "query": "건강보험 본인부담",
       "group": "product",
       "is_major_news": false
@@ -2468,23 +2479,23 @@
       "is_major_news": false
     },
     {
+      "title": "희귀질환자 의료비 부담 확 낮춘다… 본인부담 10%→5% [경기일보 보도,...",
+      "description": "희귀·중증난치질환자의 건강보험 본인부담 률이 절반으로 낮아지고, 산정특례 재등록 문턱이 완화되면서 환자들의 의료비 부담과 치료 접근성이 크게 개선될 전망이다. 보건복지부는 8일 열린 제15차...",
+      "source_url": "https://www.kyeonggi.com/article/20260908580313",
+      "naver_url": "https://n.news.naver.com/mnews/article/666/0000122464?sid=100",
+      "published_at": "2026-09-08T14:52:00+09:00",
+      "source": "kyeonggi.com",
+      "query": "건강보험 본인부담",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
       "title": "의료쇼핑 제동… 年300회 초과땐 본인부담 90%",
       "description": "현재는 하루 한 번꼴인 연 365회가 넘게 외래진료를 받으면 초과 진료분을 환자 본인 이 건강보험 진료비의 90%를 부담 하는데, 이 기준을 내년부터 300회로 낮춘다. 정형외과·한의원 등을 거의 매일 찾거나, 감기 등...",
       "source_url": "https://www.munhwa.com/article/11615401?ref=naver",
       "naver_url": "https://n.news.naver.com/mnews/article/021/0002817214?sid=100",
       "published_at": "2026-09-08T14:52:00+09:00",
       "source": "munhwa.com",
-      "query": "건강보험 본인부담",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
-      "title": "내년 건보료율 7.19%로 동결…중증·희귀질환자 부담 은 낮춘다",
-      "description": "이날 건정심에서는 보험 료율과 함께 ‘ 건강보험 보장 1단계 혁신방안’도 의결됐다. 중증·희귀난치질환자 약 197만명에게 연간 8천억원 규모의 지원이 이뤄질 전망이다. 우선 희귀질환과 중증 난치질환자의 본인부담 ...",
-      "source_url": "https://www.kyeonggi.com/article/20260908580313",
-      "naver_url": "https://n.news.naver.com/mnews/article/666/0000122464?sid=100",
-      "published_at": "2026-09-08T14:52:00+09:00",
-      "source": "kyeonggi.com",
       "query": "건강보험 본인부담",
       "group": "product",
       "is_major_news": false
@@ -2985,23 +2996,23 @@
       "is_major_news": false
     },
     {
-      "title": "\"달린 거리만큼 2배 기부\"… 흥국화재, '흥국 마라톤 시즌3' 성황",
-      "description": "땀방울이 곧 치료비 로 바뀌는 이색적인 나눔 선순환 모델이 상생 경영의 새로운 이정표를 제시하고 있다. 태광그룹 금융계열사인 흥국화재가 지난 6일 서울 양천구 목동 종합운동장에서 소아암 환아 치료비 지원...",
-      "source_url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=129314",
-      "naver_url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=129314",
-      "published_at": "2026-09-07T11:12:00+09:00",
-      "source": "dailysmart.co.kr",
-      "query": "암 치료비",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "\"흥국화재 임직원, 소아암 환아 치료비 지원 위해 달리다\"",
       "description": "태광그룹 금융계열사인 흥국화재 임직원들이 소아암 환아 치료비 지원을 위해 레이스를 펼쳤다. 흥국화재는 7일 \"지난 6일 서울 양천구 목동 종합운동장에서 소아암 환아 치료비 지원과 임직원 건강 증진을 위한...",
       "source_url": "https://www.ngonews.kr/news/articleView.html?idxno=237400",
       "naver_url": "https://www.ngonews.kr/news/articleView.html?idxno=237400",
       "published_at": "2026-09-07T11:12:00+09:00",
       "source": "ngonews.kr",
+      "query": "암 치료비",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "\"달린 거리만큼 2배 기부\"… 흥국화재, '흥국 마라톤 시즌3' 성황",
+      "description": "땀방울이 곧 치료비 로 바뀌는 이색적인 나눔 선순환 모델이 상생 경영의 새로운 이정표를 제시하고 있다. 태광그룹 금융계열사인 흥국화재가 지난 6일 서울 양천구 목동 종합운동장에서 소아암 환아 치료비 지원...",
+      "source_url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=129314",
+      "naver_url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=129314",
+      "published_at": "2026-09-07T11:12:00+09:00",
+      "source": "dailysmart.co.kr",
       "query": "암 치료비",
       "group": "product",
       "is_major_news": false
@@ -3051,23 +3062,23 @@
       "is_major_news": false
     },
     {
-      "title": "“CAR-T 2차 치료 급여화를”…미만성 거대 B세포 림프종 환자들의 눈물",
-      "description": "2차 치료 단계에서는 건강보험이 적용되지 않아 막대한 치료비 를 감당하기 어려웠기 때문이다”고... 중증 암 환자에게는 ‘나중에 받을 수 있는 치료’보다 ‘필요한 때 받을 수 있는 치료’가 중요하다. 경제적...",
-      "source_url": "https://www.segye.com/newsView/20260907505059?OutUrl=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/022/0004156918?sid=102",
-      "published_at": "2026-09-07T10:10:00+09:00",
-      "source": "segye.com",
-      "query": "암 치료비",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "[포토] 흥국화재, 소아암 환아 위한 마라톤 기부 행사",
       "description": "환아 치료비 지원을 위한 마라톤 행사를 진행했다. '제23회 새벽강변 국제마라톤대회'와 연계해 진행한 이번 행사에는 흥국화재 임직원과 가족 등 260여명이 참가했으며, 완주 거리 1m당 10원의 기부금을 적립해 치료비 로...",
       "source_url": "https://www.fetv.co.kr/news/articleView.html?idxno=309722",
       "naver_url": "https://www.fetv.co.kr/news/articleView.html?idxno=309722",
       "published_at": "2026-09-07T10:10:00+09:00",
       "source": "fetv.co.kr",
+      "query": "암 치료비",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "“CAR-T 2차 치료 급여화를”…미만성 거대 B세포 림프종 환자들의 눈물",
+      "description": "2차 치료 단계에서는 건강보험이 적용되지 않아 막대한 치료비 를 감당하기 어려웠기 때문이다”고... 중증 암 환자에게는 ‘나중에 받을 수 있는 치료’보다 ‘필요한 때 받을 수 있는 치료’가 중요하다. 경제적...",
+      "source_url": "https://www.segye.com/newsView/20260907505059?OutUrl=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/022/0004156918?sid=102",
+      "published_at": "2026-09-07T10:10:00+09:00",
+      "source": "segye.com",
       "query": "암 치료비",
       "group": "product",
       "is_major_news": false
@@ -3348,23 +3359,23 @@
       "is_major_news": false
     },
     {
-      "title": "‘치질’ 탓에 혈변 나오나 했더니⋯ “‘이 암 ’ 3기 판정” 36세女, 무...",
-      "description": "이후 항암방사선치료와 항 암치료 , 수술을 받았으며 현재는 치료를 마치고 3년째 암이 재발하지 않은 상태다. 치핵과 대장암 모두 혈변⋯색만으로 구분 어려워 치질이라고 부르는 항문질환 가운데 흔한 질환이...",
-      "source_url": "https://kormedi.com/?p=2862078",
-      "naver_url": "https://n.news.naver.com/mnews/article/296/0000104609?sid=103",
-      "published_at": "2026-09-08T16:36:00+09:00",
-      "source": "kormedi.com",
-      "query": "암 치료",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "KAIST, 비타민 A 유래 물질로 지친 면역세포 지킨다",
       "description": "이흥규 교수는 \"교모세포종은 면역세포가 종양 안에서 쉽게 지쳐버려 면역 치료 가 잘 듣지 않는 대표적인 암 \"이라며 \"이번 연구는 활성형 비타민 A 신호가 CD8 T세포의 말기 탈진을 막고 항암 기능을 유지하도록 돕는...",
       "source_url": "http://www.gocj.net/news/articleView.html?idxno=152111",
       "naver_url": "http://www.gocj.net/news/articleView.html?idxno=152111",
       "published_at": "2026-09-08T16:36:00+09:00",
       "source": "gocj.net",
+      "query": "암 치료",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "‘치질’ 탓에 혈변 나오나 했더니⋯ “‘이 암 ’ 3기 판정” 36세女, 무...",
+      "description": "이후 항암방사선치료와 항 암치료 , 수술을 받았으며 현재는 치료를 마치고 3년째 암이 재발하지 않은 상태다. 치핵과 대장암 모두 혈변⋯색만으로 구분 어려워 치질이라고 부르는 항문질환 가운데 흔한 질환이...",
+      "source_url": "https://kormedi.com/?p=2862078",
+      "naver_url": "https://n.news.naver.com/mnews/article/296/0000104609?sid=103",
+      "published_at": "2026-09-08T16:36:00+09:00",
+      "source": "kormedi.com",
       "query": "암 치료",
       "group": "product",
       "is_major_news": false
@@ -3403,23 +3414,23 @@
       "is_major_news": false
     },
     {
-      "title": "계명대-연세대, 바이오포스택 기술 개발…단백질 인산화 신호만 정밀 타...",
-      "description": "기존 치료 제들은 인산화 효소(키나아제)를 억제하는 방식으로 작용했으나, 하나의 키나아제가 여러... 계명대 권택규 교수는 \"기존 치료 제가 인산화 효소 억제에 초점을 맞췄다면, 이번 기술은 특정 단백질의...",
-      "source_url": "https://www.kyosu.net/news/articleView.html?idxno=209960",
-      "naver_url": "https://www.kyosu.net/news/articleView.html?idxno=209960",
-      "published_at": "2026-09-08T16:26:00+09:00",
-      "source": "kyosu.net",
-      "query": "암 치료",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "계명대 의대, 교수 1인당 국제학술지 논문 대구·경북 1위",
       "description": "배재훈 계명대 동산의료원장은 \"이번 수치는 교수 개개인의 연구 성과가 쌓인 결과\"라며 \"논문 실적을 넘어 연구 결과가 실제 진료와 치료 성과로 이어지도록 연구 기반을 더 강화하겠다\"고 말했다. 계명대 의대가 이번...",
       "source_url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4083515",
       "naver_url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4083515",
       "published_at": "2026-09-08T16:26:00+09:00",
       "source": "kyongbuk.co.kr",
+      "query": "암 치료",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "계명대-연세대, 바이오포스택 기술 개발…단백질 인산화 신호만 정밀 타...",
+      "description": "기존 치료 제들은 인산화 효소(키나아제)를 억제하는 방식으로 작용했으나, 하나의 키나아제가 여러... 계명대 권택규 교수는 \"기존 치료 제가 인산화 효소 억제에 초점을 맞췄다면, 이번 기술은 특정 단백질의...",
+      "source_url": "https://www.kyosu.net/news/articleView.html?idxno=209960",
+      "naver_url": "https://www.kyosu.net/news/articleView.html?idxno=209960",
+      "published_at": "2026-09-08T16:26:00+09:00",
+      "source": "kyosu.net",
       "query": "암 치료",
       "group": "product",
       "is_major_news": false
@@ -3458,10 +3469,10 @@
       "is_major_news": false
     },
     {
-      "title": "[제약업계 소식] 9월 8일",
-      "description": "셀비온은 암 치료 및 진단용 방사성의약품 개발에 특화된 기업으로 방사성의약품 연구개발 및 제조 역량을 보유하고 있다. 주요 신약 파이프라인으로 전립선 암 치료 제 '177Lu-DGUL'(일반명 177Lupocuvotidesatetraxetan)을...",
-      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239904",
-      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239904",
+      "title": "[병원계 소식] 9월 8일",
+      "description": "주요 발표는 △충북공공보건의료지원단의 암 치료 지역 격차 해소와 공공의료의 역할 △대구·경북지역의 암 수술역량 강화와 공공보건의료 연계 확대 △인천지역의 트루빔 방사선치료를 통한 암환자 치료 접근성...",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239905",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239905",
       "published_at": "2026-09-08T16:06:00+09:00",
       "source": "doctorstimes.com",
       "query": "암 치료",
@@ -3568,17 +3579,6 @@
       "is_major_news": false
     },
     {
-      "title": "[유통가 NOW] 롯데마트, 오설록, 랄프 로렌, CJ온스타일, LG생활건강",
-      "description": "암 예방과 치료를 위한 오랜 지원 활동을 바탕으로 랄프 로렌은 전 세계 지역사회에서 양질의 암 치료 에 대한 접근성을 확대해 왔다. 이번 센터 설립은 이러한 노력의 연장선에 있다. 랄프 로렌은 한국에서도...",
-      "source_url": "https://www.ekn.kr/web/view.php?key=20260908028402091",
-      "naver_url": "https://www.ekn.kr/web/view.php?key=20260908028402091",
-      "published_at": "2026-09-08T15:30:00+09:00",
-      "source": "ekn.kr",
-      "query": "암 치료",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
       "title": "[MD제약바이오] 루닛, 세계폐암학회서 AI 바이오마커 연구 3건 발표",
       "description": "루닛은 비소세포폐암(NSCLC)의 EGFR 변이 아형별 종양미세환경 차이와 수술 전 화학·면역 병용요법 치료 후... 서범석 루닛 대표는 “유전자 변이와 종양미세환경, 치료 반응을 잇는 단서를 AI를 통해 보다 쉽게 찾을...",
       "source_url": "https://www.mydaily.co.kr/page/view/2026090815290192112",
@@ -3590,12 +3590,12 @@
       "is_major_news": false
     },
     {
-      "title": "HLB주가, 3만2000원선도 위태…FDA 허가 지연·재무 부담에 3%대 하락",
-      "description": "또 다른 반등 카드는 담관 암 치료 제다. HLB의 미국 자회사 엘레바테라퓨틱스는 FGFR2 표적항암제 '리라푸그라티닙'의 FDA 허가 심사를 진행하고 있다. 지난 7월 회사는 FDA와 허가 후반부 심사를 위한 레이트 사이클...",
-      "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=226673",
-      "naver_url": "https://www.job-post.co.kr/news/articleView.html?idxno=226673",
-      "published_at": "2026-09-08T15:28:00+09:00",
-      "source": "job-post.co.kr",
+      "title": "[유통가 NOW] 롯데마트, 오설록, 랄프 로렌, CJ온스타일, LG생활건강",
+      "description": "암 예방과 치료를 위한 오랜 지원 활동을 바탕으로 랄프 로렌은 전 세계 지역사회에서 양질의 암 치료 에 대한 접근성을 확대해 왔다. 이번 센터 설립은 이러한 노력의 연장선에 있다. 랄프 로렌은 한국에서도...",
+      "source_url": "https://www.ekn.kr/web/view.php?key=20260908028402091",
+      "naver_url": "https://www.ekn.kr/web/view.php?key=20260908028402091",
+      "published_at": "2026-09-08T15:30:00+09:00",
+      "source": "ekn.kr",
       "query": "암 치료",
       "group": "product",
       "is_major_news": false
@@ -3607,6 +3607,17 @@
       "naver_url": "https://www.getnews.co.kr/news/articleView.html?idxno=880169",
       "published_at": "2026-09-08T15:28:00+09:00",
       "source": "getnews.co.kr",
+      "query": "암 치료",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "HLB주가, 3만2000원선도 위태…FDA 허가 지연·재무 부담에 3%대 하락",
+      "description": "또 다른 반등 카드는 담관 암 치료 제다. HLB의 미국 자회사 엘레바테라퓨틱스는 FGFR2 표적항암제 '리라푸그라티닙'의 FDA 허가 심사를 진행하고 있다. 지난 7월 회사는 FDA와 허가 후반부 심사를 위한 레이트 사이클...",
+      "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=226673",
+      "naver_url": "https://www.job-post.co.kr/news/articleView.html?idxno=226673",
+      "published_at": "2026-09-08T15:28:00+09:00",
+      "source": "job-post.co.kr",
       "query": "암 치료",
       "group": "product",
       "is_major_news": false
@@ -3651,17 +3662,6 @@
       "naver_url": "https://kpenews.com/View.aspx?No=4217986",
       "published_at": "2026-09-08T15:08:00+09:00",
       "source": "kpenews.com",
-      "query": "암 치료",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
-      "title": "반복되는 유륜 습진, 단순 피부염일까? 유방 파젯병과 차이점은",
-      "description": "하지만 일반적인 습진 치료 에도 불구하고 증상이 호전되지 않거나, 유두 모양이 변하고 한쪽 부위에만... 치료 법도 서로 달라… 진단에 따라 수술까지 고려해야 치료 방식 역시 일반 습진과 유방 파젯병은 완전히 다릅니다....",
-      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=67126",
-      "naver_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=67126",
-      "published_at": "2026-09-08T15:00:00+09:00",
-      "source": "news.hidoc.co.kr",
       "query": "암 치료",
       "group": "product",
       "is_major_news": false
@@ -3876,10 +3876,10 @@
       "is_major_news": false
     },
     {
-      "title": "[병원계 소식] 9월 7일",
-      "description": "비롯해 암 , 난임, 노화 극복을 위한 다양한 연구를 수행하며 희귀·난치·중증질환 치료 제 개발을 선도하고 있다. ■일산백병원, '간호·간병 통합 서비스병동' 50병상 확장 오픈 인제대 일산백병원(원장 최원주)이 간호...",
-      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239874",
-      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239874",
+      "title": "[제약업계 소식] 9월 7일",
+      "description": "치료 와 정밀의료 연구가 진행되고 있다. 한국로슈는 약 100억원 규모의 연구 지원을 통해 전국 32개 병원이 참여하는 다기관 임상연구 운영을 지원했다. 또 국립암센터 주도로 임상 데이터와 유전체 정보를 통합 하는...",
+      "source_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239873",
+      "naver_url": "http://www.doctorstimes.com/news/articleView.html?idxno=239873",
       "published_at": "2026-09-07T16:08:00+09:00",
       "source": "doctorstimes.com",
       "query": "암 통합치료",
@@ -6164,12 +6164,12 @@
       "is_major_news": false
     },
     {
-      "title": "곽순헌 정책관, \"보건의료, 타 산업분야 혁신과 같은 잣대 안돼\"",
-      "description": "특정 도매업체나 제약사의 의약품을 중심으로 상품 을 구성하거나, 제휴 약국의 재고를 노출하는 방식 등이... 강화하고 건강보험 청구자료와 자금 흐름 등 관련 자료를 활용한 이상징후 분석도 검토하고 있다. 비정상...",
-      "source_url": "https://www.monews.co.kr/news/articleView.html?idxno=413686",
-      "naver_url": "https://www.monews.co.kr/news/articleView.html?idxno=413686",
+      "title": "대장내시경 국가검진 본격화…'검사자 질 관리'가 성패 가른다\"",
+      "description": "이에 따라 45~74세 성인은 10년 주기로 대장내시경 검사를 받게 되며, 건강보험 소득 하위 50%와 의료급여... 배상 보험 가입을 지원하거나 국가검진 내시경에 특화된 보험상품 을 마련하는 방안을 제시했다. 오태훈...",
+      "source_url": "http://www.bokuennews.com/news/article.html?no=283724",
+      "naver_url": "http://www.bokuennews.com/news/article.html?no=283724",
       "published_at": "2026-09-07T06:00:00+09:00",
-      "source": "monews.co.kr",
+      "source": "bokuennews.com",
       "query": "건강보험 상품",
       "group": "product",
       "is_major_news": false
@@ -6186,23 +6186,12 @@
       "is_major_news": false
     },
     {
-      "title": "대장내시경 국가검진 본격화…'검사자 질 관리'가 성패 가른다\"",
-      "description": "이에 따라 45~74세 성인은 10년 주기로 대장내시경 검사를 받게 되며, 건강보험 소득 하위 50%와 의료급여... 배상 보험 가입을 지원하거나 국가검진 내시경에 특화된 보험상품 을 마련하는 방안을 제시했다. 오태훈...",
-      "source_url": "http://www.bokuennews.com/news/article.html?no=283724",
-      "naver_url": "http://www.bokuennews.com/news/article.html?no=283724",
+      "title": "곽순헌 정책관, \"보건의료, 타 산업분야 혁신과 같은 잣대 안돼\"",
+      "description": "특정 도매업체나 제약사의 의약품을 중심으로 상품 을 구성하거나, 제휴 약국의 재고를 노출하는 방식 등이... 강화하고 건강보험 청구자료와 자금 흐름 등 관련 자료를 활용한 이상징후 분석도 검토하고 있다. 비정상...",
+      "source_url": "https://www.monews.co.kr/news/articleView.html?idxno=413686",
+      "naver_url": "https://www.monews.co.kr/news/articleView.html?idxno=413686",
       "published_at": "2026-09-07T06:00:00+09:00",
-      "source": "bokuennews.com",
-      "query": "건강보험 상품",
-      "group": "product",
-      "is_major_news": false
-    },
-    {
-      "title": "곽희필 ABL생명 대표 “ 보험 은 장기 사업…전속 채널 육성·유지율 제고...",
-      "description": "곽 대표는 전속 채널을 강화하는 만큼, 상품 포트폴리오도 FC에 특화된 상품 으로 재편했다. ABL생명은 지난 1년간 통합 건강보험 의 보장을 30여종 이상으로 확대하고 전신마취수술 보장 등 전속채널에 특화된 담보를...",
-      "source_url": "https://www.fntimes.com/html/view.php?ud=202609042311193001dd55077bc2_18",
-      "naver_url": "https://www.fntimes.com/html/view.php?ud=202609042311193001dd55077bc2_18",
-      "published_at": "2026-09-07T00:02:00+09:00",
-      "source": "fntimes.com",
+      "source": "monews.co.kr",
       "query": "건강보험 상품",
       "group": "product",
       "is_major_news": false
@@ -6214,6 +6203,17 @@
       "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92615",
       "published_at": "2026-09-07T00:02:00+09:00",
       "source": "insnews.co.kr",
+      "query": "건강보험 상품",
+      "group": "product",
+      "is_major_news": false
+    },
+    {
+      "title": "곽희필 ABL생명 대표 “ 보험 은 장기 사업…전속 채널 육성·유지율 제고...",
+      "description": "곽 대표는 전속 채널을 강화하는 만큼, 상품 포트폴리오도 FC에 특화된 상품 으로 재편했다. ABL생명은 지난 1년간 통합 건강보험 의 보장을 30여종 이상으로 확대하고 전신마취수술 보장 등 전속채널에 특화된 담보를...",
+      "source_url": "https://www.fntimes.com/html/view.php?ud=202609042311193001dd55077bc2_18",
+      "naver_url": "https://www.fntimes.com/html/view.php?ud=202609042311193001dd55077bc2_18",
+      "published_at": "2026-09-07T00:02:00+09:00",
+      "source": "fntimes.com",
       "query": "건강보험 상품",
       "group": "product",
       "is_major_news": false
@@ -6747,10 +6747,10 @@
       "is_major_news": false
     },
     {
-      "title": "중국 장기 요양 보험 , '지급 표준화'로 기금 관리 강화",
-      "description": "중국 국가의료 보장 국이 장기 요양 보험 의 지급 범위와 방식, 지급기준을 전국적으로 통일한다. 지역별 제도 차이를 줄이고 장기 요양 보험 기금의 효율성과 안정성을 높이기 위한 조치다. 국가의료 보장 국은 최근...",
-      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92572",
-      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92572",
+      "title": "자동차 보험 '8주룰' 시행, 염좌·타박상 환자 장기 치료 제동",
+      "description": "반면 경상환자는 향후치료비 대신 치료가 완료될 때까지 실제 발생한 치료비를 보장 받는다. 금감원은 \"기존... 금감원 관계자는 \" 보험 금 누수 방지를 통해 자동차 보험 의 장기 적인 지속 기반을 마련하는 한편, 선량한...",
+      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92593",
+      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92593",
       "published_at": "2026-09-07T00:02:00+09:00",
       "source": "insnews.co.kr",
       "query": "장기보험 보장",
@@ -6758,10 +6758,10 @@
       "is_major_news": false
     },
     {
-      "title": "자동차 보험 '8주룰' 시행, 염좌·타박상 환자 장기 치료 제동",
-      "description": "반면 경상환자는 향후치료비 대신 치료가 완료될 때까지 실제 발생한 치료비를 보장 받는다. 금감원은 \"기존... 금감원 관계자는 \" 보험 금 누수 방지를 통해 자동차 보험 의 장기 적인 지속 기반을 마련하는 한편, 선량한...",
-      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92593",
-      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92593",
+      "title": "중국 장기 요양 보험 , '지급 표준화'로 기금 관리 강화",
+      "description": "중국 국가의료 보장 국이 장기 요양 보험 의 지급 범위와 방식, 지급기준을 전국적으로 통일한다. 지역별 제도 차이를 줄이고 장기 요양 보험 기금의 효율성과 안정성을 높이기 위한 조치다. 국가의료 보장 국은 최근...",
+      "source_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92572",
+      "naver_url": "https://www.insnews.co.kr/news/articleView.html?idxno=92572",
       "published_at": "2026-09-07T00:02:00+09:00",
       "source": "insnews.co.kr",
       "query": "장기보험 보장",
@@ -6822,6 +6822,17 @@
       "query": "장기보험 보장",
       "group": "product",
       "is_major_news": false
+    },
+    {
+      "title": "손주 15년 키우고…아들에 7천만 원대 양육비 청구한 중국 할머니[이런...",
+      "description": "이후 아들이 재혼해 집을 떠나면서 쉬씨는 손녀의 일상 돌봄은 물론 생활비, 의료비 , 교육비 등 경제적 부담 까지 전적으로 떠안았다. 아들이 부모로서의 의무를 다하지 않았다는 이유로 소송을 제기한 쉬씨는 법원의...",
+      "source_url": "https://www.nocutnews.co.kr/news/6575052?utm_source=naver&utm_medium=article&utm_campaign=20260908070045",
+      "naver_url": "https://n.news.naver.com/mnews/article/079/0004187279?sid=104",
+      "published_at": "2026-09-08T19:01:00+09:00",
+      "source": "nocutnews.co.kr",
+      "query": "의료비 부담",
+      "group": "medical_cost",
+      "is_major_news": true
     },
     {
       "title": "울릉군, 아이 낳으면 산후조리비 100만원까지 지원",
@@ -7229,6 +7240,17 @@
       "query": "의료비 재정 부담",
       "group": "medical_cost",
       "is_major_news": true
+    },
+    {
+      "title": "건보료율 동결에 건보노조 반발...\"국고지원 20% 이행해야\"",
+      "description": "건강보험 재정 악화가 보장성 축소와 국민의 사 의료비 부담 증가로 이어질 수 있다는 우려도 제기했다. 건보노조는 \"적립금 소진에 따른 건보재정 악화는 보장성 후퇴로 이어질 수밖에 없고 그 빈자리를 민간보험이...",
+      "source_url": "https://www.dailypharm.com/user/news/342298?REFERER=NP",
+      "naver_url": "https://www.dailypharm.com/user/news/342298?REFERER=NP",
+      "published_at": "2026-09-08T19:04:00+09:00",
+      "source": "dailypharm.com",
+      "query": "의료비 부담",
+      "group": "medical_cost",
+      "is_major_news": false
     },
     {
       "title": "국가원로회의, '격차사회 대책: 청년세대에 희망을' 주제로 2026 국가발...",
@@ -7704,23 +7726,23 @@
       "is_major_news": false
     },
     {
-      "title": "﻿중증난치·희귀질환 본인 부담 율 10%→7%→5%",
-      "description": "있는 환자 136만명에 대한 건강보험 본인 부담 률(현행 10%)을 단계적으로 인하한다. 희귀질환은 2만명 이하의 유병인구, 의료비 부담 등을 고려, 희귀질환관리위원회에서 매년 지정한다. 혈우병, 발작성...",
-      "source_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940287",
-      "naver_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940287",
-      "published_at": "2026-09-08T14:08:00+09:00",
-      "source": "dailymedi.com",
-      "query": "환자 의료비 부담",
-      "group": "medical_cost",
-      "is_major_news": false
-    },
-    {
       "title": "희귀·난치질환 본인 부담 ↓, 건강보험 보장성 강화 추진",
       "description": "보건복지부는 \"중증, 희귀질 환자 와 어르신, 소아·청소년에 대한 보험 급여 확대로 의료비 부담 이 완화되어 보다 적극적인 치료와 관리가 가능하게 됐다\"며 \"큰 틀의 건강보험 보장 강화 로드맵 하에 건강보험 급여...",
       "source_url": "http://www.doctorsnews.co.kr/news/articleView.html?idxno=166236",
       "naver_url": "http://www.doctorsnews.co.kr/news/articleView.html?idxno=166236",
       "published_at": "2026-09-08T14:08:00+09:00",
       "source": "doctorsnews.co.kr",
+      "query": "환자 의료비 부담",
+      "group": "medical_cost",
+      "is_major_news": false
+    },
+    {
+      "title": "﻿중증난치·희귀질환 본인 부담 율 10%→7%→5%",
+      "description": "있는 환자 136만명에 대한 건강보험 본인 부담 률(현행 10%)을 단계적으로 인하한다. 희귀질환은 2만명 이하의 유병인구, 의료비 부담 등을 고려, 희귀질환관리위원회에서 매년 지정한다. 혈우병, 발작성...",
+      "source_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940287",
+      "naver_url": "https://www.dailymedi.com/news/news_view.php?wr_id=940287",
+      "published_at": "2026-09-08T14:08:00+09:00",
+      "source": "dailymedi.com",
       "query": "환자 의료비 부담",
       "group": "medical_cost",
       "is_major_news": false
@@ -7957,23 +7979,23 @@
       "is_major_news": false
     },
     {
-      "title": "길고긴 '콜린' 건보급여 분쟁 속, 가성비 갖춘 ' 비급여 콜린' 등장",
-      "description": "금액 차이는 다르지만 콜린알포세레이트 정제의 경우 약 420원대 중반에서 500원대 초반 수준인데, 비급여 가격 이 1정 기준 2원에서 최대 20원까지 저렴해진다. 업계에서는 프라임제약의 전략이 아직 남아있는...",
-      "source_url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78952",
-      "naver_url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78952",
-      "published_at": "2026-09-08T12:10:00+09:00",
-      "source": "hitnews.co.kr",
-      "query": "비급여 가격",
-      "group": "medical_cost",
-      "is_major_news": false
-    },
-    {
       "title": "코로나·독감환자 꿈틀…팍스로비드·키트 재고 확보 본격화",
       "description": "특히 팍스로비드의 경우 사입 가격 만 94만원에 달하고, 비급여 처방시 환자 본인부담금 역시 94만원을 상회하는 만큼 처방을 내지 않거나, 처방이 나와도 투약을 피하는 사례 등도 빚어지고 있다는 설명이다. 다른...",
       "source_url": "https://www.dailypharm.com/user/news/342250?REFERER=NP",
       "naver_url": "https://www.dailypharm.com/user/news/342250?REFERER=NP",
       "published_at": "2026-09-08T12:10:00+09:00",
       "source": "dailypharm.com",
+      "query": "비급여 가격",
+      "group": "medical_cost",
+      "is_major_news": false
+    },
+    {
+      "title": "길고긴 '콜린' 건보급여 분쟁 속, 가성비 갖춘 ' 비급여 콜린' 등장",
+      "description": "금액 차이는 다르지만 콜린알포세레이트 정제의 경우 약 420원대 중반에서 500원대 초반 수준인데, 비급여 가격 이 1정 기준 2원에서 최대 20원까지 저렴해진다. 업계에서는 프라임제약의 전략이 아직 남아있는...",
+      "source_url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78952",
+      "naver_url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78952",
+      "published_at": "2026-09-08T12:10:00+09:00",
+      "source": "hitnews.co.kr",
       "query": "비급여 가격",
       "group": "medical_cost",
       "is_major_news": false
@@ -8034,23 +8056,23 @@
       "is_major_news": false
     },
     {
-      "title": "도수의학회 \"전문가 이탈, 무자격자 불법 시술 노출\"",
-      "description": "학회는 정부가 일부 의료기관의 과잉진료와 실손보험사의 손실 문제를 해결한다는 명목으로 비급여 진료를... 현행 고시가 도수치료 1회당 관행 가격 수준을 크게 밑도는 4만 3850원으로 수가를 묶은데다 의사가 30분 이상...",
-      "source_url": "http://www.newsmp.com/news/articleView.html?idxno=257947",
-      "naver_url": "http://www.newsmp.com/news/articleView.html?idxno=257947",
-      "published_at": "2026-09-07T06:02:00+09:00",
-      "source": "newsmp.com",
-      "query": "비급여 가격",
-      "group": "medical_cost",
-      "is_major_news": false
-    },
-    {
       "title": "이연제약, 트롬빈 해외공략 속도…2029년 매출 290억 목표",
       "description": "이연제약은 기존 비급여 지혈 제품보다 합리적인 가격 을 내세워 대학병원과 진료과별 공급을 확대하고 있다. 회사는 해외 판로 개척과 국내 비급여 시장 확대가 맞물리면 트롬빈 사업이 새로운 수익원으로 자리 잡을...",
       "source_url": "https://www.dailypharm.com/user/news/342195?REFERER=NP",
       "naver_url": "https://www.dailypharm.com/user/news/342195?REFERER=NP",
       "published_at": "2026-09-07T06:02:00+09:00",
       "source": "dailypharm.com",
+      "query": "비급여 가격",
+      "group": "medical_cost",
+      "is_major_news": false
+    },
+    {
+      "title": "도수의학회 \"전문가 이탈, 무자격자 불법 시술 노출\"",
+      "description": "학회는 정부가 일부 의료기관의 과잉진료와 실손보험사의 손실 문제를 해결한다는 명목으로 비급여 진료를... 현행 고시가 도수치료 1회당 관행 가격 수준을 크게 밑도는 4만 3850원으로 수가를 묶은데다 의사가 30분 이상...",
+      "source_url": "http://www.newsmp.com/news/articleView.html?idxno=257947",
+      "naver_url": "http://www.newsmp.com/news/articleView.html?idxno=257947",
+      "published_at": "2026-09-07T06:02:00+09:00",
+      "source": "newsmp.com",
       "query": "비급여 가격",
       "group": "medical_cost",
       "is_major_news": false
@@ -8166,23 +8188,23 @@
       "is_major_news": false
     },
     {
-      "title": "선별급여로 신약 접근성 개선...사후관리까지 검토 착수",
-      "description": "지난 2018년 문재인 정부에서 비급여 의 급여화 정책으로 추진됐다. 임상적 유용성과 대체 가능 여부, 사회적 요구도를 고려해 30%, 50%, 80%로 환자 본인부담 률을 달리 적용하고 있다. 하지만 항암제, 희귀질환 치료제로...",
-      "source_url": "https://www.dailypharm.com/user/news/342244?REFERER=NP",
-      "naver_url": "https://www.dailypharm.com/user/news/342244?REFERER=NP",
-      "published_at": "2026-09-08T06:02:00+09:00",
-      "source": "dailypharm.com",
-      "query": "비급여 본인부담",
-      "group": "medical_cost",
-      "is_major_news": false
-    },
-    {
       "title": "'희귀질환 100일 신속등재' 흥행 예고...14개 품목 신청",
       "description": "전액 본인부담 까지 부여하겠다는 입장이다. RWE 데이터 자체에 대한 논란이 아직 해소되지 않은 상황에서 판정에 따라, 5년 후 사실상 비급여 전환도 가능한 셈이다. 이는 다국적사 입장에서 한국 정부가 본인 들의 보유...",
       "source_url": "https://new.dailypharm.com/user/news/342233?REFERER=NP",
       "naver_url": "https://new.dailypharm.com/user/news/342233?REFERER=NP",
       "published_at": "2026-09-08T06:02:00+09:00",
       "source": "new.dailypharm.com",
+      "query": "비급여 본인부담",
+      "group": "medical_cost",
+      "is_major_news": false
+    },
+    {
+      "title": "선별급여로 신약 접근성 개선...사후관리까지 검토 착수",
+      "description": "지난 2018년 문재인 정부에서 비급여 의 급여화 정책으로 추진됐다. 임상적 유용성과 대체 가능 여부, 사회적 요구도를 고려해 30%, 50%, 80%로 환자 본인부담 률을 달리 적용하고 있다. 하지만 항암제, 희귀질환 치료제로...",
+      "source_url": "https://www.dailypharm.com/user/news/342244?REFERER=NP",
+      "naver_url": "https://www.dailypharm.com/user/news/342244?REFERER=NP",
+      "published_at": "2026-09-08T06:02:00+09:00",
+      "source": "dailypharm.com",
       "query": "비급여 본인부담",
       "group": "medical_cost",
       "is_major_news": false
@@ -8529,17 +8551,6 @@
       "is_major_news": false
     },
     {
-      "title": "\"손주 돌봤으니 7000만원 내\"...아들 상대 소송 눈길",
-      "description": "현지 보도에 따르면 생활비· 의료비 ·교육비 등을 모두 쉬씨가 부담했다. 쉬씨는 소송에서 \"아들이 가족에... 부부 증가 와 보육 서비스 부족 등으로 조부모가 손주 돌봄에 나서는 사례가 흔하다. SCMP는 이와 관련해...",
-      "source_url": "http://www.inews24.com/view/2003193",
-      "naver_url": "https://n.news.naver.com/mnews/article/031/0001056392?sid=104",
-      "published_at": "2026-09-08T14:10:00+09:00",
-      "source": "inews24.com",
-      "query": "의료비 증가",
-      "group": "medical_cost",
-      "is_major_news": false
-    },
-    {
       "title": "\"약가제도 개선안 희귀·항암제 중심…만성질환 신약은 소외\"",
       "description": "\" 환자수가 많고 삶의 질 개선이나 의료비 절감효과가 큰 만성질환 혁신 신약의 가치를 다시 들여다 봐야 한다는 의견이 제시됐다. 홍석철 서울대 경제학부 교수는 지난 4일 국회의원회관에서 열린 '지속가능한 보건 의료 를...",
       "source_url": "https://www.kpanews.co.kr/news/articleView.html?idxno=542753",
@@ -8760,23 +8771,23 @@
       "is_major_news": false
     },
     {
-      "title": "[더벨][Company Watch] 코스모로보틱스, 하반기 미 FDA 인증 확보 관건",
-      "description": "코스모로보틱스는 환자들의 보행 재활 치료비 부담 이 줄어든 만큼 하반기부터는 제품 판매량이 다시 증가할 것으로 보고 있다. 코스모로보틱스는 올 연말까지 '밤비니 틴즈'의 미 FDA 인증을 확보하는 데 집중할...",
-      "source_url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609041606034240103010",
-      "naver_url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609041606034240103010",
-      "published_at": "2026-09-08T07:02:00+09:00",
-      "source": "thebell.co.kr",
-      "query": "치료비 부담",
-      "group": "medical_cost",
-      "is_major_news": false
-    },
-    {
       "title": "[BS모닝] 농식품부, 동물병원 의료제도 개선…펫보험 활성화 물꼬 트이...",
       "description": "이로 인해 반려인들이 치료비 부담 을 예측하기 어렵다는 지적이 잇따르자 정부가 비용 격차를 완화하고 정보 투명성을 높이기 위해 제도 개선에 나선 것이다. 보험업계는 이번 조치를 계기로 침체된 펫보험 시장이...",
       "source_url": "http://www.segyebiz.com/newsView/20260908501755?OutUrl=naver",
       "naver_url": "http://www.segyebiz.com/newsView/20260908501755?OutUrl=naver",
       "published_at": "2026-09-08T07:02:00+09:00",
       "source": "segyebiz.com",
+      "query": "치료비 부담",
+      "group": "medical_cost",
+      "is_major_news": false
+    },
+    {
+      "title": "[더벨][Company Watch] 코스모로보틱스, 하반기 미 FDA 인증 확보 관건",
+      "description": "코스모로보틱스는 환자들의 보행 재활 치료비 부담 이 줄어든 만큼 하반기부터는 제품 판매량이 다시 증가할 것으로 보고 있다. 코스모로보틱스는 올 연말까지 '밤비니 틴즈'의 미 FDA 인증을 확보하는 데 집중할...",
+      "source_url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609041606034240103010",
+      "naver_url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609041606034240103010",
+      "published_at": "2026-09-08T07:02:00+09:00",
+      "source": "thebell.co.kr",
       "query": "치료비 부담",
       "group": "medical_cost",
       "is_major_news": false
@@ -10894,23 +10905,23 @@
       "is_major_news": false
     },
     {
-      "title": "삼성 , 8일부터 하반기 공채...19개 관계사 신입사원 채용",
-      "description": "삼성 SDS ▲ 삼성화재 ▲ 삼성 카드 ▲ 삼성 증권 ▲ 삼성 중공업 ▲ 삼성 E&A ▲호텔신라 ▲제일기획 ▲에스원... 채용 절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT·Global Samsung Aptitude Test), 11월 면접, 건강 검...",
-      "source_url": "https://www.discoverynews.kr/news/articleView.html?idxno=1100796",
-      "naver_url": "https://www.discoverynews.kr/news/articleView.html?idxno=1100796",
-      "published_at": "2026-09-07T17:22:00+09:00",
-      "source": "discoverynews.kr",
-      "query": "삼성화재 건강",
-      "group": "samsung_fire",
-      "is_major_news": false
-    },
-    {
       "title": "삼성 , 2026년 하반기 공채...15일까지 접수",
       "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 이후 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT, Global Samsung Aptitude Test) ▲11월 면접, 건강 검진...",
       "source_url": "https://www.fntimes.com/html/view.php?ud=2026090717152313867de3572ddd_18",
       "naver_url": "https://www.fntimes.com/html/view.php?ud=2026090717152313867de3572ddd_18",
       "published_at": "2026-09-07T17:22:00+09:00",
       "source": "fntimes.com",
+      "query": "삼성화재 건강",
+      "group": "samsung_fire",
+      "is_major_news": false
+    },
+    {
+      "title": "삼성 , 8일부터 하반기 공채...19개 관계사 신입사원 채용",
+      "description": "삼성 SDS ▲ 삼성화재 ▲ 삼성 카드 ▲ 삼성 증권 ▲ 삼성 중공업 ▲ 삼성 E&A ▲호텔신라 ▲제일기획 ▲에스원... 채용 절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT·Global Samsung Aptitude Test), 11월 면접, 건강 검...",
+      "source_url": "https://www.discoverynews.kr/news/articleView.html?idxno=1100796",
+      "naver_url": "https://www.discoverynews.kr/news/articleView.html?idxno=1100796",
+      "published_at": "2026-09-07T17:22:00+09:00",
+      "source": "discoverynews.kr",
       "query": "삼성화재 건강",
       "group": "samsung_fire",
       "is_major_news": false
@@ -11048,23 +11059,23 @@
       "is_major_news": false
     },
     {
-      "title": "삼성 ·넷마블, 하반기 공채 실시·대학생 서포터즈 '마블챌린저' 26기 발...",
-      "description": "삼성 SDS 삼성화재 삼성 카드 삼성 증권 삼성 중공업 삼성 E&A 호텔신라 제일기획 에스원 삼성 의료원... 채용 절차는 이달 직무적합성 평가, 오는 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 진행된다....",
-      "source_url": "http://www.wsobi.com/news/articleView.html?idxno=317701",
-      "naver_url": "http://www.wsobi.com/news/articleView.html?idxno=317701",
-      "published_at": "2026-09-07T15:50:00+09:00",
-      "source": "wsobi.com",
-      "query": "삼성화재 건강",
-      "group": "samsung_fire",
-      "is_major_news": false
-    },
-    {
       "title": "\"70년 지킨 삼성 의 약속\"…하반기 신입사원 공채 실시",
       "description": "삼성 SDS ▲ 삼성화재 ▲ 삼성 카드 ▲ 삼성 증권 ▲ 삼성 중공업 ▲ 삼성 E&A ▲호텔신라 ▲제일기획 ▲에스원... 채용 절차는 9월 직무적합성 평가를 시작으로 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로...",
       "source_url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129200",
       "naver_url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129200",
       "published_at": "2026-09-07T15:50:00+09:00",
       "source": "ntoday.co.kr",
+      "query": "삼성화재 건강",
+      "group": "samsung_fire",
+      "is_major_news": false
+    },
+    {
+      "title": "삼성 ·넷마블, 하반기 공채 실시·대학생 서포터즈 '마블챌린저' 26기 발...",
+      "description": "삼성 SDS 삼성화재 삼성 카드 삼성 증권 삼성 중공업 삼성 E&A 호텔신라 제일기획 에스원 삼성 의료원... 채용 절차는 이달 직무적합성 평가, 오는 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 진행된다....",
+      "source_url": "http://www.wsobi.com/news/articleView.html?idxno=317701",
+      "naver_url": "http://www.wsobi.com/news/articleView.html?idxno=317701",
+      "published_at": "2026-09-07T15:50:00+09:00",
+      "source": "wsobi.com",
       "query": "삼성화재 건강",
       "group": "samsung_fire",
       "is_major_news": false
@@ -11081,23 +11092,23 @@
       "is_major_news": false
     },
     {
-      "title": "삼성 , 하반기 신입 공채…전자·바이오 등 19개사 채용",
-      "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용 절차는 9월 직무적합성 평가를 시작으로 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로...",
-      "source_url": "https://www.gpkorea.com/news/articleView.html?idxno=146458",
-      "naver_url": "https://www.gpkorea.com/news/articleView.html?idxno=146458",
-      "published_at": "2026-09-07T15:34:00+09:00",
-      "source": "gpkorea.com",
-      "query": "삼성화재 건강",
-      "group": "samsung_fire",
-      "is_major_news": false
-    },
-    {
       "title": "삼성 , 하반기 공채 스타트…19개 계열사 청년인재 뽑는다",
       "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 이후 9월 직무적합성 평가를 거쳐 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 채용 절차가...",
       "source_url": "http://www.updownnews.co.kr/news/articleView.html?idxno=318650",
       "naver_url": "http://www.updownnews.co.kr/news/articleView.html?idxno=318650",
       "published_at": "2026-09-07T15:34:00+09:00",
       "source": "updownnews.co.kr",
+      "query": "삼성화재 건강",
+      "group": "samsung_fire",
+      "is_major_news": false
+    },
+    {
+      "title": "삼성 , 하반기 신입 공채…전자·바이오 등 19개사 채용",
+      "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용 절차는 9월 직무적합성 평가를 시작으로 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로...",
+      "source_url": "https://www.gpkorea.com/news/articleView.html?idxno=146458",
+      "naver_url": "https://www.gpkorea.com/news/articleView.html?idxno=146458",
+      "published_at": "2026-09-07T15:34:00+09:00",
+      "source": "gpkorea.com",
       "query": "삼성화재 건강",
       "group": "samsung_fire",
       "is_major_news": false
@@ -11169,23 +11180,23 @@
       "is_major_news": false
     },
     {
-      "title": "삼성 , 올해 하반기 신입사원 공채 실시… 19개 관계사 참여",
-      "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용 절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT), 11월 면접 및 건강 검진 순으로 진행된다. 다만...",
-      "source_url": "https://www.newstnt.com/news/articleView.html?idxno=717004",
-      "naver_url": "https://www.newstnt.com/news/articleView.html?idxno=717004",
-      "published_at": "2026-09-07T15:04:00+09:00",
-      "source": "newstnt.com",
-      "query": "삼성화재 건강",
-      "group": "samsung_fire",
-      "is_major_news": false
-    },
-    {
       "title": "9월 8일부터 시작... 삼성 공채, 꼭 필요한 스펙은?",
       "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 지원 이후에는 직무적합성 평가와 삼성 직무적성검사(GSAT), 면접, 건강 검진 등의 절차가 진행된다. 삼성 에 따르면...",
       "source_url": "https://www.wikitree.co.kr/articles/1157821",
       "naver_url": "https://www.wikitree.co.kr/articles/1157821",
       "published_at": "2026-09-07T15:04:00+09:00",
       "source": "wikitree.co.kr",
+      "query": "삼성화재 건강",
+      "group": "samsung_fire",
+      "is_major_news": false
+    },
+    {
+      "title": "삼성 , 올해 하반기 신입사원 공채 실시… 19개 관계사 참여",
+      "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용 절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT), 11월 면접 및 건강 검진 순으로 진행된다. 다만...",
+      "source_url": "https://www.newstnt.com/news/articleView.html?idxno=717004",
+      "naver_url": "https://www.newstnt.com/news/articleView.html?idxno=717004",
+      "published_at": "2026-09-07T15:04:00+09:00",
+      "source": "newstnt.com",
       "query": "삼성화재 건강",
       "group": "samsung_fire",
       "is_major_news": false
@@ -11246,23 +11257,23 @@
       "is_major_news": false
     },
     {
-      "title": "'드디어 떴다' 삼성 그룹 19개사 신입사원 하반기 공채",
-      "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용 절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 진행된다....",
-      "source_url": "https://economist.co.kr/article/view/ecn202609070038",
-      "naver_url": "https://n.news.naver.com/mnews/article/243/0000102735?sid=101",
-      "published_at": "2026-09-07T14:18:00+09:00",
-      "source": "economist.co.kr",
-      "query": "삼성화재 건강",
-      "group": "samsung_fire",
-      "is_major_news": false
-    },
-    {
       "title": "이재용 \"양질의 일자리 창출\"··· 삼성 , 19개사 하반기 공채 돌입",
       "description": "삼성 SDS ▲ 삼성화재 ▲ 삼성 카드 ▲ 삼성 증권 ▲ 삼성 중공업 ▲ 삼성 E&A ▲호텔신라 ▲제일기획 ▲에스원... 채용 절차는 9월 직무적합성 평가를 시작으로 10월 삼성 직무적성검사 GSAT, 11월 면접, 건강 검진 순으로...",
       "source_url": "https://www.smartbizn.com/news/articleView.html?idxno=153205",
       "naver_url": "https://www.smartbizn.com/news/articleView.html?idxno=153205",
       "published_at": "2026-09-07T14:18:00+09:00",
       "source": "smartbizn.com",
+      "query": "삼성화재 건강",
+      "group": "samsung_fire",
+      "is_major_news": false
+    },
+    {
+      "title": "'드디어 떴다' 삼성 그룹 19개사 신입사원 하반기 공채",
+      "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용 절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 진행된다....",
+      "source_url": "https://economist.co.kr/article/view/ecn202609070038",
+      "naver_url": "https://n.news.naver.com/mnews/article/243/0000102735?sid=101",
+      "published_at": "2026-09-07T14:18:00+09:00",
+      "source": "economist.co.kr",
       "query": "삼성화재 건강",
       "group": "samsung_fire",
       "is_major_news": false
@@ -11279,23 +11290,23 @@
       "is_major_news": false
     },
     {
-      "title": "\"70년째 공채 이어간다\"… 삼성 , 2026 하반기 19개 계열사 신입사원 채용",
-      "description": "삼성 SDS ▲ 삼성화재 ▲ 삼성 카드 ▲ 삼성 증권 ▲ 삼성 중공업 ▲ 삼성 E&A ▲호텔신라 ▲제일기획 ▲에스원... 채용 절차는 9월 직무적합성 평가를 시작으로 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 진행될...",
-      "source_url": "https://www.youthdaily.co.kr/news/article.html?no=226563",
-      "naver_url": "https://www.youthdaily.co.kr/news/article.html?no=226563",
-      "published_at": "2026-09-07T14:08:00+09:00",
-      "source": "youthdaily.co.kr",
-      "query": "삼성화재 건강",
-      "group": "samsung_fire",
-      "is_major_news": false
-    },
-    {
       "title": "삼성 , 2026년 하반기 공채 실시…8일 원서접수",
       "description": "삼성 SDS, 삼성화재 , 삼성 카드, 삼성 증권, 삼성 중공업, 삼성 E&A, 호텔신라, 제일기획, 에스원, 삼성 의료원... 채용절차는 9월 직무적합성 평가, 10월 삼성 직무적성검사(GSAT, Global Samsung Aptitude Test), 11월 면접, 건강 검진...",
       "source_url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260907.99099001954",
       "naver_url": "https://n.news.naver.com/mnews/article/658/0000154752?sid=101",
       "published_at": "2026-09-07T14:08:00+09:00",
       "source": "kookje.co.kr",
+      "query": "삼성화재 건강",
+      "group": "samsung_fire",
+      "is_major_news": false
+    },
+    {
+      "title": "\"70년째 공채 이어간다\"… 삼성 , 2026 하반기 19개 계열사 신입사원 채용",
+      "description": "삼성 SDS ▲ 삼성화재 ▲ 삼성 카드 ▲ 삼성 증권 ▲ 삼성 중공업 ▲ 삼성 E&A ▲호텔신라 ▲제일기획 ▲에스원... 채용 절차는 9월 직무적합성 평가를 시작으로 10월 삼성 직무적성검사(GSAT), 11월 면접, 건강 검진 순으로 진행될...",
+      "source_url": "https://www.youthdaily.co.kr/news/article.html?no=226563",
+      "naver_url": "https://www.youthdaily.co.kr/news/article.html?no=226563",
+      "published_at": "2026-09-07T14:08:00+09:00",
+      "source": "youthdaily.co.kr",
       "query": "삼성화재 건강",
       "group": "samsung_fire",
       "is_major_news": false
@@ -11653,10 +11664,10 @@
       "is_major_news": true
     },
     {
-      "title": "美 회사채 256조 쏟아지고 국채 바이백 2배…금리 출렁이나",
-      "description": "금융위원회 가 4월 보험 업권의 주식·지분 투자 규제를 완화하며 최대 24조 2000억 원이 기업으로 흘러갈 수 있다고 기대한 만큼 채권 투자 여력도 줄어들 수 있다는 지적이 나온다. 10년물 국고채 금리는 지난해 말...",
-      "source_url": "https://www.sedaily.com/article/20088275?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/011/0004659596?sid=102",
+      "title": "삼성·SK하이닉스 급등에 코스피 7000…“1만2000 간다”",
+      "description": "금융위원회 가 4월 보험 업권의 주식·지분 투자 규제를 완화하며 최대 24조 2000억 원의 자금이 기업으로 흘러갈 수 있다고 기대한 정책 방향도 영향을 미쳤다. 지난해 말 연 3.385%였던 10년물 국고채 금리는 4일 4.36...",
+      "source_url": "https://www.sedaily.com/article/20088278?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/011/0004659597?sid=101",
       "published_at": "2026-09-08T10:01:00+09:00",
       "source": "sedaily.com",
       "query": "금융위원회 보험",
@@ -11664,10 +11675,10 @@
       "is_major_news": true
     },
     {
-      "title": "삼성·SK하이닉스 급등에 코스피 7000…“1만2000 간다”",
-      "description": "금융위원회 가 4월 보험 업권의 주식·지분 투자 규제를 완화하며 최대 24조 2000억 원의 자금이 기업으로 흘러갈 수 있다고 기대한 정책 방향도 영향을 미쳤다. 지난해 말 연 3.385%였던 10년물 국고채 금리는 4일 4.36...",
-      "source_url": "https://www.sedaily.com/article/20088278?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/011/0004659597?sid=101",
+      "title": "美 회사채 256조 쏟아지고 국채 바이백 2배…금리 출렁이나",
+      "description": "금융위원회 가 4월 보험 업권의 주식·지분 투자 규제를 완화하며 최대 24조 2000억 원이 기업으로 흘러갈 수 있다고 기대한 만큼 채권 투자 여력도 줄어들 수 있다는 지적이 나온다. 10년물 국고채 금리는 지난해 말...",
+      "source_url": "https://www.sedaily.com/article/20088275?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/011/0004659596?sid=102",
       "published_at": "2026-09-08T10:01:00+09:00",
       "source": "sedaily.com",
       "query": "금융위원회 보험",
@@ -11686,12 +11697,12 @@
       "is_major_news": true
     },
     {
-      "title": "유재훈 신임 보험 개발원장 “ 보험 산업 ‘페이스세터’ 될 것”",
-      "description": "국내 보험 사들이 익숙한 환경에서 현지 사업을 시작할 수 있도록 지원할 예정이다. 유 신임 원장은 성균관대 경제학과를 졸업하고 미국 애리조나대에서 MBA를 취득했다. 행정고시 39회로 공직에 입문해 금융위원회 ...",
-      "source_url": "https://www.sedaily.com/article/20088258?ref=naver",
-      "naver_url": "https://n.news.naver.com/mnews/article/011/0004659555?sid=101",
+      "title": "유재훈 보험 개발원장 취임…\"AI·데이터로 보험 산업 혁신\"",
+      "description": "행정고시 39회로 공직에 입문한 뒤 과학기술부와 금융 감독 위원회 , 금융위원회 등에서 근무했다. 금융 위 보험 과와 위원장 비서관, 기업구조개선과장, 자본시장조사단장, 혁신기획재정담당관, 금융 정보분석원(FIU)...",
+      "source_url": "https://www.fnnews.com/news/202609071437292987",
+      "naver_url": "https://n.news.naver.com/mnews/article/014/0005572449?sid=101",
       "published_at": "2026-09-08T09:01:00+09:00",
-      "source": "sedaily.com",
+      "source": "fnnews.com",
       "query": "금융위원회 보험",
       "group": "policy",
       "is_major_news": true
@@ -11884,10 +11895,10 @@
       "is_major_news": true
     },
     {
-      "title": "건보 요율 인상 전에 ‘부과 형평성’ 제정비 필요",
-      "description": "건강보험 료 부과체계 개선 논의가 뜨겁다. 고령화와 만성질환 증가로 의료비는 계속 증가해 보험 료율 인상도 불가피하다. 건강보험 의 지속가능성을 지키려면 단순히 보험 료를 더 걷는 데 그쳐서는 안 된다. 부담능력에...",
-      "source_url": "https://www.edaily.co.kr/News/Read?newsId=01525206645577824&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "naver_url": "https://n.news.naver.com/mnews/article/018/0006364609?sid=102",
+      "title": "'건보료 ‘0원’…같은 5000만원 버는데 건보료 왜 이래?",
+      "description": "건강보험 료 부과기준 개선 논의가 뜨겁다. 건강보험 은 질병의 위험을 사회가 함께 나누는 상호부조의... 마땅히 부담능력이 있는 곳에서 공정하게 거둬야 부담능력과 무관하게 요율 을 똑같이 올려야 하는 상황을...",
+      "source_url": "https://www.edaily.co.kr/News/Read?newsId=01528486645577824&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "naver_url": "https://n.news.naver.com/mnews/article/018/0006364610?sid=101",
       "published_at": "2026-09-07T05:37:00+09:00",
       "source": "edaily.co.kr",
       "query": "건강보험요율",
@@ -11895,10 +11906,10 @@
       "is_major_news": true
     },
     {
-      "title": "'건보료 ‘0원’…같은 5000만원 버는데 건보료 왜 이래?",
-      "description": "건강보험 료 부과기준 개선 논의가 뜨겁다. 건강보험 은 질병의 위험을 사회가 함께 나누는 상호부조의... 마땅히 부담능력이 있는 곳에서 공정하게 거둬야 부담능력과 무관하게 요율 을 똑같이 올려야 하는 상황을...",
-      "source_url": "https://www.edaily.co.kr/News/Read?newsId=01528486645577824&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "naver_url": "https://n.news.naver.com/mnews/article/018/0006364610?sid=101",
+      "title": "건보 요율 인상 전에 ‘부과 형평성’ 제정비 필요",
+      "description": "건강보험 료 부과체계 개선 논의가 뜨겁다. 고령화와 만성질환 증가로 의료비는 계속 증가해 보험 료율 인상도 불가피하다. 건강보험 의 지속가능성을 지키려면 단순히 보험 료를 더 걷는 데 그쳐서는 안 된다. 부담능력에...",
+      "source_url": "https://www.edaily.co.kr/News/Read?newsId=01525206645577824&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "naver_url": "https://n.news.naver.com/mnews/article/018/0006364609?sid=102",
       "published_at": "2026-09-07T05:37:00+09:00",
       "source": "edaily.co.kr",
       "query": "건강보험요율",
@@ -11994,10 +12005,10 @@
       "is_major_news": true
     },
     {
-      "title": "건보노조 \" 국고지원 늘리고 보장성 강화해야\"",
+      "title": "건보 재정 '빨간불'…노동계 \" 국고지원 20% 이행하라\"",
       "description": "민주노총 공공운수노조 국민 건강보험 노동조합 조합원들이 8일 서울 서초구 건강보험 심사평가원 앞에서 열린 ' 건강보험 재정안정화를 위한 국가책임 촉구 기자회견'에서 정부 지원 확대와 보장성 강화를 촉구하고...",
-      "source_url": "https://www.news1.kr/photos/8093876",
-      "naver_url": "https://n.news.naver.com/mnews/article/421/0009156897?sid=102",
+      "source_url": "https://www.news1.kr/photos/8093870",
+      "naver_url": "https://n.news.naver.com/mnews/article/421/0009156899?sid=102",
       "published_at": "2026-09-08T10:12:00+09:00",
       "source": "news1.kr",
       "query": "건강보험 국고지원",
@@ -12445,10 +12456,21 @@
       "is_major_news": false
     },
     {
-      "title": "외국인 지분율 50% 향하는 우리 금융 …임종룡표 ‘IR 전략’ 성과 보이나",
-      "description": "하지만 임 회장 취임 이후 증권사와 보험 사를 잇따라 인수하면서 비은행 수익기여도가 상반기 기준 22.3... 한편, 임 회장은 이달 8일 이찬진 금융감독원 장 및 타 금융 사 수장들과 함께 런던을 방문해 글로벌...",
-      "source_url": "https://www.ceoscoredaily.com/page/view/2026090716153467718",
-      "naver_url": "https://www.ceoscoredaily.com/page/view/2026090716153467718",
+      "title": "[Who Is ?] 신재욱 NH투자증권 대표이사",
+      "description": "△NH투자증권이 걸어온 길 NH투자증권은 1969년 국내 손해 보험 사들이 공동출자해 설립한 한보증권에... 앞서 NH투자증권은 2025년 10월28일 금융 위원회· 금융감독원 ·한국거래소로 구성된 주가조작 근절...",
+      "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=445389",
+      "naver_url": "https://www.businesspost.co.kr/BP?command=article_view&num=445389",
+      "published_at": "2026-09-08T07:00:00+09:00",
+      "source": "businesspost.co.kr",
+      "query": "금융감독원 보험",
+      "group": "policy",
+      "is_major_news": false
+    },
+    {
+      "title": "잘나가던 손보사 ROA 일제히 ‘후퇴’…메리츠화재만 4%대 사수",
+      "description": "국내 주요 손해 보험 사들의 올해 1분기 총자산순이익률(ROA)이 자동차 보험 손해율 악화 등의 여파로... 8일 금융감독원 공시에 따르면 올해 1분기 상위 5개 손보사(삼성·메리츠화재·DB·KB손보·현대해상)의 ROA 단순...",
+      "source_url": "https://www.ceoscoredaily.com/page/view/2026090316073175574",
+      "naver_url": "https://www.ceoscoredaily.com/page/view/2026090316073175574",
       "published_at": "2026-09-08T07:00:00+09:00",
       "source": "ceoscoredaily.com",
       "query": "금융감독원 보험",
@@ -12467,21 +12489,10 @@
       "is_major_news": false
     },
     {
-      "title": "[Who Is ?] 신재욱 NH투자증권 대표이사",
-      "description": "△NH투자증권이 걸어온 길 NH투자증권은 1969년 국내 손해 보험 사들이 공동출자해 설립한 한보증권에... 앞서 NH투자증권은 2025년 10월28일 금융 위원회· 금융감독원 ·한국거래소로 구성된 주가조작 근절...",
-      "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=445389",
-      "naver_url": "https://www.businesspost.co.kr/BP?command=article_view&num=445389",
-      "published_at": "2026-09-08T07:00:00+09:00",
-      "source": "businesspost.co.kr",
-      "query": "금융감독원 보험",
-      "group": "policy",
-      "is_major_news": false
-    },
-    {
-      "title": "잘나가던 손보사 ROA 일제히 ‘후퇴’…메리츠화재만 4%대 사수",
-      "description": "국내 주요 손해 보험 사들의 올해 1분기 총자산순이익률(ROA)이 자동차 보험 손해율 악화 등의 여파로... 8일 금융감독원 공시에 따르면 올해 1분기 상위 5개 손보사(삼성·메리츠화재·DB·KB손보·현대해상)의 ROA 단순...",
-      "source_url": "https://www.ceoscoredaily.com/page/view/2026090316073175574",
-      "naver_url": "https://www.ceoscoredaily.com/page/view/2026090316073175574",
+      "title": "외국인 지분율 50% 향하는 우리 금융 …임종룡표 ‘IR 전략’ 성과 보이나",
+      "description": "하지만 임 회장 취임 이후 증권사와 보험 사를 잇따라 인수하면서 비은행 수익기여도가 상반기 기준 22.3... 한편, 임 회장은 이달 8일 이찬진 금융감독원 장 및 타 금융 사 수장들과 함께 런던을 방문해 글로벌...",
+      "source_url": "https://www.ceoscoredaily.com/page/view/2026090716153467718",
+      "naver_url": "https://www.ceoscoredaily.com/page/view/2026090716153467718",
       "published_at": "2026-09-08T07:00:00+09:00",
       "source": "ceoscoredaily.com",
       "query": "금융감독원 보험",
@@ -12731,23 +12742,23 @@
       "is_major_news": false
     },
     {
-      "title": "\"대출규제 무용지물\"…5대 은행 가계대출 1년반새 41조↑",
-      "description": "특히 은행 대출 규제 여파로 최근에는 보험 업권 대출이 급증했는데, 대출수요를 금융 권 곳곳으로 떠밀고... /사진=미디어펜 김상문 기자 국회 정무위원회 소속 박성훈 국민의힘 의원실(부산 북구을)이 금융감독원 ...",
-      "source_url": "https://www.mediapen.com/news/view/1121866",
-      "naver_url": "https://www.mediapen.com/news/view/1121866",
-      "published_at": "2026-09-07T16:34:00+09:00",
-      "source": "mediapen.com",
-      "query": "금융감독원 보험",
-      "group": "policy",
-      "is_major_news": false
-    },
-    {
       "title": "KB증권, AI 소비자 보호 시스템 확장 운영",
       "description": "금융감독원 도 금융 권의 금융 소비자 보호 강화가 중요하다고 보고 있다. 이찬진 금감원장은 지난해 9월 9일... 금융 권의 주요 소비자 위험요인과 대응 방안 관련 논의가 진행됐다. 금감원은 목표 전환형 펀드와 보험 상품...",
       "source_url": "https://www.cnbnews.com/news/articleView.html?idxno=1014733",
       "naver_url": "https://www.cnbnews.com/news/articleView.html?idxno=1014733",
       "published_at": "2026-09-07T16:34:00+09:00",
       "source": "cnbnews.com",
+      "query": "금융감독원 보험",
+      "group": "policy",
+      "is_major_news": false
+    },
+    {
+      "title": "\"대출규제 무용지물\"…5대 은행 가계대출 1년반새 41조↑",
+      "description": "특히 은행 대출 규제 여파로 최근에는 보험 업권 대출이 급증했는데, 대출수요를 금융 권 곳곳으로 떠밀고... /사진=미디어펜 김상문 기자 국회 정무위원회 소속 박성훈 국민의힘 의원실(부산 북구을)이 금융감독원 ...",
+      "source_url": "https://www.mediapen.com/news/view/1121866",
+      "naver_url": "https://www.mediapen.com/news/view/1121866",
+      "published_at": "2026-09-07T16:34:00+09:00",
+      "source": "mediapen.com",
       "query": "금융감독원 보험",
       "group": "policy",
       "is_major_news": false
@@ -12874,23 +12885,23 @@
       "is_major_news": false
     },
     {
-      "title": "하태경 \" 금융 위가 AI 투자 막아\"···규제합리화위에 조사 요청",
-      "description": "한편, 금융위원회 는 보험 연수원이 비영리법인이라는 점을 고려해 합작법인을 통한 영리사업 추진에 우려를 전한 것으로 알려졌다. 보험 연수원 노동조합도 사업 타당성 추진 절차 등을 문제 삼아 합작투자에 반대해왔다.",
-      "source_url": "https://www.smartbizn.com/news/articleView.html?idxno=153371",
-      "naver_url": "https://www.smartbizn.com/news/articleView.html?idxno=153371",
-      "published_at": "2026-09-08T16:46:00+09:00",
-      "source": "smartbizn.com",
-      "query": "금융위원회 보험",
-      "group": "policy",
-      "is_major_news": false
-    },
-    {
       "title": "유재훈號 보험 개발원 출범…AI·실손·해외로 보폭 넓힌다",
       "description": "유 원장은 금융위원회 보험 과장과 금융소비자국장 등을 거쳐 예금보험공사 사장을 역임한 금융·보험 정책 전문가다. 정책과 소비자보호 분야에서 쌓은 경험을 바탕으로 보험개발원의 역할을 기존 통계·요율 중심에서...",
       "source_url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129239",
       "naver_url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129239",
       "published_at": "2026-09-08T16:46:00+09:00",
       "source": "ntoday.co.kr",
+      "query": "금융위원회 보험",
+      "group": "policy",
+      "is_major_news": false
+    },
+    {
+      "title": "하태경 \" 금융 위가 AI 투자 막아\"···규제합리화위에 조사 요청",
+      "description": "한편, 금융위원회 는 보험 연수원이 비영리법인이라는 점을 고려해 합작법인을 통한 영리사업 추진에 우려를 전한 것으로 알려졌다. 보험 연수원 노동조합도 사업 타당성 추진 절차 등을 문제 삼아 합작투자에 반대해왔다.",
+      "source_url": "https://www.smartbizn.com/news/articleView.html?idxno=153371",
+      "naver_url": "https://www.smartbizn.com/news/articleView.html?idxno=153371",
+      "published_at": "2026-09-08T16:46:00+09:00",
+      "source": "smartbizn.com",
       "query": "금융위원회 보험",
       "group": "policy",
       "is_major_news": false
@@ -13259,6 +13270,17 @@
       "is_major_news": false
     },
     {
+      "title": "유재훈 제14대 보험 개발원장 취임… \" 보험 산업 페이스세터 될 것\"",
+      "description": "유재훈 전 금융위원회 금융 소비국장이 8일 제14대 보험 개발원장으로 취임했다. 유 원장은 별도의 취임식 없이 곧바로 업무에 착수해 주요 사업의 추진 상황과 현안을 점검하고 현장의 목소리를 청취할 예정이다. 유...",
+      "source_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727514",
+      "naver_url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727514",
+      "published_at": "2026-09-08T09:32:00+09:00",
+      "source": "the-biz.co.kr",
+      "query": "금융위원회 보험",
+      "group": "policy",
+      "is_major_news": false
+    },
+    {
       "title": "명목GDP 성장률 26.4%, 47년만의 최대",
       "description": "제조업과 금융 · 보험 업이 실적 개선을 이끌었다. 반면 피용자보수(임금)는 같은 기간 1.9% 늘어나는 데... 명목 GDP 증가세가 예상보다 가팔랐던 만큼, 금융 통화 위원회 가 이를 어떻게 받아들일지가 다음 변수다....",
       "source_url": "http://www.newskr.kr/news/articleView.html?idxno=106185",
@@ -13270,23 +13292,23 @@
       "is_major_news": false
     },
     {
-      "title": "유재훈 제14대 보험 개발원장 취임…\" 보험 산업 이끄는 페이스세터 되어야...",
-      "description": "컨슈머타임스=김예령 기자 | 유재훈 신임 보험 개발원장이 급변하는 보험 산업의 미래를 선도하는... 행정고시 재경직 39회로 공직에 입문해 금융위원회 기업구조개선과장, 자본시장조사단장, 금융 소비자국장 등을 거쳤다....",
-      "source_url": "https://www.cstimes.com/news/articleView.html?idxno=719781",
-      "naver_url": "https://www.cstimes.com/news/articleView.html?idxno=719781",
-      "published_at": "2026-09-08T09:18:00+09:00",
-      "source": "cstimes.com",
-      "query": "금융위원회 보험",
-      "group": "policy",
-      "is_major_news": false
-    },
-    {
       "title": "유재훈 보험 개발원장 취임…\"데이터·기술·서비스 선제 제시\"",
       "description": "제14대 보험 개발원장에 취임한 유재훈 원장은 성균관대 경제학과를 졸업하고 행정고시 39회로 공직에 발을 들였다. 그는 금융위원회 기업구조개선과장과 자본시장조사단장, 혁신기획재정담당관, 금융 정보분석원(FIU)...",
       "source_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433828",
       "naver_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433828",
       "published_at": "2026-09-08T09:02:00+09:00",
       "source": "news.einfomax.co.kr",
+      "query": "금융위원회 보험",
+      "group": "policy",
+      "is_major_news": false
+    },
+    {
+      "title": "유재훈 보험 개발원장 “ 보험 산업 페이스세터 되겠다”",
+      "description": "나아가 유 원장은 보험 개발원의 오랜 경험과 다양한 통계집적관리시스템(K- 보험 )을 동남아 등에 전파해 보험 사의 현지 사업 지원도 약속했다. 유 원장은 금융위원회 기업구조개선과장과 자본시장조사단장, 기획조정관...",
+      "source_url": "https://biz.heraldcorp.com/article/10865683?ref=naver",
+      "naver_url": "https://n.news.naver.com/mnews/article/016/0002694116?sid=101",
+      "published_at": "2026-09-08T09:01:00+09:00",
+      "source": "biz.heraldcorp.com",
       "query": "금융위원회 보험",
       "group": "policy",
       "is_major_news": false
@@ -13402,23 +13424,23 @@
       "is_major_news": false
     },
     {
-      "title": "최태원 \"한일 경제공동체 만들어야…6조달러 세계 4위 경제권\"",
-      "description": "솅겐 협정은 회원국 간 국경 통과 절차를 최소화해 자유로운 인적 이동을 보장 하는 제도 다. 민간 차원의 협력 방안으로는 금융사 공동 펀드와 양국에서 함께 적용할 수 있는 보험 상품, 헬스케어 사업 등을 제시했다. AI...",
-      "source_url": "https://daily.hankooki.com/news/articleView.html?idxno=1403911",
-      "naver_url": "https://daily.hankooki.com/news/articleView.html?idxno=1403911",
-      "published_at": "2026-09-08T15:38:00+09:00",
-      "source": "daily.hankooki.com",
-      "query": "보험 보장 제도",
-      "group": "policy",
-      "is_major_news": false
-    },
-    {
       "title": "[정준모의 미술마을 正舌] 큐레이터십 없는 한국의 큐레이터",
       "description": "학예연구원 즉 큐레이터 제도 는 1960년대 국립박물관에 도입되어, 1984년 박물관법이 제정되면서, 학예 전문... 사립의 경우 사정은 더 열악해, 계약직·인턴·프리랜서 고용이 흔하고 4대 보험 조차 보장 되지 않는 경우도...",
       "source_url": "https://www.ajunews.com/view/20260908095136842",
       "naver_url": "https://www.ajunews.com/view/20260908095136842",
       "published_at": "2026-09-08T15:38:00+09:00",
       "source": "ajunews.com",
+      "query": "보험 보장 제도",
+      "group": "policy",
+      "is_major_news": false
+    },
+    {
+      "title": "최태원 \"한일 경제공동체 만들어야…6조달러 세계 4위 경제권\"",
+      "description": "솅겐 협정은 회원국 간 국경 통과 절차를 최소화해 자유로운 인적 이동을 보장 하는 제도 다. 민간 차원의 협력 방안으로는 금융사 공동 펀드와 양국에서 함께 적용할 수 있는 보험 상품, 헬스케어 사업 등을 제시했다. AI...",
+      "source_url": "https://daily.hankooki.com/news/articleView.html?idxno=1403911",
+      "naver_url": "https://daily.hankooki.com/news/articleView.html?idxno=1403911",
+      "published_at": "2026-09-08T15:38:00+09:00",
+      "source": "daily.hankooki.com",
       "query": "보험 보장 제도",
       "group": "policy",
       "is_major_news": false
@@ -13479,12 +13501,12 @@
       "is_major_news": false
     },
     {
-      "title": "외국인연금 '무임승차' 막는다 \"실제 기여기간 강화'",
-      "description": "현행 추납 제도 는 실직이나 경력단절 등으로 보험 료를 내지 못했던 가입자가 이후 보험 료를 납부해... 다만 국가별 상호주의 적용 기준과 외국인의 사회 보장 권 등을 둘러싼 논의가 국회 심사 과정에서 쟁점이 될...",
-      "source_url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=863056",
-      "naver_url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=863056",
+      "title": "최태원, 한일 경제공동체 필요성 강조…\"뭉치면 세계 4위 경제권 형성\"",
+      "description": "이동을 보장 하는 제도 입니다. 민간 기업 차원에서는 양국 금융사들이 인공지능(AI)이나 젊은 세대에 초점을 맞춘 공동 펀드나 양국에서 모두 적용되는 새로운 보험 상품을 출시하거나 헬스케어 분야 등에서도 협력이...",
+      "source_url": "https://biz.sbs.co.kr/article_hub/20000333409?division=NAVER",
+      "naver_url": "https://n.news.naver.com/mnews/article/374/0000531785?sid=101",
       "published_at": "2026-09-08T14:34:00+09:00",
-      "source": "hansbiz.co.kr",
+      "source": "biz.sbs.co.kr",
       "query": "보험 보장 제도",
       "group": "policy",
       "is_major_news": false
@@ -14268,6 +14290,790 @@
       "origin_type": "official",
       "source_org": "HIRA",
       "source_org_name": "건강보험심사평가원"
+    },
+    {
+      "title": "금융소비자리포터",
+      "description": "금융소비자리포터 참여·소통 고객의 소리 금융소비자리포터 국민검사청구제도 금융회사 소통 중소기업 금융애로상담센터",
+      "source_url": "https://www.fss.or.kr/fss/partcptn/mntrDclr/forInsert.do?menuNo=200382",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "금융소비자보호법",
+      "description": "금융소비자보호법 업무자료 업무처리 절차 공통 은행·중소서민금융 금융투자 금융소비자보호법 보험 공시 회계 외국환 검사·제재 금융감독법규정보 해외금융감독 금융통계 기타 금융감독연구",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000111/list.do?menuNo=200139",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "금융소비자보호자문위원회",
+      "description": "금융소비자보호자문위원회 금융소비자보호 금융소비자보호자문위원회 금융소비자 정보포털 파인(FINE) 서민금융1332 통합연금포털 금융생활 길라잡이 금융회사 길라잡이 민원·상담 조회서비스 상생·협력 금융新상품 우수사례",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000422/list.do?menuNo=201275",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보도자료(소비자 유의사항 등)",
+      "description": "보도자료(소비자 유의사항 등) 분쟁조정결정례 분쟁해결기준 분쟁조정사례 주요판례 보도자료(소비자 유의사항 등)",
+      "source_url": "https://www.fss.or.kr/fss/job/fncCnflNewsData/list.do?menuNo=201197",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보험전문인(업)/보험중개사 등록",
+      "description": "보험전문인(업)/보험중개사 등록 이전화면 전체메뉴 닫기 보험전문인(업)/보험중개사 등록 등록안내 등록조회 증명서발급 인허가 사전협의(S.T.A.R.T) 이전화면 전체메뉴 닫기 인허가 사전협의(S.T.A.R.T) 인허가 사전협의(S.T.A.R.T) 사전협의신청 사전협의신청 조회 자료실 인허가등록신고시스템 온라인 인허가등록 사전협의 이전화면 전체메뉴 닫기 온라인 인허가등록 사전협의 사전협의 안내 사전협의 신청 조회 보험전문인(업)/보험중개사 등록 이전화면 전체메뉴 닫기 보험전문인(업)/보험중개사 등록 등록안내 등록조회 증명서발급",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000188/list.do?menuNo=200218#n",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보험사기 방지업무",
+      "description": "보험사기 방지업무 보험사기 방지업무 보험사기란? 보험사기 신고 보험사기 예방 및 소비자정보 자료마당",
+      "source_url": "https://www.fss.or.kr/fss/main/contents.do?menuNo=200524",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "주요 보도자료 및 FAQ",
+      "description": "주요 보도자료 및 FAQ 주요 보도자료 및 FAQ 법인 및 개인사업자 접수 개인 접수",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000319/list.do?menuNo=200766",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보험계리사보유현황",
+      "description": "보험계리사보유현황 재무현황 보험계약관리 보험계리사보유현황 손해사정사보유현황 금융사고현황 공시제도안내",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000118/list.do?menuNo=200415",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보험사기 적발통계",
+      "description": "보험사기 적발통계 금융통계 금융통계정보 동적시각화분석(DIVA) 핵심경영지표 이전화면 전체메뉴 닫기 핵심경영지표 은행 생명보험회사 손해보험회사 금융투자회사 저축은행 카드사 연금통계 보험사기 적발통계 금융분쟁통계 이전화면 전체메뉴 닫기 금융분쟁통계 접수 및 처리실적 분쟁 중 소송 현황",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000050/list.do?menuNo=200727",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "원리금보장 연금상품",
+      "description": "원리금보장 연금상품 연금저축 비교공시 퇴직연금 비교공시 원리금보장 연금상품 사전지정운용방법(디폴트옵션) 비교공시",
+      "source_url": "https://www.fss.or.kr/fss/lifeplan/pnintSttus/list.do?menuNo=200968",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "금융소비자보호 실태평가 결과",
+      "description": "금융소비자보호 실태평가 결과 금융소비자보호 실태평가 결과 금융회사별 민원/제재현황 이전화면 전체메뉴 닫기 금융회사별 민원/제재현황 민원발생동향분석 검사제재현황 조사제재현황 경영유의 사항 등 현황 금융회사콜센터 이전화면 전체메뉴 닫기 금융회사콜센터 은행 보험회사 금융투자회사 카드회사 제도권 금융회사 정보 투자자 주의 대상 외국회사 등록대부업체 통합조회",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000219/list.do?menuNo=200206",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "금융소비자 뉴스 API",
+      "description": "금융소비자 뉴스 API 금융꿀팁 200선 API 금융소비자 뉴스 API 보도자료 API 금융권 채용정보 API 금융시장동향 API 금융감독정보 API 금융감독제도 일반 API 분야별 감독제도 API 은행 경영통계 API 외국인 국내 투자동향 API 검사결과제재 API 금융회사 경영유의사항 등 공시 API",
+      "source_url": "https://www.fss.or.kr/fss/api/apiInquiryFcnInfo/view.do?menuNo=200280",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보도자료 API",
+      "description": "보도자료 API 금융꿀팁 200선 API 금융소비자 뉴스 API 보도자료 API 금융권 채용정보 API 금융시장동향 API 금융감독정보 API 금융감독제도 일반 API 분야별 감독제도 API 은행 경영통계 API 외국인 국내 투자동향 API 검사결과제재 API 금융회사 경영유의사항 등 공시 API",
+      "source_url": "https://www.fss.or.kr/fss/api/apiInquiryBodoInfo/view.do?menuNo=200281",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "260907_(보도자료) 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요.hwp",
+      "description": "260907_(보도자료) 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요.hwp 260907_(보도자료) 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요.hwp 260907_(보도자료) 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요.pdf",
+      "source_url": "https://www.fss.or.kr/fss/cmmn/file/fileDown.do?menuNo=200218&atchFileId=16c53315a0a8499b8315847dde84284d&fileSn=1&bbsId=",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보험회사종합공시",
+      "description": "보험회사종합공시 재무현황 보험계약관리 보험계리사보유현황 손해사정사보유현황 금융사고현황 공시제도안내 보험업무자료 보험상품자료 보험회사종합공시 재무현황 보험계약관리 보험계리사보유현황 손해사정사보유현황 금융사고현황 공시제도안내 보험전문인(업)/보험중개사 등록절차 안내 등록여부 조회 부수업무 지급여력제도 및 감독회계 이용안내 공지사항 지급여력제도 관련 법규 업무자료 감독원장 제공자료 FAQ QA",
+      "source_url": "https://www.fss.or.kr/fss/bbs/B0000116/list.do?menuNo=200413",
+      "naver_url": "",
+      "published_at": "",
+      "source": "fss.or.kr",
+      "query": "OFFICIAL:FSS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "FSS",
+      "source_org_name": "금융감독원"
+    },
+    {
+      "title": "보험사기신고센터",
+      "description": "보험사기신고센터 모집질서문란 신고센터 과장광고 신고센터 보험사기신고센터 장애인ㆍ장기기증자 보험가입 차별 신고센터 안내",
+      "source_url": "https://www.knia.or.kr/family/crime/home",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "장애인ㆍ장기기증자 보험가입 차별 신고센터 안내",
+      "description": "장애인ㆍ장기기증자 보험가입 차별 신고센터 안내 모집질서문란 신고센터 과장광고 신고센터 보험사기신고센터 장애인ㆍ장기기증자 보험가입 차별 신고센터 안내",
+      "source_url": "https://www.knia.or.kr/report/report-discriminate",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "방위산업보험 및 보세화물화재보험 공동인수",
+      "description": "손해보험 상담센터 손해보험상담 자동차사고과실상담 내보험 찾아줌 상속인 방문조회 결과 휴면계좌 통합조회 보험다모아 자동차사고 과실비율 소비자포털 민원상담·보험정보 소비자정보·통합공시 손해보험학습센터 윙크(WINK) 소비자 신고센터 모집질서문란 신고센터 과장광고 신고센터 보험사기신고센터 장애인ㆍ장기기증자 보험가입 차별 신고센터 안내 어려운보험약관 · 용어제안 제안하기 답변확인 참고 사이트 금융감독원 FINE 자동차365 국민권익위원회 서민금융1332 방위산업보험 및 보세화물화재보험 공동인수 반려동물 건강관리 가이드 손해보험 상담센터 손해보험상담 자동차사고과실상담 내보험 찾아줌 상속인 방문조회 결과 휴면계좌 통합조회 보험다모아 자동차사고 과실비율 소비자포털 민원상담·보험정보 소비자정보·통합공시 손해보험학습센터 윙크(WINK) 소비자 신고센터 모집질서문란 신고센터 과장광고 신고센터 보험사기신고센터 장애인ㆍ장기기증자 보험가입 차별 신고센터 안내 어려운보험약관 · 용어제안 제안하기 답변확인 참",
+      "source_url": "https://www.knia.or.kr/coins/coins01",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "소비자 정보제공",
+      "description": "소비자 정보제공 보도자료 공지사항 소비자 정보제공",
+      "source_url": "https://www.knia.or.kr/data/cardNews",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "손해보험 사회공헌협의회",
+      "description": "손해보험 사회공헌협의회 손해보험 사회공헌협의회 손해보험 공동 사회공헌사업 사회공헌활동 통합조회 손해보험 사회공헌활동보고서",
+      "source_url": "https://www.knia.or.kr/contribute/contribute01",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "손해보험 공동 사회공헌사업",
+      "description": "손해보험 공동 사회공헌사업 손해보험 사회공헌협의회 손해보험 공동 사회공헌사업 사회공헌활동 통합조회 손해보험 사회공헌활동보고서",
+      "source_url": "https://www.knia.or.kr/contribute/contribute04",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "손해보험 사회공헌활동보고서",
+      "description": "손해보험 사회공헌활동보고서 손해보험 사회공헌협의회 손해보험 공동 사회공헌사업 사회공헌활동 통합조회 손해보험 사회공헌활동보고서",
+      "source_url": "https://www.knia.or.kr/contribute/contribute05",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "유병력자 실손의료보험",
+      "description": "유병력자 실손의료보험 유병력자 실손의료보험",
+      "source_url": "https://www.knia.or.kr/consumer/anamnesis",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "금융통계월보(손해보험편)",
+      "description": "금융통계월보(손해보험편) 바로보기 파일게시판 금융통계월보(손해보험편) 바로보기 파일게시판 분기별 손해보험통계 바로보기",
+      "source_url": "https://www.knia.or.kr/data/gistat/statistics-monthly02?rptdocGrpCd=02",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "분기별 손해보험통계",
+      "description": "분기별 손해보험통계 바로보기 금융통계월보(손해보험편) 바로보기 파일게시판 분기별 손해보험통계 바로보기",
+      "source_url": "https://www.knia.or.kr/data/gistat/statistics-monthly01?rptdocGrpCd=01",
+      "naver_url": "",
+      "published_at": "",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "손해보험협회, 전주지부 개소",
+      "description": "손해보험협회, 전주지부 개소 482 손해보험협회, 전주지부 개소 2026-09-08 28",
+      "source_url": "https://www.knia.or.kr/data/news/content?index=88754",
+      "naver_url": "",
+      "published_at": "2026-09-08T00:00:00+09:00",
+      "source": "knia.or.kr",
+      "query": "OFFICIAL:KNIA",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "KNIA",
+      "source_org_name": "손해보험협회"
+    },
+    {
+      "title": "h-well 국민건강보험",
+      "description": "h-well 국민건강보험 h-well 국민건강보험 통합검색 회원가입 로그인 전체메뉴",
+      "source_url": "https://www.nhis.or.kr/nhis/index.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 로드맵",
+      "description": "건강검진 로드맵 건강검진 로드맵 건강검진 실시안내 검진대상 조회 건강검진 결과조회 검진정보 목록 민간검진 입력/비교 검진신청 건강검진 실시확인서(직장제출용) 건강검진 내역서 출력(운전면허적성검사용) 채용 건강검진 대체 통보서(직장제출용)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHltExmdLoadMap.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 실시안내",
+      "description": "건강검진 실시안내 건강검진 로드맵 건강검진 실시안내 검진대상 조회 건강검진 결과조회 검진정보 목록 민간검진 입력/비교 검진신청 건강검진 실시확인서(직장제출용) 건강검진 내역서 출력(운전면허적성검사용) 채용 건강검진 대체 통보서(직장제출용)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 결과조회",
+      "description": "건강검진 결과조회 건강검진 로드맵 건강검진 실시안내 검진대상 조회 건강검진 결과조회 검진정보 목록 민간검진 입력/비교 검진신청 건강검진 실시확인서(직장제출용) 건강검진 내역서 출력(운전면허적성검사용) 채용 건강검진 대체 통보서(직장제출용)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetResultPerson.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 실시확인서(직장제출용)",
+      "description": "건강검진 실시확인서(직장제출용) 건강검진 로드맵 건강검진 실시안내 검진대상 조회 건강검진 결과조회 검진정보 목록 민간검진 입력/비교 검진신청 건강검진 실시확인서(직장제출용) 건강검진 내역서 출력(운전면허적성검사용) 채용 건강검진 대체 통보서(직장제출용)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpImplementConfirmation.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 내역서 출력(운전면허적성검사용)",
+      "description": "건강검진 내역서 출력(운전면허적성검사용) 건강검진 로드맵 건강검진 실시안내 검진대상 조회 건강검진 결과조회 검진정보 목록 민간검진 입력/비교 검진신청 건강검진 실시확인서(직장제출용) 건강검진 내역서 출력(운전면허적성검사용) 채용 건강검진 대체 통보서(직장제출용)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpResultDriverLicenseAptitudeCheck.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "채용 건강검진 대체 통보서(직장제출용)",
+      "description": "채용 건강검진 대체 통보서(직장제출용) 건강검진 로드맵 건강검진 실시안내 검진대상 조회 건강검진 결과조회 검진정보 목록 민간검진 입력/비교 검진신청 건강검진 실시확인서(직장제출용) 건강검진 내역서 출력(운전면허적성검사용) 채용 건강검진 대체 통보서(직장제출용)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpEmployment.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "영유아 건강검진",
+      "description": "영유아 건강검진 영유아 건강검진 학생 건강검진 자녀 진료 및 투약정보 자녀 건강수첩 자녀 의료영상촬영현황",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetInfants.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "경증질환 대형병원 의료이용현황",
+      "description": "경증질환 대형병원 의료이용현황 외래진료 이용현황 진료 및 투약정보 의료영상촬영현황 상위 5개 방문의료기관 경증질환 대형병원 의료이용현황",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveLargeHospitalMedicaluseStatus.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "일차의료 만성질환관리",
+      "description": "일차의료 만성질환관리 일차의료 만성질환관리 만성질환 건강지원사업",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveFrstMdcCrntDiseMgmtNew.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "만성질환 건강지원사업",
+      "description": "만성질환 건강지원사업 일차의료 만성질환관리 만성질환 건강지원사업",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHitSuprtSvcAplyGuid.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강보험 제도안내",
+      "description": "건강보험 제도안내 건강보험 제도안내",
+      "source_url": "https://www.nhis.or.kr/nhis/minwon/wbhapa01000m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "필수의료 중심의 건강보험 보장성 확대",
+      "description": "필수의료 중심의 건강보험 보장성 확대 필수의료 중심의 건강보험 보장성 확대 제2차 국민건강보험 종합계획 통합돌봄 소득중심의 보험료 부과",
+      "source_url": "https://www.nhis.or.kr/nhis/policy/wbhadd09400m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "제2차 국민건강보험 종합계획",
+      "description": "제2차 국민건강보험 종합계획 필수의료 중심의 건강보험 보장성 확대 제2차 국민건강보험 종합계획 통합돌봄 소득중심의 보험료 부과",
+      "source_url": "https://www.nhis.or.kr/nhis/minwon/wbhadd09600m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "소득중심의 보험료 부과",
+      "description": "소득중심의 보험료 부과 필수의료 중심의 건강보험 보장성 확대 제2차 국민건강보험 종합계획 통합돌봄 소득중심의 보험료 부과",
+      "source_url": "https://www.nhis.or.kr/nhis/policy/wbhaea03800m03.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강보험모니터단 커뮤니티",
+      "description": "건강보험모니터단 커뮤니티 국민제안 재정지킴이 제안 건강보험모니터단 커뮤니티 IT 기술제안 보건의료인력지원전문기관 기업성장응답센터",
+      "source_url": "https://www.nhis.or.kr/nhis/together/wbhaeb06300m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강보험 특강 프로그램",
+      "description": "건강보험 특강 프로그램 포스터/리플릿 홍보책자 홍보동영상 건강보험 특강 프로그램 글로벌협력사업",
+      "source_url": "https://www.nhis.or.kr/nhis/about/wbhafc01600m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "학교 밖 청소년 건강검진",
+      "description": "학교 밖 청소년 건강검진 일반건강검진 암검진 의료급여생애 전환기검진 영유아건강검진 학생건강검진 학교 밖 청소년 건강검진",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca05200m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 제외신청",
+      "description": "건강검진 제외신청 전년도미수검자 추가신청 건강검진 제외신청 문진표/평가도구 작성",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetExceptRequest.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "영유아 건강검진 결과조회",
+      "description": "영유아 건강검진 결과조회 영유아 검진대상 조회 영유아 건강검진 결과조회 문진표/발달선별검사지 작성",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetResultInfants.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "학생 건강검진결과 조회",
+      "description": "학생 건강검진결과 조회 학생 검진대상조회 학생 건강검진결과 조회 학생 문진표 작성",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveViewOfStudentHealthCheckUpResult.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "만성신장질환 예측",
+      "description": "만성신장질환 예측 건강나이 알아보기 뇌졸중 예측 당뇨병 예측 만성신장질환 예측 심근경색 예측 심뇌혈관 예측",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveKidneyDiseaseAI.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "환자 교육교재 자료실",
+      "description": "환자 교육교재 자료실 사업소개 환자 교육교재 자료실 일차의료만성질환 조회",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhacc08800m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "일차의료만성질환 조회",
+      "description": "일차의료만성질환 조회 사업소개 환자 교육교재 자료실 일차의료만성질환 조회",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/retrieveMyHealthinBloodPres.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강보험의 재정적 지속가능성 제고",
+      "description": "건강보험의 재정적 지속가능성 제고 필수의료 공급 및 정당한 보상 의료격차 축소 및 건강한 삶 보장 건강보험의 재정적 지속가능성 제고 안정적 공급체계 및 선순환 구조 마련",
+      "source_url": "https://www.nhis.or.kr/nhis/policy/wbhadd09500m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강보험 통계연보",
+      "description": "건강보험 통계연보 건강보험 통계연보 장기요양보험 통계연보 의료급여 통계연보 건강검진 통계연보 주요수술 통계연보 지역별 의료이용 통계연보",
+      "source_url": "https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강검진 통계연보",
+      "description": "건강검진 통계연보 건강보험 통계연보 장기요양보험 통계연보 의료급여 통계연보 건강검진 통계연보 주요수술 통계연보 지역별 의료이용 통계연보",
+      "source_url": "https://www.nhis.or.kr/nhis/together/wbhaec07000m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "건강보험연구원 소개",
+      "description": "건강보험연구원 소개 건강보험연구원 소개 간행물",
+      "source_url": "https://www.nhis.or.kr/nhis/about/wbhafb07700m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "보도자료 선택됨",
+      "description": "보도자료 선택됨 공지사항 포토뉴스 보도자료 선택됨 보도설명자료 담배소송 입찰공고 열기 입찰공고 닫기 입찰공고 거래희망업체 등록신청 채용 열기 채용 닫기 인재상 채용 JOB ALIO 미활용 특허 공유·이전 열기 미활용 특허 공유·이전 닫기 미활용 특허 공유·이전 제도 안내 공지사항",
+      "source_url": "https://www.nhis.or.kr/nhis/together/wbhaea01600m01.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
+    },
+    {
+      "title": "국민건강보험공단 공단가족",
+      "description": "국민건강보험공단 공단가족 노인장기요양보험 사회보험통합징수포털 요양기관정보마당 국민건강보험 EDI서비스 건강관리포털시스템 국가건강검진교육연수원 건강보험 빅데이터 플랫폼 국민건강보험공단 인재개발원 국민건강보험공단 전문도서관 국민건강보험공단 공단가족 비급여 정보 포털",
+      "source_url": "https://www.nhis.or.kr/family/index.do",
+      "naver_url": "",
+      "published_at": "",
+      "source": "nhis.or.kr",
+      "query": "OFFICIAL:NHIS",
+      "group": "policy",
+      "is_major_news": true,
+      "origin_type": "official",
+      "source_org": "NHIS",
+      "source_org_name": "국민건강보험공단"
     }
   ]
 }
