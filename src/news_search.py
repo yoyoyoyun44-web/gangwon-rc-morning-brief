@@ -15,10 +15,10 @@ NAVER_NEWS_URL = f"{NAVER_API_BASE}/search/v1/news"
 OUTPUT_FILE = "data/raw_news.json"
 
 SEARCH_GROUPS = {
-    "product": ["실손보험 보장", "건강보험 보장", "암 치료비", "암 치료", "암 통합치료", "암 의료비", "뇌혈관질환 치료비", "뇌혈관질환 의료비", "심혈관질환 치료비", "심혈관질환 의료비", "중증질환 치료비", "고액 치료비", "건강보험 상품", "간편보험", "어린이보험", "장기보험 보장"],
-    "medical_cost": ["의료비 부담", "가계 의료비 부담", "비급여 의료비", "비급여 치료비", "건강보험 본인부담", "본인부담금 의료비", "의료비 증가", "고액 의료비", "신의료기술 의료비", "혁신의료기술 의료비", "중증질환 의료비", "암 의료비", "뇌혈관 의료비", "심혈관 의료비", "선별급여 본인부담", "고가 신약 치료비", "비만 의료비"],
-    "caregiver": ["간병비", "간병 비용", "간병인 비용", "간병비 부담", "간병인 지원", "간병보험", "가족 간병", "간병서비스", "요양병원 간병비", "요양병원 간병", "간병 급여화", "간병 부담 가계"],
-    "policy": ["금융감독원 보험", "금융위원회 보험", "보험 보장 제도", "실손보험 제도", "건강보험 제도", "보건복지부 의료비", "건강보험공단 의료비", "건강보험심사평가원 비급여", "비급여 관리 의료비", "간병 급여화", "건강보험요율", "건강보험료율", "건강보험 국고지원", "국고지원 건강보험"],
+    "product": ["실손보험 보장", "실손보험 본인부담", "건강보험 보장", "건강보험 본인부담", "암 치료비", "암 치료", "암 통합치료", "암 의료비", "암 수술비", "항암치료 비용", "항암약물치료", "항암방사선치료", "뇌혈관질환 치료비", "뇌혈관질환 의료비", "뇌졸중 치료비", "뇌출혈 치료비", "심혈관질환 치료비", "심혈관질환 의료비", "심근경색 치료비", "심장질환 치료비", "중증질환 치료비", "고액 치료비", "고액 의료비", "신약 치료비", "신의료기술", "건강보험 상품", "간편보험", "어린이보험", "장기보험 보장"],
+    "medical_cost": ["의료비 부담", "가계 의료비 부담", "환자 의료비 부담", "비급여 의료비", "비급여 치료비", "비급여 가격", "비급여 본인부담", "건강보험 본인부담", "본인부담금 의료비", "본인부담 증가", "의료비 증가", "고액 의료비", "고액 치료비", "신의료기술 의료비", "혁신의료기술 의료비", "중증질환 의료비", "암 의료비", "뇌혈관 의료비", "심혈관 의료비", "선별급여 본인부담", "고가 신약 치료비", "치료비 부담", "환자 부담 의료비", "의료비 재정 부담", "비만 의료비"],
+    "caregiver": ["간병비", "간병 비용", "간병인 비용", "간병비 부담", "간병인 지원", "간병인지원", "간병보험", "가족 간병", "가족의 간병 부담", "간병서비스", "요양병원 간병비", "요양병원 간병", "간병 급여화", "간병 부담 가계", "간병 국가책임", "간병비 본인부담"],
+    "policy": ["금융감독원 보험", "금융위원회 보험", "보험 보장 제도", "실손보험 제도", "실손보험 개편", "건강보험 제도", "보건복지부 의료비", "보건복지부 비급여", "건강보험공단 의료비", "건강보험심사평가원 비급여", "심평원 비급여", "비급여 관리 의료비", "비급여 관리", "간병 급여화", "간병 지원 정책", "건강보험요율", "건강보험료율", "건강보험 국고지원", "국고지원 건강보험", "건강보험 재정"],
     "samsung_fire": ["삼성화재 건강보험", "삼성화재 장기보험", "삼성화재 실손보험", "삼성화재 간병", "삼성화재 건강", "삼성화재 보장"],
 }
 
@@ -79,10 +79,9 @@ def are_duplicate_topics(article_a, article_b):
     if not title_a or not title_b: return False
     if title_a == title_b or SequenceMatcher(None, title_a, title_b).ratio() >= 0.82: return True
     topic_a = topic_cluster(article_a.get("title", ""), article_a.get("description", "")); topic_b = topic_cluster(article_b.get("title", ""), article_b.get("description", ""))
-    if topic_a and topic_a == topic_b: return True
     stopwords = {"관련", "대한", "대해", "정부", "보험", "건강", "질환", "의료", "기사", "전망", "논란"}
     words_a = {w for w in title_a.split() if len(w) >= 2 and w not in stopwords}; words_b = {w for w in title_b.split() if len(w) >= 2 and w not in stopwords}
-    return bool(words_a and words_b and len(words_a & words_b) / max(1, min(len(words_a), len(words_b))) >= 0.75)
+    return bool(words_a and words_b and len(words_a & words_b) / max(1, min(len(words_a), len(words_b))) >= 0.85)
 def is_other_insurer_promotional_article(title, description):
     combined = f"{title} {description}"
     if not any(name in combined for name in OTHER_INSURER_NAMES) or not any(term in combined for term in OTHER_INSURER_PROMO_TERMS): return False
@@ -110,7 +109,7 @@ def deduplicate_topics(collected):
 def main():
     now = datetime.now().astimezone()
     weekday = now.weekday()
-    # 평일: 최근 24시간. 월요일 또는 화요일은 주말/연휴 공백을 고려해 72시간.
+    # 평일: 최근 24시간. 주말 직후는 72시간.
     hours = 72 if weekday in (0, 1) else 24
     cutoff = now - timedelta(hours=hours)
     collected = []; seen_urls = set()
