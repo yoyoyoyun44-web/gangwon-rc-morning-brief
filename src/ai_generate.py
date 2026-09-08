@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import time
 from pathlib import Path
 
@@ -13,6 +14,7 @@ MAX_ANALYSIS_NEWS = 50
 BATCH_SIZE = 20
 MAX_RETRIES_503 = 2
 RETRY_DELAY_503 = 20
+TITLE_ALIGNMENT_MIN_SCORE = 80
 
 if not API_KEY:
     raise RuntimeError("GEMINI_API_KEY 환경변수가 설정되어 있지 않습니다.")
@@ -124,13 +126,23 @@ SYSTEM_PROMPT = """
 상품·보장 뉴스는 '다른 보험사가 무엇을 팔고 있는가'보다
 '고객에게 어떤 보장 공백이 생길 수 있는가'를 중심으로 선택하십시오.
 
+[기사-카드뉴스 제목 상관관계 원칙]
+- 카드뉴스 제목은 반드시 연결된 원문 기사의 '핵심 주제'를 반영해야 합니다.
+- 원문 제목과 본문에서 가장 먼저·크게 다뤄지는 이슈를 핵심 주제로 판단하십시오.
+- 기사 후반부에 보조적으로 등장한 수치, 사례, 한 문장을 제목의 중심 소재로 끌어올리지 마십시오.
+- 원문 제목이 '영상의학·정형외과 전문의 쏠림'인데 본문 후반에 '국민 의료비 225조원'이 언급되었다면,
+  '국민 의료비 225조원'을 카드뉴스 제목의 핵심으로 만들면 안 됩니다.
+- 카드뉴스 제목은 원문 제목의 핵심 문제·현상·대상 중 적어도 하나를 의미적으로 유지해야 합니다.
+- 제목을 더 이해하기 쉽게 재구성할 수는 있지만, 기사에서 가장 비중이 낮은 보조 수치를 중심 제목으로 바꾸지 마십시오.
+- 원문 제목과 제공된 내용만으로 핵심 주제를 명확하게 판단할 수 없다면 해당 기사를 선택하지 마십시오.
+
 [다주제·종합 기사에 대한 추가 제외 원칙]
 - 하나의 기사 안에서 여러 주제나 사례를 함께 다루는 종합·묶음형 기사는 엄격하게 판단합니다.
 - 우리가 선택하려는 핵심 주제가 기사 전체 내용에서 1/3 미만만 차지한다면 제외합니다.
 - 핵심 주제가 기사 전체 내용의 1/3 이상을 차지하더라도, 그 주제가 기사에서 첫 번째로 제시된 주제 또는 사실상 메인 주제가 아니라면 제외합니다.
 - 기사 중간이나 후반부에 관련 키워드가 잠깐 등장하는 것만으로는 선정하지 않습니다.
 - 제목에 관련 키워드가 들어 있더라도 본문에서 해당 주제가 부수적으로만 다뤄지면 제외합니다.
-- 여러 주제를 다루는 기사에서는 '관련 키워드가 있는가'보다 '이 기사의 첫 번째/메인 주제가 무엇인가'를 우선 판단합니다.
+- 여러 주제를 다루는 기사에서는 '관련 키워드가 있는가'보다 '이 기사의 첫 번째/메인 주제'를 우선 판단합니다.
 - 같은 주제를 여러 기사에서 반복 보도한 경우에는 가장 직접적이고 핵심적인 기사 1개만 남깁니다.
 - 입력값에 제공된 제목·내용만으로 기사 전체의 비중을 신뢰성 있게 판단할 수 없다면 과도하게 추정하지 말고 핵심 주제가 명확한 기사만 선택합니다.
 
@@ -239,6 +251,21 @@ def build_prompt(batch):
 좋은 기사가 부족하면 억지로 10개를 채우지 말고, 객관적으로 가치 있는 기사만 선택합니다.
 단, 최근 뉴스가 적은 날에는 직전 48~72시간의 관련성 높은 기사까지 활용할 수 있습니다.
 
+[기사-제목 상관관계 자기검수]
+각 기사에 대해 출력하기 전에 반드시 스스로 검수하십시오.
+① 원문 제목에서 가장 중요한 문제·현상·대상이 무엇인지 판단합니다.
+② 기사 내용에서 실제로 가장 비중 있게 다뤄지는 핵심 주제를 판단합니다.
+③ 재구성한 카드뉴스 제목이 ①과 ②를 모두 반영하는지 확인합니다.
+④ 제목이 기사 후반부의 보조 수치·사례·한 문장만 가져와 만든 것은 아닌지 확인합니다.
+⑤ 제목과 원문 핵심 주제가 다르면 해당 기사를 출력하지 않습니다.
+
+title_alignment_score는 0~100점으로 평가하십시오.
+- 90~100: 원문 제목과 기사 핵심 주제가 거의 동일하고 제목이 정확히 반영함
+- 80~89: 표현은 재구성했지만 핵심 주제와 대상이 명확히 일치함
+- 60~79: 관련성은 있으나 제목이 기사 일부 내용에 치우침
+- 0~59: 핵심 주제가 다르거나 기사 후반부의 보조 내용을 중심으로 제목을 만듦
+80점 미만은 반드시 출력하지 마십시오.
+
 [다주제 기사 최종 검증]
 최종 선택 직전에 각 기사에 대해 반드시 아래 순서로 판단하십시오.
 ① 이 기사의 핵심 주제가 무엇인가?
@@ -272,6 +299,11 @@ JSON 형식:
   "articles": [
     {
       "category": "policy|medical|samsung_fire",
+      "source_title": "입력된 원문 기사 제목",
+      "core_topic": "원문 기사의 핵심 주제",
+      "title_topic": "재구성한 카드뉴스 제목이 다루는 핵심 주제",
+      "title_alignment_score": 0,
+      "title_alignment_pass": true,
       "title": "재구성한 제목",
       "summary": "2~3문장 요약",
       "why_it_matters": "삼성화재 RC가 고객 상담에 활용할 수 있는 의미",
@@ -324,6 +356,7 @@ def restore_metadata(article, source_by_url):
     article["published_at"] = original["published_at"]
     article["source"] = original["source"] or clean_text(article.get("source"))
     article["naver_url"] = original["naver_url"]
+    article["source_title"] = original["title"]
     return article
 
 
@@ -337,6 +370,109 @@ def deduplicate(articles):
         seen.add(url)
         result.append(article)
     return result
+
+
+def validate_title_alignment(articles, source_by_url):
+    """생성된 카드뉴스 제목이 실제 원문 기사 핵심 주제와 일치하는지 2차 검수한다."""
+    candidates = []
+    for article in articles:
+        url = clean_text(article.get("source_url"))
+        original = source_by_url.get(url)
+        if not original:
+            continue
+        candidates.append({
+            "source_url": url,
+            "source_title": original["title"],
+            "source_description": original["description"],
+            "generated_title": clean_text(article.get("title")),
+            "summary": clean_text(article.get("summary")),
+            "core_topic": clean_text(article.get("core_topic")),
+        })
+
+    if not candidates:
+        return []
+
+    prompt = """
+당신은 뉴스 편집 품질검수자입니다.
+아래 카드뉴스 후보 각각에 대해 '원문 기사 제목/내용의 핵심 주제'와 '카드뉴스 제목'이 실제로 같은 기사를 설명하는지 검수하십시오.
+
+가장 중요한 기준:
+- 원문 제목의 핵심 문제·현상·대상이 카드뉴스 제목에도 의미적으로 유지되어야 합니다.
+- 원문 본문 후반부의 보조 수치나 사례가 기사 전체의 핵심인 것처럼 제목에 확대되어서는 안 됩니다.
+- 원문 제목이 '영상의학-정형외과 20%는 타과 전문의… 필수의료 블랙홀'이고 본문에 '국민 의료비 225조원'이 보조적으로 언급되어 있다면,
+  '국민 의료비 225조원 역대 최대' 같은 제목은 불일치로 판정하십시오.
+- 단순 키워드 하나가 겹친다고 통과시키지 말고, 문제의 중심과 대상이 같은지 판단하십시오.
+- 표현을 자연스럽게 바꾸거나 압축한 것은 허용하지만, 기사 전체의 메인 주제를 다른 주제로 바꾼 것은 불허합니다.
+
+각 항목을 다음 JSON으로 평가하십시오.
+{
+  "checks": [
+    {
+      "source_url": "...",
+      "pass": true,
+      "score": 0,
+      "reason": "한 문장 이유"
+    }
+  ]
+}
+
+score 기준:
+90~100 = 핵심 주제와 대상이 사실상 동일
+80~89 = 표현은 달라도 핵심 주제가 명확히 동일
+60~79 = 일부 관련되지만 제목이 기사 일부에 치우침
+0~59 = 다른 주제이거나 보조 정보를 메인 제목으로 왜곡
+80점 미만은 pass=false입니다.
+"""
+
+    payload = json.dumps(candidates, ensure_ascii=False)
+    for attempt in range(MAX_RETRIES_503 + 1):
+        try:
+            print(f"  제목-기사 상관관계 2차 검수 (시도 {attempt + 1}/{MAX_RETRIES_503 + 1})")
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt + "\n\n검수 대상:\n" + payload,
+            )
+            text = (response.text or "").strip()
+            if text.startswith("```"):
+                text = text.replace("```json", "", 1).replace("```", "").strip()
+            result = json.loads(text)
+            checks = result.get("checks", [])
+            if not isinstance(checks, list):
+                raise ValueError("title alignment checks가 배열이 아닙니다.")
+
+            by_url = {clean_text(item.get("source_url")): item for item in checks}
+            validated = []
+            rejected = 0
+            for article in articles:
+                url = clean_text(article.get("source_url"))
+                check = by_url.get(url)
+                model_pass = article.get("title_alignment_pass") is True
+                try:
+                    model_score = int(article.get("title_alignment_score", 0))
+                except (TypeError, ValueError):
+                    model_score = 0
+                final_score = min(model_score, int(check.get("score", 0))) if check else 0
+                final_pass = bool(check and check.get("pass") is True and model_pass and final_score >= TITLE_ALIGNMENT_MIN_SCORE)
+                article["title_alignment_score"] = final_score
+                article["title_alignment_pass"] = final_pass
+                article["title_alignment_reason"] = clean_text(check.get("reason")) if check else "2차 상관관계 검수 결과가 없습니다."
+                if final_pass:
+                    validated.append(article)
+                else:
+                    rejected += 1
+                    print(f"  [제목-기사 불일치 제외] {clean_text(article.get('title'))} / {article.get('title_alignment_reason')}")
+            print(f"  → 상관관계 검수 완료: 통과 {len(validated)}개 / 제외 {rejected}개")
+            return validated
+        except Exception as e:
+            error_text = str(e)
+            if "429" in error_text or "RESOURCE_EXHAUSTED" in error_text:
+                raise RuntimeError("제목-기사 상관관계 검수 Gemini 쿼터가 초과되어 안전하게 중단합니다.") from e
+            if "503" in error_text or "UNAVAILABLE" in error_text:
+                if attempt < MAX_RETRIES_503:
+                    time.sleep(RETRY_DELAY_503)
+                    continue
+            raise RuntimeError(f"제목-기사 상관관계 검수 실패: {error_text}") from e
+    return []
 
 
 def organize_articles(articles):
@@ -419,8 +555,11 @@ def main():
         if fixed:
             restored.append(fixed)
 
+    restored = deduplicate(restored)
+    restored = validate_title_alignment(restored, source_by_url)
+
     final_articles = []
-    for article in deduplicate(restored):
+    for article in restored:
         original = source_by_url.get(clean_text(article.get("source_url")))
         if original and is_other_insurer_promo(original):
             continue
