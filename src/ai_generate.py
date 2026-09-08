@@ -90,6 +90,9 @@ def prepare_news(news_list):
             "source": source,
             "group": group,
             "is_major_news": bool(news.get("is_major_news")) or source in MAJOR_NEWS_DOMAINS,
+            "origin_type": clean_text(news.get("origin_type")) or "news",
+            "source_org": clean_text(news.get("source_org")),
+            "source_org_name": clean_text(news.get("source_org_name")),
         })
     return prepared
 
@@ -125,6 +128,13 @@ SYSTEM_PROMPT = """
 
 상품·보장 뉴스는 '다른 보험사가 무엇을 팔고 있는가'보다
 '고객에게 어떤 보장 공백이 생길 수 있는가'를 중심으로 선택하십시오.
+
+[공식기관 자료 우선 원칙]
+- 출처가 건강보험심사평가원, 금융감독원, 손해보험협회, 보건복지부, 국민건강보험공단,
+  질병관리청, 한국보건의료연구원 등 공식기관으로 표시된 입력은 신뢰도 높은 원자료입니다.
+- 공식기관 자료 중 고객 의료비·비급여·본인부담·간병·중증질환 치료비·보험제도와 직접 관련된 자료는
+  일반 뉴스보다 우선적으로 검토하십시오.
+- 단, 공식기관이라는 이유만으로 무조건 카드로 만들지 말고 RC 상담 활용성이 있어야 합니다.
 
 [기사-카드뉴스 제목 상관관계 원칙]
 - 카드뉴스 제목은 반드시 연결된 원문 기사의 '핵심 주제'를 반영해야 합니다.
@@ -191,34 +201,20 @@ SALES_TIP_RULES = """
 
 1. 의료비 뉴스는 단순히 '병원비가 비싸졌다'로 끝내지 말고,
    어떤 치료·상황에서 고객의 본인부담이 커질 수 있는지 설명하십시오.
-
-2. 암 뉴스:
-   암 진단비 하나가 아니라 수술·항암약물치료·항암방사선치료·표적/면역치료 등
+2. 암 뉴스: 암 진단비 하나가 아니라 수술·항암약물치료·항암방사선치료·표적/면역치료 등
    치료 과정 전체의 비용 부담을 살펴보는 '암 통합치료비' 관점으로 연결하십시오.
-
-3. 뇌혈관 뉴스:
-   진단 이후 시술·수술·재활·치료 과정에서 발생할 수 있는 비용 부담을 살펴보는
+3. 뇌혈관 뉴스: 진단 이후 시술·수술·재활·치료 과정에서 발생할 수 있는 비용 부담을 살펴보는
    '뇌혈관질환 통합치료비' 관점으로 연결하십시오.
-
-4. 심혈관 뉴스:
-   진단·시술·수술·약물치료 등 치료 과정 전체의 비용 부담을 살펴보는
+4. 심혈관 뉴스: 진단·시술·수술·약물치료 등 치료 과정 전체의 비용 부담을 살펴보는
    '심혈관질환 통합치료비' 관점으로 연결하십시오.
-
-5. 비급여/선별급여 뉴스:
-   건강보험이 적용된다는 사실만으로 환자 부담이 낮다고 단정하지 말고,
+5. 비급여/선별급여 뉴스: 건강보험이 적용된다는 사실만으로 환자 부담이 낮다고 단정하지 말고,
    실제 본인부담률과 보장 공백을 확인하도록 대화하십시오.
-
-6. 간병 뉴스:
-   '간병인 사용일당'을 중심으로 표현하지 않습니다.
+6. 간병 뉴스: '간병인 사용일당'을 중심으로 표현하지 않습니다.
    '간병인 지원', '간병인지원', '간병인 비용 부담', '가족의 간병 부담'을 중심으로
    실제 고객이 입원했을 때 가족이 무엇을 감당해야 하는지 대화하게 하십시오.
-
-7. 삼성화재 장기보험 연결:
-   뉴스와 직접 연결되는 경우에만 '현재 건강보험/장기보험 보장 내역을 한번 점검해 보자'는
-   자연스러운 상담으로 연결하십시오. 특정 담보 가입을 단정적으로 권유하지 마십시오.
-
+7. 삼성화재 장기보험 연결: 뉴스와 직접 연결되는 경우에만
+   '현재 건강보험/장기보험 보장 내역을 한번 점검해 보자'는 자연스러운 상담으로 연결하십시오.
 8. 고객 공포를 과장하지 말고 객관적인 사실과 보장 점검 중심으로 작성하십시오.
-
 9. 실제 RC가 카카오톡이나 전화에서 그대로 활용할 수 있는 자연스러운 문장으로 작성하십시오.
 """
 
@@ -229,6 +225,8 @@ def build_prompt(batch):
         news_text.append(f"""
 [NEWS_ID={item['id']}]
 검색그룹: {item['group']}
+공식기관 자료 여부: {item.get('origin_type') == 'official'}
+공식기관: {item.get('source_org_name', '')}
 메이저언론 여부: {item['is_major_news']}
 제목: {item['title']}
 내용: {item['description']}
@@ -247,9 +245,10 @@ def build_prompt(batch):
 - 고객 관심도: 10점
 - 보험 제도 관련성: 5점
 
+공식기관 자료가 고객 의료비·비급여·본인부담·간병·중증질환 치료비·보험제도와 직접 관련되면 우선 고려합니다.
 다른 보험사 홍보성 기사와 채널 경쟁 기사는 점수와 관계없이 제외합니다.
-좋은 기사가 부족하면 억지로 채우지 말고, 객관적으로 가치 있는 기사만 선택합니다. 서로 다른 핵심 주제는 균형 있게 배분하고, 같은 핵심 주제에서도 실질적으로 다른 기사라면 2개까지 허용합니다.
-단, 최근 뉴스가 적은 날에는 직전 48~72시간의 관련성 높은 기사까지 활용할 수 있습니다.
+좋은 기사가 부족하면 억지로 채우지 말고, 객관적으로 가치 있는 기사만 선택합니다.
+서로 다른 핵심 주제는 균형 있게 배분하고, 같은 핵심 주제에서도 실질적으로 다른 기사라면 2개까지 허용합니다.
 
 [기사-제목 상관관계 자기검수]
 각 기사에 대해 출력하기 전에 반드시 스스로 검수하십시오.
@@ -267,16 +266,11 @@ title_alignment_score는 0~100점으로 평가하십시오.
 65점 미만은 반드시 출력하지 마십시오.
 
 [다주제 기사 최종 검증]
-최종 선택 직전에 각 기사에 대해 반드시 아래 순서로 판단하십시오.
 ① 이 기사의 핵심 주제가 무엇인가?
 ② 우리가 선택하려는 보험·의료비 관련 주제가 기사 전체의 1/3 이상인가?
 ③ 1/3 이상이라면 그 주제가 기사에서 첫 번째로 제시된 주제이거나 사실상 메인 주제인가?
 ④ 관련 내용이 기사 중간/후반부의 일부 사례에 불과한 것은 아닌가?
-
-②가 아니면 무조건 제외합니다.
-②를 충족해도 ③이 아니면 무조건 제외합니다.
-따라서 '여러 주제를 소개하는 기사에서 관련 주제가 1/3 이상이지만 두 번째 이후 주제인 경우'도 제외합니다.
-입력된 제목·내용만으로 1/3 비중을 신뢰성 있게 판단할 수 없는 경우에는 해당 기사를 선택하지 않습니다.
+②가 아니면 무조건 제외합니다. ②를 충족해도 ③이 아니면 무조건 제외합니다.
 
 최종 출력 카테고리:
 - policy: 보험 제도·정책 변화
@@ -318,11 +312,11 @@ JSON 형식:
 """ + "\n".join(news_text)
 
 
-def analyze_batch(batch, batch_number):
+def analyze_batch(batch, batch_number, allow_split=True):
     prompt = build_prompt(batch)
     for attempt in range(MAX_RETRIES_503 + 1):
         try:
-            print(f"  Gemini 요청 (배치 {batch_number}, 시도 {attempt + 1}/{MAX_RETRIES_503 + 1})")
+            print(f"  Gemini 요청 (배치 {batch_number}, 시도 {attempt + 1}/{MAX_RETRIES_503 + 1}, {len(batch)}개)")
             response = client.models.generate_content(model=MODEL_NAME, contents=prompt)
             text = (response.text or "").strip()
             if text.startswith("```"):
@@ -343,6 +337,13 @@ def analyze_batch(batch, batch_number):
                     time.sleep(RETRY_DELAY_503)
                     continue
             print(f"  [Gemini 오류] {error_text}")
+            if allow_split and len(batch) > 5:
+                mid = len(batch) // 2
+                print(f"  [배치 복구] JSON/응답 오류로 {len(batch)}개 배치를 {mid}개 + {len(batch)-mid}개로 재시도합니다.")
+                left = analyze_batch(batch[:mid], f"{batch_number}A", allow_split=False)
+                time.sleep(2)
+                right = analyze_batch(batch[mid:], f"{batch_number}B", allow_split=False)
+                return left + right
             return []
     return []
 
@@ -357,6 +358,9 @@ def restore_metadata(article, source_by_url):
     article["source"] = original["source"] or clean_text(article.get("source"))
     article["naver_url"] = original["naver_url"]
     article["source_title"] = original["title"]
+    article["origin_type"] = original.get("origin_type", "news")
+    article["source_org"] = original.get("source_org", "")
+    article["source_org_name"] = original.get("source_org_name", "")
     return article
 
 
@@ -399,8 +403,6 @@ def validate_title_alignment(articles, source_by_url):
 가장 중요한 기준:
 - 원문 제목의 핵심 문제·현상·대상이 카드뉴스 제목에도 의미적으로 유지되어야 합니다.
 - 원문 본문 후반부의 보조 수치나 사례가 기사 전체의 핵심인 것처럼 제목에 확대되어서는 안 됩니다.
-- 원문 제목이 '영상의학-정형외과 20%는 타과 전문의… 필수의료 블랙홀'이고 본문에 '국민 의료비 225조원'이 보조적으로 언급되어 있다면,
-  '국민 의료비 225조원 역대 최대' 같은 제목은 불일치로 판정하십시오.
 - 단순 키워드 하나가 겹친다고 통과시키지 말고, 문제의 중심과 대상이 같은지 판단하십시오.
 - 표현을 자연스럽게 바꾸거나 압축한 것은 허용하지만, 기사 전체의 메인 주제를 다른 주제로 바꾼 것은 불허합니다.
 
@@ -428,10 +430,7 @@ score 기준:
     for attempt in range(MAX_RETRIES_503 + 1):
         try:
             print(f"  제목-기사 상관관계 2차 검수 (시도 {attempt + 1}/{MAX_RETRIES_503 + 1})")
-            response = client.models.generate_content(
-                model=MODEL_NAME,
-                contents=prompt + "\n\n검수 대상:\n" + payload,
-            )
+            response = client.models.generate_content(model=MODEL_NAME, contents=prompt + "\n\n검수 대상:\n" + payload)
             text = (response.text or "").strip()
             if text.startswith("```"):
                 text = text.replace("```json", "", 1).replace("```", "").strip()
@@ -439,7 +438,6 @@ score 기준:
             checks = result.get("checks", [])
             if not isinstance(checks, list):
                 raise ValueError("title alignment checks가 배열이 아닙니다.")
-
             by_url = {clean_text(item.get("source_url")): item for item in checks}
             validated = []
             rejected = 0
@@ -507,13 +505,38 @@ def select_balanced_medical(articles, limit=10, per_topic=2):
     return selected
 
 
+def normalize_category(article):
+    raw = clean_text(article.get("category")).lower().replace(" ", "_").replace("-", "_")
+    aliases = {
+        "policy": "policy", "policies": "policy", "제도": "policy", "정책": "policy", "보험제도": "policy", "보험_제도": "policy",
+        "medical": "medical", "medicine": "medical", "health": "medical", "의료": "medical", "의료비": "medical", "보장": "medical", "간병": "medical", "상품": "medical",
+        "samsung_fire": "samsung_fire", "samsungfire": "samsung_fire", "samsung": "samsung_fire", "삼성화재": "samsung_fire"
+    }
+    if raw in aliases:
+        return aliases[raw]
+
+    text = " ".join(clean_text(article.get(k)) for k in ("source_title", "title", "summary", "core_topic"))
+    if article.get("origin_type") == "official":
+        policy_terms = ["제도", "정책", "개편", "개정", "보험료", "건강보험", "보건복지", "금융감독", "비급여 관리"]
+        if any(term in text for term in policy_terms):
+            return "policy"
+    if "삼성화재" in text:
+        return "samsung_fire"
+    if any(term in text for term in ["의료비", "치료비", "비급여", "본인부담", "간병", "암", "뇌혈관", "심혈관", "건강보험"]):
+        return "medical"
+    return "policy" if article.get("group") == "policy" else "medical"
+
+
 def organize_articles(articles):
     categories = {"policy": [], "medical": [], "samsung_fire": []}
     for article in articles:
-        category = article.get("category")
+        category = normalize_category(article)
         if category in categories and article.get("source_url"):
+            article["category"] = category
             categories[category].append(article)
-    categories["policy"] = categories["policy"][:2]
+
+    # 공식기관 자료는 최종 조직화 단계에서도 우선한다.
+    categories["policy"] = sorted(categories["policy"], key=lambda x: (x.get("origin_type") != "official", not x.get("is_major_news", False)))[:2]
     categories["medical"] = select_balanced_medical(categories["medical"], limit=10, per_topic=2)
     categories["samsung_fire"] = categories["samsung_fire"][:2]
     return categories
@@ -521,11 +544,7 @@ def organize_articles(articles):
 
 def make_sales_points(categories):
     points = []
-    for label, key in (
-        ("상품·보장/의료비", "medical"),
-        ("삼성화재 소식", "samsung_fire"),
-        ("제도 동향", "policy"),
-    ):
+    for label, key in (("상품·보장/의료비", "medical"), ("삼성화재 소식", "samsung_fire"), ("제도 동향", "policy")):
         for article in categories[key]:
             tip = clean_text(article.get("sales_tip"))
             if tip:
@@ -546,6 +565,8 @@ def main():
     def candidate_score(item):
         text = f"{item['title']} {item['description']}"
         score = 0
+        if item.get("origin_type") == "official":
+            score += 45
         if item.get("is_major_news"):
             score += 15
         group_score = {"medical_cost": 40, "caregiver": 35, "product": 30, "samsung_fire": 25, "policy": 15}
@@ -556,16 +577,17 @@ def main():
             score -= 100
         return score
 
-    candidates = sorted(raw_news, key=candidate_score, reverse=True)[:MAX_ANALYSIS_NEWS]
+    official_candidates = [x for x in raw_news if x.get("origin_type") == "official" and not is_other_insurer_promo(x)]
+    general_candidates = [x for x in raw_news if x.get("origin_type") != "official" and not is_other_insurer_promo(x)]
+    official_candidates = sorted(official_candidates, key=candidate_score, reverse=True)
+    general_candidates = sorted(general_candidates, key=candidate_score, reverse=True)
+    # 공식기관 후보를 먼저 확보하고, 나머지는 일반 뉴스로 채워 분석 폭을 유지한다.
+    candidates = (official_candidates[:12] + general_candidates)[:MAX_ANALYSIS_NEWS]
+    print(f"공식기관 후보 우선 확보: {min(len(official_candidates), 12)}개")
     print(f"AI 분석 대상: {len(candidates)}개")
 
     if not candidates:
-        output = {
-            "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
-            "categories": {"policy": [], "medical": [], "samsung_fire": []},
-            "sales_points": [],
-            "article_count": 0,
-        }
+        output = {"generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "categories": {"policy": [], "medical": [], "samsung_fire": []}, "sales_points": [], "article_count": 0}
         OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
         with OUTPUT_FILE.open("w", encoding="utf-8") as f:
             json.dump(output, f, ensure_ascii=False, indent=2)
@@ -577,7 +599,7 @@ def main():
     for start in range(0, len(candidates), BATCH_SIZE):
         batch = candidates[start:start + BATCH_SIZE]
         batch_number = (start // BATCH_SIZE) + 1
-        analyzed.extend(analyze_batch(batch, batch_number))
+        analyzed.extend(analyze_batch(batch, batch_number, allow_split=True))
         if start + BATCH_SIZE < len(candidates):
             time.sleep(3)
 
@@ -614,7 +636,6 @@ def main():
     print(f"상품·보장/의료비·간병: {len(categories['medical'])}개")
     print(f"삼성화재 소식: {len(categories['samsung_fire'])}개")
     print(f"제도 동향: {len(categories['policy'])}개")
-    print(f"파일 생성: {OUTPUT_FILE}")
     print("=" * 60)
 
 
