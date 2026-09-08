@@ -10,11 +10,11 @@ INPUT_FILE = Path("data/raw_news.json")
 OUTPUT_FILE = Path("data/news.json")
 API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME = "gemini-3.6-flash"
-MAX_ANALYSIS_NEWS = 50
+MAX_ANALYSIS_NEWS = 80
 BATCH_SIZE = 20
 MAX_RETRIES_503 = 2
 RETRY_DELAY_503 = 20
-TITLE_ALIGNMENT_MIN_SCORE = 80
+TITLE_ALIGNMENT_MIN_SCORE = 65
 
 if not API_KEY:
     raise RuntimeError("GEMINI_API_KEY 환경변수가 설정되어 있지 않습니다.")
@@ -248,7 +248,7 @@ def build_prompt(batch):
 - 보험 제도 관련성: 5점
 
 다른 보험사 홍보성 기사와 채널 경쟁 기사는 점수와 관계없이 제외합니다.
-좋은 기사가 부족하면 억지로 10개를 채우지 말고, 객관적으로 가치 있는 기사만 선택합니다.
+좋은 기사가 부족하면 억지로 채우지 말고, 객관적으로 가치 있는 기사만 선택합니다. 서로 다른 핵심 주제는 균형 있게 배분하고, 같은 핵심 주제에서도 실질적으로 다른 기사라면 2개까지 허용합니다.
 단, 최근 뉴스가 적은 날에는 직전 48~72시간의 관련성 높은 기사까지 활용할 수 있습니다.
 
 [기사-제목 상관관계 자기검수]
@@ -264,7 +264,7 @@ title_alignment_score는 0~100점으로 평가하십시오.
 - 80~89: 표현은 재구성했지만 핵심 주제와 대상이 명확히 일치함
 - 60~79: 관련성은 있으나 제목이 기사 일부 내용에 치우침
 - 0~59: 핵심 주제가 다르거나 기사 후반부의 보조 내용을 중심으로 제목을 만듦
-80점 미만은 반드시 출력하지 마십시오.
+65점 미만은 반드시 출력하지 마십시오.
 
 [다주제 기사 최종 검증]
 최종 선택 직전에 각 기사에 대해 반드시 아래 순서로 판단하십시오.
@@ -286,12 +286,12 @@ title_alignment_score는 0~100점으로 평가하십시오.
 중요:
 - 반드시 JSON 객체 하나만 출력하십시오.
 - Markdown 코드블록을 사용하지 마십시오.
-- 전체 최대 10개 기사
+- 전체 최대 14개 기사
 - policy 최대 2개
-- medical 최대 7개
+- medical 최대 10개
 - samsung_fire 최대 2개
 - 동일 기사 중복 금지
-- 유사한 주제의 반복 기사도 최대한 1개만 남기십시오.
+- 동일 기사만 중복 제거하고, 서로 다른 관점·사례·정책 변화는 같은 핵심 주제라도 최대 2개까지 허용합니다.
 - 타 보험사의 상품·특약·가입·판매 홍보 내용은 출력하지 마십시오.
 
 JSON 형식:
@@ -421,7 +421,7 @@ score 기준:
 80~89 = 표현은 달라도 핵심 주제가 명확히 동일
 60~79 = 일부 관련되지만 제목이 기사 일부에 치우침
 0~59 = 다른 주제이거나 보조 정보를 메인 제목으로 왜곡
-80점 미만은 pass=false입니다.
+65점 미만은 pass=false입니다.
 """
 
     payload = json.dumps(candidates, ensure_ascii=False)
@@ -475,6 +475,38 @@ score 기준:
     return []
 
 
+MEDICAL_TOPIC_CLUSTERS = {
+    "health_insurance_finance": ["건강보험요율", "건강보험료율", "보험료율", "건강보험료", "국고지원", "국고 지원", "건강보험 재정", "건보 재정", "건강보험 국고", "국고보조"],
+    "noncovered_burden": ["비급여", "선별급여", "본인부담", "본인 부담", "비급여 의료비", "비급여 치료비"],
+    "caregiver_burden": ["간병비", "간병 비용", "간병인 비용", "간병비 부담", "간병 부담", "가족 간병", "간병 지원"],
+    "cancer_treatment_cost": ["암 치료비", "암 의료비", "암 치료", "암 통합치료", "항암", "방사선", "표적항암", "면역항암"],
+    "cerebrovascular_cost": ["뇌혈관", "뇌졸중", "뇌출혈", "뇌경색", "뇌혈관질환"],
+    "cardiovascular_cost": ["심혈관", "심근경색", "심장질환", "심혈관질환"],
+}
+
+
+def infer_medical_topic(article):
+    text = " ".join(clean_text(article.get(k)) for k in ("source_title", "title", "summary", "core_topic"))
+    for topic, terms in MEDICAL_TOPIC_CLUSTERS.items():
+        if any(term in text for term in terms):
+            return topic
+    return "other"
+
+
+def select_balanced_medical(articles, limit=10, per_topic=2):
+    selected = []
+    counts = {}
+    for article in articles:
+        topic = infer_medical_topic(article)
+        if counts.get(topic, 0) >= per_topic:
+            continue
+        selected.append(article)
+        counts[topic] = counts.get(topic, 0) + 1
+        if len(selected) >= limit:
+            break
+    return selected
+
+
 def organize_articles(articles):
     categories = {"policy": [], "medical": [], "samsung_fire": []}
     for article in articles:
@@ -482,7 +514,7 @@ def organize_articles(articles):
         if category in categories and article.get("source_url"):
             categories[category].append(article)
     categories["policy"] = categories["policy"][:2]
-    categories["medical"] = categories["medical"][:7]
+    categories["medical"] = select_balanced_medical(categories["medical"], limit=10, per_topic=2)
     categories["samsung_fire"] = categories["samsung_fire"][:2]
     return categories
 
