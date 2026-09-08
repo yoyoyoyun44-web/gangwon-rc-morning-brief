@@ -114,7 +114,7 @@ def main():
     hours = 72 if weekday in (0, 1) else 24
     cutoff = now - timedelta(hours=hours)
     collected = []; seen_urls = set()
-    print("=" * 60); print("강원영업단 RC Morning Brief"); print("NAVER API HUB 뉴스 수집 시작"); print(f"수집 기준: 최근 {hours}시간"); print("검색 우선순위: 상품/보장 > 의료비 부담 > 간병 > 삼성화재 > 제도"); print("타 보험사 상품 홍보성 기사 및 GA/전속 채널경쟁 기사 제외"); print("생명보험사 연금·적금·저축·목돈마련·자산관리 기사 제외"); print("비만: 뇌·심혈관질환과의 연관성이 주된 기사만 허용"); print("대통령/국회의원 주장 반박 목적 기사 제외"); print("유사 주제 중복 기사 제거"); print("네이버 엔터/스포츠: 본인 중증질환·고가치료 사례만 허용"); print("=” * 60)
+    print("=" * 60); print("강원영업단 RC Morning Brief"); print("NAVER API HUB 뉴스 수집 시작"); print(f"수집 기준: 최근 {hours}시간"); print("검색 우선순위: 상품/보장 > 의료비 부담 > 간병 > 삼성화재 > 제도"); print("타 보험사 상품 홍보성 기사 및 GA/전속 채널경쟁 기사 제외"); print("생명보험사 연금·적금·저축·목돈마련·자산관리 기사 제외"); print("비만: 뇌·심혈관질환과의 연관성이 주된 기사만 허용"); print("대통령/국회의원 주장 반박 목적 기사 제외"); print("유사 주제 중복 기사 제거"); print("네이버 엔터/스포츠: 본인 중증질환·고가치료 사례만 허용"); print("=" * 60)
     for group, queries in SEARCH_GROUPS.items():
         print(f"\n### {group}")
         for query in queries:
