@@ -123,17 +123,19 @@ SYSTEM_PROMPT = """
 카드뉴스 제목은 원문 기사 전체의 메인 주제를 반영해야 합니다. 본문 후반부의 보조 수치나 사례를 메인 제목으로 확대하지 마십시오.
 
 [중복 방지 - 최우선]
-같은 사건·정책·발표를 여러 언론이 거의 같은 내용으로 보도한 경우 1개만 선택하십시오.
-특히 '중증·희귀·난치질환', '중증 희귀질환', '희귀 난치질환', '중증·희귀질환 지원', '희귀질환 건강보험 지원', '희귀질환 본인부담 경감' 등 핵심 정책 대상과 사건이 같은 기사는 제목 표현, 숫자, 언론사가 달라도 동일 주제로 간주하십시오.
-건강보험료율 동결/조정과 중증·희귀·난치질환 보장 확대가 같은 시점의 동일 정책 발표·논쟁에서 함께 다뤄진 경우도 하나의 '건강보험 재정·개인 의료비 부담' 이슈로 묶으십시오.
-같은 발표를 서로 다른 언론이 재인용한 기사도 1개만 남기십시오.
-단, 같은 질환군이라도 치료비·비급여·신약·간병 등 실질적인 핵심 이슈가 다른 경우에만 별도 기사로 허용하십시오.
+같은 사건·정책·발표·연구 결과를 여러 언론이 거의 같은 내용으로 보도한 경우 1개만 선택하십시오.
+같은 사건을 다른 표현으로 쓴 제목은 서로 다른 기사로 취급하지 마십시오.
+특히 동일한 정책 발표, 동일한 연구, 동일한 통계, 동일한 정부 발표자료를 재인용한 기사들은 하나의 이슈로 묶으십시오.
+'희귀·난치', '중증 희귀질환', '중증·희귀질환 지원', '희귀질환 건강보험 지원', '희귀질환 본인부담 경감' 등 표현이 달라도 동일 발표/정책이면 하나만 남기십시오.
+'유산', '자연유산', '반복 유산', '유산 경험' 등 표현이 달라도 동일 연구·조사·통계·발표를 근거로 한 기사라면 하나만 남기십시오.
+같은 날 '건보료 동결 + 중증·희귀·난치 보장 확대'처럼 하나의 정책 패키지/논쟁을 서로 다른 제목으로 보도한 경우도 하나로 묶으십시오.
+단, 같은 질환군이라도 실제 사건·연구·정책·치료비 이슈가 다르면 별도 기사로 허용하십시오.
 
 [같은 이슈일 때 남길 기사]
-같은 정책/사건을 다룬 후보가 여러 개라면 '고객 개인의 의료비 부담'을 가장 구체적으로 보여주는 기사를 우선하십시오.
-특히 비급여, 고액 신약, 신약 치료비, 본인부담 증가, 개인 의료비 부담, 보장 공백, 민영보험/보험 준비 필요성처럼 고객의 추가 비용과 보장 점검으로 바로 연결되는 내용이 있으면 그것을 우선 선택하십시오.
-단순 '건강보험료 동결', 단순 '본인부담률 인하', 단순 '급여 확대'처럼 제도 사실만 반복하는 기사는 같은 이슈의 다른 후보보다 후순위로 두십시오.
-기사에 없는 민영보험 필요성을 새로 만들어내지 말고, 원문에 실제로 비급여·신약·개인부담 또는 보장 공백이 언급된 경우에만 그 연결을 사용하십시오.
+같은 사건/연구/정책 후보가 여러 개라면 고객 개인의 의료비 부담을 가장 구체적으로 보여주는 기사를 우선하십시오.
+비급여, 고액 신약, 신약 치료비, 본인부담 증가, 개인 의료비 부담, 보장 공백, 민영보험/보험 준비 필요성처럼 고객의 추가 비용과 보장 점검으로 바로 연결되는 내용이 실제 원문에 있으면 그것을 우선 선택하십시오.
+단순 제도 사실만 반복하는 기사는 후순위로 두십시오.
+기사에 없는 민영보험 필요성을 새로 만들지 마십시오.
 
 [절대 제외]
 다른 보험사의 신상품·특약·보장강화·가입·판매·실적·시장점유율·상품홍보, GA 장점·성장·확대·이직·전환·수수료 경쟁, 전속채널 약화/위기, 주가·주식, 단순 실적, 자동차/여행/펫/휴대폰보험, 연예·정치 일반·사건사고, 광고·협찬·홍보성 콘텐츠.
@@ -170,9 +172,8 @@ def build_prompt(batch):
     return SYSTEM_PROMPT + SALES_TIP_RULES + """
 [선별]
 좋은 기사가 부족하면 억지로 채우지 마십시오.
-동일 사건·정책·발표의 반복 보도는 1개만 남기고 서로 다른 핵심 주제는 균형 있게 선택하십시오.
-같은 날 '건보료 동결 + 중증·희귀·난치 보장 확대'처럼 서로 다른 제목으로 보도되더라도 실제로 하나의 정책 패키지/논쟁을 다룬다면 하나만 선택하십시오.
-그 경우 단순 제도 설명보다 비급여·고액 신약·개인 본인부담 등 고객 부담을 가장 잘 보여주는 기사 하나를 남기십시오.
+동일 사건·정책·발표·연구의 반복 보도는 1개만 남기고 서로 다른 핵심 주제는 균형 있게 선택하십시오.
+같은 연구·통계·정책을 서로 다른 언론사가 다시 쓴 기사도 동일 이슈로 처리하십시오.
 
 [출력]
 반드시 JSON 객체 하나만 출력하십시오. Markdown 코드블록 금지.
@@ -322,6 +323,10 @@ MEDICAL_TOPIC_CLUSTERS = {
         "희귀질환 본인부담", "희귀질환 치료비", "난치질환 지원", "중증질환 지원",
         "희귀질환 보장성", "희귀질환 본인 부담", "중증 희귀 난치질환"
     ],
+    "miscarriage": [
+        "유산", "자연유산", "반복 유산", "반복유산", "유산 경험", "유산율",
+        "유산 위험", "유산 위험도", "유산 예방", "유산 원인", "유산 관련"
+    ],
     "noncovered_burden": ["비급여", "선별급여", "본인부담", "본인 부담", "비급여 의료비", "비급여 치료비"],
     "caregiver_burden": ["간병비", "간병 비용", "간병인 비용", "간병비 부담", "간병 부담", "가족 간병", "간병 지원"],
     "cancer_treatment_cost": ["암 치료비", "암 의료비", "암 치료", "암 통합치료", "항암", "방사선", "표적항암", "면역항암"],
@@ -329,7 +334,7 @@ MEDICAL_TOPIC_CLUSTERS = {
     "cardiovascular_cost": ["심혈관", "심근경색", "심장질환", "심혈관질환"],
 }
 
-TOPIC_MAX = {"health_policy_medical_burden": 1}
+TOPIC_MAX = {"health_policy_medical_burden": 1, "miscarriage": 1}
 BURDEN_PRIORITY_TERMS = [
     ("고액 신약", 70), ("신약 치료비", 70), ("신약", 60), ("비급여", 55),
     ("개인 의료비 부담", 55), ("고액 치료비", 50), ("개인 부담", 45),
@@ -341,16 +346,15 @@ BURDEN_PRIORITY_TERMS = [
 
 def infer_medical_topic(article):
     text = " ".join(clean_text(article.get(k)) for k in ("source_title", "title", "core_topic", "summary", "why_it_matters", "sales_tip"))
-    rare_terms = [
-        "중증 희귀 난치", "중증·희귀·난치", "중증 희귀질환", "중증·희귀질환",
-        "희귀 난치질환", "희귀·난치질환", "희귀질환 지원", "희귀질환 건강보험",
-        "희귀질환 본인부담", "희귀질환 치료비", "난치질환 지원", "중증질환 지원",
-        "희귀질환 보장성", "희귀질환 본인 부담", "중증 희귀 난치질환"
-    ]
+    rare_terms = MEDICAL_TOPIC_CLUSTERS["health_policy_medical_burden"]
     insurance_finance_terms = ["건강보험료율", "건강보험요율", "건강보험료", "보험료율", "건강보험 재정"]
     if any(t in text for t in rare_terms) or any(t in text for t in insurance_finance_terms):
         return "health_policy_medical_burden"
+    if any(t in text for t in MEDICAL_TOPIC_CLUSTERS["miscarriage"]):
+        return "miscarriage"
     for topic, terms in MEDICAL_TOPIC_CLUSTERS.items():
+        if topic in ("health_policy_medical_burden", "miscarriage"):
+            continue
         if any(term in text for term in terms):
             return topic
     return "other"
@@ -367,6 +371,23 @@ def burden_priority_score(article):
     return score
 
 
+def article_text(article):
+    return " ".join(clean_text(article.get(k)) for k in ("source_title", "title", "core_topic", "summary", "why_it_matters"))
+
+
+def normalized_tokens(text):
+    text = clean_text(text).lower()
+    text = re.sub(r"[^0-9a-z가-힣 ]", " ", text)
+    return [x for x in text.split() if len(x) >= 2]
+
+
+def token_overlap(a, b):
+    sa, sb = set(normalized_tokens(article_text(a))), set(normalized_tokens(article_text(b)))
+    if not sa or not sb:
+        return 0.0
+    return len(sa & sb) / min(len(sa), len(sb))
+
+
 def title_similarity(a, b):
     na = re.sub(r"[^0-9a-z가-힣 ]", " ", clean_text(a).lower())
     nb = re.sub(r"[^0-9a-z가-힣 ]", " ", clean_text(b).lower())
@@ -381,15 +402,54 @@ def core_topic_similarity(a, b):
     return SequenceMatcher(None, ta, tb).ratio()
 
 
+def event_fingerprint(article):
+    """기사 제목이 달라도 같은 연구/발표/정책을 다룬 경우 잡기 위한 핵심 토큰 묶음."""
+    text = article_text(article)
+    fingerprint_terms = [
+        "정부", "보건복지부", "건강보험공단", "심평원", "질병관리청", "연구팀", "연구진", "연구",
+        "조사", "조사결과", "통계", "발표", "보고서", "정책", "시범사업", "본인부담", "건강보험",
+        "유산", "자연유산", "반복유산", "희귀질환", "중증질환", "난치질환"
+    ]
+    return {term for term in fingerprint_terms if term in text}
+
+
 def same_core_topic(a, b):
     topic_a, topic_b = infer_medical_topic(a), infer_medical_topic(b)
     if topic_a != topic_b:
         return False
-    if topic_a == "health_policy_medical_burden":
-        return True
+    if topic_a in ("health_policy_medical_burden", "miscarriage"):
+        # 같은 클러스터라도 서로 다른 연구/사건을 무조건 합치지 않도록
+        # 제목/핵심주제/본문의 공통 핵심어가 충분히 겹칠 때 동일 이슈로 본다.
+        title_sim = title_similarity(a.get("source_title") or a.get("title"), b.get("source_title") or b.get("title"))
+        core_sim = core_topic_similarity(a, b)
+        overlap = token_overlap(a, b)
+        fingerprints = event_fingerprint(a) & event_fingerprint(b)
+        return title_sim >= 0.62 or core_sim >= 0.70 or (overlap >= 0.65 and len(fingerprints) >= 2)
     title_sim = title_similarity(a.get("source_title") or a.get("title"), b.get("source_title") or b.get("title"))
     core_sim = core_topic_similarity(a, b)
-    return title_sim >= 0.72 or core_sim >= 0.72
+    overlap = token_overlap(a, b)
+    return title_sim >= 0.72 or core_sim >= 0.72 or overlap >= 0.85
+
+
+def issue_similarity(a, b):
+    """클러스터가 다르게 분류된 기사까지 같은 사건인지 보조 판정한다."""
+    title_sim = title_similarity(a.get("source_title") or a.get("title"), b.get("source_title") or b.get("title"))
+    core_sim = core_topic_similarity(a, b)
+    overlap = token_overlap(a, b)
+    fingerprints = event_fingerprint(a) & event_fingerprint(b)
+    return title_sim >= 0.80 or core_sim >= 0.80 or (overlap >= 0.82 and len(fingerprints) >= 2)
+
+
+def representative_score(article):
+    score = burden_priority_score(article)
+    if article.get("origin_type") == "official":
+        score += 25
+    if article.get("is_major_news"):
+        score += 10
+    desc = clean_text(article.get("summary") or article.get("why_it_matters"))
+    if len(desc) >= 80:
+        score += 5
+    return score
 
 
 def select_balanced_medical(articles, limit=10, per_topic=2):
@@ -399,21 +459,23 @@ def select_balanced_medical(articles, limit=10, per_topic=2):
         topic = infer_medical_topic(article)
         grouped.setdefault(topic, []).append(article)
 
-    if "health_policy_medical_burden" in grouped:
-        grouped["health_policy_medical_burden"] = sorted(grouped["health_policy_medical_burden"], key=burden_priority_score, reverse=True)
+    for topic in ("health_policy_medical_burden", "miscarriage"):
+        if topic in grouped:
+            grouped[topic] = sorted(grouped[topic], key=representative_score, reverse=True)
 
     ordered = []
-    if "health_policy_medical_burden" in grouped:
-        winner = grouped["health_policy_medical_burden"][0]
-        ordered.append(winner)
-        counts["health_policy_medical_burden"] = 1
-        print(f"  [핵심이슈 대표기사] 건강보험·중증희귀 이슈: {clean_text(winner.get('title'))}")
-        for excluded in grouped["health_policy_medical_burden"][1:]:
-            print(f"  [동일 핵심이슈 제외] 건강보험·중증희귀 이슈: {clean_text(excluded.get('title'))}")
-        del grouped["health_policy_medical_burden"]
+    for topic in ("health_policy_medical_burden", "miscarriage"):
+        if topic in grouped:
+            winner = grouped[topic][0]
+            ordered.append(winner)
+            counts[topic] = 1
+            print(f"  [핵심이슈 대표기사] {topic}: {clean_text(winner.get('title'))}")
+            for excluded in grouped[topic][1:]:
+                print(f"  [동일 핵심이슈 제외] {topic}: {clean_text(excluded.get('title'))}")
+            del grouped[topic]
 
     for topic, group in grouped.items():
-        ordered.extend(group)
+        ordered.extend(sorted(group, key=representative_score, reverse=True))
 
     for article in ordered:
         topic = infer_medical_topic(article)
@@ -421,8 +483,8 @@ def select_balanced_medical(articles, limit=10, per_topic=2):
         if counts.get(topic, 0) >= cap:
             print(f"  [동일 핵심주제 제외] {topic}: {clean_text(article.get('title'))}")
             continue
-        if any(same_core_topic(article, existing) for existing in selected):
-            print(f"  [거의 동일 기사 제외] {clean_text(article.get('title'))}")
+        if any(issue_similarity(article, existing) or same_core_topic(article, existing) for existing in selected):
+            print(f"  [거의 동일 이슈 제외] {clean_text(article.get('title'))}")
             continue
         selected.append(article)
         counts[topic] = counts.get(topic, 0) + 1
@@ -445,8 +507,8 @@ def select_core_topic_winners(articles):
 
     winners = []
     for topic, group in groups.items():
-        if topic == "health_policy_medical_burden":
-            winner = max(group, key=burden_priority_score)
+        if topic in ("health_policy_medical_burden", "miscarriage"):
+            winner = max(group, key=representative_score)
             winners.append(winner)
             print(f"  [핵심이슈 1개로 통합] {topic} 대표: {clean_text(winner.get('title'))}")
             for item in group:
@@ -460,7 +522,19 @@ def select_core_topic_winners(articles):
                     continue
                 kept.append(item)
             winners.extend(kept)
-    return winners + others
+
+    # 서로 다른 토픽으로 분류된 기사라도 동일 사건이면 하나만 남긴다.
+    cross_checked = []
+    for article in winners:
+        duplicate = False
+        for existing in cross_checked:
+            if issue_similarity(article, existing):
+                duplicate = True
+                print(f"  [교차 이슈 중복 제외] {clean_text(article.get('title'))}")
+                break
+        if not duplicate:
+            cross_checked.append(article)
+    return cross_checked + [x for x in others if not any(issue_similarity(x, y) for y in cross_checked)]
 
 
 def normalize_category(article):
@@ -477,7 +551,7 @@ def normalize_category(article):
         return "policy"
     if "삼성화재" in text:
         return "samsung_fire"
-    if any(x in text for x in ["의료비", "치료비", "비급여", "본인부담", "간병", "암", "뇌혈관", "심혈관", "건강보험"]):
+    if any(x in text for x in ["의료비", "치료비", "비급여", "본인부담", "간병", "암", "뇌혈관", "심혈관", "건강보험", "유산"]):
         return "medical"
     return "policy" if article.get("group") == "policy" else "medical"
 
@@ -519,7 +593,7 @@ def main():
         score = 45 if item.get("origin_type") == "official" else 0
         score += 15 if item.get("is_major_news") else 0
         score += {"medical_cost": 40, "caregiver": 35, "product": 30, "samsung_fire": 25, "policy": 15}.get(item.get("group"), 0)
-        if any(x in text for x in ["의료비", "치료비", "본인부담", "비급여", "간병비", "간병", "암", "뇌혈관", "심혈관"]):
+        if any(x in text for x in ["의료비", "치료비", "본인부담", "비급여", "간병비", "간병", "암", "뇌혈관", "심혈관", "유산"]):
             score += 20
         if is_other_insurer_promo(item):
             score -= 100
