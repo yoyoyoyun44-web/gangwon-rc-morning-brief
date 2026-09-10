@@ -13,10 +13,17 @@ TOPIC_TERMS = {
     'cardiovascular': ['심혈관', '심근경색', '심장질환', '심혈관질환', '심장 수술', '심장 시술'],
     'caregiver': ['간병비', '간병인 비용', '간병 비용', '간병인 지원', '간병인지원', '가족 간병', '간병 부담', '요양병원 간병'],
 }
-
 TOPIC_LABEL = {'cancer': '암', 'cerebrovascular': '뇌혈관', 'cardiovascular': '심혈관', 'caregiver': '간병'}
 EXCLUDE = ['GA', '주가', '주식', '광고', '협찬', '자동차보험', '여행보험', '펫보험', '휴대폰보험']
 PROMO = ['신상품', '상품 출시', '보장 강화', '가입자', '체결', '판매 돌입', '판매 개시', '배타적사용권', '판매실적', '시장점유율']
+LOW_VALUE = [
+    '기부', '기부금', '후원', '성금', '기탁', '모교에', '모교에 기부', '나눔',
+    '의료인력', '의료 인력', '보건사업 인력', '인력 공백', '인력 부족', '의료인력 부족',
+    '의사 부족', '의사 인력', '간호인력', '간호 인력', '채용 절차', '인력 채용',
+    '의료진 확보', '의료진 부족', '의료인력 확보', '의료인력 정책', '보건사업 인력',
+    '공공의료', '공공 의료', '취약지역 소아 진료', '소아 진료 공백', '진료 공백 해소',
+    '지역 의료 공백', '공공병원 인력', '예산 감액', '예산 증액'
+]
 
 
 def clean(v):
@@ -54,6 +61,9 @@ def has_topic(a, terms):
 def is_bad(a):
     s = article_text(a)
     if any(x in s for x in EXCLUDE):
+        return True
+    if any(x in s for x in LOW_VALUE):
+        # 기부/유명인 미담, 인력·채용·공공서비스 행정이 핵심인 기사는 보충 후보에서도 제외한다.
         return True
     if any(x in s for x in PROMO) and not any(x in s for x in ['의료비', '치료비', '간병', '환자', '질환', '비급여']):
         return True
@@ -123,35 +133,21 @@ def build_deterministic_card(topic, src):
     else:
         tip = "기사의 핵심 내용과 관련해 고객에게 ‘입원이나 장기 치료가 필요할 때 간병비와 가족의 돌봄 부담을 어떻게 준비하고 있는지’ 물어보고 간병인지원 중심으로 보장을 점검해 보세요."
     return {
-        'source_url': src['source_url'],
-        'naver_url': src['naver_url'],
-        'category': 'medical',
-        'source_title': src['title'],
-        'core_topic': f'{label} 관련 의료비·치료비 부담',
-        'title_topic': label,
-        'issue_signature': f'{label}|{src["title"]}',
-        'title_alignment_score': 95,
-        'title_alignment_pass': True,
-        'title': title,
-        'summary': description[:500],
+        'source_url': src['source_url'], 'naver_url': src['naver_url'], 'category': 'medical',
+        'source_title': src['title'], 'core_topic': f'{label} 관련 의료비·치료비 부담', 'title_topic': label,
+        'issue_signature': f'{label}|{src["title"]}', 'title_alignment_score': 95, 'title_alignment_pass': True,
+        'title': title, 'summary': description[:500],
         'why_it_matters': f'이번 기사는 {label} 분야의 실제 의료비·치료비 부담을 고객 관점에서 확인할 수 있는 상담 소재입니다.',
-        'sales_tip': tip,
-        'source': src['source_org_name'] or src['source'],
-        'published_at': src['published_at'],
-        'group': src['group'] or 'medical_cost',
-        'origin_type': src['origin_type'],
-        'source_org_name': src['source_org_name'],
-        'is_major_news': src['is_major_news'],
+        'sales_tip': tip, 'source': src['source_org_name'] or src['source'], 'published_at': src['published_at'],
+        'group': src['group'] or 'medical_cost', 'origin_type': src['origin_type'],
+        'source_org_name': src['source_org_name'], 'is_major_news': src['is_major_news'],
     }
 
 
 def make_prompt(topic, candidates):
     label = TOPIC_LABEL[topic]
-    body = ''.join(
-        f"\n[NEWS_ID={i+1}] 제목={a['title']} 내용={a['description']} 출처={a['source']} 발행={a['published_at']} URL={a['source_url']}"
-        for i, a in enumerate(candidates)
-    )
-    return f'''당신은 강원영업단 RC Morning Brief 편집자입니다. '{label}'이 핵심 주제인 후보 중 고객 의료비 부담 상담에 가장 유용한 기사 1개만 선택하십시오. 원문에 없는 사실을 만들지 말고, 카드 제목은 원문 핵심 이슈와 정확히 일치시켜야 합니다. 광고·보험사 상품홍보·GA 경쟁·단순 판매실적은 제외하십시오. JSON 객체 하나만 반환하십시오.\n{{"article":{{"source_url":"정확한 후보 URL","category":"medical","source_title":"원문 제목","core_topic":"기사 핵심주제","title_topic":"카드 제목 주제","issue_signature":"실제 사건/정책/연구 서명","title_alignment_score":90,"title_alignment_pass":true,"title":"카드뉴스 제목","summary":"요약","why_it_matters":"고객에게 중요한 이유","sales_tip":"기사에 직접 연결된 고객 질문","source":"출처","published_at":"발행일"}}}}\n{body}'''
+    body = ''.join(f"\n[NEWS_ID={i+1}] 제목={a['title']} 내용={a['description']} 출처={a['source']} 발행={a['published_at']} URL={a['source_url']}" for i, a in enumerate(candidates))
+    return f'''당신은 강원영업단 RC Morning Brief 편집자입니다. '{label}'이 핵심 주제인 후보 중 고객 의료비 부담 상담에 가장 유용한 기사 1개만 선택하십시오. 원문에 없는 사실을 만들지 말고, 카드 제목은 원문 핵심 이슈와 정확히 일치시켜야 합니다. 광고·보험사 상품홍보·GA 경쟁·단순 판매실적·연예인 기부·개인 투병 미담·의료인력/채용/공공의료 행정 기사는 선택하지 마십시오. JSON 객체 하나만 반환하십시오.\n{{"article":{{"source_url":"정확한 후보 URL","category":"medical","source_title":"원문 제목","core_topic":"기사 핵심주제","title_topic":"카드 제목 주제","issue_signature":"실제 사건/정책/연구 서명","title_alignment_score":90,"title_alignment_pass":true,"title":"카드뉴스 제목","summary":"요약","why_it_matters":"고객에게 중요한 이유","sales_tip":"기사에 직접 연결된 고객 질문","source":"출처","published_at":"발행일"}}}}\n{body}'''
 
 
 def rescue_with_gemini(topic, candidates):
@@ -162,8 +158,7 @@ def rescue_with_gemini(topic, candidates):
         from google import genai
         client = genai.Client(api_key=api_key)
         response = client.models.generate_content(model=MODEL_NAME, contents=make_prompt(topic, candidates))
-        raw = (response.text or '').strip()
-        raw = re.sub(r'^```(?:json)?\s*|\s*```$', '', raw).strip()
+        raw = re.sub(r'^```(?:json)?\s*|\s*```$', '', (response.text or '').strip()).strip()
         obj = json.loads(raw)
         article = obj.get('article') if isinstance(obj, dict) else None
         if not isinstance(article, dict):
@@ -172,15 +167,10 @@ def rescue_with_gemini(topic, candidates):
         src = next((x for x in candidates if x['source_url'] == url), None)
         if not src:
             return None
-        article['source_url'] = url
-        article['source_title'] = src['title']
-        article['source'] = src['source']
-        article['published_at'] = src['published_at']
-        article['naver_url'] = src['naver_url']
-        article['group'] = src['group'] or 'medical_cost'
-        article['origin_type'] = src['origin_type']
-        article['source_org_name'] = src['source_org_name']
-        article['is_major_news'] = src['is_major_news']
+        article['source_url'] = url; article['source_title'] = src['title']; article['source'] = src['source']
+        article['published_at'] = src['published_at']; article['naver_url'] = src['naver_url']
+        article['group'] = src['group'] or 'medical_cost'; article['origin_type'] = src['origin_type']
+        article['source_org_name'] = src['source_org_name']; article['is_major_news'] = src['is_major_news']
         return article
     except Exception as e:
         print(f'[Gemini 주제 보충 실패] {topic}: {e}')
@@ -196,7 +186,6 @@ def main():
         cats.setdefault(key, [])
     existing = current_articles(news)
     existing_urls = {clean(a.get('source_url')) for a in existing}
-
     rescued = []
     for topic in TOPIC_TERMS:
         if any(has_topic(a, TOPIC_TERMS[topic]) for a in existing):
@@ -207,17 +196,10 @@ def main():
             print(f'[주제 보충] {topic}: 후보 없음')
             continue
         candidates.sort(key=lambda a: score_candidate(a, topic), reverse=True)
-        article = rescue_with_gemini(topic, candidates[:12])
-        if article is None:
-            article = build_deterministic_card(topic, candidates[0])
-            print(f'[주제 보충] {topic}: GEMINI_API_KEY 없음/실패 → 원문 기반 안전 보충')
+        article = rescue_with_gemini(topic, candidates[:12]) or build_deterministic_card(topic, candidates[0])
         if article:
-            cats['medical'].append(article)
-            existing.append(article)
-            existing_urls.add(article['source_url'])
-            rescued.append(article)
+            cats['medical'].append(article); existing.append(article); existing_urls.add(article['source_url']); rescued.append(article)
             print(f'[주제 보충 완료] {topic}: {article.get("title")}')
-
     if rescued:
         news['article_count'] = sum(len(v or []) for v in cats.values())
         quality = news.setdefault('quality', {})
