@@ -103,6 +103,10 @@
       "cardiovascular",
       "caregiver"
     ],
-    "distinct_medical_cost_topics_can_coexist": true
+    "distinct_medical_cost_topics_can_coexist": true,
+    "dedup_policy": "same URL or demonstrably same event/policy/research only",
+    "topic_similarity_alone_is_not_duplicate": true,
+    "research_new_drug_new_technology_preserved": true,
+    "different_numbers_or_customer_questions_preserved": true
   }
 }
