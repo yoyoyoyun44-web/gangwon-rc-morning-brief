@@ -79,8 +79,8 @@
   "article_count": 3,
   "sales_points": [
     "광명시 등 지자체에서 희귀질환자에게 본인부담금과 간병비를 지원하지만 기준 중위소득 140% 미만 등의 조건이 있습니다. 고객님, 만약 소득 기준을 초과하는 상황에서 희귀질환이나 중증질환에 진단될 경우, 고액의 치료비와 장기 간병비에 대한 기존 보장이 충분히 준비되어 있으신가요?",
-    "고객님, 혹시 부모님이나 가족 중에 평소 어지럼증을 자주 느끼는 분이 계신가요? 어지럼증으로 낙상이 일어나 대퇴골 골절이 발생하면 수천만 원의 치료비와 긴 간병 기간이 필요하게 됩니다. 현재 가입하신 보험에 골절 수술비와 간병인 사용 일당 보장이 충분히 준비되어 있으신지 확인해 보셨나요?",
-    "사망보험금 및 치매보험금 신탁 제도 활용 확대 뉴스 언급 → 치매 진단 시 매월 지속적으로 발생하는 간병비와 의료비 부담 설명 → '혹시 치매나 중증 질환으로 장기 간병이 필요해졌을 때, 매월 지출되는 간병비와 의료비를 안정적으로 충당할 수 있는 치매·간병 보장이 잘 준비되어 있으신가요?' → 기존 치매 진단비 및 간병인 지원/비용 보장금액 점검"
+    "사망보험금 및 치매보험금 신탁 제도 활용 확대 뉴스 언급 → 치매 진단 시 매월 지속적으로 발생하는 간병비와 의료비 부담 설명 → '혹시 치매나 중증 질환으로 장기 간병이 필요해졌을 때, 매월 지출되는 간병비와 의료비를 안정적으로 충당할 수 있는 치매·간병 보장이 잘 준비되어 있으신가요?' → 기존 치매 진단비 및 간병인 지원/비용 보장금액 점검",
+    "고객님, 혹시 부모님이나 가족 중에 평소 어지럼증을 자주 느끼는 분이 계신가요? 어지럼증으로 낙상이 일어나 대퇴골 골절이 발생하면 수천만 원의 치료비와 긴 간병 기간이 필요하게 됩니다. 현재 가입하신 보험에 골절 수술비와 간병인 사용 일당 보장이 충분히 준비되어 있으신지 확인해 보셨나요?"
   ],
   "quality": {
     "ai_sales_editor": true,
@@ -90,6 +90,19 @@
     "ai_generated_count": 3,
     "ai_valid_count": 3,
     "deduped_count": 3,
-    "min_sales_score": 70
+    "min_sales_score": 70,
+    "sales_relevance_filter": true,
+    "sales_relevance_removed_count": 0,
+    "sales_relevance_removed_reasons": [],
+    "final_strict_issue_dedup": true,
+    "dedup_rule": "same URL / same issue_signature / demonstrably same event-policy-research with strong anchors only",
+    "generic_title_similarity_is_not_duplicate": true,
+    "protected_medical_topics": [
+      "cancer",
+      "cerebrovascular",
+      "cardiovascular",
+      "caregiver"
+    ],
+    "distinct_medical_cost_topics_can_coexist": true
   }
 }
