@@ -17,7 +17,20 @@ BRIEF_URL = "https://yoyoyoyun44-web.github.io/gangwon-rc-morning-brief/"
 
 
 def run_final_quality_check():
-    """AI/fallback 결과를 카카오 전송 직전에 한 번 더 엄격 검수한다."""
+    """AI/fallback 결과를 카카오 전송 직전에 주제 보충 + 엄격 검수한다."""
+    print("보호 주제 보충 시작: 암·뇌혈관·심혈관·간병")
+    rescue_result = subprocess.run(
+        [sys.executable, "src/topic_rescue.py"],
+        capture_output=True,
+        text=True,
+    )
+    if rescue_result.stdout:
+        print(rescue_result.stdout)
+    if rescue_result.stderr:
+        print(rescue_result.stderr, file=sys.stderr)
+    if rescue_result.returncode != 0:
+        raise RuntimeError(f"보호 주제 보충 실패: exit={rescue_result.returncode}")
+
     print("최종 품질검수 시작: 동일 이슈 중복 제거 + 기사별 영업 Tip 보정")
     result = subprocess.run(
         [sys.executable, "src/final_quality.py"],
