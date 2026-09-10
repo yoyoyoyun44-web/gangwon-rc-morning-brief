@@ -15,6 +15,27 @@
     ],
     "medical": [
       {
+        "source_url": "https://www.joongboo.com/news/articleView.html?idxno=363736288",
+        "naver_url": "https://www.joongboo.com/news/articleView.html?idxno=363736288",
+        "category": "medical",
+        "source_title": "[사설] 간병의 질 높인 간병지원 시범사업",
+        "core_topic": "간병 관련 의료비·치료비 부담",
+        "title_topic": "간병",
+        "issue_signature": "간병|[사설] 간병의 질 높인 간병지원 시범사업",
+        "title_alignment_score": 95,
+        "title_alignment_pass": true,
+        "title": "[사설] 간병의 질 높인 간병지원 시범사업",
+        "summary": "급증하면서 노후 돌봄과 간병을 필요로 하는 인구가 급증하고 있다. 간병 인력 양성과 확보도 중요한 문제다. 간병비에 건강보험 을 적용해 본인부담 률을 낮추는 간병비 급여화 시범사업의 성공적인 시행과 정착을 기대한다.",
+        "why_it_matters": "이번 기사는 간병 분야의 실제 의료비·치료비 부담을 고객 관점에서 확인할 수 있는 상담 소재입니다.",
+        "sales_tip": "기사에서 언급한 간병비·돌봄 부담을 기준으로 고객에게 ‘입원했을 때 가족이 직접 간병하기 어려우면 간병 비용을 어떻게 마련할 계획인가요?’라고 물어보세요. 이후 간병인 지원 여부와 기존 간병 관련 보장을 구체적으로 확인하세요.",
+        "source": "joongboo.com",
+        "published_at": "2026-09-09T19:00:00+09:00",
+        "group": "product",
+        "origin_type": "news",
+        "source_org_name": "",
+        "is_major_news": false
+      },
+      {
         "source_url": "http://www.yonhapnewstv.co.kr/news/AKR20260909105932hPn",
         "naver_url": "https://n.news.naver.com/mnews/article/422/0000904310?sid=102",
         "category": "medical",
@@ -34,16 +55,6 @@
         "origin_type": "news",
         "source_org_name": "",
         "is_major_news": false
-      },
-      {
-        "title": "이건희 경기도의원, 취약지역 소아 진료 공백 해소 위해 남양주 공공의...",
-        "summary": "이 밖에도 수술실 환경개선 예산이 전액 삭감된 의정부병원의 환자 진료 공백 방지 대책을 당부하고, 응급의료헬기 격납고의 입지 여건과 경기도의료원의 본인부담 금· 비급여 진료비 수준 등 도민의 의료 이용 환경...",
-        "why_it_matters": "고객의 실제 의료비 부담과 현재 보장 공백을 점검할 수 있는 상담 소재입니다.",
-        "sales_tip": "기사에서 다룬 비급여 항목을 중심으로 고객에게 ‘최근 병원에서 비급여 치료나 검사를 받아본 적이 있나요?’라고 물어보고, 실제 본인부담 가능 비용과 기존 보장의 연결 여부를 확인해 보세요.",
-        "source": "seoul.co.kr",
-        "published_at": "2026-09-09T12:50:00+09:00",
-        "naver_url": "https://n.news.naver.com/mnews/article/081/0003678420?sid=102",
-        "source_url": "https://www.seoul.co.kr/news/publicnews/local_govern/kyungki_do/2026/09/09/20260909500152?wlog_tag3=naver"
       },
       {
         "title": "환자 지갑 터는 비급여 항목…치료재료· 암치료비 증가세 '뚜렷'",
@@ -66,26 +77,6 @@
         "source_url": "https://www.straightnews.co.kr/news/articleView.html?idxno=310745"
       },
       {
-        "title": "우현욱 경기도의원, 보건사업 인력 공백 따른 예산 감액 지적…“채용 ...",
-        "summary": "복지국 소관 ‘간병 SOS 프로젝트’마저 감액되는 실정에서 관련 간병 사업이 동반 축소될 경우 요양병원 이용 가정의 간병비 고통이 가중될 수밖에 없다는 지적이다. 우 의원은 사업 추진을 위한 법무부 및...",
-        "why_it_matters": "고객의 실제 의료비 부담과 현재 보장 공백을 점검할 수 있는 상담 소재입니다.",
-        "sales_tip": "기사에서 언급한 간병비·돌봄 부담을 기준으로 고객에게 ‘입원했을 때 가족이 직접 간병하기 어려우면 간병 비용을 어떻게 마련할 계획인가요?’라고 물어보세요. 이후 간병인 지원 여부와 기존 간병 관련 보장을 구체적으로 확인하세요.",
-        "source": "seoul.co.kr",
-        "published_at": "2026-09-09T14:00:00+09:00",
-        "naver_url": "https://n.news.naver.com/mnews/article/081/0003678474?sid=102",
-        "source_url": "https://www.seoul.co.kr/news/publicnews/local_govern/kyungki_do/2026/09/09/20260909500204?wlog_tag3=naver"
-      },
-      {
-        "title": "부모 암투병 겪은 조권 \"김혜수가 도와줬다\" 미담 전해",
-        "summary": "실제로 그가 지난해 별다른 활동을 펼치지 못했던 이유 역시 부친의 간병 때문이었던 것으로 전해졌다.... 조권은 \"내가 데뷔할 시기에는 연습생 투자 비용 이 회수가 돼야 정산되는 시스템이라 3~4년 정도는 거의 돈을 벌지...",
-        "why_it_matters": "고객의 실제 의료비 부담과 현재 보장 공백을 점검할 수 있는 상담 소재입니다.",
-        "sales_tip": "‘부모 암투병 겪은 조권 \"김혜수가 도와줬다\" 미담 전해’에서 실제로 고객 부담을 만드는 핵심 내용을 한 가지 골라, 그 비용이나 제도 변화가 고객에게 해당되는지 먼저 질문해 보세요. 기사와 직접 연결되는 경우에만 현재 보장을 점검하세요.",
-        "source": "hankyung.com",
-        "published_at": "2026-09-09T11:22:00+09:00",
-        "naver_url": "https://m.entertain.naver.com/article/015/0005330380",
-        "source_url": "https://www.hankyung.com/article/202609093400H"
-      },
-      {
         "title": "\"치매 돌봄 부담 낮춘다\"…코라솔, 웰케어와 '맞손'",
         "summary": "이번 협약으로 코라솔 가입 고객 중 치매 등으로 지속적인 간병 이 필요한 가족 이 있는 경우 장기요양 지원 서비스를 보다 편리하게 이용할 수 있다. 장기요양 가족 휴가제 이용 대상 확인부터 요양보호사 연계, 일정...",
         "why_it_matters": "고객의 실제 의료비 부담과 현재 보장 공백을 점검할 수 있는 상담 소재입니다.",
@@ -100,13 +91,13 @@
   },
   "sales_points": [
     "기사에서 다룬 비급여 항목을 중심으로 고객에게 ‘최근 병원에서 비급여 치료나 검사를 받아본 적이 있나요?’라고 물어보고, 실제 본인부담 가능 비용과 기존 보장의 연결 여부를 확인해 보세요.",
+    "기사에서 언급한 간병비·돌봄 부담을 기준으로 고객에게 ‘입원했을 때 가족이 직접 간병하기 어려우면 간병 비용을 어떻게 마련할 계획인가요?’라고 물어보세요. 이후 간병인 지원 여부와 기존 간병 관련 보장을 구체적으로 확인하세요.",
     "기사의 암 치료 내용에서 진단 이후 어떤 치료비가 발생하는지가 핵심인지 확인하고, 고객에게 ‘암 치료를 받는다면 수술·항암·약물치료 중 어떤 비용이 가장 걱정되나요?’라고 물어보세요.",
-    "기사에서 다룬 비급여 항목을 중심으로 고객에게 ‘최근 병원에서 비급여 치료나 검사를 받아본 적이 있나요?’라고 물어보고, 실제 본인부담 가능 비용과 기존 보장의 연결 여부를 확인해 보세요.",
     "기사에서 다룬 비급여 항목을 중심으로 고객에게 ‘최근 병원에서 비급여 치료나 검사를 받아본 적이 있나요?’라고 물어보고, 실제 본인부담 가능 비용과 기존 보장의 연결 여부를 확인해 보세요.",
     "기사에서 다룬 비급여 항목을 중심으로 고객에게 ‘최근 병원에서 비급여 치료나 검사를 받아본 적이 있나요?’라고 물어보고, 실제 본인부담 가능 비용과 기존 보장의 연결 여부를 확인해 보세요."
   ],
   "fallback": true,
-  "article_count": 8,
+  "article_count": 6,
   "quality": {
     "protected_topic_rescue": true,
     "protected_topics": [
@@ -123,6 +114,13 @@
       "cerebrovascular",
       "cardiovascular",
       "caregiver"
+    ],
+    "sales_relevance_filter": true,
+    "sales_relevance_removed_count": 3,
+    "sales_relevance_removed_reasons": [
+      "정치인·지자체 행정/예산 중심 기사",
+      "의료인력·채용·인력정책 중심 기사",
+      "연예인 개인사·투병 미담"
     ]
   }
 }
