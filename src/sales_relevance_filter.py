@@ -5,8 +5,8 @@ from pathlib import Path
 NEWS_FILE = Path('data/news.json')
 
 # 보험 상담 소재로 보기 어려운 뉴스 유형.
-# 단순히 의료라는 이유만으로 제거하지 않고, 제목/핵심내용에서 패턴이 함께 나타날 때 제외한다.
-DONATION_TERMS = ['기부', '기부금', '후원', '성금', '기탁', '모교에', '모교에 기부', '나눔']
+# 기부/후원은 의료비 지원 사례라도 개인 선행·미담 중심이면 보험 세일즈 자료와 직접 연결되지 않으므로 원칙적으로 제외한다.
+DONATION_TERMS = ['기부', '기부금', '후원', '성금', '기탁', '모교에', '나눔', '기부활동', '기부 활동', '후원금', '후원 활동']
 CELEBRITY_TERMS = ['배우', '가수', '방송인', '연예인', '아이돌', '스타', '유명인', '미담', '투병', '도와줬다', '도왔다']
 PERSONAL_STORY_TERMS = ['부모 암투병', '아버지 암투병', '어머니 암투병', '부모님 암투병', '가족의 투병', '개인 미담']
 MEDICAL_STAFFING_TERMS = [
@@ -20,7 +20,7 @@ PUBLIC_SERVICE_GAP_TERMS = [
 ]
 POLITICAL_ADMIN_TERMS = ['도의원', '시의원', '국회의원', '도지사', '시의회', '도의회', '예산 감액', '예산 증액', '채용 절차']
 LOW_VALUE_REASON = {
-    'donation': '연예인·유명인의 기부/후원 활동',
+    'donation': '기부·후원·성금·나눔 활동 중심 기사',
     'celebrity_personal': '연예인 개인사·투병 미담',
     'medical_staffing': '의료인력·채용·인력정책 중심 기사',
     'public_service_gap': '공공의료·지역 진료공백 중심 기사',
@@ -38,19 +38,18 @@ def article_text(a):
 
 def classify(a):
     s = article_text(a)
-    celebrity = any(x.lower() in s for x in CELEBRITY_TERMS)
     donation = any(x.lower() in s for x in DONATION_TERMS)
+    celebrity = any(x.lower() in s for x in CELEBRITY_TERMS)
     personal = any(x.lower() in s for x in PERSONAL_STORY_TERMS)
     staffing = any(x.lower() in s for x in MEDICAL_STAFFING_TERMS)
     public_gap = any(x.lower() in s for x in PUBLIC_SERVICE_GAP_TERMS)
     political = any(x.lower() in s for x in POLITICAL_ADMIN_TERMS)
 
-    # 연예인/유명인의 기부나 개인 투병 미담은 보험상담 소재가 아니므로 제외.
-    if donation and celebrity:
+    # 기부/후원/성금/나눔 기사는 연예인 여부와 관계없이 Morning Brief에서 전면 제외.
+    if donation:
         return 'donation'
     if personal and celebrity:
         return 'celebrity_personal'
-    # 의료인력·채용·예산 공백이 핵심인 정책기사는 제외.
     if staffing and (political or any(x.lower() in s for x in ['인력', '채용', '예산'])):
         return 'medical_staffing'
     if public_gap and not any(x in s for x in ['의료비', '치료비', '본인부담', '비급여', '간병비']):
@@ -79,13 +78,12 @@ def main():
                 continue
             kept.append(a)
         cats[key] = kept
-    if removed:
-        data['article_count'] = sum(len(v or []) for v in cats.values())
-        q = data.setdefault('quality', {})
-        q['sales_relevance_filter'] = True
-        q['sales_relevance_removed_count'] = len(removed)
-        data['quality']['sales_relevance_removed_reasons'] = [r for _, _, r in removed]
-        NEWS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+    data['article_count'] = sum(len(v or []) for v in cats.values())
+    q = data.setdefault('quality', {})
+    q['sales_relevance_filter'] = True
+    q['sales_relevance_removed_count'] = len(removed)
+    q['sales_relevance_removed_reasons'] = [r for _, _, r in removed]
+    NEWS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
     for key, title, reason in removed:
         print(f'[영업 활용도 필터 제거] {key}: {title} / {reason}')
     print(f'[영업 활용도 필터] 제거 {len(removed)}개')
