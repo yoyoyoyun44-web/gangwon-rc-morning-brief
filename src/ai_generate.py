@@ -6,80 +6,119 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from google import genai
 
-INPUT_FILE = Path('data/raw_news.json')
-OUTPUT_FILE = Path('data/news.json')
-API_KEY = os.getenv('GEMINI_API_KEY')
-MODEL_NAME = 'gemini-3.6-flash'
+INPUT_FILE = Path("data/raw_news.json")
+OUTPUT_FILE = Path("data/news.json")
+API_KEY = os.getenv("GEMINI_API_KEY")
+MODEL_NAME = "gemini-3.6-flash"
 MAX_ANALYSIS_NEWS = 80
 BATCH_SIZE = 20
-MAX_RETRIES_503 = 2
-RETRY_DELAY_503 = 20
-TITLE_ALIGNMENT_MIN_SCORE = 65
+MAX_RETRIES = 2
+RETRY_DELAY = 8
+MIN_SALES_SCORE = 70
 
 if not API_KEY:
-    raise RuntimeError('GEMINI_API_KEY 환경변수가 설정되어 있지 않습니다.')
+    raise RuntimeError("GEMINI_API_KEY 환경변수가 설정되어 있지 않습니다.")
 client = genai.Client(api_key=API_KEY)
 
 MAJOR_NEWS_DOMAINS = {
-    'chosun.com','joongang.co.kr','donga.com','hani.co.kr','hankookilbo.com',
-    'mk.co.kr','hankyung.com','sedaily.com','fnnews.com','newsis.com','yna.co.kr',
-    'news1.kr','edaily.co.kr','heraldcorp.com','asiae.co.kr','mt.co.kr','seoul.co.kr',
-    'khan.co.kr','nocutnews.co.kr','ytn.co.kr'
+    "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "hankookilbo.com",
+    "mk.co.kr", "hankyung.com", "sedaily.com", "fnnews.com", "newsis.com", "yna.co.kr",
+    "news1.kr", "edaily.co.kr", "heraldcorp.com", "asiae.co.kr", "mt.co.kr", "seoul.co.kr",
+    "khan.co.kr", "nocutnews.co.kr", "ytn.co.kr"
 }
+
+EXCLUDE_TERMS = [
+    "기부", "기부금", "기부활동", "기부 활동", "후원", "후원금", "후원 활동", "성금", "기탁", "나눔", "모금",
+    "의료인력", "의료 인력", "의료진 채용", "의료인력 채용", "간호인력", "간호 인력", "의사 부족",
+    "인력 공백", "인력 확충", "채용 절차", "행정사무감사", "도의원", "시의원", "국회의원", "도지사",
+    "시의회", "도의회", "군의회", "예산 감액", "예산 증액", "자동차보험", "여행보험", "반려동물보험",
+    "휴대폰보험", "연금보험", "연금저축", "연금상품", "노후자금", "노후자산", "은퇴자금", "목돈마련",
+    "저축보험", "저축성보험", "적립보험", "적금", "자산관리"
+]
+
 OTHER_INSURER_NAMES = [
-    '현대해상','DB손해보험','메리츠화재','KB손해보험','한화손해보험','롯데손해보험',
-    '흥국화재','NH농협손해보험','하나손해보험','AXA손해보험','악사손해보험','캐롯손해보험',
-    '삼성생명','한화생명','교보생명','신한라이프','KB라이프','NH농협생명','미래에셋생명',
-    '동양생명','흥국생명','DB생명','ABL생명','푸본현대생명','라이나생명','AIA생명',
-    '메트라이프','처브라이프','KDB생명','iM라이프'
+    "현대해상", "DB손해보험", "메리츠화재", "KB손해보험", "한화손해보험", "롯데손해보험",
+    "흥국화재", "NH농협손해보험", "하나손해보험", "AXA손해보험", "악사손해보험", "캐롯손해보험",
+    "삼성생명", "한화생명", "교보생명", "신한라이프", "KB라이프", "NH농협생명", "미래에셋생명",
+    "동양생명", "흥국생명", "DB생명", "ABL생명", "푸본현대생명", "라이나생명", "AIA생명",
+    "메트라이프", "처브라이프", "KDB생명", "iM라이프"
 ]
 OTHER_INSURER_PROMO_TERMS = [
-    '신상품','상품 출시','출시','보장 강화','보장확대','보장 확대','가입자','체결','판매',
-    '판매 돌입','판매 개시','인기','히트상품','주력상품','대표상품','추천','특화상품',
-    '배타적사용권','배타적 사용권','상품 경쟁력','흥행','완판','판매실적','판매 실적','시장점유율'
+    "신상품", "상품 출시", "출시", "보장 강화", "보장확대", "보장 확대", "가입자", "체결", "판매",
+    "판매 돌입", "판매 개시", "인기", "히트상품", "주력상품", "대표상품", "추천", "특화상품",
+    "배타적사용권", "배타적 사용권", "상품 경쟁력", "흥행", "완판", "판매실적", "판매 실적", "시장점유율"
 ]
 
-GENERIC = {
-    '오늘','이번','관련','대한','통해','예상','전망','확대','강화','지원','부담','증가','감소',
-    '문제','논란','우려','필요','가능','환자','건강','의료','질환','치료','발생','확인','정부',
-    '당국','발표','정책','연구','조사','통계','기사','보험','보장','본인','부담금','최근',
-    '내년','올해','등','대상','계획','방안','추진','시행','적용','혜택','관련해','있다','한다'
-}
-
-# 같은 실제 사건·정책을 식별하기 위한 핵심 이슈군.
-ISSUE_GROUPS = {
-    'rare_severe_policy': ['희귀질환','희귀·난치','희귀 난치','난치질환','중증희귀','중증·희귀','중증 난치','중증난치','중증질환'],
-    'rare_copay_policy': ['본인부담 10','본인부담률','본인부담 5','본인부담 7','본인 부담 10','본인 부담률'],
-    'inheritance': ['상속','유산','상속재산','유류분','20억','10억','30%','맏아들','삼형제','형제','아버지','어머니'],
-    'miscarriage': ['자연유산','반복유산','계류유산','유산 경험','유산율','유산 위험','임신','임산부','산모','태아'],
-    'caregiver': ['간병인','간병비','간병 비용','가족간병','가족 간병','돌봄 부담','간병 지원'],
-    'noncovered': ['비급여','선별급여','비급여 진료비','본인부담금'],
-    'cancer': ['암 치료비','암 의료비','암 치료','항암','방사선','표적항암','면역항암'],
-    'cerebrovascular': ['뇌혈관','뇌졸중','뇌출혈','뇌경색'],
-    'cardiovascular': ['심혈관','심근경색','심장질환','심장']
-}
+MEDICAL_VALUE_TERMS = [
+    "의료비", "치료비", "수술비", "본인부담", "비급여", "간병비", "간병 비용", "간병인", "간병인지원",
+    "간병인 지원", "가족 간병", "간병 부담", "고액 치료", "고액 약제", "고가 치료", "신약", "보험급여",
+    "건강보험 보장", "치료 부담", "의료비 부담", "치료비 부담", "환자 부담", "본인 부담"
+]
+DISEASE_TERMS = [
+    "암", "항암", "표적항암", "면역항암", "뇌혈관", "뇌졸중", "뇌출혈", "뇌경색", "심혈관", "심근경색",
+    "심장질환", "희귀질환", "희귀·난치", "희귀 난치", "난치질환", "중증질환", "중증·희귀", "중증난치"
+]
 
 
 def clean(v):
-    return re.sub(r'\s+', ' ', str(v or '').replace('\n', ' ').replace('\r', ' ').strip())
+    return re.sub(r"\s+", " ", str(v or "").replace("\n", " ").replace("\r", " ").strip())
 
 
-def load():
-    with INPUT_FILE.open(encoding='utf-8') as f:
-        d = json.load(f)
-    if isinstance(d, list):
-        return d
-    if isinstance(d, dict):
-        for k in ('items','news','articles'):
-            if isinstance(d.get(k), list):
-                return d[k]
+def article_text(a):
+    return clean(" ".join(str(a.get(k, "")) for k in (
+        "title", "description", "source", "publisher", "source_title", "core_topic", "summary", "why_it_matters", "sales_tip"
+    ))).lower()
+
+
+def has_any(s, terms):
+    return any(t.lower() in s for t in terms)
+
+
+def clearly_excluded(a):
+    s = article_text(a)
+    if has_any(s, EXCLUDE_TERMS):
+        return True
+    insurer = has_any(s, OTHER_INSURER_NAMES)
+    promo = has_any(s, OTHER_INSURER_PROMO_TERMS)
+    if insurer and promo:
+        # 경쟁사 상품홍보라도 실제 의료비·환자부담 이슈가 핵심이면 AI가 다시 판단할 수 있도록 허용
+        if not has_any(s, MEDICAL_VALUE_TERMS):
+            return True
+    celebrity = has_any(s, ["배우", "가수", "방송인", "연예인", "아이돌", "스타", "유명인", "셀럽"])
+    personal = has_any(s, ["투병", "미담", "개인사", "가족사", "건강 이상"])
+    if celebrity and personal and not has_any(s, MEDICAL_VALUE_TERMS):
+        return True
+    return False
+
+
+def sales_candidate(a):
+    if clearly_excluded(a):
+        return False
+    s = article_text(a)
+    value = has_any(s, MEDICAL_VALUE_TERMS)
+    disease = has_any(s, DISEASE_TERMS)
+    treatment = has_any(s, ["치료", "수술", "입원", "재활", "항암", "시술", "치료과정", "치료 과정"])
+    burden = has_any(s, ["부담", "비용", "본인", "비급여", "고액", "경제적", "지출"])
+    caregiver = has_any(s, ["간병", "돌봄"])
+    if value:
+        return True
+    if disease and treatment and burden:
+        return True
+    if caregiver and (treatment or burden):
+        return True
+    return False
+
+
+def load_raw():
+    with INPUT_FILE.open(encoding="utf-8") as f:
+        data = json.load(f)
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict):
+        for key in ("items", "news", "articles"):
+            if isinstance(data.get(key), list):
+                return data[key]
     return []
-
-
-def promo(a):
-    t = f"{a.get('title','')} {a.get('description','')}"
-    medical = ['의료비','치료비','비급여','본인부담','간병','환자','질환','건강보험','병원','신약','암','뇌혈관','심혈관']
-    return any(x in t for x in OTHER_INSURER_NAMES) and any(x in t for x in OTHER_INSURER_PROMO_TERMS) and not any(x in t for x in medical)
 
 
 def prepare(items):
@@ -87,333 +126,298 @@ def prepare(items):
     for n in items:
         if not isinstance(n, dict):
             continue
-        u = clean(n.get('source_url') or n.get('originallink') or n.get('url'))
-        t = clean(n.get('title'))
-        if not u or not t or u in seen:
+        url = clean(n.get("source_url") or n.get("originallink") or n.get("url"))
+        title = clean(n.get("title"))
+        if not url or not title or url in seen or not sales_candidate(n):
             continue
-        seen.add(u)
-        s = clean(n.get('source') or n.get('publisher'))
+        seen.add(url)
+        source = clean(n.get("source") or n.get("publisher"))
         out.append({
-            'id': len(out)+1,
-            'title': t,
-            'description': clean(n.get('description')),
-            'source_url': u,
-            'naver_url': clean(n.get('naver_url') or n.get('link')),
-            'published_at': clean(n.get('published_at') or n.get('pubDate') or n.get('publishedAt')),
-            'source': s,
-            'group': clean(n.get('group')),
-            'is_major_news': bool(n.get('is_major_news')) or s in MAJOR_NEWS_DOMAINS,
-            'origin_type': clean(n.get('origin_type')) or 'news',
-            'source_org': clean(n.get('source_org')),
-            'source_org_name': clean(n.get('source_org_name'))
+            "id": len(out) + 1,
+            "title": title,
+            "description": clean(n.get("description")),
+            "source_url": url,
+            "naver_url": clean(n.get("naver_url") or n.get("link")),
+            "published_at": clean(n.get("published_at") or n.get("pubDate") or n.get("publishedAt")),
+            "source": source,
+            "group": clean(n.get("group")),
+            "is_major_news": bool(n.get("is_major_news")) or any(d in source for d in MAJOR_NEWS_DOMAINS),
+            "origin_type": clean(n.get("origin_type")) or "news",
+            "source_org": clean(n.get("source_org")),
+            "source_org_name": clean(n.get("source_org_name"))
         })
     return out
 
 
-PROMPT = '''당신은 강원영업단 RC Morning Brief의 전문 편집자입니다.
-고객의 실제 의료비 부담, 치료비, 간병비, 비급여와 보장 공백을 이해하는 데 도움이 되는 기사만 선별합니다.
+MASTER_PROMPT = r'''당신은 삼성화재 RC의 실제 보장점검 영업을 지원하는 의료·보험 뉴스 편집자입니다.
 
-[가장 중요한 원칙 1: 기사 제목과 원문 핵심 주제 일치]
-카드뉴스 제목은 원문 기사의 '가장 중요한 핵심 이슈'를 정확히 반영해야 합니다. 기사 후반부에 잠깐 등장하는 보조 통계, 다른 사례, 부수적인 숫자를 제목의 주제로 끌어올리지 마십시오.
+목적은 일반 의료뉴스를 모으는 것이 아니라, 삼성화재 RC가 이 뉴스를 보고 고객에게 구체적인 질문을 하고 기존 보장을 점검할 수 있게 하는 것입니다.
 
-[가장 중요한 원칙 2: 동일 이슈 중복 금지]
-질환명이 아니라 '실제로 발생한 하나의 사건/정책/발표/연구/조사/통계/시범사업/제도변경'을 기준으로 중복을 판단합니다.
-같은 발표에서 치과·당뇨·임플란트처럼 예시만 달라진 기사는 같은 이슈입니다.
-예를 들어 '중증·희귀질환 본인부담 10%→7%', '희귀·난치환자 본인부담 10→5%', '희귀·난치질환 본인부담 10%→5% + 당뇨/임플란트 사례'가 같은 정책 발표를 다룬다면 반드시 1개만 남깁니다.
-'이미 20억을 받은 맏아들의 추가 10억 상속분쟁', '20억을 받은 형의 남은 10억 유산분쟁'처럼 금액·가족관계·사건이 같은 기사도 반드시 1개만 남깁니다.
+[최우선 판단]
+1. 이 뉴스를 본 RC가 고객에게 "혹시 이런 상황에 대한 보장은 준비되어 있으세요?"라고 구체적으로 질문할 수 있는가?
+2. 그 질문이 기존 보험의 보장금액·보장공백 확인으로 이어질 수 있는가?
+3. 다음 중 하나 이상과 직접 연결되는가?
+- 중증질환 치료비 / 고액 치료비
+- 질병·상해 수술비
+- 반복·장기치료 비용
+- 비급여 또는 본인부담 의료비
+- 고가 신약·치료비
+- 입원 간병 필요
+- 간병인 비용 / 가족 간병 부담 / 간병인지원
+명확한 연결이 없으면 제외하십시오.
 
-동일 이슈 여부를 판단할 때 제목의 단어뿐 아니라 숫자/금액/비율/대상자 수/기관명/정책명/가족관계/사건의 고유 사실을 함께 비교하십시오.
-각 기사에 issue_signature를 만들되, 같은 사건을 다른 표현으로 쓴 기사들은 같은 issue_signature가 되도록 하십시오.
+[우선 주제]
+암, 뇌혈관질환, 심혈관질환, 중증질환, 희귀질환, 난치질환, 반복·장기치료, 수술, 비급여·본인부담, 고액 치료, 간병비·간병인지원.
+중증질환이 아니어도 실제 수술비가 발생하는 질환은 선정할 수 있습니다.
 
-[대표 기사 선택]
-동일 이슈가 여러 기사에 있으면 공식기관 원자료 > 메이저 언론의 상세 기사 > 일반 재인용 순으로 선택합니다.
-같은 정책을 다루는 기사 중에서는 정책 자체와 고객 부담을 가장 정확히 설명하는 기사를 선택합니다.
-비급여·고액 신약·개인 의료비 부담·보장 공백이 실제 원문에 있으면 우선합니다.
-원문에 없는 보험 필요성을 만들어내지 마십시오.
-
-[오늘의 영업 Tip]
-'sales_tip'은 반드시 해당 기사에서 바로 도출되어야 합니다.
-1) 기사 핵심 사실을 한 문장으로 해석하고
-2) 그 사실을 고객에게 확인하는 구체적인 질문을 만들고
-3) 필요할 경우 현재 보장 점검으로 연결하십시오.
-'최근 의료비 부담을 확인해 보세요', '보장 공백을 점검해 보세요'처럼 어느 기사에나 붙일 수 있는 범용 문구는 금지합니다.
-기사의 핵심 숫자·제도·질환·비용·대상과 직접 연결된 질문을 포함하십시오.
-뉴스가 보험 상담과 직접 연결되지 않는다면 억지로 상품 이야기를 만들지 말고, '영업 활용도가 낮음'에 가깝게 작성하십시오.
+[정책·공식자료]
+공식기관 자료를 우선 신뢰하되 공식자료라는 이유만으로 선정하지 마십시오. 환자의 실제 치료비·수술비·본인부담·비급여·간병비에 직접 영향을 주는 경우만 선정합니다.
 
 [절대 제외]
-다른 보험사 상품홍보/신상품/가입/판매/실적/시장점유율/배타적사용권, GA 경쟁/이직/전환/수수료, 전속채널 위기, 주가/주식, 단순 실적, 자동차/여행/펫/휴대폰보험, 연예/정치 일반/사건사고, 광고/협찬.
+기부·후원·성금·기탁·나눔·모금.
+연예인·정치인·스포츠 선수의 단순 미담·투병·선행.
+의료인력·채용·병원 운영·의료행정.
+정치공방·지역의회·예산·행정 논쟁.
+다른 보험사의 신상품·특약·판매·가입·실적·시장점유율·배타적사용권·홍보.
+GA 경쟁·이직·전환·수수료·채널 실적.
+연금·저축·자산관리·노후자금.
+자동차·여행·펫·휴대폰보험.
+단순 건강상식·연구성과·의료기술 소개만 있는 기사.
 
-출력은 JSON 객체 하나입니다.
-각 기사 필드: category(policy|medical|samsung_fire), source_title, core_topic, title_topic, issue_signature, title_alignment_score, title_alignment_pass, title, summary, why_it_matters, sales_tip, source, published_at, source_url.
-전체 최대 14개.
+[유명인 예외]
+원칙적으로 제외합니다. 예외는 실제 의료비·치료비·수술비·간병비 경제부담이 핵심이고, 유명인이라는 사실을 삭제해도 일반 고객에게 의미가 있으며, 보험 보장점검 질문이 가능한 경우뿐입니다.
+
+[동일 이슈 중복]
+질환명이 아니라 하나의 사건·정책·발표·연구·조사·통계·시범사업·제도변경을 기준으로 중복을 판단하십시오.
+같은 정책을 다른 언론이 다르게 표현해도 하나만 남깁니다.
+같은 사건의 금액·인물관계·기관·고유사실이 같으면 하나만 남깁니다.
+같은 사건이 아니어도 고객에게 던지는 질문과 영업 메시지가 사실상 같으면 하나만 남깁니다.
+issue_signature에는 사건/정책/연구의 핵심 고유사실을 짧게 담고, 같은 이슈라면 표현이 달라도 같은 의미가 되게 하십시오.
+
+[대표 기사]
+공식 원자료 > 내용이 가장 구체적인 주요 언론 > 일반 재인용 순으로 선택합니다.
+환자 경제부담, 치료비, 수술비, 비급여, 본인부담, 간병비가 실제 원문에서 구체적인 기사를 우선합니다.
+
+[영업 Tip]
+sales_tip은 반드시 기사에서 직접 도출하십시오.
+'기사의 사실 → 고객 상황 → 구체적인 질문 → 필요 시 기존 보장 점검' 순서로 작성하십시오.
+"보장공백을 점검해 보세요" 같은 범용 문구만 쓰지 마십시오.
+기사의 핵심 질환·비용·제도·숫자와 직접 연결된 질문을 포함하십시오.
+원문에 없는 보험 필요성이나 보장내용을 만들어내지 마십시오.
+
+[제목]
+카드 제목은 원문의 가장 중요한 핵심 이슈와 일치해야 합니다. 기사 후반부의 보조 통계·사례·숫자를 기사 전체의 핵심처럼 제목화하지 마십시오.
+
+[점수]
+sales_score는 100점 기준: 중증질환 치료비 20 / 수술비 15 / 반복·장기치료 15 / 비급여·본인부담 15 / 간병 20 / 고객질문 구체성 10 / 삼성화재 RC 활용성 5.
+70점 미만은 출력하지 마십시오. 80점 이상 우선, 90점 이상 최우선.
+title_alignment_score 65 미만은 출력하지 마십시오.
+
+[최종 질문 검증]
+반드시 "이 뉴스를 본 삼성화재 RC는 고객에게 ______라고 질문할 수 있다"가 구체적으로 완성되어야 합니다. 구체적인 질문이 불가능하면 출력하지 마십시오.
+
+[출력]
+JSON 객체 하나만 출력하십시오.
+{"articles":[{"category":"policy|medical|samsung_fire","source_title":"원문 제목","core_topic":"기사 핵심","title_topic":"제목 핵심","issue_signature":"동일 이슈 식별용 고유사실","title_alignment_score":0,"title_alignment_pass":true,"sales_score":0,"title":"카드 제목","summary":"2~3문장 요약","why_it_matters":"삼성화재 RC 관점의 의미","sales_tip":"기사 사실과 연결된 실제 고객 질문","source":"출처","published_at":"발행일","source_url":"원문 URL"}]}
+최대 14개.
 '''
 
 
 def make_prompt(batch):
-    return PROMPT + ''.join(
-        f"\n[NEWS_ID={x['id']}] 유형={x.get('origin_type')} 공식기관={x.get('source_org_name','')} 그룹={x.get('group')} 메이저={x.get('is_major_news')} 제목={x['title']} 내용={x['description']} 출처={x['source']} 발행={x['published_at']} URL={x['source_url']}"
-        for x in batch
-    )
+    rows = []
+    for x in batch:
+        rows.append(
+            f"\n[NEWS_ID={x['id']}] 유형={x['origin_type']} 공식기관={x['source_org_name']} 그룹={x['group']} "
+            f"메이저={x['is_major_news']} 제목={x['title']} 내용={x['description']} 출처={x['source']} "
+            f"발행={x['published_at']} URL={x['source_url']}"
+        )
+    return MASTER_PROMPT + "".join(rows)
 
 
-def parse(t):
-    t = (t or '').strip()
-    t = re.sub(r'^```(?:json)?\s*', '', t)
-    t = re.sub(r'\s*```$', '', t)
-    return json.loads(t)
+def parse_json(text):
+    text = (text or "").strip()
+    text = re.sub(r"^```(?:json)?\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
+    return json.loads(text)
 
 
-def analyze(batch, no, split=True):
-    for i in range(MAX_RETRIES_503 + 1):
+def analyze(batch, label, allow_split=True):
+    for attempt in range(MAX_RETRIES + 1):
         try:
-            r = client.models.generate_content(model=MODEL_NAME, contents=make_prompt(batch))
-            a = parse(r.text).get('articles', [])
-            if not isinstance(a, list):
-                raise ValueError('articles 배열 아님')
-            print(f'배치 {no}: {len(a)}개')
-            return a
-        except Exception as e:
-            m = str(e)
-            if '429' in m or 'RESOURCE_EXHAUSTED' in m:
+            response = client.models.generate_content(model=MODEL_NAME, contents=make_prompt(batch))
+            data = parse_json(response.text)
+            articles = data.get("articles", []) if isinstance(data, dict) else []
+            if not isinstance(articles, list):
+                raise ValueError("articles 배열이 아닙니다")
+            print(f"Gemini 배치 {label}: {len(articles)}개")
+            return articles
+        except Exception as exc:
+            msg = str(exc)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                print(f"Gemini 배치 {label}: quota 오류")
                 return []
-            if ('503' in m or 'UNAVAILABLE' in m) and i < MAX_RETRIES_503:
-                time.sleep(RETRY_DELAY_503)
+            if attempt < MAX_RETRIES:
+                time.sleep(RETRY_DELAY)
                 continue
-            if split and len(batch) > 5:
-                k = len(batch) // 2
-                return analyze(batch[:k], f'{no}A', False) + analyze(batch[k:], f'{no}B', False)
-            print(f'Gemini 오류 {no}: {m}')
+            if allow_split and len(batch) > 5:
+                mid = len(batch) // 2
+                print(f"Gemini 배치 {label}: 실패 → 분할 재시도")
+                return analyze(batch[:mid], f"{label}A", False) + analyze(batch[mid:], f"{label}B", False)
+            print(f"Gemini 배치 {label} 오류: {msg}")
             return []
     return []
 
 
-def restore(a, by):
-    o = by.get(clean(a.get('source_url')))
-    if not o:
-        return None
-    for k in ('source_url','published_at','source','naver_url','group','source_org','source_org_name'):
-        a[k] = o.get(k, '')
-    a['source_title'] = o['title']
-    a['origin_type'] = o.get('origin_type', 'news')
-    a['is_major_news'] = o.get('is_major_news', False)
-    return a
-
-
-def title_check(items, by):
-    if not items:
-        return []
-    q = '''원문 핵심주제와 카드뉴스 제목의 일치 여부를 엄격히 검수하십시오. 후반부 보조 수치나 사례를 메인 제목으로 만들면 불일치입니다. JSON checks 배열만 반환: {"source_url":"...","pass":true,"score":0,"reason":"..."}. 65 미만은 pass=false.'''
-    data = [{
-        'source_url': by[clean(a.get('source_url'))]['source_url'],
-        'source_title': by[clean(a.get('source_url'))]['title'],
-        'source_description': by[clean(a.get('source_url'))]['description'],
-        'generated_title': clean(a.get('title')),
-        'core_topic': clean(a.get('core_topic'))
-    } for a in items if clean(a.get('source_url')) in by]
-    try:
-        r = client.models.generate_content(model=MODEL_NAME, contents=q + '\n' + json.dumps(data, ensure_ascii=False))
-        checks = {clean(x.get('source_url')): x for x in parse(r.text).get('checks', [])}
-    except Exception as e:
-        raise RuntimeError(f'제목-기사 상관관계 검수 실패: {e}')
-    out = []
-    for a in items:
-        c = checks.get(clean(a.get('source_url')))
-        score = min(int(a.get('title_alignment_score', 0) or 0), int(c.get('score', 0))) if c else 0
-        ok = bool(c and c.get('pass') is True and a.get('title_alignment_pass') is True and score >= TITLE_ALIGNMENT_MIN_SCORE)
-        a['title_alignment_score'] = score
-        a['title_alignment_pass'] = ok
-        a['title_alignment_reason'] = clean(c.get('reason')) if c else '검수 결과 없음'
-        if ok:
-            out.append(a)
-    return out
-
-
-def article_text(a):
-    return ' '.join(clean(a.get(k)) for k in (
-        'source_title','title','issue_signature','core_topic','summary','why_it_matters'
-    )).lower()
-
-
-def extract_numbers(a):
-    return set(re.findall(r'\d+(?:\.\d+)?\s*(?:억|만원|조|만명|명|%|퍼센트)?', article_text(a)))
-
-
-def extract_keywords(a):
+def normalize_category(a):
+    c = clean(a.get("category")).lower()
+    if c in {"policy", "medical", "samsung_fire"}:
+        return c
     s = article_text(a)
-    words = {x for x in re.sub(r'[^0-9a-z가-힣% ]', ' ', s).split() if len(x) >= 2 and x not in GENERIC}
-    for group, terms in ISSUE_GROUPS.items():
-        if any(term in s for term in terms):
-            words.add(group)
-            words.update(term for term in terms if term in s)
-    return words
+    if "삼성화재" in s:
+        return "samsung_fire"
+    if any(x in s for x in ["보건복지부", "건강보험", "심평원", "국민건강보험", "질병관리청", "금융감독원"]):
+        return "policy"
+    return "medical"
 
 
-def title_similarity(a, b):
-    x = extract_keywords({'title': a.get('title','')})
-    y = extract_keywords({'title': b.get('title','')})
-    return len(x & y) / max(1, min(len(x), len(y))) if x and y else 0.0
+def article_tokens(a):
+    text = clean(" ".join(str(a.get(k, "")) for k in ("source_title", "title", "core_topic", "summary", "issue_signature"))).lower()
+    stop = {"오늘", "관련", "대한", "통해", "지원", "확대", "강화", "필요", "가능", "환자", "의료", "질환", "치료", "보험", "보장", "기사", "발표", "정부"}
+    return {x for x in re.findall(r"[0-9]+(?:\.[0-9]+)?[가-힣%]*|[가-힣]{2,}", text) if x not in stop}
 
 
-def strict_same_issue(a, b):
-    sa, sb = article_text(a), article_text(b)
-    na, nb = extract_numbers(a), extract_numbers(b)
-    ka, kb = extract_keywords(a), extract_keywords(b)
-    shared_numbers = na & nb
-    shared_keywords = ka & kb
-    ta = clean(a.get('title') or a.get('source_title'))
-    tb = clean(b.get('title') or b.get('source_title'))
-    raw_title_sim = SequenceMatcher(None, ta, tb).ratio()
-    token_title_sim = title_similarity(a, b)
-
-    groups_a = {g for g, terms in ISSUE_GROUPS.items() if any(t in sa for t in terms)}
-    groups_b = {g for g, terms in ISSUE_GROUPS.items() if any(t in sb for t in terms)}
-    shared_groups = groups_a & groups_b
-
-    # 제목과 핵심 키워드가 거의 같은 기사
-    if raw_title_sim >= 0.84 or token_title_sim >= 0.78:
-        return True, '제목 핵심키워드 고유도 중복'
-
-    # 희귀·중증 본인부담 정책은 세부 사례/최종 비율이 달라도 같은 발표 패키지로 묶는다.
-    if 'rare_severe_policy' in shared_groups and '본인부담' in sa and '본인부담' in sb:
-        if shared_numbers or '건강보험' in sa and '건강보험' in sb:
-            return True, '희귀·중증 본인부담 동일 정책'
-
-    # 상속 사건: 20억/10억/30% 및 가족관계가 일부만 겹쳐도 같은 사건으로 묶는다.
-    if 'inheritance' in shared_groups:
-        if len(shared_numbers) >= 1 and any(x in sa and x in sb for x in ['상속','유산','상속재산','유류분','맏아들','삼형제']):
-            return True, '상속 동일 사건·금액'
-        if len(shared_keywords) >= 6:
-            return True, '상속 핵심키워드 중복'
-
-    # 같은 이슈군 + 공통 숫자 + 핵심키워드. 예시만 달라진 기사도 포함.
-    if shared_groups and len(shared_numbers) >= 1 and len(shared_keywords) >= 5:
-        return True, '동일 이슈군·공통 숫자·키워드'
-
-    # 숫자가 달라도 같은 정책/사건을 가리키는 강한 핵심어 중복
-    if len(shared_keywords) >= 8 and token_title_sim >= 0.55:
-        return True, '공통 핵심키워드 강한 중복'
-
-    return False, ''
+def numbers(a):
+    text = clean(" ".join(str(a.get(k, "")) for k in ("source_title", "title", "core_topic", "summary", "issue_signature")))
+    return set(re.findall(r"\d+(?:\.\d+)?\s*(?:억|조|만원|만명|명|%|퍼센트|개월|년|월)?", text))
 
 
-def representative_score(a):
-    s = 0
-    if a.get('origin_type') == 'official':
-        s += 100
-    if a.get('is_major_news'):
-        s += 30
-    t = article_text(a)
-    for term, p in [('비급여',35),('고액 신약',35),('신약 치료비',35),('개인 의료비',30),('치료비 부담',30),('본인부담',25),('간병비',25),('상속재산',15)]:
-        if term in t:
-            s += p
-    if a.get('title_alignment_pass') is True:
-        s += 10
-    return s
+def same_issue(a, b):
+    sa = clean(a.get("issue_signature") or a.get("core_topic") or a.get("title")).lower()
+    sb = clean(b.get("issue_signature") or b.get("core_topic") or b.get("title")).lower()
+    if sa and sb and SequenceMatcher(None, sa, sb).ratio() >= 0.78:
+        return True
+    ta, tb = article_tokens(a), article_tokens(b)
+    shared = ta & tb
+    overlap = len(shared) / max(1, min(len(ta), len(tb)))
+    title_ratio = SequenceMatcher(None, clean(a.get("title")), clean(b.get("title"))).ratio()
+    shared_numbers = numbers(a) & numbers(b)
+    if shared_numbers and len(shared) >= 4 and overlap >= 0.45:
+        return True
+    if overlap >= 0.72 or title_ratio >= 0.86:
+        return True
+    return False
 
 
-def strict_dedup(items):
+def source_priority(a):
+    score = 0
+    if a.get("origin_type") == "official":
+        score += 10000
+    if a.get("is_major_news"):
+        score += 1000
+    score += int(a.get("sales_score") or 0) * 10
+    score += int(a.get("title_alignment_score") or 0)
+    text = article_text(a)
+    for term, points in [("비급여", 100), ("본인부담", 90), ("치료비", 90), ("수술비", 80), ("간병비", 80), ("고액", 50)]:
+        if term in text:
+            score += points
+    return score
+
+
+def deduplicate(articles):
     winners = []
-    for a in sorted(items, key=representative_score, reverse=True):
-        duplicate = next((w for w in winners if strict_same_issue(a, w)[0]), None)
+    for a in sorted(articles, key=source_priority, reverse=True):
+        duplicate = next((w for w in winners if same_issue(a, w)), None)
         if duplicate:
-            print(f'[엄격 중복 제거] {clean(a.get("title"))} -> {clean(duplicate.get("title"))}')
-        else:
-            winners.append(a)
+            print(f"[AI 동일이슈 제거] {clean(a.get('title'))} -> {clean(duplicate.get('title'))}")
+            continue
+        winners.append(a)
     return winners
 
 
-def category(a):
-    r = clean(a.get('category')).lower().replace(' ', '_').replace('-', '_')
-    aliases = {
-        'policy':'policy','policies':'policy','제도':'policy','정책':'policy','보험제도':'policy',
-        'medical':'medical','medicine':'medical','health':'medical','의료':'medical','의료비':'medical','보장':'medical','간병':'medical',
-        'samsung_fire':'samsung_fire','samsungfire':'samsung_fire','samsung':'samsung_fire','삼성화재':'samsung_fire'
-    }
-    if r in aliases:
-        return aliases[r]
-    t = article_text(a)
-    if a.get('origin_type') == 'official' and any(x in t for x in ['제도','정책','개편','개정','보험료','건강보험','보건복지','금융감독']):
-        return 'policy'
-    if '삼성화재' in t:
-        return 'samsung_fire'
-    return 'medical'
-
-
-def topic(a):
-    s = article_text(a)
-    for g, terms in ISSUE_GROUPS.items():
-        if any(t in s for t in terms):
-            return g
-    return 'other'
-
-
-def organize(items):
-    items = strict_dedup(items)
-    c = {'policy':[], 'medical':[], 'samsung_fire':[]}
-    for a in items:
-        c[category(a)].append(a)
-
-    c['policy'] = sorted(c['policy'], key=lambda x: (x.get('origin_type') != 'official', not x.get('is_major_news', False), -representative_score(x)))[:2]
-
-    medical = []
-    counts = {}
-    for a in sorted(c['medical'], key=representative_score, reverse=True):
-        tg = topic(a)
-        cap = 1 if tg in {'rare_severe_policy','rare_copay_policy','inheritance','miscarriage'} else 2
-        if counts.get(tg, 0) >= cap:
-            continue
-        if any(strict_same_issue(a, x)[0] for x in medical):
-            continue
-        medical.append(a)
-        counts[tg] = counts.get(tg, 0) + 1
-        if len(medical) >= 10:
-            break
-    c['medical'] = medical
-    c['samsung_fire'] = strict_dedup(c['samsung_fire'])[:2]
-    return c
+def valid_ai_article(a):
+    if not isinstance(a, dict):
+        return False
+    if not clean(a.get("title")) or not clean(a.get("source_title")) or not clean(a.get("summary")) or not clean(a.get("sales_tip")):
+        return False
+    if int(a.get("sales_score") or 0) < MIN_SALES_SCORE:
+        return False
+    if int(a.get("title_alignment_score") or 0) < 65 or a.get("title_alignment_pass") is False:
+        return False
+    if clearly_excluded(a):
+        return False
+    tip = clean(a.get("sales_tip"))
+    if not any(x in tip for x in ["고객에게", "물어보", "질문", "준비되어", "확인해"]):
+        return False
+    return True
 
 
 def main():
-    raw = prepare(load())
-    print(f'전체 수집 뉴스: {len(raw)}개')
+    raw = load_raw()
+    candidates = prepare(raw)
+    print(f"원본 기사: {len(raw)}개 / 영업 후보: {len(candidates)}개")
+    if not candidates:
+        raise RuntimeError("영업 활용도가 높은 AI 후보가 없습니다.")
 
-    def score(x):
-        t = x['title'] + ' ' + x['description']
-        s = (45 if x.get('origin_type') == 'official' else 0) + (15 if x.get('is_major_news') else 0)
-        s += {'medical_cost':40,'caregiver':35,'product':30,'samsung_fire':25,'policy':15}.get(x.get('group'),0)
-        s += 20 if any(z in t for z in ['의료비','치료비','본인부담','비급여','간병','암','뇌혈관','심혈관','유산','상속']) else 0
-        return s
+    candidates = sorted(candidates, key=lambda x: (
+        x.get("origin_type") == "official",
+        x.get("is_major_news"),
+        has_any(article_text(x), MEDICAL_VALUE_TERMS),
+        x.get("published_at", "")
+    ), reverse=True)[:MAX_ANALYSIS_NEWS]
 
-    cand = sorted([x for x in raw if not promo(x)], key=score, reverse=True)[:MAX_ANALYSIS_NEWS]
-    print(f'AI 분석 대상: {len(cand)}개')
-    by = {x['source_url']: x for x in cand}
-    analyzed = []
-    for i in range(0, len(cand), BATCH_SIZE):
-        analyzed += analyze(cand[i:i+BATCH_SIZE], i//BATCH_SIZE+1)
+    all_articles = []
+    for start in range(0, len(candidates), BATCH_SIZE):
+        all_articles.extend(analyze(candidates[start:start + BATCH_SIZE], start // BATCH_SIZE + 1))
 
-    restored = [x for x in (restore(a, by) for a in analyzed) if x]
-    print(f'AI 생성 결과: {len(restored)}개')
-    checked = title_check(restored, by)
-    print(f'제목-기사 상관관계 통과: {len(checked)}개')
+    by_url = {x["source_url"]: x for x in candidates}
+    by_title = {x["title"]: x for x in candidates}
+    normalized = []
+    for a in all_articles:
+        if not isinstance(a, dict):
+            continue
+        meta = by_url.get(clean(a.get("source_url"))) or by_title.get(clean(a.get("source_title")))
+        if meta:
+            for key in ("source_url", "naver_url", "published_at", "source", "origin_type", "source_org", "source_org_name", "is_major_news", "group"):
+                if not a.get(key):
+                    a[key] = meta.get(key, "")
+        a["category"] = normalize_category(a)
+        normalized.append(a)
 
-    # 제목 검수 직후, 카테고리 분류 전에 전 범위 엄격 중복 제거
-    checked = strict_dedup(checked)
-    cats = organize(checked)
+    valid = [a for a in normalized if valid_ai_article(a)]
+    valid = deduplicate(valid)
 
-    out = {
-        'generated_at': time.strftime('%Y-%m-%dT%H:%M:%S%z'),
-        'categories': cats,
-        'sales_points': [a.get('sales_tip','') for a in checked if clean(a.get('sales_tip'))][:5],
-        'article_count': sum(len(v) for v in cats.values()),
-        'quality': {
-            'strict_keyword_issue_dedup': True,
-            'title_alignment_min_score': TITLE_ALIGNMENT_MIN_SCORE
+    categories = {"policy": [], "medical": [], "samsung_fire": []}
+    for a in valid:
+        categories[a["category"]].append(a)
+    for key in categories:
+        categories[key] = sorted(categories[key], key=source_priority, reverse=True)
+
+    final_count = sum(len(v) for v in categories.values())
+    if final_count == 0:
+        raise RuntimeError("최종 검수 통과 뉴스가 없습니다.")
+
+    sales_points = [clean(a.get("sales_tip")) for a in valid[:5] if clean(a.get("sales_tip"))]
+    output = {
+        "date": time.strftime("%Y.%m.%d"),
+        "categories": categories,
+        "article_count": final_count,
+        "sales_points": sales_points,
+        "quality": {
+            "ai_sales_editor": True,
+            "master_prompt_version": "2026-09-10-sales-first-v1",
+            "raw_count": len(raw),
+            "sales_candidate_count": len(candidates),
+            "ai_generated_count": len(all_articles),
+            "ai_valid_count": len(valid),
+            "deduped_count": final_count,
+            "min_sales_score": MIN_SALES_SCORE
         }
     }
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
-    print(f'최종 기사: {out["article_count"]}개')
+    OUTPUT_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"최종 Morning Brief: {final_count}개")
+    for key, items in categories.items():
+        print(f"  {key}: {len(items)}개")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
