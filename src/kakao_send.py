@@ -21,19 +21,16 @@ def run_script(path, label):
 
 
 def run_final_quality_check():
-    # 1) 보험 세일즈 활용도가 낮은 연예인 기부/개인 미담/의료인력 정책 등을 먼저 제거
-    run_script("src/sales_relevance_filter.py", "영업 활용도 필터 시작")
+    # AI 단계에서 이미 '삼성화재 RC 영업 활용도'를 최우선으로 선정했으므로
+    # 최종 단계에서는 저가치 기사 제거와 중복 검수만 수행한다.
+    run_script("src/sales_relevance_filter.py", "영업 활용도 최종 필터 시작")
 
-    # 2) 암·뇌혈관·심혈관·간병 보호 주제 보충
-    run_script("src/topic_rescue.py", "보호 주제 보충 시작: 암·뇌혈관·심혈관·간병")
+    # 주제별 강제 보충은 하지 않는다. 약한 기사로 quota를 채우지 않는 것이 원칙이다.
+    print("보호 주제 강제 보충 생략: 실제 영업 활용도가 확인된 기사만 유지")
 
-    # 3) 동일 이슈 중복 제거 + 기사별 영업 Tip 보정
     run_script("src/final_quality.py", "최종 품질검수 시작: 동일 이슈 중복 제거 + 기사별 영업 Tip 보정")
-
-    # 4) 최종 HTML 재생성
     run_script("src/generate_html.py", "최종 HTML 재생성")
 
-    # 5) 최종 결과를 GitHub Pages에 반영
     status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
     if status.stdout.strip():
         subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
