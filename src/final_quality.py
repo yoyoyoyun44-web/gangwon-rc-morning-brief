@@ -13,16 +13,22 @@ GENERIC = {
     "추진", "시행", "적용", "혜택", "있다", "한다", "전망이다", "밝혔다"
 }
 
-# 서로 다른 숫자나 사례가 붙어도 하나의 실제 이슈로 판단해야 하는 강한 이슈군
 ISSUE_FAMILIES = {
     "rare_copay": ["희귀질환", "희귀·난치", "희귀 난치", "중증희귀", "중증·희귀", "중증난치", "중증 난치", "난치질환", "중증질환"],
     "inheritance_case": ["상속", "상속재산", "유류분", "유산", "맏아들", "삼형제", "형제", "아버지", "어머니", "20억", "10억", "30%"],
     "miscarriage": ["자연유산", "반복유산", "계류유산", "유산 경험", "유산율", "유산 위험", "임신", "임산부", "산모", "태아"],
     "caregiver": ["간병인", "간병비", "간병 비용", "가족간병", "가족 간병", "돌봄 부담", "간병 지원"],
     "noncovered": ["비급여", "선별급여", "비급여 진료비", "비급여 치료비"],
-    "cancer": ["암 치료비", "암 의료비", "항암", "표적항암", "면역항암"],
+    "cancer": ["암 치료비", "암 의료비", "암 치료", "항암", "표적항암", "면역항암"],
     "cerebrovascular": ["뇌혈관", "뇌졸중", "뇌출혈", "뇌경색"],
     "cardiovascular": ["심혈관", "심근경색", "심장질환"]
+}
+
+PROTECTED_TOPIC_TERMS = {
+    "cancer": ["암 치료비", "암 의료비", "암 치료", "항암", "표적항암", "면역항암"],
+    "cerebrovascular": ["뇌혈관", "뇌졸중", "뇌출혈", "뇌경색"],
+    "cardiovascular": ["심혈관", "심근경색", "심장질환"],
+    "caregiver": ["간병인", "간병비", "간병 비용", "간병인지원", "간병인 지원", "가족 간병", "간병 부담"]
 }
 
 
@@ -56,6 +62,15 @@ def family_set(a):
     return {family for family, terms in ISSUE_FAMILIES.items() if any(term in s for term in terms)}
 
 
+def protected_topic(a):
+    """기사 제목의 주된 의료 영역을 반환한다. 서로 다른 영역은 중복제거하지 않는다."""
+    title = clean(a.get("title") or a.get("source_title")).lower()
+    for family in ("cancer", "cerebrovascular", "cardiovascular", "caregiver"):
+        if any(term in title for term in PROTECTED_TOPIC_TERMS[family]):
+            return family
+    return None
+
+
 def title_tokens(a):
     s = clean(a.get("title") or a.get("source_title")).lower()
     return {w for w in re.findall(r"[0-9]+(?:\.[0-9]+)?[가-힣%]*|[가-힣]{2,}", s) if w not in GENERIC}
@@ -76,6 +91,12 @@ def strict_same_issue(a, b):
     raw_title = SequenceMatcher(None, clean(a.get("title")), clean(b.get("title"))).ratio()
     title_overlap = overlap(a, b)
 
+    # 암·뇌혈관·심혈관·간병은 서로 다른 보호 영역이다.
+    # 본인부담/비급여 같은 공통 표현 때문에 다른 질환 기사가 사라지는 것을 막는다.
+    pa, pb = protected_topic(a), protected_topic(b)
+    if pa and pb and pa != pb:
+        return False, "서로 다른 보호 의료영역"
+
     # 1. 희귀·중증질환 본인부담 정책: 5%, 7%, 치과, 당뇨 등 세부 사례가 달라도 동일 정책 발표로 본다.
     if "rare_copay" in shared_families:
         copay_a = any(x in sa for x in ["본인부담", "본인 부담", "본인부담률", "부담률"])
@@ -83,7 +104,7 @@ def strict_same_issue(a, b):
         if copay_a and copay_b:
             return True, "희귀·중증질환 본인부담 동일 정책"
 
-    # 2. 상속/유산 사건: 금액 또는 가족관계가 겹치면 표현이 달라도 동일 사건으로 묶는다.
+    # 2. 상속 사건: 금액과 가족관계가 겹치면 표현이 달라도 동일 사건으로 묶는다.
     if "inheritance_case" in shared_families:
         money_overlap = bool(shared_numbers & {"20억", "10억", "30%"}) or len(shared_numbers) >= 1
         family_overlap = any(x in sa and x in sb for x in ["맏아들", "삼형제", "형제", "아버지", "어머니", "유류분", "상속재산"])
@@ -92,7 +113,7 @@ def strict_same_issue(a, b):
         if "20억" in sa and "20억" in sb and ("상속" in sa or "유산" in sa) and ("상속" in sb or "유산" in sb):
             return True, "상속 20억 동일 사건"
 
-    # 3. 유산(임신) 이슈는 상속과 섞지 않고, 같은 임신/유산 사건이면 묶는다.
+    # 3. 임신/유산 이슈는 상속과 섞지 않고 같은 임신·유산 이슈만 묶는다.
     if "miscarriage" in shared_families and "inheritance_case" not in shared_families:
         if len(shared_numbers) >= 1 or len(shared_keywords) >= 5:
             return True, "유산·임신 동일 이슈"
@@ -125,6 +146,9 @@ def score(a):
             s += points
     if a.get("title_alignment_pass") is True:
         s += 10
+    # 보호 의료영역은 대표기사 선택에서 가산점을 주되 서로 다른 영역을 합치지는 않는다.
+    if protected_topic(a):
+        s += 40
     return s
 
 
@@ -192,12 +216,10 @@ def main():
 
     filtered = dedup(all_items)
 
-    # 중복 제거 후 원래 카테고리를 유지하되, 각 카테고리 상한을 적용한다.
     out = {"policy": [], "medical": [], "samsung_fire": []}
     for item in filtered:
         key = item.get("category") if item.get("category") in out else None
         if not key:
-            # 원본 데이터에서는 category가 없을 수 있으므로 기존 목록에서 찾는다.
             for k in out:
                 if item in (categories.get(k) or []):
                     key = k
@@ -214,6 +236,7 @@ def main():
     data["quality"] = data.get("quality", {})
     data["quality"]["final_strict_issue_dedup"] = True
     data["quality"]["article_specific_sales_tip"] = True
+    data["quality"]["protected_medical_topics"] = ["cancer", "cerebrovascular", "cardiovascular", "caregiver"]
     NEWS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"최종 품질검수 완료: {data['article_count']}건")
 
