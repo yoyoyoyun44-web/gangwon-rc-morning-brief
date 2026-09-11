@@ -1,0 +1,59 @@
+{
+  "updated_at": "2026-09-11T10:26:55.909286+09:00",
+  "regions": [
+    {
+      "name": "춘천",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "원주",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "인제",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "양구",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "영월",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "태백",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "여주",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "가평",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    },
+    {
+      "name": "화천",
+      "temp": null,
+      "sky": "기상청 API 연결 필요",
+      "hourly": []
+    }
+  ]
+}
