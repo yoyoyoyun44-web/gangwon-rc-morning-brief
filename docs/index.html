@@ -799,12 +799,12 @@ body {
 
 </style>
 
-<style id="weather-style">.weather-page{background:#eef5fb;color:#12304d}.weather-page h1{font-size:clamp(34px,8vw,64px);margin:18px 0 8px}.weather-kicker{color:#1e6bb8;font-weight:700;margin-top:28px}.weather-sub{color:#58708a;margin-bottom:24px}.weather-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.weather-card{min-height:105px;border:1px solid #b9d5f2;background:#fff;border-radius:16px;padding:13px 8px;text-align:center;color:#12304d;cursor:pointer;box-shadow:0 3px 10px rgba(50,100,150,.08)}.weather-card:hover{border-color:#4d98d1}.weather-name,.weather-card strong,.weather-card small{display:block}.weather-name{font-weight:800;font-size:16px}.weather-card strong{font-size:27px;margin:7px 0 3px}.weather-card small{font-size:11px;color:#58708a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.weather-detail{margin-top:20px;padding:18px;border-radius:16px;background:#fff;border:1px solid #b9d5f2;min-height:70px}.detail-title{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.detail-title b{font-size:24px}.detail-title strong{font-size:30px}.detail-title span{color:#58708a}.hourly-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px;margin-top:15px}.hour-row{border:1px solid #d8e7f5;border-radius:10px;padding:9px;display:grid;grid-template-columns:1fr auto;gap:3px}.hour-row span{color:#58708a}.hour-row strong{text-align:right}.hour-row small{grid-column:1/-1;color:#58708a}.weather-note{margin-top:18px;color:#58708a;font-size:12px}@media(max-width:700px){.weather-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.weather-card{min-height:96px}.weather-name{font-size:14px}.weather-card strong{font-size:23px}}@media(max-width:420px){.weather-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}</style></head>
+</head>
 
 
 <body>
 
-<div class="brief"><section class="page weather-page" id="weather-page"><div class="topline"><span>WEATHER / TODAY</span><span class="stamp">KMA FORECAST</span></div><div class="weather-kicker">강원·경기 주요 지역</div><h1>오늘의 날씨</h1><p class="weather-sub">지역별 날씨를 한눈에 확인하고, 지역을 누르면 시간대별 예보를 볼 수 있습니다.</p><div class="weather-grid"><button class="weather-card" data-region="춘천"><span class="weather-name">춘천</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="원주"><span class="weather-name">원주</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="인제"><span class="weather-name">인제</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="양구"><span class="weather-name">양구</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="영월"><span class="weather-name">영월</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="태백"><span class="weather-name">태백</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="정선"><span class="weather-name">정선</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="평창"><span class="weather-name">평창</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="여주"><span class="weather-name">여주</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="가평"><span class="weather-name">가평</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="화천"><span class="weather-name">화천</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button></div><div class="weather-detail" id="weather-detail">지역을 선택해 주세요.</div><div class="weather-note">기상청 단기예보 기준 · 업데이트 2026-09-11 12:02 KST</div><script>window.MORNING_WEATHER={"updated_at": "2026-09-11T12:02:43.108827+09:00", "source": "기상청 단기예보 조회서비스", "regions": [{"name": "춘천", "nx": 73, "ny": 134, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "원주", "nx": 76, "ny": 122, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "인제", "nx": 81, "ny": 138, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "양구", "nx": 78, "ny": 139, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "영월", "nx": 86, "ny": 119, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "태백", "nx": 95, "ny": 119, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "정선", "nx": 89, "ny": 115, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "평창", "nx": 84, "ny": 122, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "여주", "nx": 71, "ny": 121, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "가평", "nx": 69, "ny": 133, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "화천", "nx": 72, "ny": 139, "temp": null, "sky": "조회 오류", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}]};</script><script>(function(){const d=window.MORNING_WEATHER||{},box=document.getElementById('weather-detail');function render(r){const rows=(r.hourly||[]).map(x=>`<div class="hour-row"><b>${x.time}</b><span>${x.sky}</span><strong>${x.temp??'-'}℃</strong><small>강수 ${x.pop??'-'}%</small></div>`).join('');box.innerHTML=`<div class="detail-title"><b>${r.name}</b><strong>${r.temp??'-'}℃</strong><span>${r.sky}</span></div><div class="hourly-list">${rows||'시간대별 예보가 없습니다.'}</div>`;}(d.regions||[]).forEach(r=>{const b=document.querySelector(`[data-region="${r.name}"]`);if(!b)return;b.querySelector('.weather-temp').textContent=(r.temp??'-')+'℃';b.querySelector('small').textContent=r.sky||'예보 확인 중';b.addEventListener('click',()=>render(r));});})();</script></section>
+<div class="brief">
 
 
 <section class="page cover">
@@ -846,18 +846,7 @@ body {
                     ></i>
                     01　제도 동향
                 </span>
-                <b>1건</b>
-            </div>
-            
-            <div class="toc-row">
-                <span>
-                    <i
-                        class="toc-dot"
-                        style="background:#1E6BB8"
-                    ></i>
-                    02　의료비 이슈
-                </span>
-                <b>10건</b>
+                <b>2건</b>
             </div>
             
 
@@ -891,34 +880,34 @@ body {
     제도 동향
   </div>
 
-  <h1>치솟는 보험 분쟁에 칼 빼든 금감원…주요 보험 사 현장점검 착수</h1>
+  <h1>국민건강보험공단, 중증·필수의료 중심 건강보험 보장성 확대 추진</h1>
 
   <div class="meta">
-    2026.09.11 11:38 · widedaily.com
+    발행일 미상 · nhis.or.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">이처럼 제기된 분쟁들은 보험 상품 의 종류에 따라 그 양상도 뚜렷하게 나뉘는 추세다. 실손의료 보험 의 경우 주로 소액 의료비와 관련된 분쟁 건수가 압도적으로 많은 비중을 차지한다. 반면 건강보험 을 비롯한 제3 보험 은...</p>
+    <p class="summary">국민건강보험공단은 제2차 국민건강보험 종합계획에 따라 중증·응급 등 필수의료를 중심으로 건강보험 보장성을 개편하고 있습니다. 이에 따라 중증질환 치료에 대한 보장은 강화되는 한편, 비필수의료 및 비급여 항목에 대한 관리는 강화되고 있습니다.</p>
   </div>
 
   <div class="why">
     <div class="label">
       💡 WHY IT MATTERS
     </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
+    <div>건강보험 정책이 중증·필수의료 위주로 집중됨에 따라, 비급여 치료나 본인부담금이 발생하는 고액 치료비에 대한 민간 보장의 정교한 점검이 필요해졌습니다.</div>
   </div>
 
   <div class="tip">
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
+    <div>정부가 중증·필수의료 중심으로 건강보험 보장성을 개편하고 있는데, 혹시 뇌·심장질환이나 암 등 중증질환 발생 시 필요한 진단비와 비급여 고액 치료비 보장이 든든하게 준비되어 있으신가요?</div>
   </div>
 
-  <a class="source policy" href="https://www.widedaily.com/news/articleView.html?idxno=300993" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source policy" href="https://www.nhis.or.kr/nhis/policy/wbhadd09400m01.do" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -927,568 +916,55 @@ body {
 </section>
 
 <section
-    class="page article-page medical"
+    class="page article-page policy"
     style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
+        --cat-main:#B58900;
+        --cat-bg:#FFF8E6;
+        --cat-text:#5A4400;
+        --cat-subtext:#7A6A44;
+        --cat-accent:#B58900;
+        --cat-border:#E8D7A3;
     "
 >
 
   <div class="topline">
-    <span>02 / 01</span>
+    <span>01 / 02</span>
     <span class="stamp">MORNING BRIEF</span>
   </div>
 
   <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
+    <span class="badge-number">01</span>
+    제도 동향
   </div>
 
-  <h1>화상환자 치료 넘어 재활·사회복귀까지⋯한림화상재단, 서울시 복지상...</h1>
+  <h1>백내장·치질 등 7개 질병군 포괄수가제(DRG) 수술 진료비 확인 안내</h1>
 
   <div class="meta">
-    2026.09.11 11:47 · kormedi.com
+    발행일 미상 · hira.or.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">치료비 넘어 재활·심리회복·사회복귀까지 한림화상재단은 경제적으로 어려운 한국과 해외 화상환자에게 수술비 와 재활치료비, 간병비, 생계비 등을 지원해 왔다. 퇴원 뒤에도 돌봄은 이어진다. 화상경험코디네이터...</p>
+    <p class="summary">건강보험심사평가원은 백내장, 편도, 치질, 맹장, 탈장, 산부인과 수술 등 자주 발생하는 7개 질병군 수술에 대한 포괄수가제 진료비 확인 정보를 제공합니다. 포괄수가제가 적용되어도 일부 비급여 재료나 본인부담 수술비용은 발생하게 됩니다.</p>
   </div>
 
   <div class="why">
     <div class="label">
       💡 WHY IT MATTERS
     </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
+    <div>일상에서 흔히 발생하는 수술 질환의 진료비 체계를 확인하고, 고객의 질병수술비 및 비급여 수술비 보장 금액을 점검하는 기회로 활용할 수 있습니다.</div>
   </div>
 
   <div class="tip">
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 입원 시 간병인 지원과 간병비 부담에 대한 준비가 되어 있는지 질문해 보세요.</div>
+    <div>백내장이나 치질 같은 7개 질병군 수술을 받으실 때 포괄수가제가 적용되더라도 본인부담 수술비와 비급여 항목이 발생하는데, 기존 보험에 질병수술비 보장이 얼마나 준비되어 있는지 점검해보셨나요?</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/296/0000104735?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 02</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>GC녹십자, 코로나19 mRNA 백신 &#x27;GC4006A&#x27; 국내 2상 IND 승인</h1>
-
-  <div class="meta">
-    2026.09.11 11:58 · biotimes.co.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">GC4006A의 임상 개발을 통해 자체 mRNA-LNP 플랫폼의 성능과 상용화 가능성을 검증하고, 향후 코로나19 백신을 넘어 면역항암 제와 희귀 유전질환 치료제 등으로 적용 영역을 확대한다는 계획이다. 이재우 GC녹십자...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://www.biotimes.co.kr/news/articleView.html?idxno=34411" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 03</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>광주신통한방병원, 여성암 환자 회복•요양기 생활관리 체크 운영</h1>
-
-  <div class="meta">
-    2026.09.11 11:54 · hemophilia.co.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">수술•항암•방사선 치료 전후에 나타날 수 있는 생활 변화를 함께 살피는 진료를 운영하고 있다고 밝혔다. 해당 병원 측은 처음 내원한 환자의 경우 기존 치료 이력과 향후 치료 일정, 현재 느끼는 불편, 식사량, 수면 상태...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://www.hemophilia.co.kr/news/articleView.html?idxno=44422" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 04</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>GC녹십자, 코로나 mRNA 백신 2상 IND 승인…2028년 자급화 목표</h1>
-
-  <div class="meta">
-    2026.09.11 11:45 · news.tf.co.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">회사는 이번 임상을 통해 검증된 자체 mRNA-LNP 플랫폼을 기반으로 코로나19 백신 상용화를 넘어 차세대 면역항암제, 희귀 유전 질환 치료 제 등으로 파이프라인을 확대해 나갈 예정이다. 최근 모더나의 mRNA 암 ...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/629/0000532940?sid=101" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 05</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>GC녹십자, 백신 후보물질 &#x27;GC4006A&#x27;, 임상 2상 IND 승인…27년 3상 추진</h1>
-
-  <div class="meta">
-    2026.09.11 11:40 · 100ssd.co.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">GC녹십자는 자체 mRNA-LNP 플랫폼을 기반으로 코로나19 백신을 비롯해 차세대 면역항암 제, 희귀 유전질환 치료제 등으로 파이프라인을 확대해 나갈 계획이라고 11일 밝혔다. GC녹십자는 이번 임상 2상을 통해...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://www.100ssd.co.kr/news/articleView.html?idxno=212717" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 06</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>여성 암 치료 이후, 회복 속도보다 몸의 신호를 살펴야</h1>
-
-  <div class="meta">
-    2026.09.11 11:38 · ikoreanspirit.com
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">여성 암 치료 를 마친 뒤에는 치료 일정이 끝났다는 안도감과 함께 일상으로 빨리 돌아가고 싶은 마음이 생기기 쉽다. 그러나 유방암, 자궁암, 난소암 등 여성암 환자의 경우 수술과 항암, 방사선 치료를 거친 이후에도 체력...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="http://www.ikoreanspirit.com/news/articleView.html?idxno=87228" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 07</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>경찰, 김승원 ‘신약 청탁 의혹&#x27; 수사 착수…첫 고발인 조사</h1>
-
-  <div class="meta">
-    2026.09.11 11:56 · hani.co.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">코로나19 치료 제 업체인 ‘제넨셀’의 임상 2·3상 시험 계획 승인을 신속하게 처리해달라고 요청했다. 김... 입장을 반복 했다. 앞서 김 후보자는 보수성향 시민단체인 서민민생대책위원회(서민위)에도 정치자금법 위반...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/028/0002822672?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 08</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>경찰, 김승원 &#x27; 신약 청탁 의혹&#x27; 첫 고발인 조사…용혜인 사건은 이틀째</h1>
-
-  <div class="meta">
-    2026.09.11 11:46 · edaily.co.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">경찰이 김승원 법무부 장관 후보자의 ‘ 신약 청탁 의혹’ 관련 수사에 본격 착수했다. 용혜인 성평등가족부... 한편 김 후보자의 ‘ 신약 청탁 의혹’과 관련한 고발인 조사가 오는 12일 예정돼 있다. 두 후보자를 둘러싼...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/018/0006367572?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 09</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>복지위서 &#x27;김승원 공방&#x27;…野 &quot;식약처 현안질의&quot; vs 與 &quot;정쟁 안돼&quot;</h1>
-
-  <div class="meta">
-    2026.09.11 11:42 · news1.kr
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">서미선 김정률 홍유진 기자 = 여야는 11일 국회 보건복지위원회 전체회의에서 김승원 법무부 장관 후보자의 신약 로비 의혹과 관련해 시작부터 공방을 벌였다. 국민의힘이 식품의약품안전처에 관련 의혹을 따져 물어야...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/421/0009164861?sid=100" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
-
-  <div class="swipe">
-    ← 좌우로 스와이프 →
-  </div>
-
-</section>
-
-<section
-    class="page article-page medical"
-    style="
-        --cat-main:#1E6BB8;
-        --cat-bg:#E8F2FF;
-        --cat-text:#0B3A78;
-        --cat-subtext:#4D6B8A;
-        --cat-accent:#1E6BB8;
-        --cat-border:#B9D5F2;
-    "
->
-
-  <div class="topline">
-    <span>02 / 10</span>
-    <span class="stamp">MORNING BRIEF</span>
-  </div>
-
-  <div class="badge">
-    <span class="badge-number">02</span>
-    의료비 이슈
-  </div>
-
-  <h1>지씨셀 이뮨셀엘씨주, 간이식 후 간암 재발 억제 가능성 확인</h1>
-
-  <div class="meta">
-    2026.09.11 11:52 · dailypharm.com
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="summary-box">
-    <div class="label">요약</div>
-    <p class="summary">연구진은 간이식 4주 후부터 이뮨셀엘씨주를 투여한 환자군과 별도 치료 를 시행하지 않은 대조군을... 안전성 측면에서는 이뮨셀엘씨주 투여군에서 치료 관련 독성이 관찰되지 않았다. 급성 거부반응 없는...</p>
-  </div>
-
-  <div class="why">
-    <div class="label">
-      💡 WHY IT MATTERS
-    </div>
-    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
-  </div>
-
-  <div class="tip">
-    <div class="tip-title">
-      💬 오늘의 영업 Tip
-    </div>
-    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
-  </div>
-
-  <a class="source medical" href="https://www.dailypharm.com/user/news/342408?REFERER=NP" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source policy" href="https://www.hira.or.kr/rb/drg/drgAmtsList.do?pgmid=HIRAA030066050000&amp;WT.gnb=7%EA%B0%9C%EC%A7%88%EB%B3%91%EA%B5%B0%28DRG%29+%EC%A7%84%EB%A3%8C%EB%B9%84+%ED%99%95%EC%9D%B8" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1520,27 +996,12 @@ body {
     
         <div class="point">
             <span>01</span>
-            <p>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</p>
+            <p>정부가 중증·필수의료 중심으로 건강보험 보장성을 개편하고 있는데, 혹시 뇌·심장질환이나 암 등 중증질환 발생 시 필요한 진단비와 비급여 고액 치료비 보장이 든든하게 준비되어 있으신가요?</p>
         </div>
         
         <div class="point">
             <span>02</span>
-            <p>이 뉴스를 고객에게 보여드리며 입원 시 간병인 지원과 간병비 부담에 대한 준비가 되어 있는지 질문해 보세요.</p>
-        </div>
-        
-        <div class="point">
-            <span>03</span>
-            <p>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</p>
-        </div>
-        
-        <div class="point">
-            <span>04</span>
-            <p>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</p>
-        </div>
-        
-        <div class="point">
-            <span>05</span>
-            <p>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</p>
+            <p>백내장이나 치질 같은 7개 질병군 수술을 받으실 때 포괄수가제가 적용되더라도 본인부담 수술비와 비급여 항목이 발생하는데, 기존 보험에 질병수술비 보장이 얼마나 준비되어 있는지 점검해보셨나요?</p>
         </div>
         
   </div>
