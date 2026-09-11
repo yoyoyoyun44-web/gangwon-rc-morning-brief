@@ -68,6 +68,11 @@ jobs:
           print(f'Morning Brief 뉴스 결과: {count}개')
           if count<=0: raise SystemExit('Morning Brief 뉴스가 0개입니다.')
           PY
+      - name: Generate weather map and clickable detail page
+        if: steps.business_day.outputs.run == 'true'
+        env:
+          KMA_API_KEY: ${{ secrets.KMA_API_KEY }}
+        run: python src/weather_overlay.py
       - name: Run Kakao send pipeline
         if: steps.business_day.outputs.run == 'true'
         env:
@@ -75,12 +80,11 @@ jobs:
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
         run: python src/kakao_send.py
-      - name: Generate weather map and clickable detail page
+      - name: Commit generated site data
         if: steps.business_day.outputs.run == 'true'
         run: |
-          python src/weather_overlay.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/weather.json docs/index.html
-          git diff --cached --quiet || git commit -m "Add daily weather map to Morning Brief"
+          git diff --cached --quiet || git commit -m "Update daily weather map"
           git push
