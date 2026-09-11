@@ -1,10 +1,7 @@
-
 name: Morning Brief - Weekdays
 
 on:
   schedule:
-    # 08:15 KST = 23:15 UTC on the previous day
-    # 일~목 UTC 실행 → 월~금 KST 실행
     - cron: "15 23 * * 0-4"
   workflow_dispatch:
 
@@ -14,96 +11,63 @@ permissions:
 jobs:
   morning-brief:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 google-genai holidays
-
       - name: Check Korean business day
         id: business_day
         shell: bash
         run: |
           python - <<'PY'
-          import os
-          import holidays
+          import os, holidays
           from datetime import datetime, timezone, timedelta
-          kst = timezone(timedelta(hours=9))
-          today = datetime.now(kst).date()
-          kr = holidays.KR(years=today.year)
-          is_holiday = today in kr
-          is_weekend = today.weekday() >= 5
-          should_run = not is_holiday and not is_weekend
-          print(f"KST date: {today}")
-          print(f"Weekday: {not is_weekend}")
-          print(f"Holiday: {is_holiday} {kr.get(today, '')}")
-          print(f"Business day: {should_run}")
-          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
-              f.write(f"run={'true' if should_run else 'false'}\n")
+          kst=timezone(timedelta(hours=9)); today=datetime.now(kst).date()
+          kr=holidays.KR(years=today.year); run=today.weekday()<5 and today not in kr
+          print(f"KST date: {today}"); print(f"Business day: {run}")
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write(f"run={'true' if run else 'false'}\n")
           PY
-
       - name: Run news search
         if: steps.business_day.outputs.run == 'true'
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python src/news_search.py
-
       - name: Run official source collection
         if: steps.business_day.outputs.run == 'true'
         run: python src/official_sources.py
-
-      # Gemini 쿼터/RESOURCE_EXHAUSTED가 발생해도 전체 Morning Brief를 중단하지 않는다.
-      # AI가 실패하면 ai_fallback.py가 의료·보험 후보를 URL 기준으로 보존한다.
       - name: Generate AI news
         if: steps.business_day.outputs.run == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        continue-on-error: false
         shell: bash
         run: |
           set +e
           python src/ai_generate.py
-          AI_STATUS=$?
-          if [ $AI_STATUS -ne 0 ]; then
-            echo "[AI FALLBACK] Gemini 분석 실패 또는 quota 오류($AI_STATUS) → fallback 실행"
+          status=$?
+          if [ $status -ne 0 ]; then
             python src/ai_fallback.py
-            FALLBACK_STATUS=$?
-            if [ $FALLBACK_STATUS -ne 0 ]; then
-              echo "[AI FALLBACK] fallback도 실패했습니다."
-              exit $FALLBACK_STATUS
-            fi
           fi
           exit 0
-
-      # AI 정상 생성 결과가 있으면 그대로 유지한다.
-      # fallback은 Generate AI news 단계에서 이미 수행되므로 여기서는 안전 확인만 한다.
       - name: Verify news output
         if: steps.business_day.outputs.run == 'true'
-        shell: bash
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          p = Path("data/news.json")
-          if not p.exists():
-              raise SystemExit("data/news.json이 생성되지 않았습니다.")
-          data = json.loads(p.read_text(encoding="utf-8"))
-          count = int(data.get("article_count", 0)) if isinstance(data, dict) else 0
-          print(f"Morning Brief 뉴스 결과: {count}개")
-          if count <= 0:
-              raise SystemExit("Morning Brief 뉴스가 0개입니다.")
+          p=Path('data/news.json')
+          if not p.exists(): raise SystemExit('data/news.json이 생성되지 않았습니다.')
+          count=int(json.loads(p.read_text(encoding='utf-8')).get('article_count',0))
+          print(f'Morning Brief 뉴스 결과: {count}개')
+          if count<=0: raise SystemExit('Morning Brief 뉴스가 0개입니다.')
           PY
-
       - name: Run Kakao send pipeline
         if: steps.business_day.outputs.run == 'true'
         env:
@@ -111,3 +75,12 @@ jobs:
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
         run: python src/kakao_send.py
+      - name: Generate weather map and clickable detail page
+        if: steps.business_day.outputs.run == 'true'
+        run: |
+          python src/weather_overlay.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/weather.json docs/index.html
+          git diff --cached --quiet || git commit -m "Add daily weather map to Morning Brief"
+          git push
