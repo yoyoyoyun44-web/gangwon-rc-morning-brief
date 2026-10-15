@@ -36,6 +36,31 @@ POLITICAL_COUNTERARGUMENT_TERMS = ["대통령 주장 반박", "대통령 발언 
 MAJOR_NEWS_DOMAINS = {"chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "hankookilbo.com", "mk.co.kr", "hankyung.com", "sedaily.com", "fnnews.com", "newsis.com", "yna.co.kr", "news1.kr", "edaily.co.kr", "heraldcorp.com", "asiae.co.kr", "mt.co.kr", "seoul.co.kr", "khan.co.kr", "nocutnews.co.kr", "ytn.co.kr"}
 
 
+
+# 엄격한 영업 활용도 필터: 투자·인사·행사성 기사와 동물 진료 기사는 수집 단계에서 제외
+NON_GANGWON_REGIONS = ["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "경기도", "충북", "충청북도", "충남", "충청남도", "전북", "전라북도", "전남", "전라남도", "경북", "경상북도", "경남", "경상남도", "제주", "제주도"]
+EVENT_FORUM_TERMS = ["포럼", "심포지엄", "세미나", "학술대회", "컨퍼런스", "토론회", "간담회", "박람회", "기념행사", "행사 개최", "개최한다", "개최했다", "업무협약식"]
+INVESTMENT_TERMS = ["투자 유치", "투자유치", "투자한다", "투자 계획", "투자계획", "투자 확대", "투자확대", "시설 투자", "시설투자", "신규 투자", "신규투자", "사업 투자", "사업투자", "유상증자", "인수합병", "MOU 체결"]
+PERSONNEL_TERMS = ["대표이사 선임", "대표이사 취임", "임원 인사", "인사 발령", "인사발령", "승진 인사", "신임 원장", "병원장 취임", "원장 취임", "본부장 선임", "사장 선임", "CEO 선임"]
+ANIMAL_TERMS = ["반려견", "반려묘", "강아지", "고양이", "동물병원", "수의사", "동물 수술", "동물 치료", "반려동물 수술", "반려동물 치료", "야생동물 치료"]
+DIRECT_SALES_TERMS = ["보험금 지급", "보험금 청구", "보장 기준", "보장 변경", "보장 개편", "실손보험", "간병비", "간병인", "의료비 부담", "치료비 부담", "본인부담", "비급여", "수술비", "보험료", "보험 상품", "보험상품", "가입 심사", "보험 제도", "건강보험 급여"]
+def strict_excluded_article(title, description):
+    text = f"{title} {description}".lower()
+    if any(term.lower() in text for term in ANIMAL_TERMS):
+        # 동물 관련 기사 중 보험 세일즈에 직접 연결되는 펫보험 제도 뉴스도 기본 제외
+        return True
+    if any(term.lower() in text for term in PERSONNEL_TERMS):
+        return True
+    if any(term.lower() in text for term in INVESTMENT_TERMS) and any(x in text for x in ["병원", "제약", "바이오", "기업", "회사", "의료기관"]):
+        return True
+    if any(term.lower() in text for term in EVENT_FORUM_TERMS) and any(region.lower() in text for region in NON_GANGWON_REGIONS) and not any(x in text for x in ["강원", "춘천", "원주", "강릉", "속초", "동해", "태백", "삼척", "홍천", "횡성", "영월", "평창", "정선", "철원", "화천", "양구", "인제", "고성", "양양"]):
+        return True
+    # 제약·바이오 소식은 보험 보장/치료비/환자부담에 직접 연결되는 경우만 허용
+    if any(x in text for x in ["제약", "바이오", "신약", "임상시험", "임상 1상", "임상 2상", "임상 3상"]) and not any(term.lower() in text for term in DIRECT_SALES_TERMS):
+        return True
+    return False
+
+
 def clean_html(value):
     return BeautifulSoup(value or "", "html.parser").get_text(" ", strip=True)
 
@@ -165,6 +190,8 @@ def main():
                 source = source_from_url(original_url)
 
                 if not title or not original_url:
+                    continue
+                if strict_excluded_article(title, description):
                     continue
                 if original_url in seen_urls:
                     duplicate_urls += 1
