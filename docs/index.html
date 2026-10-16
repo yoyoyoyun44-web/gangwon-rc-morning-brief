@@ -799,12 +799,12 @@ body {
 
 </style>
 
-<style id="weather-style">.weather-page{background:#eef5fb;color:#12304d}.weather-page h1{font-size:clamp(34px,8vw,64px);margin:18px 0 8px}.weather-kicker{color:#1e6bb8;font-weight:700;margin-top:28px}.weather-sub{color:#58708a;margin-bottom:24px}.weather-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.weather-card{min-height:125px;border:1px solid #b9d5f2;background:#fff;border-radius:16px;padding:11px 8px;text-align:center;color:#12304d;cursor:pointer;box-shadow:0 3px 10px rgba(50,100,150,.08)}.weather-card:hover{border-color:#4d98d1}.weather-name,.weather-card strong,.weather-card small{display:block}.weather-name{font-weight:800;font-size:16px}.weather-icon{display:block;font-size:34px;line-height:1.1;margin:5px 0}.weather-card strong{font-size:25px;margin:2px 0 3px}.weather-card small{font-size:11px;color:#58708a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.weather-detail{margin-top:20px;padding:18px;border-radius:16px;background:#fff;border:1px solid #b9d5f2;min-height:70px}.detail-title{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.detail-title b{font-size:24px}.detail-title strong{font-size:30px}.detail-title span:last-child{color:#58708a}.detail-icon{font-size:34px}.hourly-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px;margin-top:15px}.hour-row{border:1px solid #d8e7f5;border-radius:10px;padding:9px;display:grid;grid-template-columns:1fr auto;gap:3px}.hour-row span{color:#58708a}.hour-row strong{text-align:right}.hour-row small{grid-column:1/-1;color:#58708a}.hour-icon{font-size:25px;line-height:1}.weather-note{margin-top:18px;color:#58708a;font-size:12px}@media(max-width:700px){.weather-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.weather-card{min-height:116px}.weather-name{font-size:14px}.weather-icon{font-size:30px}.weather-card strong{font-size:23px}}@media(max-width:420px){.weather-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}</style></head>
+</head>
 
 
 <body>
 
-<div class="brief"><section class="page weather-page" id="weather-page"><div class="topline"><span>WEATHER / TODAY</span><span class="stamp">KMA FORECAST</span></div><div class="weather-kicker">강원·경기 주요 지역</div><h1>오늘의 날씨</h1><p class="weather-sub">지역별 날씨를 한눈에 확인하고, 지역을 누르면 시간대별 예보를 볼 수 있습니다.</p><div class="weather-grid"><button class="weather-card" data-region="원주"><span class="weather-name">원주</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="여주"><span class="weather-name">여주</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="영월"><span class="weather-name">영월</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="평창"><span class="weather-name">평창</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="정선"><span class="weather-name">정선</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="태백"><span class="weather-name">태백</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="춘천"><span class="weather-name">춘천</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="가평"><span class="weather-name">가평</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="화천"><span class="weather-name">화천</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="인제"><span class="weather-name">인제</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="양구"><span class="weather-name">양구</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button></div><div class="weather-detail" id="weather-detail">지역을 선택해 주세요.</div><div class="weather-note">기상청 단기예보 기준 · 업데이트 2026-10-15 13:43 KST</div><script>window.MORNING_WEATHER={"updated_at": "2026-10-15T13:43:45.739181+09:00", "source": "기상청 단기예보 조회서비스", "regions": [{"name": "원주", "nx": 76, "ny": 122, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "여주", "nx": 71, "ny": 121, "temp": "21", "sky": "맑음", "icon": "☀️", "hourly": [{"time": "13:00", "temp": "21", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "14:00", "temp": "21", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "15:00", "temp": "21", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "16:00", "temp": "21", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "17:00", "temp": "20", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "18:00", "temp": "18", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "19:00", "temp": "16", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "20:00", "temp": "15", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "21:00", "temp": "14", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "22:00", "temp": "13", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "23:00", "temp": "13", "sky": "구름 많음", "icon": "⛅", "pop": "20"}], "error": null}, {"name": "영월", "nx": 86, "ny": 119, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "평창", "nx": 84, "ny": 122, "temp": "18", "sky": "구름 많음", "icon": "⛅", "hourly": [{"time": "13:00", "temp": "18", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "14:00", "temp": "18", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "15:00", "temp": "18", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "16:00", "temp": "18", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "17:00", "temp": "17", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "18:00", "temp": "14", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "19:00", "temp": "13", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "20:00", "temp": "12", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "21:00", "temp": "12", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "22:00", "temp": "11", "sky": "맑음", "icon": "☀️", "pop": "0"}, {"time": "23:00", "temp": "11", "sky": "구름 많음", "icon": "⛅", "pop": "20"}], "error": null}, {"name": "정선", "nx": 89, "ny": 115, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "태백", "nx": 95, "ny": 119, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "춘천", "nx": 73, "ny": 134, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "가평", "nx": 69, "ny": 133, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "화천", "nx": 72, "ny": 139, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "03: NO_DATA"}, {"name": "인제", "nx": 81, "ny": 138, "temp": "15", "sky": "구름 많음", "icon": "⛅", "hourly": [{"time": "13:00", "temp": "15", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "14:00", "temp": "15", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "15:00", "temp": "15", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "16:00", "temp": "15", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "17:00", "temp": "14", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "18:00", "temp": "13", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "19:00", "temp": "12", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "20:00", "temp": "12", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "21:00", "temp": "12", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "22:00", "temp": "12", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "23:00", "temp": "11", "sky": "흐림", "icon": "☁️", "pop": "30"}], "error": null}, {"name": "양구", "nx": 78, "ny": 139, "temp": "18", "sky": "흐림", "icon": "☁️", "hourly": [{"time": "13:00", "temp": "18", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "14:00", "temp": "18", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "15:00", "temp": "18", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "16:00", "temp": "18", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "17:00", "temp": "17", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "18:00", "temp": "15", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "19:00", "temp": "14", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "20:00", "temp": "14", "sky": "흐림", "icon": "☁️", "pop": "30"}, {"time": "21:00", "temp": "14", "sky": "구름 많음", "icon": "⛅", "pop": "20"}, {"time": "22:00", "temp": "13", "sky": "비", "icon": "🌧️", "pop": "60"}, {"time": "23:00", "temp": "13", "sky": "비", "icon": "🌧️", "pop": "60"}], "error": null}]};</script><script>(function(){const d=window.MORNING_WEATHER||{},box=document.getElementById('weather-detail');function render(r){const rows=(r.hourly||[]).map(x=>`<div class="hour-row"><b>${x.time}</b><span class="hour-icon">${x.icon||'🌤️'}</span><span>${x.sky}</span><strong>${x.temp??'-'}℃</strong><small>강수 ${x.pop??'-'}%</small></div>`).join('');box.innerHTML=`<div class="detail-title"><b>${r.name}</b><span class="detail-icon">${r.icon||'🌤️'}</span><strong>${r.temp??'-'}℃</strong><span>${r.sky}</span></div><div class="hourly-list">${rows||'시간대별 예보가 없습니다.'}</div>`;}(d.regions||[]).forEach(r=>{const b=document.querySelector(`[data-region="${r.name}"]`);if(!b)return;b.querySelector('.weather-icon').textContent=r.icon||'🌤️';b.querySelector('.weather-temp').textContent=(r.temp??'-')+'℃';b.querySelector('small').textContent=r.sky||'예보 확인 중';b.addEventListener('click',()=>render(r));});})();</script></section>
+<div class="brief">
 
 
 <section class="page cover">
@@ -826,7 +826,7 @@ body {
     </h1>
 
     <div class="date">
-      2026.10.15
+      2026.10.16
     </div>
 
   </div>
@@ -846,7 +846,7 @@ body {
                     ></i>
                     01　제도 동향
                 </span>
-                <b>1건</b>
+                <b>2건</b>
             </div>
             
             <div class="toc-row">
@@ -891,17 +891,74 @@ body {
     제도 동향
   </div>
 
-  <h1>요로결석 신기술·전립선비대증 복합제…급여 &#x27;장벽&#x27;에 막혔다</h1>
+  <h1>ABL생명, 간편 건강보험 출시...질병 이력 있어도 가입 가능</h1>
 
   <div class="meta">
-    2026.10.15 12:40 · medipana.com
+    2026.10.16 10:16 · pointdaily.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">건강보험 적용 문제도 주요 쟁점으로 다뤄졌다. 두타스테리드 0.5mg과 타다라필 5mg을 결합한 복합제는 중등도에서 중증의 양성 전립선비대증 증상 치료제로 허가됐지만, 현재 비급여로 공급돼 환자가 약제비 전액을 부담 하...</p>
+    <p class="summary">1등급에 가까울수록 건강 상태가 양호한 것을 의미하며 건강 기록이 개선되면 보험 료 할인 혜택도 받을 수 있다. 주요 질병에 대한 보장 과 보험 료 부담도 완화했다. 일반암, 소액암, 뇌혈관질환, 허혈심장질환 관련...</p>
+  </div>
+
+  <div class="why">
+    <div class="label">
+      💡 WHY IT MATTERS
+    </div>
+    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">
+      💬 오늘의 영업 Tip
+    </div>
+    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
+  </div>
+
+  <a class="source policy" href="https://www.pointdaily.co.kr/news/articleView.html?idxno=322525" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <div class="swipe">
+    ← 좌우로 스와이프 →
+  </div>
+
+</section>
+
+<section
+    class="page article-page policy"
+    style="
+        --cat-main:#B58900;
+        --cat-bg:#FFF8E6;
+        --cat-text:#5A4400;
+        --cat-subtext:#7A6A44;
+        --cat-accent:#B58900;
+        --cat-border:#E8D7A3;
+    "
+>
+
+  <div class="topline">
+    <span>01 / 02</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
+  <div class="badge">
+    <span class="badge-number">01</span>
+    제도 동향
+  </div>
+
+  <h1>“6만원이면 될 치료에 193만원 청구”…상처 꿰매러 갔다가 ‘날벼락’</h1>
+
+  <div class="meta">
+    2026.10.16 10:09 · sedaily.com
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="summary-box">
+    <div class="label">요약</div>
+    <p class="summary">적정 진료비로 추산된 환자 본인 부담 액은 4만5000~6만원에 불과했지만 실제 환자는 이보다 약 30배 많은... 진료비를 부담 시킬 수 있다고 지적했다. 건강보험 심사평가원의 비급여 진료비 공개 제도도 실효성이 떨어진다고...</p>
   </div>
 
   <div class="why">
@@ -918,7 +975,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
   </div>
 
-  <a class="source policy" href="https://www.medipana.com/news/articleView.html?idxno=419361" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source policy" href="https://n.news.naver.com/mnews/article/011/0004671927?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -948,17 +1005,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>제핏 ‘zDART’, 美 FDA ISTAND LOI 수용…동물대체시험법 개발 추진</h1>
+  <h1>&#x27;박주호♥&#x27; 안나, 30세에 유방암 진단...&quot;눈물이 줄줄&quot; 회상</h1>
 
   <div class="meta">
-    2026.10.15 13:25 · economist.co.kr
+    2026.10.16 10:06 · mt.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">우선 적용 대상으로는 항암제 등 중증 질환 치료 제를 고려하고 있다. 핵심 과제는 기존 평가에... 회사 측은 기존 ISTAND에 수용된 동물시험 대체 도구가 장기칩과 오가노이드 등 세포 ·조직 단위 모델을...</p>
+    <p class="summary">영상에서 안나는 자신의 주치의인 서울아산병원 김희정 교수와 만나 유방암 진단 당시부터 치료 과정까지... 안나는 2022년 암 투병 사실을 알렸으며 이후 완치 판정을 받았다. 현재는 넷째를 임신 중이다.</p>
   </div>
 
   <div class="why">
@@ -975,7 +1032,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/243/0000104249?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://m.entertain.naver.com/article/008/0005427309" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1005,17 +1062,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>암 세포 ‘자가 수리’ 막아 치료 율 극대화…차세대 유도미사일 항암제...</h1>
+  <h1>&#x27;박주호♥&#x27; 안나, 유방암 발병 당시 회상 &quot;가족 중 암 전혀 없는데…&quot;</h1>
 
   <div class="meta">
-    2026.10.15 13:24 · kbmaeil.com
+    2026.10.16 10:01 · newsis.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">김태경 교수는 “선택적 CDK7 억제를 통해 암 세포 의 DNA 복구를 막고 ADC 치료 효과를 극대화하는 기전을 규명했다”며 “약물 부작용으로 용량을 줄여야 하거나 내성이 발생한 환자들에게 새로운 치료 전략이 될 것”...</p>
+    <p class="summary">항 암 치료 당시에 대해서는 &quot;손톱에 보우선 같은 것들이 있었다. 보기 좋지 않다고 생각하기보다는... 안나는 2022년 11월 암 투병 중인 사실을 공개했으나 완치된 지 3년이 넘었으며 현재 넷째를 임신 중이다.</p>
   </div>
 
   <div class="why">
@@ -1032,7 +1089,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.kbmaeil.com/article/20261015500133" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://m.entertain.naver.com/article/003/0014257634" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1062,17 +1119,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>“집·월급 있어도 포기 마세요”… 2026년 기초생활수급 선정 기준 보니</h1>
+  <h1>유방에 멍울 만져지거나 피부 변화 생겼다면?…&#x27;유방암&#x27; 의심</h1>
 
   <div class="meta">
-    2026.10.15 13:22 · seoul.co.kr
+    2026.10.16 10:16 · bosa.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">생계급여는 기본적인 생활비를, 의료급여는 병원 이용에 필요한 의료비 부담 경감을 지원하죠. 주거급여는 임차료나 주택 수선, 교육급여는 학생의 교육활동비 등을 지원합니다. 급여 종류에 따라 전기·통신요금...</p>
+    <p class="summary">암의 특성 따라 치료 법 달라…수술 후 삶의 질까지 고려 유방암 진단에는 유방촬영술과 유방초음파 등이... 결정하고 치료 계획을 세운다. 치료 는 암의 병기와 특성에 따라 수술과 방사선 치료 , 항암화학요법, 항호르몬 치료 ...</p>
   </div>
 
   <div class="why">
@@ -1086,10 +1143,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/081/0003689228?sid=004" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.bosa.co.kr/news/articleView.html?idxno=3014084" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1119,17 +1176,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>&quot;1cm 꿰매고 193만원&quot; 주범 &#x27; 비급여 &#x27;...5만 원이면 충분</h1>
+  <h1>HLB이노베이션, 베리스모, 고형암 CAR-T 전임상 결과 공개</h1>
 
   <div class="meta">
-    2026.10.15 13:06 · edaily.co.kr
+    2026.10.16 10:10 · view.asiae.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">경제정의실천시민연합(경실련)과 더불어민주당 박지원 의원은 15일 오전 경실련 강당에서 ‘ 비급여 가격 실태 및 환자 피해 사례 발표 기자회견’을 열었다. 경실련에 따르면 제보자 A씨는 지난 7월 전자기기 모서리에...</p>
+    <p class="summary">HLB이노베이션의 미국 자회사 베리스모 테라퓨틱스가 다음달 6일(현지시간) 미국 면역항암 학회(SITC 2026)에서 고형암 CAR-T 전임상 결과를 발표한다. 16일 베리스모에 따르면 이번 연구는 다중사슬 구조인...</p>
   </div>
 
   <div class="why">
@@ -1143,10 +1200,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/018/0006388554?sid=100" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/277/0005829395?sid=101" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1176,17 +1233,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>7차례 수술 견딘 붉은바다거북 &#x27;럭키&#x27;, 제주 해녀가 배웅했다</h1>
+  <h1>[국감] 사무장병원 불법 운영에 환자 피해·건보재정 유출…수사기간 1...</h1>
 
   <div class="meta">
-    2026.10.15 12:41 · newsis.com
+    2026.10.16 10:20 · kmedinfo.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">치료 과정은 순탄하지 않았다. 어깨와 목 부위의 염증이 반복 해서 재발했지만, 올해 2월 마지막 수술에서 남아 있던 염증 조직을 제거한 뒤 건강을 회복했다. 해양수산부는 장기간 보호· 치료 를 받은 럭키가 자연에서...</p>
+    <p class="summary">특히 불법 운영자가 환자에게 거액의 치료비 를 미리 받은 뒤 잠적하거나 재산을 은닉하는 사례까지... 한 사무장병원 운영자는 산삼약침에 암 치료효과가 있는 것처럼 허위 광고해 말기암 환자 5명으로부터 1억 3...</p>
   </div>
 
   <div class="why">
@@ -1200,10 +1257,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/003/0014255690?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="http://www.kmedinfo.co.kr/news/articleView.html?idxno=98265" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1233,17 +1290,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>“1㎝ 봉합하고 193만원 청구”…경실련, ‘ 비급여 폭탄 방지책’ 촉구</h1>
+  <h1>에스티로더, 핑크리본 한옥하우스 오픈</h1>
 
   <div class="meta">
-    2026.10.15 12:19 · seoul.co.kr
+    2026.10.16 10:14 · hansbiz.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">국회 보건복지위원회 소속 박지원 더불어민주당 의원과 시민단체 경제정의실천시민연합(경실련)은 15일 ‘ 비급여 가격 실태 및 환자 피해 사례 발표’ 기자회견을 개최하고 이같이 문제를 제기했다. A씨 봉합 치료에도...</p>
+    <p class="summary">한국에서는 대한암협회와 26년간 협력하며 치료비 와 수술비 등을 지원하고 있다. 에스티 로더 컴퍼니즈 코리아는 올해 10월 캠페인 활동을 통해 글로벌 캠페인 메시지인 &#x27;가슴 건강은 셀프 케어(Breast Care is Self-Care)&#x27;를...</p>
   </div>
 
   <div class="why">
@@ -1257,10 +1314,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/081/0003689219?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="http://www.hansbiz.co.kr/news/articleView.html?idxno=873432" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1290,17 +1347,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>[HLB 리픽투 승부수①]경쟁약물 2030억 규모…美 직접판매 승부수</h1>
+  <h1>대구파티마병원, 목 절개 없이 하인두·식도 경계부 암 로봇수술 성공</h1>
 
   <div class="meta">
-    2026.10.15 13:38 · medicopharma.co.kr
+    2026.10.16 10:10 · pressian.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">HLB가 제시한 경쟁약물은 모두 FGFR 유전자 이상을 표적으로 하는 담관 암 치료 제다. 페미가티닙과 푸티바티닙은 리픽투가 공략할 FGFR2 융합·재배열 담관암 환자군과 치료 대상이 겹친다. 이미 시장에서 처방되고 있는...</p>
+    <p class="summary">다만 수술 후 회복 경과와 장기적인 치료 효과는 종양의 병리 결과와 추적 관찰 등을 통해 확인할 필요가 있다. 특히 이번 사례는 접근이 까다로운 하인두·식도 경계 부위 암 수술에서 로봇 기술과 기존 내시경적...</p>
   </div>
 
   <div class="why">
@@ -1314,10 +1371,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.medicopharma.co.kr/news/articleView.html?idxno=69875" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/002/0002461227?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1347,17 +1404,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>멈춰버린 일상에 다시 &#x27;사브작&#x27;, 희망이 걸어 들어왔다</h1>
+  <h1>&#x27;박주호♥&#x27; 안나, 유방암 투병→폐경 주사 맞고도 넷째 임신 &quot;가임력 있...</h1>
 
   <div class="meta">
-    2026.10.15 13:37 · sidae.com
+    2026.10.16 10:08 · spotvnews.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">&quot;( 암 치료 는) 혼자서 버티기가 참 어려워요. 의지할 누군가가 있을 때 극복할 수 있어요.&quot; 얼마 전엔 근처에 산다는 한 손님이 투병 생활 내내 집안에만 있던 어머니를 모시고 찾아와 강 대표와 오랜 시간 대화를 나눴다고...</p>
+    <p class="summary">전 축구선수 박주호의 아내 안나가 항 암 치료 후에도 넷째를 임신할 수 있었던 과정을 공개했다. 15일 안나의... 안나는 2022년 암 투병 소식을 전했으나, 최근 넷째 임신 소식을 알려 많은 축하를 받았다. 다만 그는 암 투병...</p>
   </div>
 
   <div class="why">
@@ -1374,7 +1431,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/417/0001161008?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://m.entertain.naver.com/article/477/0000633294" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1404,17 +1461,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>서울아산병원, 국내 첫 ‘소아신속대응팀’ 신설…“중증 악화 위험 선...</h1>
+  <h1>유한양행 공식몰 ‘버들장터’, 환절기 맞이 토탈 케어 기획전 진행</h1>
 
   <div class="meta">
-    2026.10.15 13:34 · sentv.co.kr
+    2026.10.16 10:04 · fntimes.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">치료 과정에서 진정 관리 등을 지원하는 ‘소아환자안전 및 진료지원팀(PACE)’으로 나뉘어 운영된다. 통계청의 2024년 사망원인통계에 따르면 1~9세 소아 사망원인 1위는 암으로 집계되는 등 중증 질환으로 입원 치료 를...</p>
+    <p class="summary">최근 미국 등 글로벌 시장에서 비소세포폐 암 치료 제 ‘렉라자’와 존슨앤드존슨(J&amp;J) ‘리브리반트’ 병용요법의 분기 매출이 처음으로 3억 달러를 돌파하는 등 해외 로열티 수익 확대에 따른 실적 성장세가 가속화할...</p>
   </div>
 
   <div class="why">
@@ -1431,7 +1488,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.sentv.co.kr/article/view/sentv202610150139" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.fntimes.com/html/view.php?ud=202610161001281817fd637f543_18" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1461,17 +1518,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>엔티엘헬스케어, &#x27;WHX 요하네스버그&#x27; 참가…&quot;AI 검진시스템 공급 논의&quot;</h1>
+  <h1>건보공단 132조 예산 편성…필수의료·디지털 혁신 추진</h1>
 
   <div class="meta">
-    2026.10.15 13:32 · rapportian.com
+    2026.10.16 10:04 · pharmnews.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">세계보건기구(WHO)에 따르면 자궁경부암은 전 세계 26개국에서 여성 암 사망 원인 1위이며, 이들 국가의 상당수가 사하라 이남 아프리카에 속한다. 백신 접종과 검진, 치료 에 대한 접근성 격차가 주요 요인으로 꼽히며...</p>
+    <p class="summary">비급여 진료비용 보고 항목을 2025년 1,251개에서 2026년 1411개로 확대하고, 산정특례 대상 희귀질환을 1,389개로 확충해 의료비 부담 을 완화한다. 불법개설기관 적발을 위한 특별사법경찰 도입 기반을 마련하고...</p>
   </div>
 
   <div class="why">
@@ -1485,10 +1542,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.rapportian.com/news/articleView.html?idxno=241290" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.pharmnews.com/news/articleView.html?idxno=306996" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1520,12 +1577,12 @@ body {
     
         <div class="point">
             <span>01</span>
-            <p>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</p>
         </div>
         
         <div class="point">
             <span>02</span>
-            <p>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</p>
         </div>
         
         <div class="point">
@@ -1540,7 +1597,7 @@ body {
         
         <div class="point">
             <span>05</span>
-            <p>이 뉴스를 고객에게 보여드리며 건강보험 적용 후에도 남는 본인부담과 비급여 의료비에 대한 보장이 준비되어 있는지 질문해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</p>
         </div>
         
   </div>
