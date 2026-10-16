@@ -104,12 +104,12 @@ def clearly_excluded(a):
     insurer = has_any(s, OTHER_INSURER_NAMES)
     promo = has_any(s, OTHER_INSURER_PROMO_TERMS)
     if insurer and promo:
-        # 경쟁사 상품홍보라도 실제 의료비·환자부담 이슈가 핵심이면 AI가 다시 판단할 수 있도록 허용
-        if not has_any(s, MEDICAL_VALUE_TERMS):
-            return True
-    celebrity = has_any(s, ["배우", "가수", "방송인", "연예인", "아이돌", "스타", "유명인", "셀럽"])
-    personal = has_any(s, ["투병", "미담", "개인사", "가족사", "건강 이상"])
-    if celebrity and personal and not has_any(s, MEDICAL_VALUE_TERMS):
+        # 삼성화재 외 보험사의 상품 출시·판매·가입 홍보는 무조건 제외
+        return True
+    celebrity = has_any(s, ["배우", "가수", "방송인", "연예인", "아이돌", "스타", "유명인", "셀럽", "축구선수", "야구선수", "농구선수", "운동선수", "국가대표"])
+    personal = has_any(s, ["투병", "진단", "진단받", "발병", "회상", "고백", "가족력", "임신", "폐경 주사", "건강 이상"])
+    cost_burden = has_any(s, ["치료비 부담", "의료비 부담", "병원비 부담", "본인부담", "비급여", "수술비", "간병비", "경제적 부담", "비용 부담", "고액 치료비", "고액 의료비", "수천만원", "수억원"])
+    if celebrity and personal and not cost_burden:
         return True
     return False
 
@@ -324,6 +324,12 @@ def same_issue(a, b):
     overlap = len(shared) / max(1, min(len(ta), len(tb)))
     title_ratio = SequenceMatcher(None, clean(a.get("title")), clean(b.get("title"))).ratio()
     shared_numbers = numbers(a) & numbers(b)
+    # 같은 유명인/운동선수의 동일 질환·투병 사건을 다룬 제목 변형은 하나만 남김
+    person_terms = {"박주호", "안나", "이강인", "손흥민", "김민재", "황희찬", "류현진", "김연아", "박세리", "유재석", "송지효", "김우빈", "최성봉"}
+    shared_person = shared & person_terms
+    shared_disease = shared & {"암", "유방암", "폐암", "위암", "대장암", "췌장암", "백혈병", "뇌종양", "뇌졸중", "심근경색", "당뇨", "희귀질환"}
+    if shared_person and shared_disease and overlap >= 0.35:
+        return True
     if shared_numbers and len(shared) >= 4 and overlap >= 0.45:
         return True
     if overlap >= 0.72 or title_ratio >= 0.86:
