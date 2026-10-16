@@ -94,10 +94,9 @@ def is_allowed_special_category_article(title, description, category):
     if category not in {"entertainment", "sports"}:
         return True
     combined = f"{title} {description}"
-    return any(x in combined for x in PERSONAL_CASE_TERMS) and (
-        any(x in combined for x in SEVERE_TREATMENT_TERMS)
-        or any(x in combined for x in HIGH_COST_TREATMENT_TERMS)
-    )
+    # 유명인·운동선수의 진단·투병 회상만으로는 선정하지 않고, 실제 치료비/의료비 부담이 명시된 경우만 허용
+    cost_burden_terms = ["치료비 부담", "의료비 부담", "병원비 부담", "본인부담", "비급여", "수술비", "간병비", "치료비가", "의료비가", "비용 부담", "경제적 부담", "비용이 많이", "수천만원", "수억원", "고액 치료비", "고액 의료비"]
+    return any(x in combined for x in PERSONAL_CASE_TERMS) and any(x in combined for x in cost_burden_terms)
 
 
 def is_life_asset_accumulation_article(title, description):
@@ -126,8 +125,8 @@ def is_other_insurer_promotional_article(title, description):
         return False
     if not any(term in combined for term in OTHER_INSURER_PROMO_TERMS):
         return False
-    medical_context = ["의료비", "치료비", "비급여", "본인부담", "간병비", "간병", "치료", "환자", "질환", "건강보험", "의료", "병원", "신약", "신의료기술", "암", "뇌혈관", "심혈관", "수술"]
-    return not any(term in combined for term in medical_context)
+    # 다른 보험사의 상품 출시·판매 홍보는 치료비 키워드가 함께 있어도 제외
+    return True
 
 
 def search_naver(query):
