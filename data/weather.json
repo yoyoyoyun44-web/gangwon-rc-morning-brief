@@ -1,116 +1,1051 @@
 {
-  "updated_at": "2026-10-20T10:54:19.959264+09:00",
+  "updated_at": "2026-10-21T10:39:31.454878+09:00",
   "source": "기상청 단기예보 조회서비스",
   "regions": [
     {
       "name": "원주",
       "nx": 76,
       "ny": 122,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "15",
+      "sky": "비",
+      "icon": "🌧️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "15",
+          "sky": "비",
+          "icon": "🌧️",
+          "pop": "60"
+        },
+        {
+          "time": "11:00",
+          "temp": "15",
+          "sky": "구름 많음",
+          "icon": "⛅",
+          "pop": "20"
+        },
+        {
+          "time": "12:00",
+          "temp": "16",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "16",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "16",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "16",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "여주",
       "nx": 71,
       "ny": 121,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "16",
+      "sky": "비",
+      "icon": "🌧️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "16",
+          "sky": "비",
+          "icon": "🌧️",
+          "pop": "60"
+        },
+        {
+          "time": "11:00",
+          "temp": "17",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "12:00",
+          "temp": "17",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "17",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "17",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "16",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "영월",
       "nx": 86,
       "ny": 119,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "14",
+      "sky": "비",
+      "icon": "🌧️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "14",
+          "sky": "비",
+          "icon": "🌧️",
+          "pop": "60"
+        },
+        {
+          "time": "11:00",
+          "temp": "14",
+          "sky": "비",
+          "icon": "🌧️",
+          "pop": "60"
+        },
+        {
+          "time": "12:00",
+          "temp": "14",
+          "sky": "구름 많음",
+          "icon": "⛅",
+          "pop": "20"
+        },
+        {
+          "time": "13:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "평창",
       "nx": 84,
       "ny": 122,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "13",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "13",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "13",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "12:00",
+          "temp": "13",
+          "sky": "구름 많음",
+          "icon": "⛅",
+          "pop": "20"
+        },
+        {
+          "time": "13:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "6",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "정선",
       "nx": 89,
       "ny": 115,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "14",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "14",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "14",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "12:00",
+          "temp": "14",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "13:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "태백",
       "nx": 95,
       "ny": 119,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "13",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "13",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "12",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "12:00",
+          "temp": "12",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "13:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "6",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "5",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "춘천",
       "nx": 73,
       "ny": 134,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "14",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "14",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "12:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "가평",
       "nx": 69,
       "ny": 133,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "13",
+      "sky": "비",
+      "icon": "🌧️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "13",
+          "sky": "비",
+          "icon": "🌧️",
+          "pop": "60"
+        },
+        {
+          "time": "11:00",
+          "temp": "14",
+          "sky": "구름 많음",
+          "icon": "⛅",
+          "pop": "20"
+        },
+        {
+          "time": "12:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "15",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "화천",
       "nx": 72,
       "ny": 139,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "12",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "12",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "13",
+          "sky": "구름 많음",
+          "icon": "⛅",
+          "pop": "20"
+        },
+        {
+          "time": "12:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "12",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "6",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "인제",
       "nx": 81,
       "ny": 138,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "9",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "9",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "9",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "12:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "9",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "6",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "5",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "4",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "3",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "양구",
       "nx": 78,
       "ny": 139,
-      "temp": null,
-      "sky": "조회 오류",
-      "icon": "⚠️",
-      "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "temp": "12",
+      "sky": "흐림",
+      "icon": "☁️",
+      "hourly": [
+        {
+          "time": "10:00",
+          "temp": "12",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "11:00",
+          "temp": "13",
+          "sky": "흐림",
+          "icon": "☁️",
+          "pop": "30"
+        },
+        {
+          "time": "12:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "13:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "14:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "15:00",
+          "temp": "14",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "16:00",
+          "temp": "13",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "17:00",
+          "temp": "11",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "18:00",
+          "temp": "10",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "19:00",
+          "temp": "8",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "20:00",
+          "temp": "7",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        },
+        {
+          "time": "21:00",
+          "temp": "6",
+          "sky": "맑음",
+          "icon": "☀️",
+          "pop": "0"
+        }
+      ],
+      "error": null
     },
     {
       "name": "홍천",
@@ -120,7 +1055,7 @@
       "sky": "조회 오류",
       "icon": "⚠️",
       "hourly": [],
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"
+      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=20)"
     }
   ]
 }
