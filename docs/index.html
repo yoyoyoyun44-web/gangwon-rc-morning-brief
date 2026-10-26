@@ -799,12 +799,12 @@ body {
 
 </style>
 
-<style id="weather-style">.weather-page{background:#eef5fb;color:#12304d}.weather-page h1{font-size:clamp(34px,8vw,64px);margin:18px 0 8px}.weather-kicker{color:#1e6bb8;font-weight:700;margin-top:28px}.weather-sub{color:#58708a;margin-bottom:24px}.weather-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.weather-card{min-height:125px;border:1px solid #b9d5f2;background:#fff;border-radius:16px;padding:11px 8px;text-align:center;color:#12304d;cursor:pointer;box-shadow:0 3px 10px rgba(50,100,150,.08)}.weather-card:hover{border-color:#4d98d1}.weather-name,.weather-card strong,.weather-card small{display:block}.weather-name{font-weight:800;font-size:16px}.weather-icon{display:block;font-size:34px;line-height:1.1;margin:5px 0}.weather-card strong{font-size:25px;margin:2px 0 3px}.weather-card small{font-size:11px;color:#58708a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.weather-detail{margin-top:20px;padding:18px;border-radius:16px;background:#fff;border:1px solid #b9d5f2;min-height:70px}.detail-title{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.detail-title b{font-size:24px}.detail-title strong{font-size:30px}.detail-title span:last-child{color:#58708a}.detail-icon{font-size:34px}.hourly-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px;margin-top:15px}.hour-row{border:1px solid #d8e7f5;border-radius:10px;padding:9px;display:grid;grid-template-columns:1fr auto;gap:3px}.hour-row span{color:#58708a}.hour-row strong{text-align:right}.hour-row small{grid-column:1/-1;color:#58708a}.hour-icon{font-size:25px;line-height:1}.weather-note{margin-top:18px;color:#58708a;font-size:12px}@media(max-width:700px){.weather-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.weather-card{min-height:116px}.weather-name{font-size:14px}.weather-icon{font-size:30px}.weather-card strong{font-size:23px}}@media(max-width:420px){.weather-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}</style></head>
+</head>
 
 
 <body>
 
-<div class="brief"><section class="page weather-page" id="weather-page"><div class="topline"><span>WEATHER / TODAY</span><span class="stamp">KMA FORECAST</span></div><div class="weather-kicker">강원·경기 주요 지역</div><h1>오늘의 날씨</h1><p class="weather-sub">지역별 날씨를 한눈에 확인하고, 지역을 누르면 시간대별 예보를 볼 수 있습니다.</p><div class="weather-grid"><button class="weather-card" data-region="원주"><span class="weather-name">원주</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="여주"><span class="weather-name">여주</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="영월"><span class="weather-name">영월</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="평창"><span class="weather-name">평창</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="정선"><span class="weather-name">정선</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="태백"><span class="weather-name">태백</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="춘천"><span class="weather-name">춘천</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="가평"><span class="weather-name">가평</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="화천"><span class="weather-name">화천</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="인제"><span class="weather-name">인제</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="양구"><span class="weather-name">양구</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button><button class="weather-card" data-region="홍천"><span class="weather-name">홍천</span><span class="weather-icon">🌤️</span><strong class="weather-temp">-℃</strong><small>불러오는 중</small></button></div><div class="weather-detail" id="weather-detail">지역을 선택해 주세요.</div><div class="weather-note">기상청 단기예보 기준 · 업데이트 2026-10-23 10:36 KST</div><script>window.MORNING_WEATHER={"updated_at": "2026-10-23T10:36:19.744897+09:00", "source": "기상청 단기예보 조회서비스", "regions": [{"name": "원주", "nx": 76, "ny": 122, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "여주", "nx": 71, "ny": 121, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "영월", "nx": 86, "ny": 119, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "평창", "nx": 84, "ny": 122, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "정선", "nx": 89, "ny": 115, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "태백", "nx": 95, "ny": 119, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "춘천", "nx": 73, "ny": 134, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "가평", "nx": 69, "ny": 133, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "화천", "nx": 72, "ny": 139, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "인제", "nx": 81, "ny": 138, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "양구", "nx": 78, "ny": 139, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}, {"name": "홍천", "nx": 75, "ny": 130, "temp": null, "sky": "조회 오류", "icon": "⚠️", "hourly": [], "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=ahpRAwI5RhJaiy7fp1WVATF%2FaNsKxrn53%2FBqa%2FV0FNBRTH%2BE6%2BRwOpYN%2F4cqHLAYvN%2FLhVe73GesgDIF"}]};</script><script>(function(){const d=window.MORNING_WEATHER||{},box=document.getElementById('weather-detail');function render(r){const rows=(r.hourly||[]).map(x=>`<div class="hour-row"><b>${x.time}</b><span class="hour-icon">${x.icon||'🌤️'}</span><span>${x.sky}</span><strong>${x.temp??'-'}℃</strong><small>강수 ${x.pop??'-'}%</small></div>`).join('');box.innerHTML=`<div class="detail-title"><b>${r.name}</b><span class="detail-icon">${r.icon||'🌤️'}</span><strong>${r.temp??'-'}℃</strong><span>${r.sky}</span></div><div class="hourly-list">${rows||'시간대별 예보가 없습니다.'}</div>`;}(d.regions||[]).forEach(r=>{const b=document.querySelector(`[data-region="${r.name}"]`);if(!b)return;b.querySelector('.weather-icon').textContent=r.icon||'🌤️';b.querySelector('.weather-temp').textContent=(r.temp??'-')+'℃';b.querySelector('small').textContent=r.sky||'예보 확인 중';b.addEventListener('click',()=>render(r));});})();</script></section>
+<div class="brief">
 
 
 <section class="page cover">
@@ -826,7 +826,7 @@ body {
     </h1>
 
     <div class="date">
-      2026.10.23
+      2026.10.26
     </div>
 
   </div>
@@ -838,6 +838,17 @@ body {
     </div>
 
     
+            <div class="toc-row">
+                <span>
+                    <i
+                        class="toc-dot"
+                        style="background:#B58900"
+                    ></i>
+                    01　제도 동향
+                </span>
+                <b>2건</b>
+            </div>
+            
             <div class="toc-row">
                 <span>
                     <i
@@ -854,6 +865,120 @@ body {
 
   <div class="cover-foot">
     보험 · 의료 · 영업 인사이트　|　Swipe →
+  </div>
+
+</section>
+
+<section
+    class="page article-page policy"
+    style="
+        --cat-main:#B58900;
+        --cat-bg:#FFF8E6;
+        --cat-text:#5A4400;
+        --cat-subtext:#7A6A44;
+        --cat-accent:#B58900;
+        --cat-border:#E8D7A3;
+    "
+>
+
+  <div class="topline">
+    <span>01 / 01</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
+  <div class="badge">
+    <span class="badge-number">01</span>
+    제도 동향
+  </div>
+
+  <h1>의료기기 업자와 수술하고 요양급여 탄 의사… 대법 “사기죄”</h1>
+
+  <div class="meta">
+    2026.10.26 10:08 · seoul.co.kr
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="summary-box">
+    <div class="label">요약</div>
+    <p class="summary">통상 건강보험 이 적용되는 수술인 경우 환자는 진료비 중 본인부담 금을 병원에 내고 병원은 나머지 공단 부담 금을 요양급여비용으로 청구한다. 1심은 A씨의 사기 혐의를 유죄로 인정하고 징역 2년 6개월과 벌금 500만원을...</p>
+  </div>
+
+  <div class="why">
+    <div class="label">
+      💡 WHY IT MATTERS
+    </div>
+    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">
+      💬 오늘의 영업 Tip
+    </div>
+    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
+  </div>
+
+  <a class="source policy" href="https://n.news.naver.com/mnews/article/081/0003692331?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <div class="swipe">
+    ← 좌우로 스와이프 →
+  </div>
+
+</section>
+
+<section
+    class="page article-page policy"
+    style="
+        --cat-main:#B58900;
+        --cat-bg:#FFF8E6;
+        --cat-text:#5A4400;
+        --cat-subtext:#7A6A44;
+        --cat-accent:#B58900;
+        --cat-border:#E8D7A3;
+    "
+>
+
+  <div class="topline">
+    <span>01 / 02</span>
+    <span class="stamp">MORNING BRIEF</span>
+  </div>
+
+  <div class="badge">
+    <span class="badge-number">01</span>
+    제도 동향
+  </div>
+
+  <h1>심평원, 의료빅데이터·AI 혁신기업과 부산 KIMES 참가</h1>
+
+  <div class="meta">
+    2026.10.26 10:02 · dailypharm.com
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="summary-box">
+    <div class="label">요약</div>
+    <p class="summary">요양급여 비용 명세서에 포함된 진료정보를 확인할 수 있는 ‘내 진료정보 열람서비스’와 응급실 의료진에게 환자의 수술 이력, 복약 의약품 등 진료 이력 정보를 제공하는 ‘응급진료지원 데이터 서비스’에 대한...</p>
+  </div>
+
+  <div class="why">
+    <div class="label">
+      💡 WHY IT MATTERS
+    </div>
+    <div>치료비·수술비·본인부담·비급여·신약·신의료기술·간병 등 실제 고객의 의료비 부담과 보장점검에 연결할 수 있는 기사입니다.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">
+      💬 오늘의 영업 Tip
+    </div>
+    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
+  </div>
+
+  <a class="source policy" href="https://www.dailypharm.com/user/news/343788?REFERER=NP" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+
+  <div class="swipe">
+    ← 좌우로 스와이프 →
   </div>
 
 </section>
@@ -880,17 +1005,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>디앤디파마텍 &quot;GLP-1·표적항암제 연구 논문 공개&quot;</h1>
+  <h1>알테오젠, ADC 피하주사 전환 가능성 확인…&quot;전신 부작용 완화 기대&quot;</h1>
 
   <div class="meta">
-    2026.10.23 10:15 · newsis.com
+    2026.10.26 10:02 · nocutnews.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">병용 치료 기전을 규명한 것이라고 회사는 전했다. IDH 변이 신경교종은 주로 젊은 성인에서도 발생하는 난치성 희귀 뇌종양으로, IDH1 또는 IDH2 유전자 변이에 따른 암 유발 대사물질 D-2HG의 비정상적 축적이 특징이다....</p>
+    <p class="summary">ADC 치료 제의 피하주사 전환 연구 결과를 발표했다고 26일 밝혔다. ADC는 암세포를 표적하는 항체에 강력한 항암 약물을 결합해 암세포를 선택적으로 공격하도록 설계된 차세대 항암제다. 높은 치료 효과로 인해...</p>
   </div>
 
   <div class="why">
@@ -904,10 +1029,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/003/0014273569?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/079/0004202561?sid=101" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -937,17 +1062,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>치료 제 없는 말기 대장암, 자가 면역세포 투여 임상 진행</h1>
+  <h1>&#x27;침묵의 암 &#x27; 췌장암 완치..극복 환자 공통점은?</h1>
 
   <div class="meta">
-    2026.10.23 10:16 · fnnews.com
+    2026.10.26 10:00 · fnnews.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">세포치료 임상연구다. T 림프구는 암세포나 바이러스 감염 세포를 공격하고 다른 면역세포를 활성화하는... 전이성·재발성 말기 대장암은 간, 폐, 복막 등으로 암이 퍼진 4기 상태로, 절제술이나 표적항 암치료 등...</p>
+    <p class="summary">췌장암의 완치를 기대할 수 있는 가장 근본적인 치료 법은 암 덩어리를 완전히 도려내는 수술이다. 과거에는 진단 당시 수술이 불가능했던 환자라도, 최근에는 수술 전 선행 항암화학요법이나 방사선 치료 를 먼저...</p>
   </div>
 
   <div class="why">
@@ -961,10 +1086,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/014/0005593471?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/014/0005594297?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -994,17 +1119,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>교보생명, 상반기 보험금 지급 기간 &#x27;0.24일&#x27;</h1>
+  <h1>&quot;항암제 양호한 내약성&quot;…신라젠, ESMO서 발표</h1>
 
   <div class="meta">
-    2026.10.23 10:30 · enewstoday.co.kr
+    2026.10.26 09:53 · newsis.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">암 ·사망보험금 수령 고객에게 제공하던 맞춤형 안내 메시지를 뇌·심혈관질환 진단보험금 수령 고객까지 확대하고 치료 와 회복에 필요한 건강관리 콘텐츠를 제공하고 있다. 교보생명은 보험금 청구 단계에서도 고객...</p>
+    <p class="summary">주요 약물 관련 이상반응인 호구 감소증은 용량 조절과 보조요법을 통해 관리 가능했으며, 비혈액적 이상반응은 대부분 경증(1~2등급)이었으며, 이상반응으로 치료 를 중단하거나 사망한 사례는 없었다. 신라젠에...</p>
   </div>
 
   <div class="why">
@@ -1021,7 +1146,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="http://www.enewstoday.co.kr/news/articleView.html?idxno=2483692" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/003/0014277586?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1051,17 +1176,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>면역력 높여 암세포 잡는 &#x27;차세대 항암 면역증강제&#x27; 개발</h1>
+  <h1>숟가락 들 힘도 없던 직장암 4기 의사… 병상에서 시작한 건 &#x27;생수병 들...</h1>
 
   <div class="meta">
-    2026.10.23 10:26 · koreahealthlog.com
+    2026.10.26 10:01 · hankookilbo.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">이번 연구는 환자 자신의 면역력을 높여 암을 치료하는 면역항 암 치료 기술이다. 기존 항암제와 달리 약물 자체가 암세포를 직접 공격하기보다 인체 면역세포의 기능을 강화한다는 점에서, 기존 항암제 치료의...</p>
+    <p class="summary">암 극복 비결 묻는 환자들에게 이야기한 것...&quot;나를 살린 것은 운동&quot; 이런 자리에서는 ‘암 극복을 위해 어떤 음식들을 먹었나요?’, ‘ 암 치료 를 위해 복용했던 약이나 치료제는 무엇인가요?’ 등 주로 먹는 것에 대한...</p>
   </div>
 
   <div class="why">
@@ -1078,7 +1203,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.koreahealthlog.com/news/articleView.html?idxno=59582" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/469/0000961600?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1108,17 +1233,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>독감 백신 접종 후 장애…대법 &quot;추가 진료비도 줘야&quot;</h1>
+  <h1>루닛 주가, 상한가... 무슨 이유길래?</h1>
 
   <div class="meta">
-    2026.10.23 10:25 · news.tvchosun.com
+    2026.10.26 10:04 · ggilbo.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">일시보상금·진료비· 간병비 로 구성된 피해보상금 총 3억 2500여만 원을 지급했다. A씨는 이후 &quot;소송 기간에 발생한 진료비와 간병비 가 보상금에 반영되지 않았다&quot;며 추가 지급을 요청했지만, 질병청은 &#x27;장애 일시보상금을...</p>
+    <p class="summary">또한 암 검진 영상 판독 보조 솔루션과 면역항암제 치료 반응 예측 솔루션을 제공하고 있으며, 글로벌 기업과의 파트너십 및 공동 연구를 통해 사업 영역을 확대하고 있다.</p>
   </div>
 
   <div class="why">
@@ -1132,10 +1257,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 입원 시 간병인 지원과 간병비 부담에 대한 준비가 되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/448/0000646516?sid=102" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.ggilbo.com/news/articleView.html?idxno=1188938" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1165,17 +1290,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>면역항암제 시장 커지는데 주가는 엇갈려…상용화 성과 주목</h1>
+  <h1>삼성서울병원, 말초중심정맥관 관리 AI 챗봇 마련</h1>
 
   <div class="meta">
-    2026.10.23 10:24 · pinpointnews.co.kr
+    2026.10.26 10:04 · etoday.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">세포치료 와 면역조절, 항체 기반 치료 등 면역항암제 개발에 활용되는 기술은 다양하다. 같은 분야에 속하더라도 기술의 작동 원리와 임상 개발 전략이 다른 만큼 단순한 테마 분류보다 후보물질별 경쟁력을 따져야 한다....</p>
+    <p class="summary">치료를 받는 환자를 위한 카카오톡 AI 챗봇 서비스를 선보인다고 26일 밝혔다. PICC는 항암제 등 독성이 강한 약물을 안전하게 투여하기 위해 팔의 정맥을 통해 심장 가까운 큰 정맥까지 넣는 관이다. 장기간 항 암치료 나...</p>
   </div>
 
   <div class="why">
@@ -1189,10 +1314,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=497878" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.etoday.co.kr/news/view/2639948" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1222,17 +1347,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>보령, 3분기 만에 지난해 연간 영업이익 돌파… 성장세 비결은?</h1>
+  <h1>신라젠, BAL0891 임상 중간 결과 ESMO 2026서 발표</h1>
 
   <div class="meta">
-    2026.10.23 10:24 · sisaweek.com
+    2026.10.26 09:56 · medigatenews.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">올해 보령의 수익률이 빠르게 성장한 배경에는 고혈압 치료 제 &#x27;카나브 패밀리&#x27;를 비롯해 항암제 &#x27;탁소텔... 3분기는 도세탁셀 성분의 세포 독성 항암제 탁소텔 인수 이후 처음으로 석 달 치 매출이 모두 반영된 분기다....</p>
+    <p class="summary">한편 신라젠은 이번에 공개된 코호트 외에도 전이성 고형암 환자를 대상으로 면역항암 제(티슬렐리주맙)와의 병용임상과 급성골수성백혈병(AML) 환자를 대상으로 하는 단독요법 임상도 진행하고 있다.</p>
   </div>
 
   <div class="why">
@@ -1246,10 +1371,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.sisaweek.com/news/articleView.html?idxno=238543" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.medigatenews.com/news/2143453780" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1279,17 +1404,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>&#x27;예방 접종 후 장애&#x27; 보상 받았지만…&#x27;추가 진료비&#x27; 대법원 판단은</h1>
+  <h1>삼성서울병원, PICC 암치료 환자용 AI 챗봇 도입</h1>
 
   <div class="meta">
-    2026.10.23 10:24 · yonhapnewstv.co.kr
+    2026.10.26 09:54 · medical-tribune.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">A씨는 이후 &quot;소송 기간에 발생한 진료비와 간병비 가 보상금에 반영되지 않았다&quot;며 질병청에 추가 지급을 요청했습니다. 그러나 질병청은 &#x27;장애 일시보상금을 받은 경우 진료비를 지급하지 않는다&#x27;고 규정한 감염병예방법...</p>
+    <p class="summary">삼성서울병원 암병원이 말초중심정맥관(PICC)을 삽입하고 항 암치료 중인 환자와 보호자를 위한 카카오톡 AI(인공지능) 챗봇 서비스를 선보인다. PICC는 항암제 등 약물을 투여하기 위해 팔의 정맥에서 심장 가까운 큰...</p>
   </div>
 
   <div class="why">
@@ -1303,10 +1428,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 입원 시 간병인 지원과 간병비 부담에 대한 준비가 되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/422/0000918665?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="http://www.medical-tribune.co.kr/news/articleView.html?idxno=215604" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1336,17 +1461,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>아산시, 장애인 맞춤 돌봄 50건 심의 의결하고 어린이 환경안심 공간 확...</h1>
+  <h1>신라젠, ESMO서 차세대 항암제 임상 중간결과 공개</h1>
 
   <div class="meta">
-    2026.10.23 10:20 · newsworker.co.kr
+    2026.10.26 09:49 · biz.sbs.co.kr
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">전문가와 장애인단체 대표들로 꾸려진 위원회는 신청자들의 장애 정도와 스스로 일상생활을 꾸려가는 일상 수행 능력, 보호자 등 가족 구성원의 간병 부담을 종합적으로 고려해 최적화된 급여량을 합리적으로 결정했다....</p>
+    <p class="summary">이상반응으로 치료를 중단하거나 사망한 사례는 없었습니다. 초기 항종양 활성도 확인됐습니다.... 이번 임상 참여자의 81.5%는 투여 전 두 차례 이상 전신 항 암 치료 를 받은 환자였고, 18.5%는 네 차례 이상의 치료...</p>
   </div>
 
   <div class="why">
@@ -1360,10 +1485,10 @@ body {
     <div class="tip-title">
       💬 오늘의 영업 Tip
     </div>
-    <div>이 뉴스를 고객에게 보여드리며 입원 시 간병인 지원과 간병비 부담에 대한 준비가 되어 있는지 질문해 보세요.</div>
+    <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://www.newsworker.co.kr/news/articleView.html?idxno=510122" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://n.news.naver.com/mnews/article/374/0000539708?sid=101" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1393,17 +1518,17 @@ body {
     의료비 이슈
   </div>
 
-  <h1>[약손+] 우리 몸 ‘주춧돌’ 고관절을 지켜라! ⑦퇴행성 변화가 골절에...</h1>
+  <h1>대웅, 아주대병원에 &#x27;씽크&#x27; 공급…1100병상까지 확대 추진</h1>
 
   <div class="meta">
-    2026.10.23 10:16 · dgmbc.com
+    2026.10.26 10:10 · medicaltimes.com
   </div>
 
   <div class="rule"></div>
 
   <div class="summary-box">
     <div class="label">요약</div>
-    <p class="summary">고관절 골절 위험 신호와 치료 에 대해서 정형외과 전문의 서일 부장과 알아봅니다. 노화로 인한 퇴행성... 또 갑상선 호르몬제나 항암 제 등의 약물 이 이차성 골다공증의 원인이 될 수도 있고, 흡연과 음주도 골다공증의...</p>
+    <p class="summary">아주대병원은 흉부외과와 순환기내과 병동을 시작으로 응급병동과 간호· 간병 통합 서비스 병동까지 적용 범위를 넓혀 다양한 입원환자의 상태를 실시간으로 확인할 수 있는 환경을 마련했다.상급종합병원은 중증질환...</p>
   </div>
 
   <div class="why">
@@ -1420,7 +1545,7 @@ body {
     <div>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</div>
   </div>
 
-  <a class="source medical" href="https://n.news.naver.com/mnews/article/657/0000056610?sid=103" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
+  <a class="source medical" href="https://www.medicaltimes.com/Main/News/NewsView.html?ID=1171390&amp;ref=naverpc" target="_blank" rel="noopener noreferrer">NAVER 원문 기사 보기 →</a>
 
   <div class="swipe">
     ← 좌우로 스와이프 →
@@ -1452,12 +1577,12 @@ body {
     
         <div class="point">
             <span>01</span>
-            <p>이 뉴스를 고객에게 보여드리며 새로운 치료법이나 신약 치료가 필요할 때 치료비와 비급여 부담에 대한 보장이 준비되어 있는지 질문해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</p>
         </div>
         
         <div class="point">
             <span>02</span>
-            <p>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</p>
         </div>
         
         <div class="point">
@@ -1467,12 +1592,12 @@ body {
         
         <div class="point">
             <span>04</span>
-            <p>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 실제 수술이 필요한 상황에서 질병·상해 수술비 보장이 충분한지 확인해 보세요.</p>
         </div>
         
         <div class="point">
             <span>05</span>
-            <p>이 뉴스를 고객에게 보여드리며 입원 시 간병인 지원과 간병비 부담에 대한 준비가 되어 있는지 질문해 보세요.</p>
+            <p>이 뉴스를 고객에게 보여드리며 치료가 길어지거나 비용이 커질 경우 현재 보장으로 충분한지 함께 확인해 보세요.</p>
         </div>
         
   </div>
